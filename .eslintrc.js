@@ -3,6 +3,7 @@ module.exports = {
         browser: true,
         es2021: true,
         node: true,
+        "jest": true
     },
     plugins: ["simple-import-sort", "unused-imports"],
     extends: ["eslint:recommended", "next", "next/core-web-vitals", "prettier"],
