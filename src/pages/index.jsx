@@ -22,7 +22,6 @@ export default function HomePage() {
                     <a>Turkish</a>
                 </Link>
             </div>
-            
         </Layout>
     );
 }
