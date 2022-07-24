@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="how-it-works"
+>
+  <h1
+    class="text-l mb-3 flex justify-center font-bold sm:mb-5 sm:text-xl md:mb-7 md:text-2xl lg:mb-9 lg:text-4xl"
+  >
+    How It Works
+  </h1>
+  <div
+    class="flex items-center justify-center"
+  >
+    <div
+      class="w-30 m-1 overflow-hidden rounded sm:m-2 md:m-4 md:w-52 lg:m-8 lg:w-80"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "opacity": 1,
+              "padding": 0,
+              "paddingTop": "100%",
+              "width": "initial",
+            }
+          }
+        />
+        <img
+          alt="Register"
+          class="w-full"
+          data-nimg="responsive"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="Register"
+            class="w-full"
+            data-nimg="responsive"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fregister.png&w=3840&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Fregister.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fregister.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fregister.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fregister.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fregister.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fregister.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fregister.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fregister.png&w=3840&q=75 3840w"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <div
+        class="px-6 py-4"
+      >
+        <div
+          class="md:text-md mb-2 flex justify-center text-center text-[8px] font-bold sm:text-sm lg:text-lg"
+        >
+          Register
+        </div>
+        <p
+          class="md:text-md text-center text-[6px] text-gray-700 sm:text-sm lg:text-lg"
+        >
+          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+        </p>
+      </div>
+      <div
+        class=" px-6 pt-4 pb-2"
+      >
+        <h1
+          className="title md:text-md text-center text-[8px] font-bold sm:text-sm lg:text-lg"
+        >
+           
+          <a
+            href="/posts/first-post"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Sign up
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-chevron-right "
+              data-icon="chevron-right"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </h1>
+      </div>
+    </div>
+    <div
+      class="w-30 m-1 overflow-hidden rounded sm:m-2 md:m-4 md:w-52 lg:m-8 lg:w-80"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "opacity": 1,
+              "padding": 0,
+              "paddingTop": "100%",
+              "width": "initial",
+            }
+          }
+        />
+        <img
+          alt="Attend"
+          class="w-full"
+          data-nimg="responsive"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="Attend"
+            class="w-full"
+            data-nimg="responsive"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Fattend.png&w=3840&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Fattend.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fattend.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fattend.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fattend.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fattend.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fattend.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fattend.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fattend.png&w=3840&q=75 3840w"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <div
+        class="px-6 py-4"
+      >
+        <div
+          class="md:text-md mb-2 flex justify-center text-center text-[8px] font-bold sm:text-sm lg:text-lg"
+        >
+          Attend events
+        </div>
+        <p
+          class="md:text-md text-center text-[6px] text-gray-700 sm:text-sm lg:text-lg"
+        >
+          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+        </p>
+      </div>
+      <div
+        class=" px-6 pt-4 pb-2"
+      >
+        <h1
+          className="title md:text-md text-center text-[8px] font-bold sm:text-sm lg:text-lg"
+        >
+           
+          <a
+            href="/posts/first-post"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            View events
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-chevron-right "
+              data-icon="chevron-right"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </h1>
+      </div>
+    </div>
+    <div
+      class="w-30 m-1 overflow-hidden rounded sm:m-2 md:m-4 md:w-52 lg:m-8 lg:w-80"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "opacity": 1,
+              "padding": 0,
+              "paddingTop": "100%",
+              "width": "initial",
+            }
+          }
+        />
+        <img
+          alt="Organize"
+          class="w-full"
+          data-nimg="responsive"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="Organize"
+            class="w-full"
+            data-nimg="responsive"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=%2Fimages%2Forganize.png&w=3840&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Forganize.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Forganize.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Forganize.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Forganize.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Forganize.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Forganize.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Forganize.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Forganize.png&w=3840&q=75 3840w"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <div
+        class="px-6 py-4"
+      >
+        <div
+          class="md:text-md mb-2 flex justify-center text-center text-[8px] font-bold sm:text-sm lg:text-lg"
+        >
+          Organize on your own!
+        </div>
+        <p
+          class="md:text-md text-center text-[6px] text-gray-700 sm:text-sm lg:text-lg"
+        >
+          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+        </p>
+      </div>
+      <div
+        class="px-6 pt-2 pb-2 sm:pt-4 md:pt-4 lg:pt-4"
+      >
+        <h1
+          className="title md:text-md text-center text-[8px] font-bold sm:text-sm lg:text-lg"
+        >
+           
+          <a
+            href="/posts/first-post"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Get started
+             
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-chevron-right "
+              data-icon="chevron-right"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </a>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+`;
