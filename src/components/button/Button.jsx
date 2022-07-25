@@ -1,7 +1,7 @@
 import React from "react";
 
 const Button = ({ type = "button", onClick, children }) => {
-    //you should put these classes to the div you will use to wrape the button so you can use it to change buttons styles
+    //you should put these classes to the div you will use to wrappe the button so you can use it to change buttons styles
     // <div className='w-max rounded ...'>
 
     return (
