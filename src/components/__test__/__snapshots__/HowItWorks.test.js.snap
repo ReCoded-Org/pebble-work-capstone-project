@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
         />
         <img
           alt="Register"
-          className="w-full"
+          class="w-full"
           data-nimg="responsive"
           decoding="async"
           onError={[Function]}
@@ -82,7 +82,7 @@ exports[`renders correctly 1`] = `
         <noscript>
           <img
             alt="Register"
-            className="w-full"
+            class="w-full"
             data-nimg="responsive"
             decoding="async"
             loading="lazy"
@@ -201,7 +201,7 @@ exports[`renders correctly 1`] = `
         />
         <img
           alt="Attend"
-          className="w-full"
+          class="w-full"
           data-nimg="responsive"
           decoding="async"
           onError={[Function]}
@@ -233,7 +233,7 @@ exports[`renders correctly 1`] = `
         <noscript>
           <img
             alt="Attend"
-            className="w-full"
+            class="w-full"
             data-nimg="responsive"
             decoding="async"
             loading="lazy"
@@ -352,7 +352,7 @@ exports[`renders correctly 1`] = `
         />
         <img
           alt="Organize"
-          className="w-full"
+          class="w-full"
           data-nimg="responsive"
           decoding="async"
           onError={[Function]}
@@ -384,7 +384,7 @@ exports[`renders correctly 1`] = `
         <noscript>
           <img
             alt="Organize"
-            className="w-full"
+            class="w-full"
             data-nimg="responsive"
             decoding="async"
             loading="lazy"

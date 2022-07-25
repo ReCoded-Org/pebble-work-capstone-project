@@ -15,7 +15,7 @@ function HowItWorks() {
             <div className='flex items-center justify-center'>
                 <div className='w-30 m-1 overflow-hidden rounded sm:m-2 md:m-4 md:w-52 lg:m-8 lg:w-80'>
                     <Image
-                        className='w-full'
+                        class='w-full'
                         src='/images/register.png'
                         alt='Register'
                         width='100%'
@@ -45,7 +45,7 @@ function HowItWorks() {
                 </div>
                 <div className='w-30 m-1 overflow-hidden rounded sm:m-2 md:m-4 md:w-52 lg:m-8 lg:w-80'>
                     <Image
-                        className='w-full'
+                        class='w-full'
                         src='/images/attend.png'
                         alt='Attend'
                         width='100%'
@@ -75,7 +75,7 @@ function HowItWorks() {
                 </div>
                 <div className='w-30 m-1 overflow-hidden rounded sm:m-2 md:m-4 md:w-52 lg:m-8 lg:w-80'>
                     <Image
-                        className='w-full'
+                        class='w-full'
                         src='/images/organize.png'
                         alt='Organize'
                         width='100%'
