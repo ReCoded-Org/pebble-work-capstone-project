@@ -74,7 +74,8 @@ const Navbar = () => {
                         >
                             <span className='sr-only'>Open main menu</span>
                             <svg
-                                className='burgerMenuIcon block h-6 w-6 '
+                                style={{ stroke: "#56c1e6" }}
+                                className=' block h-6 w-6 hover:bg-primary-200'
                                 xmlns='http://www.w3.org/2000/svg'
                                 fill='none'
                                 viewBox='0 0 24 24'
@@ -209,12 +210,12 @@ const Navbar = () => {
                                     )}
                                 </div>
                                 <Link href='/login'>
-                                    <a className='  rounded-md px-3 py-2 text-sm font-semibold  text-gray-700  hover:text-orange-400'>
+                                    <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-700  hover:text-orange-400  '>
                                         Log In
                                     </a>
                                 </Link>
                                 <Link href='/signup'>
-                                    <button className='signupBtn  bg-orange-300 font-semibold hover:bg-orange-400 hover:font-bold hover:text-orange-100 '>
+                                    <button className='rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg '>
                                         Sign up
                                     </button>
                                 </Link>
