@@ -1,5 +1,5 @@
 import * as React from "react";
-import Getstarted from "../GetStared/Getstarted";
+import Getstarted from "../Getstarted";
 
 import Footer from "./Footer";
 export default function Layout({ children }) {
