@@ -1,5 +1,4 @@
 import * as React from "react";
-import Getstarted from "../Getstarted";
 
 import Footer from "./Footer";
 export default function Layout({ children }) {
@@ -7,7 +6,6 @@ export default function Layout({ children }) {
 
     return (
         <>
-            <Getstarted />
             {children}
             <Footer />
         </>
