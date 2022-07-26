@@ -14,6 +14,7 @@ function EventBanner({
     for (let i = 0; i < 3; i++) {
         attendeeAvatars.push(
             <svg
+                key={i+1}
                 className='-ml-6'
                 width='45'
                 height='42'
