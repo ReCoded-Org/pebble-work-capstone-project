@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="heroSection / // mx-4 flex flex-col items-center md:relative md:w-full lg:static lg:mx-32 lg:w-auto lg:flex-row lg:justify-center"
+>
+  <div
+    className="tabletImageOverlay / absolute z-10 hidden h-[638px] w-[638px] rounded-lg bg-gradient-to-t from-orange-300 via-orange-50 opacity-80 md:block lg:hidden"
+  />
+  <div
+    className="titleTextButton / // -bottom-96 z-20 flex h-auto flex-col items-center md:absolute md:h-full lg:static lg:w-1/2 lg:items-start"
+  >
+    <div
+      className="titleText // flex flex-col items-center lg:items-start"
+    >
+      <h1
+        className="// mb-4 text-center text-3xl font-bold text-black md:w-auto md:text-center md:text-4xl md:font-extrabold md:text-black lg:w-4/5 lg:text-left lg:text-3xl lg:font-bold lg:text-black xl:text-4xl"
+      >
+        Medium title placeholder text
+      </h1>
+      <p
+        className="// text-center text-gray-500 md:w-3/5 md:text-xl md:text-black lg:w-4/5 lg:text-left lg:text-lg lg:text-gray-500 xl:text-xl"
+      >
+        Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+         
+      </p>
+    </div>
+    <button
+      className="mt-6 w-28 rounded-lg bg-cyan-600 py-2 font-semibold text-white lg:w-32 lg:text-lg xl:w-40 xl:text-xl"
+    >
+      Get started
+    </button>
+  </div>
+  <div
+    className="mt-6 md:mt-auto lg:w-1/2 xl:w-auto"
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "relative",
+          "width": "initial",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27638%27%20height=%27638%27/%3e"
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        />
+      </span>
+      <img
+        alt="hero image"
+        className="z-0"
+        data-nimg="intrinsic"
+        decoding="async"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="hero image"
+          className="z-0"
+          data-nimg="intrinsic"
+          decoding="async"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2Fhero-image.png&w=1920&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fhero-image.png&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fhero-image.png&w=1920&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </span>
+  </div>
+</div>
+`;
