@@ -32,10 +32,15 @@ exports[`renders correctly 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            className="burgerMenuIcon block h-6 w-6 "
+            className=" block h-6 w-6 hover:bg-primary-200"
             fill="none"
             stroke="white"
             strokeWidth="2"
+            style={
+              Object {
+                "stroke": "#56c1e6",
+              }
+            }
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -266,7 +271,7 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-400"
+              className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-400 "
               href="/login"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -274,7 +279,7 @@ exports[`renders correctly 1`] = `
               Log In
             </a>
             <button
-              className="signupBtn bg-orange-300 font-semibold hover:bg-orange-400 hover:font-bold hover:text-orange-100 "
+              className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg "
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
