@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
     className="flex flex-row justify-center"
   >
     <button
-      className="m-1 p-0 bg-secondary-300  hover:undefined text-white undefined border  px-4 border-secondary-300 hover:undefined rounded  hover:shadow-xl"
+      className="m-2  bg-secondary-300  hover:undefined text-white undefined  py-0  px-2 border-secondary-300 hover:undefined rounded  hover:shadow-xl"
       onClick={[Function]}
       type="button"
     >
