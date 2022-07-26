@@ -5,6 +5,7 @@ const Button = ({
     label,
     bgColor,
     textColor,
+    fontWeight,
     borderColor,
     hoverBgColor,
     hoverBorderColor,
@@ -14,7 +15,7 @@ const Button = ({
         <button
             type={type}
             onClick={(e) => onClick(e)}
-            className={`m-1 ${bgColor} hover:${hoverBgColor} ${textColor}  border  py-1 px-4 ${borderColor} hover:${hoverBorderColor} rounded shadow`}
+            className={`m-1 p-0 ${bgColor}  hover:${hoverBgColor} ${textColor} ${fontWeight} border  py-1 px-4 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-xl`}
         >
             {label}
         </button>
