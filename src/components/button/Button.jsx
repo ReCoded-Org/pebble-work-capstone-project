@@ -1,20 +1,23 @@
 import React from "react";
 
-const Button = ({ type = "button", onClick, children }) => {
-    //you should put these classes to the div you will use to wrappe the button so you can use it to change buttons styles
-    // <div className='w-max rounded ...'>
-
+const Button = ({
+    type = "button",
+    label,
+    bgColor,
+    textColor,
+    borderColor,
+    hoverBgColor,
+    hoverBorderColor,
+    onClick,
+}) => {
     return (
-        <>
-            <button
-                type={type}
-                onClick={onClick}
-                className='rounded border py-2 px-4 text-white'
-            >
-                {children}
-            </button>
-        </>
+        <button
+            type={type}
+            onClick={(e) => onClick(e)}
+            className={`m-1 ${bgColor} hover:${hoverBgColor} ${textColor}  border  py-1 px-4 ${borderColor} hover:${hoverBorderColor} rounded shadow`}
+        >
+            {label}
+        </button>
     );
 };
-
 export default Button;
