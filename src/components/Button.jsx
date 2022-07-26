@@ -15,7 +15,7 @@ const Button = ({
         <button
             type={type}
             onClick={(e) => onClick(e)}
-            className={`m-1 p-0 ${bgColor}  hover:${hoverBgColor} ${textColor} ${fontWeight} border  py-1 px-4 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-xl`}
+            className={`m-1 p-0 ${bgColor}  hover:${hoverBgColor} ${textColor} ${fontWeight} border  px-4 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-xl`}
         >
             {label}
         </button>
