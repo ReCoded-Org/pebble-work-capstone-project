@@ -5,9 +5,9 @@ function AttendeesList({ attendees }) {
     let attendeeAvatars = [];
     for (let i = 0; i < attendees.length; i++) {
         attendeeAvatars.push(
-            <div className='flex h-full flex-col space-y-2'>
+            <div key={i+1} className='flex h-full flex-col space-y-2'>
                 <Image
-                    className='h-xl rounded-full object-contain'
+                    className='rounded-full object-contain'
                     src='/images/userAvatar.jpeg'
                     alt={`${attendees[i]} avatar image`}
                     width={48}

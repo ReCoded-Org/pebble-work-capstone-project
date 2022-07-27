@@ -34,10 +34,10 @@ exports[`renders correctly 1`] = `
         </b>
       </p>
       <div
-        className="grid grid-cols-4 lg:grid-cols-4 md:grid-cols-6 gap-10 items-center"
+        className="grid grid-cols-4 items-center gap-10 md:grid-cols-6 lg:grid-cols-4"
       >
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -94,7 +94,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Bob avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -126,7 +126,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Bob avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -164,7 +164,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -221,7 +221,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Jane avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -253,7 +253,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Jane avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -291,7 +291,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -348,7 +348,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Steve avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -380,7 +380,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Steve avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -418,7 +418,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -475,7 +475,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Ahmet avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -507,7 +507,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Ahmet avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -545,7 +545,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -602,7 +602,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Mehmet avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -634,7 +634,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Mehmet avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -672,7 +672,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -729,7 +729,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Jennifer avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -761,7 +761,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Jennifer avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -799,7 +799,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -856,7 +856,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Somebody avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -888,7 +888,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Somebody avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -926,7 +926,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -983,7 +983,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Nobody avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -1015,7 +1015,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Nobody avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -1053,7 +1053,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -1110,7 +1110,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Beyonce avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -1142,7 +1142,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Beyonce avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -1180,7 +1180,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -1237,7 +1237,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Cher avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -1269,7 +1269,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Cher avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -1307,7 +1307,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -1364,7 +1364,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="Madonna avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -1396,7 +1396,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="Madonna avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
@@ -1434,7 +1434,7 @@ exports[`renders correctly 1`] = `
           </p>
         </div>
         <div
-          className="flex flex-col space-y-2 h-full"
+          className="flex h-full flex-col space-y-2"
         >
           <span
             style={
@@ -1491,7 +1491,7 @@ exports[`renders correctly 1`] = `
             </span>
             <img
               alt="The Rock avatar image"
-              className="h-xl object-contain rounded-full"
+              className="rounded-full object-contain"
               data-nimg="intrinsic"
               decoding="async"
               onError={[Function]}
@@ -1523,7 +1523,7 @@ exports[`renders correctly 1`] = `
             <noscript>
               <img
                 alt="The Rock avatar image"
-                className="h-xl object-contain rounded-full"
+                className="rounded-full object-contain"
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
