@@ -5,7 +5,7 @@ function AttendeesList({ attendees }) {
     let attendeeAvatars = [];
     for (let i = 0; i < attendees.length; i++) {
         attendeeAvatars.push(
-            <div key={i+1} className='flex h-full flex-col space-y-2'>
+            <div key={i + 1} className='flex h-full flex-col space-y-2'>
                 <Image
                     className='rounded-full object-contain'
                     src='/images/userAvatar.jpeg'
