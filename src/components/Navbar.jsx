@@ -215,7 +215,7 @@ const Navbar = () => {
                                     </a>
                                 </Link>
                                 <Link href='/signup'>
-                                    <button className='rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg '>
+                                    <button className='rounded-full py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg '>
                                         Sign up
                                     </button>
                                 </Link>

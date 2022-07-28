@@ -279,7 +279,7 @@ exports[`renders correctly 1`] = `
               Log In
             </a>
             <button
-              className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg "
+              className="rounded-full py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg "
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
