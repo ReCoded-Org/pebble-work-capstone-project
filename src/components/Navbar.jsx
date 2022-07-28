@@ -75,7 +75,7 @@ const Navbar = () => {
                             <span className='sr-only'>Open main menu</span>
                             <svg
                                 style={{ stroke: "#56c1e6" }}
-                                className=' block h-6 w-6 hover:bg-primary-200'
+                                className=' block h-6 w-6 '
                                 xmlns='http://www.w3.org/2000/svg'
                                 fill='none'
                                 viewBox='0 0 24 24'
