@@ -1,7 +1,7 @@
 import React from "react";
 
-import AttendeesList from "@/components/AttendeesList";
-import EventDescription from "@/components/EventDescription";
+import AttendeesList from "@/components/EventDescriptionAttendeesList/AttendeesList";
+import EventDescription from "@/components/EventDescriptionAttendeesList/EventDescription";
 
 function EventDescriptionAttendeesList({ description, attendees }) {
     return (
