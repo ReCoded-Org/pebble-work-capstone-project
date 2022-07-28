@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<button
+  className="m-2 undefined undefined undefined undefined undefined undefined hover:undefined undefined undefined  py-1  px-2 undefined hover:undefined rounded  hover:shadow-xl"
+  onClick={[Function]}
+  type="button"
+/>
+`;
