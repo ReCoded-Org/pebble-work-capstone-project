@@ -1,4 +1,5 @@
 import * as React from "react";
+import Signinup from "../Signinup/__test__/Signinup";
 
 import Footer from "./Footer";
 export default function Layout({ children }) {
@@ -6,6 +7,7 @@ export default function Layout({ children }) {
 
     return (
         <>
+            <Signinup />
             {children}
             <Footer />
         </>
