@@ -47,7 +47,7 @@ function EventBanner({
         );
     }
     return (
-        <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-10 md:pl-6'>
+        <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:pl-6'>
             <h1 className='order-1 col-span-1 p-6 text-center text-2xl md:order-first md:col-span-3 md:text-left md:text-4xl'>
                 {title}
             </h1>
@@ -56,11 +56,11 @@ function EventBanner({
                     className='rounded'
                     src={imageSrc}
                     alt={`${title},image`}
-                    width={800}
-                    height={600}
+                    width={600}
+                    height={400}
                 />
             </div>
-            <div className='order-last col-span-1 flex flex-col justify-items-start justify-self-center p-6 md:items-start md:pt-48'>
+            <div className='order-last col-span-1 flex flex-col items-center pb-6  md:items-start md:justify-items-start md:pt-12'>
                 <div className='flex'>
                     <svg
                         width='42'
