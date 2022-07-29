@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
+import EventBanner from "@/components/EventBanner";
 import Layout from "@/components/layout/Layout";
 
 export default function HomePage() {
@@ -22,6 +23,15 @@ export default function HomePage() {
                     <a>Turkish</a>
                 </Link>
             </div>
+            <EventBanner
+                title='This is some title This is some title This is some title'
+                imageSrc='/images/sampleEventImage.jpg'
+                city='Izmir'
+                neighborhood='Torbaci'
+                address='11th Street South, Arlington, Virginia'
+                attendees='100'
+                host='Jangis Khan'
+            />
         </Layout>
     );
 }

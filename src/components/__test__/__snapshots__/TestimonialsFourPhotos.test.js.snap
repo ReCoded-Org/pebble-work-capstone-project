@@ -3,20 +3,20 @@
 exports[`renders correctly 1`] = `
 Array [
   <h2
-    className="text-3xl font-medium justify-center hidden md:flex md:mb-5 md:mt-10"
+    className="hidden justify-center text-3xl font-medium md:mb-5 md:mt-10 md:flex"
   >
     Hear it from volunteers
   </h2>,
   <div
-    className="flex flex-col items-center mx-4 my-20 md:flex-row md:mt-0 md:mx-5 md:gap-10 lg:mx-32"
+    className="mx-4 my-20 flex flex-col items-center md:mx-5 md:mt-0 md:flex-row md:gap-10 lg:mx-32"
   >
     <h2
-      className="text-3xl font-medium md:hidden mb-5"
+      className="mb-5 text-3xl font-medium md:hidden"
     >
       Hear it from volunteers
     </h2>
     <div
-      className=" flex flex-col items-center my-4"
+      className=" my-4 flex flex-col items-center"
     >
       <span
         style={
@@ -135,7 +135,7 @@ Array [
         </noscript>
       </span>
       <h3
-        className="my-3 font-medium text-xl lg:text-2xl xl:text-2xl"
+        className="my-3 text-xl font-medium lg:text-2xl xl:text-2xl"
       >
         Omer, Hacker
       </h3>
@@ -146,7 +146,7 @@ Array [
       </p>
     </div>
     <div
-      className=" flex flex-col items-center my-4"
+      className=" my-4 flex flex-col items-center"
     >
       <span
         style={
@@ -265,7 +265,7 @@ Array [
         </noscript>
       </span>
       <h3
-        className="my-3 font-medium text-xl lg:text-2xl xl:text-2xl"
+        className="my-3 text-xl font-medium lg:text-2xl xl:text-2xl"
       >
         Omer, Hacker
       </h3>
@@ -276,7 +276,7 @@ Array [
       </p>
     </div>
     <div
-      className=" flex flex-col items-center my-4"
+      className=" my-4 flex flex-col items-center"
     >
       <span
         style={
@@ -395,7 +395,7 @@ Array [
         </noscript>
       </span>
       <h3
-        className="my-3 font-medium text-xl lg:text-2xl xl:text-2xl"
+        className="my-3 text-xl font-medium lg:text-2xl xl:text-2xl"
       >
         Omer, Hacker
       </h3>
@@ -407,13 +407,13 @@ Array [
     </div>
   </div>,
   <div
-    className="flex gap-4 mx-4 md:mx-5 lg:mx-32 my-4 h-[35rem]"
+    className="mx-4 my-4 flex h-[35rem] gap-4 md:mx-5 lg:mx-32"
   >
     <div
-      className="flex flex-col w-1/2 gap-4"
+      className="flex w-1/2 flex-col gap-4"
     >
       <div
-        className="rounded-lg bg-center bg-no-repeat bg-cover h-full"
+        className="h-full rounded-lg bg-cover bg-center bg-no-repeat"
         style={
           Object {
             "backgroundImage": "url(/images/FourPhotos-1.png)",
@@ -421,7 +421,7 @@ Array [
         }
       />
       <div
-        className="rounded-lg bg-right bg-no-repeat bg-cover h-1/2"
+        className="h-1/2 rounded-lg bg-cover bg-right bg-no-repeat"
         style={
           Object {
             "backgroundImage": "url(/images/FourPhotos-2.png)",
@@ -430,10 +430,10 @@ Array [
       />
     </div>
     <div
-      className="flex flex-col w-1/2 gap-4"
+      className="flex w-1/2 flex-col gap-4"
     >
       <div
-        className="rounded-lg bg-right bg-no-repeat bg-cover h-1/2"
+        className="h-1/2 rounded-lg bg-cover bg-right bg-no-repeat"
         style={
           Object {
             "backgroundImage": "url(/images/FourPhotos-3.png)",
@@ -441,7 +441,7 @@ Array [
         }
       />
       <div
-        className="rounded-lg bg-center bg-no-repeat bg-cover h-1/2"
+        className="h-1/2 rounded-lg bg-cover bg-center bg-no-repeat"
         style={
           Object {
             "backgroundImage": "url(/images/FourPhotos-4.png)",
