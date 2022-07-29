@@ -1,8 +1,14 @@
 import Image from "next/image";
+import { useState } from "react";
 
 import Button from "../Button";
 
 const EventCards = () => {
+    const [isJoined, setIsJoined] = useState(false);
+    function handleJoinClick() {
+        setIsJoined(!isJoined);
+    }
+
     let attendeeAvatars = [];
     for (let i = 0; i < 3; i++) {
         attendeeAvatars.push(
@@ -38,7 +44,7 @@ const EventCards = () => {
                 </div>
                 <div className='col-span-2 flex flex-col justify-between text-center sm:text-left'>
                     <div>
-                        <h1 className='line-clamp-1 text-2xl font-bold'>
+                        <h1 className='text-2xl font-bold line-clamp-1'>
                             Title Of The Event
                         </h1>
                         <p className='line-clamp-4'>
@@ -54,12 +60,13 @@ const EventCards = () => {
                     </div>
                     <div className='mt-2 flex items-end justify-center sm:justify-end '>
                         <Button
-                            label='JOIN'
+                            label={isJoined ? "LEAVE" : "JOIN"}
                             textColor='text-white'
                             bgColor='bg-primary-200'
                             borderColor='border-primary-200'
                             height='h-10'
                             width='w-24'
+                            onClick={handleJoinClick}
                         />
                     </div>
                 </div>
