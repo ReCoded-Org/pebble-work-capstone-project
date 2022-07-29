@@ -2,8 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="mt-1 mb-1 undefined undefined undefined undefined undefined undefined hover:undefined undefined undefined  py-1  px-2 undefined hover:undefined rounded  hover:shadow-xl"
+  className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-xl"
   onClick={[Function]}
   type="button"
-/>
+>
+  Get started
+</button>
 `;
