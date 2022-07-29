@@ -2,9 +2,9 @@
 
 import renderer from "react-test-renderer";
 
-import Signup from "../Signup";
+import Signupin from "../Signupin";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<Signup />).toJSON();
+    const tree = renderer.create(<Signupin />).toJSON();
     expect(tree).toMatchSnapshot();
 });

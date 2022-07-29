@@ -150,16 +150,20 @@ const Signup = ({ title }) => {
                                 Already have an account?
                                 <Link href='/signin'>
                                     <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
-                                        {title}
+                                        {title === "Sign up"
+                                            ? "Sign in"
+                                            : "/Sign up"}
                                     </div>
                                 </Link>
                             </p>
                         ) : (
                             <p className='signin m-1 flex text-xs italic text-gray-700'>
-                                You dont an account?
+                                You dont have an account?
                                 <Link href='/signup'>
                                     <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
-                                        {title}
+                                        {title === "Sign up"
+                                            ? "Sign in"
+                                            : "Sign up"}
                                     </div>
                                 </Link>
                             </p>
