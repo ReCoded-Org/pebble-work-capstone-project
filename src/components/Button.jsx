@@ -20,7 +20,7 @@ const Button = ({
         <button
             type={type}
             onClick={(e) => onClick(e)}
-            className={`m-2 ${width} ${height} ${fontSize} ${bgColor} ${border} ${borderWidth} hover:${hoverBgColor} ${textColor} ${fontWeight}  py-1  px-2 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-xl`}
+            className={`mt-1 mb-1 ${width} ${height} ${fontSize} ${bgColor} ${border} ${borderWidth} hover:${hoverBgColor} ${textColor} ${fontWeight}  py-1  px-2 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-xl`}
         >
             {label}
         </button>
