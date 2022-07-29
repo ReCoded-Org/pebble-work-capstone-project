@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Button from "../Button";
+import Getstarted from "../Getstarted";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<Button />).toJSON();
+    const tree = renderer.create(<Getstarted />).toJSON();
     expect(tree).toMatchSnapshot();
 });
