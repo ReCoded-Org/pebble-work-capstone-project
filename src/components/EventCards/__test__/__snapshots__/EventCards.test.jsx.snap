@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="m-5 rounded-md border-2 border-black "
+  className="m-5 rounded-md border shadow-lg "
 >
   <div
     className="mx-4 mt-4 flex flex-col text-center sm:flex-row sm:justify-between"
