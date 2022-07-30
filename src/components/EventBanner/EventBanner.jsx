@@ -47,11 +47,11 @@ function EventBanner({
         );
     }
     return (
-        <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:pl-6'>
-            <h1 className='order-1 col-span-1 p-6 text-center text-2xl md:order-first md:col-span-3 md:text-left md:text-4xl'>
+        <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:p-6'>
+            <h1 className='order-1 col-span-1 p-6 text-center text-2xl font-semibold md:order-first md:col-span-3 md:text-left md:text-4xl md:font-normal'>
                 {title}
             </h1>
-            <div className='border-first col-span-1 flex justify-center pb-6 md:order-1 md:col-span-2 md:pl-6'>
+            <div className='border-first col-span-1 flex justify-center px-6 md:order-1 md:col-span-2 md:pl-0 md:pb-6'>
                 <Image
                     className='rounded'
                     src={imageSrc}
