@@ -5,6 +5,8 @@ const InputComponent = ({
     className = "h-full w-full rounded-md border-2 border-black p-2",
     label,
     name,
+    id,
+    value,
 }) => {
     return (
         <>
@@ -14,6 +16,8 @@ const InputComponent = ({
                 placeholder={placeholder}
                 onChange={callback}
                 name={name}
+                id={id}
+                value={value}
             />
             <label htmlFor={name}>{label}</label>
         </>
