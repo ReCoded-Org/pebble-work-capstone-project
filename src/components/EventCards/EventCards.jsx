@@ -12,7 +12,7 @@ const EventCards = () => {
     let attendeeAvatars = [];
     for (let i = 0; i < 3; i++) {
         attendeeAvatars.push(
-            <div className='-ml-3'>
+            <div key={i} className='-ml-3'>
                 <Image
                     src='/images/userAvatar.jpeg'
                     alt='user-images'

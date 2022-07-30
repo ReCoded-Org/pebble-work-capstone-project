@@ -4,7 +4,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
 import Layout from "@/components/layout/Layout";
-import EventCards from "@/components/EventCards";
 
 export default function HomePage() {
     const { t } = useTranslation("common");
@@ -23,7 +22,6 @@ export default function HomePage() {
                     <a>Turkish</a>
                 </Link>
             </div>
-            <EventCards />
         </Layout>
     );
 }
