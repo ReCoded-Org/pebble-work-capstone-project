@@ -23,7 +23,7 @@ const EventCards = () => {
         );
     }
     return (
-        <div className='m-5 rounded-md border-2 border-black '>
+        <div className='m-5 rounded-md border shadow-lg '>
             <div className='mx-4 mt-4 flex flex-col text-center sm:flex-row sm:justify-between'>
                 <h2 className='mb-2 sm:mb-0'>FRI, JUL -7:00 PM GMT+3</h2>
                 <div className='flex flex-col justify-between sm:flex-row sm:gap-2'>
