@@ -20,6 +20,7 @@ module.exports = {
         },
     },
     plugins: [
+        require("@tailwindcss/line-clamp"),
         {
             "postcss-import": {},
             "tailwindcss/nesting": "postcss-nesting",
