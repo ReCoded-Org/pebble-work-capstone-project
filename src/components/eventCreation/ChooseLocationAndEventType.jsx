@@ -7,10 +7,10 @@ const ChooseLocationAndEventType = () => {
     const [Location, setLocation] = useState("Which city?");
     return (
         <>
-            <div className='mx-8'>
-                <div className='flex flex-col   gap-10 py-3 md:flex-row md:justify-between'>
+            <div className='mx-8 mt-3 mb-4'>
+                <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
                     <div>
-                        <h1 className='text-3xl font-bold text-secondary-300'>
+                        <h1 className='text-3xl font-bold text-black'>
                             First, set your events’s location:
                         </h1>
                         <p className='my-1 w-full text-gray-500'>
@@ -35,7 +35,7 @@ const ChooseLocationAndEventType = () => {
                             </div>
                             <InputComponent
                                 placeholder='Search for a city'
-                                className='w-full rounded border border-primary-200 px-9 py-1 shadow focus:outline-none'
+                                className='w-full rounded border border-secondary-300 px-9 py-1 shadow hover:border-primary-200 focus:outline-none'
                                 callback={(event) => {
                                     {
                                         event.target.value.length === 0
@@ -46,15 +46,15 @@ const ChooseLocationAndEventType = () => {
                             />
                         </div>
                     </div>
-                    <div className='flex w-full items-center justify-center rounded-full bg-sky-100'>
+                    <div className='flex w-full items-center justify-center  '>
                         <div className='my-10 flex items-center justify-center  text-6xl font-bold text-primary-200 '>
                             {Location}
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col  gap-4  py-3 '>
+                <div className='flex flex-col gap-4  py-3 '>
                     <div>
-                        <h1 className='text-3xl font-bold text-secondary-300'>
+                        <h1 className='text-3xl font-bold text-black'>
                             Second, Choose event type:
                         </h1>
                         <p className='my-1  w-full text-gray-500 '>
@@ -68,47 +68,47 @@ const ChooseLocationAndEventType = () => {
                         <div className='md:flex md:flex-col'>
                             <Button
                                 label='No Poverty'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
+                                borderColor='text-secondary-300 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />
                             <Button
                                 label='Zero Hunger'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
                             <Button
                                 label='Clean Water and Sanitation'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
                             <Button
                                 label='Gender Equality'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
                         </div>
                         <div className='md:flex md:flex-col'>
                             <Button
                                 label='Industry, Innovation, and Infrastructure'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
 
                             <Button
                                 label='Reduced Inequalities'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
                             <Button
                                 label='Climate Action'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
                             <Button
                                 label='Life Below Water'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white'
                             />
@@ -116,26 +116,26 @@ const ChooseLocationAndEventType = () => {
                         <div className='md:flex md:flex-col'>
                             <Button
                                 label='Life on Land'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />
                             <Button
                                 label='Quality Educationg'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white hover:border-primary-200 hover:border-primary-200'
                             />
                             <Button
                                 label='Sustainable Cities and Communities'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />
                             <Button
                                 label='Good Health and 
                             Well-being  '
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />
@@ -143,19 +143,19 @@ const ChooseLocationAndEventType = () => {
                         <div className='md:flex md:flex-col'>
                             <Button
                                 label='Decent Work and Economic Growth'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />{" "}
                             <Button
                                 label='Responsible Consumption/Production'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />
                             <Button
                                 label='Peace, Justice and Strong Institutions'
-                                borderColor='border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
+                                borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
                                 hoverBgColor='bg-primary-200 border hover:text-white '
                             />

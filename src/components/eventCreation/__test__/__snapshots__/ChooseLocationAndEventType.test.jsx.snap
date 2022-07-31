@@ -2,14 +2,14 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="mx-8"
+  className="mx-8 mt-3 mb-4"
 >
   <div
-    className="flex flex-col gap-10 py-3 md:flex-row md:justify-between"
+    className="mb-4 flex flex-col gap-10 py-3 md:flex-row md:justify-between"
   >
     <div>
       <h1
-        className="text-3xl font-bold text-secondary-300"
+        className="text-3xl font-bold text-black"
       >
         First, set your events’s location:
       </h1>
@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
           </svg>
         </div>
         <input
-          className="w-full rounded border border-primary-200 px-9 py-1 shadow focus:outline-none"
+          className="w-full rounded border border-secondary-300 px-9 py-1 shadow hover:border-primary-200 focus:outline-none"
           onChange={[Function]}
           placeholder="Search for a city"
           type="text"
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="flex w-full items-center justify-center rounded-full bg-sky-100"
+      className="flex w-full items-center justify-center "
     >
       <div
         className="my-10 flex items-center justify-center text-6xl font-bold text-primary-200 "
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
   >
     <div>
       <h1
-        className="text-3xl font-bold text-secondary-300"
+        className="text-3xl font-bold text-black"
       >
         Second, Choose event type:
       </h1>
@@ -79,28 +79,28 @@ exports[`renders correctly 1`] = `
         className="md:flex md:flex-col"
       >
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 text-secondary-300 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           No Poverty
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Zero Hunger
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Clean Water and Sanitation
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
@@ -111,28 +111,28 @@ exports[`renders correctly 1`] = `
         className="md:flex md:flex-col"
       >
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Industry, Innovation, and Infrastructure
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Reduced Inequalities
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Climate Action
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
@@ -143,28 +143,28 @@ exports[`renders correctly 1`] = `
         className="md:flex md:flex-col"
       >
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Life on Land
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white hover:border-primary-200 hover:border-primary-200 undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white hover:border-primary-200 hover:border-primary-200 undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Quality Educationg
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Sustainable Cities and Communities
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
@@ -176,7 +176,7 @@ exports[`renders correctly 1`] = `
         className="md:flex md:flex-col"
       >
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
@@ -184,14 +184,14 @@ exports[`renders correctly 1`] = `
         </button>
          
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
           Responsible Consumption/Production
         </button>
         <button
-          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+          className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
