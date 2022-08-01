@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
-  className="m-2  undefined  hover:undefined undefined undefined  py-0  px-2 undefined hover:undefined rounded  hover:shadow-xl"
+  className="m-2 undefined undefined undefined  hover:undefined undefined undefined  py-1  px-2 undefined hover:undefined rounded  hover:shadow-xl"
   onClick={[Function]}
   type="button"
 />
