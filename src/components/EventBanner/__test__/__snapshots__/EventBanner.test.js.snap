@@ -1,0 +1,799 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:p-6"
+>
+  <h1
+    className="order-1 col-span-1 p-6 text-center text-2xl font-semibold md:order-first md:col-span-3 md:text-left md:text-4xl md:font-normal"
+  >
+    This is some title This is some title This is some title
+  </h1>
+  <div
+    className="border-first col-span-1 flex justify-center px-6 md:order-1 md:col-span-2 md:pl-0 md:pb-6"
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "inline-block",
+          "height": "initial",
+          "margin": 0,
+          "maxWidth": "100%",
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "relative",
+          "width": "initial",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "padding": 0,
+            "width": "initial",
+          }
+        }
+      >
+        <img
+          alt=""
+          aria-hidden={true}
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27600%27%20height=%27400%27/%3e"
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        />
+      </span>
+      <img
+        alt="This is some title This is some title This is some title,image"
+        className="rounded"
+        data-nimg="intrinsic"
+        decoding="async"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": undefined,
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="This is some title This is some title This is some title,image"
+          className="rounded"
+          data-nimg="intrinsic"
+          decoding="async"
+          loading="lazy"
+          src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=1200&q=75"
+          srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=1200&q=75 2x"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </span>
+  </div>
+  <div
+    className="order-last col-span-1 flex flex-col items-center pb-6 md:items-start md:justify-items-start md:pt-12"
+  >
+    <div
+      className="flex"
+    >
+      <svg
+        fill="none"
+        height="42"
+        viewBox="0 0 42 42"
+        width="42"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M21.0001 3.5C13.2809 3.5 7.00014 9.78075 7.00014 17.4913C6.94939 28.77 20.4681 38.122 21.0001 38.5C21.0001 38.5 35.0509 28.77 35.0001 17.5C35.0001 9.78075 28.7194 3.5 21.0001 3.5ZM21.0001 24.5C17.1326 24.5 14.0001 21.3675 14.0001 17.5C14.0001 13.6325 17.1326 10.5 21.0001 10.5C24.8676 10.5 28.0001 13.6325 28.0001 17.5C28.0001 21.3675 24.8676 24.5 21.0001 24.5Z"
+          fill="black"
+        />
+      </svg>
+      <div>
+        <p>
+          <b>
+            Izmir
+          </b>
+        </p>
+        <p>
+          Torbaci
+        </p>
+        <p>
+          11th Street South, Arlington, Virginia
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex items-center pt-6"
+    >
+      <div
+        className=""
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": "initial",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "display": "block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "padding": 0,
+                  "width": "initial",
+                }
+              }
+            />
+          </span>
+          <img
+            alt="This is some title This is some title This is some title,image"
+            className="rounded-full"
+            data-nimg="intrinsic"
+            decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="This is some title This is some title This is some title,image"
+              className="rounded-full"
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </span>
+      </div>
+      <div
+        className="-ml-6"
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": "initial",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "display": "block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "padding": 0,
+                  "width": "initial",
+                }
+              }
+            />
+          </span>
+          <img
+            alt="This is some title This is some title This is some title,image"
+            className="rounded-full"
+            data-nimg="intrinsic"
+            decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="This is some title This is some title This is some title,image"
+              className="rounded-full"
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </span>
+      </div>
+      <div
+        className="-ml-6"
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": "initial",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "display": "block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "padding": 0,
+                  "width": "initial",
+                }
+              }
+            />
+          </span>
+          <img
+            alt="This is some title This is some title This is some title,image"
+            className="rounded-full"
+            data-nimg="intrinsic"
+            decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="This is some title This is some title This is some title,image"
+              className="rounded-full"
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </span>
+      </div>
+      <div
+        className="-ml-6"
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": "initial",
+            }
+          }
+        >
+          <span
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          >
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "display": "block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "padding": 0,
+                  "width": "initial",
+                }
+              }
+            />
+          </span>
+          <img
+            alt="This is some title This is some title This is some title,image"
+            className="rounded-full"
+            data-nimg="intrinsic"
+            decoding="async"
+            onError={[Function]}
+            onLoad={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
+            <img
+              alt="This is some title This is some title This is some title,image"
+              className="rounded-full"
+              data-nimg="intrinsic"
+              decoding="async"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              style={
+                Object {
+                  "border": "none",
+                  "bottom": 0,
+                  "boxSizing": "border-box",
+                  "display": "block",
+                  "height": 0,
+                  "left": 0,
+                  "margin": "auto",
+                  "maxHeight": "100%",
+                  "maxWidth": "100%",
+                  "minHeight": "100%",
+                  "minWidth": "100%",
+                  "objectFit": undefined,
+                  "objectPosition": undefined,
+                  "padding": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 0,
+                  "width": 0,
+                }
+              }
+            />
+          </noscript>
+        </span>
+      </div>
+      <p
+        className="pl-6"
+      >
+        +6 Attendees
+      </p>
+    </div>
+    <div
+      className="flex items-center pt-6 pb-12"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt="avatar image"
+          className="rounded-full"
+          data-nimg="intrinsic"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="avatar image"
+            className="rounded-full"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <p
+        className="pl-6"
+      >
+        Organized by Jangis Khan
+      </p>
+    </div>
+    <button
+      className="m-2 w-48 h-12 bg-primary-200  hover:undefined text-white undefined  py-1  px-2 undefined hover:undefined rounded  hover:shadow-xl"
+      onClick={[Function]}
+      type="button"
+    >
+      Join
+    </button>
+  </div>
+</div>
+`;
