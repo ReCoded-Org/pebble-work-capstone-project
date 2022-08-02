@@ -169,6 +169,63 @@ const ChooseLocationAndEventType = () => {
                         </div>
                     </div>
                 </div>
+                <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
+                    <div>
+                        <h1 className='text-3xl font-bold text-black'>
+                            Event title:
+                        </h1>
+                        <p className='my-1 w-full text-gray-500'>
+                            Choose a title that will give people a clear idea of
+                            what the event is about. Feel free to be creative!
+                            You canedit this later if you change your mind.
+                        </p>
+                        <div className='relative w-96  py-5'>
+                            <InputComponent
+                                placeholder='Izmir Clean Energy Brainstorm meeting'
+                                className='w-full rounded border border-secondary-300 px-2 py-1 shadow hover:border-primary-200 focus:outline-none'
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
+                    <div>
+                        <h1 className='text-3xl font-bold text-black'>
+                            Event Description:
+                        </h1>
+                        <p className='my-1 w-full text-gray-500'>
+                            Describe the purpose of your event. Who should join
+                            and what will you do at the event?
+                        </p>
+                        <div className='relative w-96  py-5'>
+                            <InputComponent
+                                placeholder='Please write at least 50 characters'
+                                className='h-60 w-full rounded border border-secondary-300 px-2 py-1 shadow hover:border-primary-200 focus:outline-none'
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
+                    <div>
+                        <h1 className='text-3xl font-bold text-black'>
+                            Event Image:
+                        </h1>
+                        <p className='my-1 w-full text-gray-500'>
+                            We have found that listings with a photo attract
+                            more interest.
+                        </p>
+                        <div className='relative w-96  py-5'>
+                            <div className='w-25 pointer-events-none absolute inset-y-0 left-0 flex items-center hover:border-primary-200'>
+                                <button className='w-full rounded border-2 border-r-4 border-secondary-300 px-1 '>
+                                    Browse
+                                </button>
+                            </div>
+                            <InputComponent
+                                placeholder=' '
+                                className='w-full rounded border border-secondary-300 px-2  shadow  focus:outline-none'
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
