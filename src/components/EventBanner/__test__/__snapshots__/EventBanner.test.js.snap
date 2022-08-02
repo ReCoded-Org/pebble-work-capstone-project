@@ -788,7 +788,7 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <button
-      className="m-2 w-48 h-12 bg-primary-200  hover:undefined text-white undefined  py-1  px-2 undefined hover:undefined rounded  hover:shadow-xl"
+      className="mt-1 mb-1 w-48 h-12 undefined bg-primary-200 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg"
       onClick={[Function]}
       type="button"
     >
