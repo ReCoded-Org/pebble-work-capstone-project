@@ -2,11 +2,9 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex flex-col lg:flex-row"
+  className="flex flex-col md:justify-center lg:flex-row"
 >
-  <div
-    className="flex-1"
-  >
+  <div>
     <div
       className="p-6"
     >
@@ -20,9 +18,7 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
   </div>
-  <div
-    className="flex flex-1"
-  >
+  <div>
     <div
       className="p-6"
     >

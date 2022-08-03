@@ -5,11 +5,11 @@ import EventDescription from "@/components/EventDescriptionAttendeesList/EventDe
 
 function EventDescriptionAttendeesList({ description, attendees }) {
     return (
-        <div className='flex flex-col lg:flex-row'>
-            <div className='flex-1'>
+        <div className='flex flex-col md:justify-center lg:flex-row'>
+            <div>
                 <EventDescription description={description} />
             </div>
-            <div className='flex flex-1'>
+            <div>
                 <AttendeesList attendees={attendees} />
             </div>
         </div>
