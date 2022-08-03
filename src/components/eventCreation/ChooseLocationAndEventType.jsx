@@ -47,7 +47,7 @@ const ChooseLocationAndEventType = () => {
                         </div>
                     </div>
                     <div className='flex w-full items-center justify-center  '>
-                        <div className='my-10 flex items-center justify-center  text-6xl font-bold text-primary-200 '>
+                        <div className='my-10 flex items-center justify-center text-center  text-6xl font-bold text-primary-200 '>
                             {Location}
                         </div>
                     </div>
@@ -216,8 +216,8 @@ const ChooseLocationAndEventType = () => {
                             more interest.
                         </p>
                         <div className='relative py-5  md:w-full'>
-                            <div className='w-25  absolute inset-y-0 left-0 flex items-center hover:border-primary-200'>
-                                <button className='h-8 w-full cursor-pointer rounded border-2 border-r-4 border-secondary-300 px-1 hover:bg-primary-200 '>
+                            <div className='w-25  absolute inset-y-0 left-0 flex items-center hover:border-primary-200  hover:text-white'>
+                                <button className='h-8 w-full cursor-pointer rounded border-2 border-r-4 border-secondary-300 px-1 hover:border-primary-200 hover:bg-primary-200 '>
                                     Browse
                                 </button>
                             </div>
@@ -255,7 +255,7 @@ const ChooseLocationAndEventType = () => {
                 </div>
             </div>
             <div className='mb-4 flex flex-col items-center  justify-center gap-10 py-3 '>
-                <button className='rounded border-2 border-black py-4 px-4 hover:bg-primary-200'>
+                <button className='rounded border-2 border-black py-4 px-4 hover:border-primary-200 hover:bg-primary-200 hover:text-white'>
                     Agree with terms and create event!
                 </button>
             </div>
