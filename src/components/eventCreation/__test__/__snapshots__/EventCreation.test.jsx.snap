@@ -143,7 +143,7 @@ Array [
             </span>
           </div>
           <input
-            className="w-full rounded border-2 border-black px-9 py-2 shadow hover:border-primary-200 focus:outline-none"
+            className="w-full rounded border border-black px-9 py-2 shadow hover:border-primary-200 focus:outline-none"
             onChange={[Function]}
             placeholder="Search for a city"
             type="text"
@@ -195,7 +195,7 @@ Array [
             Zero Hunger
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -213,7 +213,7 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -227,7 +227,7 @@ Array [
             Reduced Inequalities
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -245,7 +245,7 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -259,7 +259,7 @@ Array [
             Quality Educationg
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -278,7 +278,7 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -286,14 +286,14 @@ Array [
           </button>
            
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
             Responsible Consumption/Production
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border-2 hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
             onClick={[Function]}
             type="button"
           >
@@ -320,7 +320,7 @@ Array [
           className=" w-full py-5 "
         >
           <input
-            className="w-full rounded border-2 border-black px-3 py-2 shadow hover:border-primary-200 focus:outline-none"
+            className="w-full rounded border border-black px-3 py-2 shadow hover:border-primary-200 focus:outline-none"
             placeholder="Izmir Clean Energy Brainstorm meeting"
             type="text"
           />
@@ -346,7 +346,7 @@ Array [
           className=" w-full py-3"
         >
           <textarea
-            className=" h-40 w-full rounded border-2 border-black px-3 py-2 shadow focus:outline-none"
+            className=" h-40 w-full rounded border border-black px-3 py-2 shadow focus:outline-none"
             placeholder="Please write at least 50 characters"
             style={
               Object {
@@ -378,13 +378,13 @@ Array [
             className="w-25 absolute inset-y-0 left-0 flex items-center hover:border-primary-200 hover:text-white"
           >
             <button
-              className="h-8 w-full cursor-pointer rounded border-2 border-r-4 border-black px-1 hover:border-primary-200 hover:bg-primary-200 "
+              className="h-8 w-full cursor-pointer rounded border-2 border-b-4 border-r-4 border-black px-1 hover:border-primary-200 hover:bg-primary-200 "
             >
               Browse
             </button>
           </div>
           <input
-            className=" h-8 w-full rounded border-2 border-black py-3 pl-20 focus:outline-none "
+            className=" h-8 w-full rounded border border-black py-3 pl-20 focus:outline-none "
           />
         </div>
       </div>
@@ -434,7 +434,7 @@ Array [
     className="mb-4 flex w-full flex-col items-center justify-center gap-10 py-3 "
   >
     <button
-      className="w-96 rounded border-2 border-b-4 border-r-4 border-black py-4 px-4 hover:border-primary-200 hover:bg-primary-200 hover:text-white"
+      className="rounded border border-b-4 border-r-4 border-black py-4 px-4 hover:border-primary-200 hover:bg-primary-200 hover:text-white md:w-96"
     >
       Agree with terms and create event!
     </button>
