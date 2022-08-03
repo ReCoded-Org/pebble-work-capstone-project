@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Footer from "./Footer";
-import ChooseLocationAndEventType from "../eventCreation/ChooseLocationAndEventType";
+import EventCreation from "../eventCreation/EventCreation";
 import Navbar from "../Navbar";
 
 export default function Layout({ children }) {
@@ -12,7 +12,7 @@ export default function Layout({ children }) {
             <header>
                 <Navbar />
             </header>
-            <ChooseLocationAndEventType />
+            <EventCreation />
             {children}
             <Footer />
         </>

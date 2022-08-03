@@ -1,2 +1,2 @@
-import ChooseLocationANdEventType from "./ChooseLocationANdEventType";
-export default ChooseLocationANdEventType;
+import EventCreation from "./EventCreation";
+export default EventCreation;

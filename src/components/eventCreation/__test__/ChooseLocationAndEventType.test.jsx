@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import ChooseLocationAndEventType from "../ChooseLocationAndEventType";
+import EventCreation from "../EventCreation";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<ChooseLocationAndEventType />).toJSON();
+    const tree = renderer.create(<EventCreation />).toJSON();
     expect(tree).toMatchSnapshot();
 });
