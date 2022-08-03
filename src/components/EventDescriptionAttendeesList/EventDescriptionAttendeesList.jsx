@@ -6,10 +6,10 @@ import EventDescription from "@/components/EventDescriptionAttendeesList/EventDe
 function EventDescriptionAttendeesList({ description, attendees }) {
     return (
         <div className='flex flex-col md:justify-center lg:flex-row'>
-            <div className="flex-1">
+            <div className='flex-1'>
                 <EventDescription description={description} />
             </div>
-            <div className="flex-1">
+            <div className='flex-1'>
                 <AttendeesList attendees={attendees} />
             </div>
         </div>
