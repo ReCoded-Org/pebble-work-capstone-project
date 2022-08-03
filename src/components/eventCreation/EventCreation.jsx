@@ -29,7 +29,7 @@ const EventCreation = () => {
                             </div>
                             <InputComponent
                                 placeholder='Search for a city'
-                                className='w-full rounded border border-black px-9 py-2 shadow hover:border-primary-200 focus:outline-none'
+                                className='w-full rounded border-2 border-black px-9 py-2 shadow hover:border-primary-200 focus:outline-none'
                                 callback={(event) => {
                                     {
                                         event.target.value.length === 0
@@ -73,7 +73,7 @@ const EventCreation = () => {
                             <Button
                                 label='Clean Water and Sanitation'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
-                                hoverBgColor='bg-primary-200 border hover:text-white'
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white'
                             />
                             <Button
                                 label='Gender Equality'
@@ -85,7 +85,7 @@ const EventCreation = () => {
                             <Button
                                 label='Industry, Innovation, and Infrastructure'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52'
-                                hoverBgColor='bg-primary-200 border hover:text-white'
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white'
                             />
 
                             <Button
@@ -98,7 +98,7 @@ const EventCreation = () => {
                                 label='Climate Action'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
-                                hoverBgColor='bg-primary-200 border hover:text-white'
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white'
                             />
                             <Button
                                 label='Life Below Water'
@@ -112,7 +112,7 @@ const EventCreation = () => {
                                 label='Life on Land'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
-                                hoverBgColor='bg-primary-200 border hover:text-white '
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white '
                             />
                             <Button
                                 label='Quality Educationg'
@@ -124,7 +124,7 @@ const EventCreation = () => {
                                 label='Sustainable Cities and Communities'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
-                                hoverBgColor='bg-primary-200 border hover:text-white '
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white '
                             />
                             <Button
                                 label='Good Health and 
@@ -139,19 +139,19 @@ const EventCreation = () => {
                                 label='Decent Work and Economic Growth'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
-                                hoverBgColor='bg-primary-200 border hover:text-white '
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white '
                             />{" "}
                             <Button
                                 label='Responsible Consumption/Production'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
-                                hoverBgColor='bg-primary-200 border hover:text-white '
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white '
                             />
                             <Button
                                 label='Peace, Justice and Strong Institutions'
                                 borderColor='border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52
                                 '
-                                hoverBgColor='bg-primary-200 border hover:text-white '
+                                hoverBgColor='bg-primary-200 border-2 hover:text-white '
                             />
                         </div>
                     </div>
@@ -169,7 +169,7 @@ const EventCreation = () => {
                         <div className=' w-full py-5 '>
                             <InputComponent
                                 placeholder='Izmir Clean Energy Brainstorm meeting'
-                                className='w-full rounded border  border-black px-3 py-2 shadow hover:border-primary-200 focus:outline-none'
+                                className='w-full rounded border-2  border-black px-3 py-2 shadow hover:border-primary-200 focus:outline-none'
                             />
                         </div>
                     </div>
@@ -186,8 +186,9 @@ const EventCreation = () => {
                         </p>
                         <div className=' w-full  py-3'>
                             <textarea
+                                style={{ resize: "none" }}
                                 placeholder='Please write at least 50 characters'
-                                className='h-60 w-full rounded border  border-black px-3 py-2 shadow focus:outline-none'
+                                className=' h-40 w-full rounded border-2  border-black px-3 py-2 shadow focus:outline-none'
                             />
                         </div>
                     </div>
@@ -208,7 +209,7 @@ const EventCreation = () => {
                                     Browse
                                 </button>
                             </div>
-                            <input className=' h-8 w-full rounded  border border-black py-3 pl-20 focus:outline-none '></input>
+                            <input className=' h-8 w-full rounded  border-2 border-black py-3 pl-20 focus:outline-none '></input>
                         </div>
                     </div>
                 </div>
@@ -223,12 +224,16 @@ const EventCreation = () => {
                             volunteers like you. This means that all events
                             should:
                         </p>
-                        <p className=' my-1 w-full pl-1 text-black'>
-                            - Be transparent about the event’s intentions.
-                            <br></br>- Encourage real human interactions in
-                            person or online. <br></br>- Have the host present
-                            in all events
-                        </p>
+                        <ul className=' my-1 w-full list-disc pl-5 text-black'>
+                            <li>
+                                Be transparent about the event’s intentions.
+                            </li>
+                            <li>
+                                Encourage real human interactions in person or
+                                online
+                            </li>
+                            <li> Have the host present in all events</li>
+                        </ul>
                         <p className=' my-1 w-full pl-1 text-gray-400'>
                             You can read more about all of this in our
                             <a
@@ -241,8 +246,8 @@ const EventCreation = () => {
                     </div>
                 </div>
             </div>
-            <div className='mb-4 flex flex-col items-center  justify-center gap-10 py-3 '>
-                <button className='rounded border-2 border-black py-4 px-4 hover:border-primary-200 hover:bg-primary-200 hover:text-white'>
+            <div className='mb-4 flex w-full flex-col items-center  justify-center gap-10 py-3 '>
+                <button className='w-96 rounded border-2 border-b-4 border-r-4 border-black py-4 px-4 hover:border-primary-200 hover:bg-primary-200 hover:text-white'>
                     Agree with terms and create event!
                 </button>
             </div>
