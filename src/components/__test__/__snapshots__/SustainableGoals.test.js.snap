@@ -112,8 +112,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-01.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-01.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-01.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-01.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-01.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-01.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -230,8 +230,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-02.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-02.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-02.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-02.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-02.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-02.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -348,8 +348,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-03.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-03.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-03.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-03.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-03.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-03.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -466,8 +466,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-04.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-04.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-04.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-04.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-04.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-04.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -584,8 +584,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-05.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-05.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-05.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-05.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-05.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-05.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -702,8 +702,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-06.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-06.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-06.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-06.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-06.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-06.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -820,8 +820,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-07.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-07.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-07.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-07.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-07.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-07.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -938,8 +938,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-08.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-08.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-08.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-08.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-08.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-08.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1056,8 +1056,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-09.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-09.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-09.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-09.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-09.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-09.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1174,8 +1174,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-10.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-10.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-10.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-10.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-10.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-10.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1292,8 +1292,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-11.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-11.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-11.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-11.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-11.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-11.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1410,8 +1410,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-12.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-12.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-12.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-12.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-12.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-12.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1528,8 +1528,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-13.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-13.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-13.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-13.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-13.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-13.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1646,8 +1646,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-14.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-14.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-14.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-14.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-14.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-14.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1764,8 +1764,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-15.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-15.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-15.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-15.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-15.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-15.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -1882,8 +1882,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-16.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-16.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-16.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-16.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-16.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-16.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -2000,8 +2000,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FE-WEB-Goal-17.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FE-WEB-Goal-17.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FE-WEB-Goal-17.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-17.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-17.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FE-WEB-Goal-17.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
@@ -2118,8 +2118,8 @@ exports[`renders correctly 1`] = `
           data-nimg="intrinsic"
           decoding="async"
           loading="lazy"
-          src="/_next/image?url=%2Fimages%2FSDG%20Wheel_WEB.png&w=3840&q=75"
-          srcSet="/_next/image?url=%2Fimages%2FSDG%20Wheel_WEB.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2FSDG%20Wheel_WEB.png&w=3840&q=75 2x"
+          src="/_next/image?url=%2Fimages%2Fgoal_images%2FSDG%20Wheel_WEB.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2Fgoal_images%2FSDG%20Wheel_WEB.png&w=1920&q=75 1x, /_next/image?url=%2Fimages%2Fgoal_images%2FSDG%20Wheel_WEB.png&w=3840&q=75 2x"
           style={
             Object {
               "border": "none",
