@@ -15,12 +15,13 @@ const Button = ({
     border,
     borderWidth,
     fontSize,
+    customStyle,
 }) => {
     return (
         <button
             type={type}
             onClick={(e) => onClick(e)}
-            className={`mt-1 mb-1 ${width} ${height} ${fontSize} ${bgColor} ${border} ${borderWidth} hover:${hoverBgColor} ${textColor} ${fontWeight}  py-1  px-2 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-lg`}
+            className={`mt-1 mb-1 ${width} ${height} ${fontSize} ${bgColor} ${border} ${borderWidth} hover:${hoverBgColor} ${textColor} ${fontWeight}  py-1  px-2 ${borderColor} hover:${hoverBorderColor} rounded  hover:shadow-lg ${customStyle}`}
         >
             {label}
         </button>
