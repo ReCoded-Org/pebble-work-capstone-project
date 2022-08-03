@@ -2,6 +2,7 @@ import * as React from "react";
 
 import Footer from "./Footer";
 import Navbar from "../Navbar";
+import Signupin from "../signinup";
 
 export default function Layout({ children }) {
     // Put Header or Footer around the children element
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
             <header>
                 <Navbar />
             </header>
+            <Signupin title='Sign up' />
             {children}
             <Footer />
         </>
