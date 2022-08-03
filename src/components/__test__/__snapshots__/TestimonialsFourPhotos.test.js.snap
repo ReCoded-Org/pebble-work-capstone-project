@@ -1,0 +1,454 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <h2
+    className="hidden justify-center text-3xl font-medium md:mb-5 md:mt-10 md:flex"
+  >
+    Hear it from volunteers
+  </h2>,
+  <div
+    className="mx-4 my-20 flex flex-col items-center md:mx-5 md:mt-0 md:flex-row md:gap-10 lg:mx-32"
+  >
+    <h2
+      className="mb-5 text-3xl font-medium md:hidden"
+    >
+      Hear it from volunteers
+    </h2>
+    <div
+      className=" my-4 flex flex-col items-center"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt="1st testimonial giver"
+          data-nimg="intrinsic"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="1st testimonial giver"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ftestimonial-1.png&w=256&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Ftestimonial-1.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Ftestimonial-1.png&w=256&q=75 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <h3
+        className="my-3 text-xl font-medium lg:text-2xl xl:text-2xl"
+      >
+        Omer, Hacker
+      </h3>
+      <p
+        className="text-center text-gray-500 lg:text-lg xl:text-xl"
+      >
+        "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description."
+      </p>
+    </div>
+    <div
+      className=" my-4 flex flex-col items-center"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt="2nd testimonial giver"
+          data-nimg="intrinsic"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="2nd testimonial giver"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ftestimonial-2.png&w=256&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Ftestimonial-2.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Ftestimonial-2.png&w=256&q=75 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <h3
+        className="my-3 text-xl font-medium lg:text-2xl xl:text-2xl"
+      >
+        Omer, Hacker
+      </h3>
+      <p
+        className="text-center text-gray-500 lg:text-lg xl:text-xl"
+      >
+        "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description."
+      </p>
+    </div>
+    <div
+      className=" my-4 flex flex-col items-center"
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "inline-block",
+            "height": "initial",
+            "margin": 0,
+            "maxWidth": "100%",
+            "opacity": 1,
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "width": "initial",
+          }
+        }
+      >
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "padding": 0,
+              "width": "initial",
+            }
+          }
+        >
+          <img
+            alt=""
+            aria-hidden={true}
+            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+            style={
+              Object {
+                "background": "none",
+                "border": 0,
+                "display": "block",
+                "height": "initial",
+                "margin": 0,
+                "maxWidth": "100%",
+                "opacity": 1,
+                "padding": 0,
+                "width": "initial",
+              }
+            }
+          />
+        </span>
+        <img
+          alt="3rd testimonial giver"
+          data-nimg="intrinsic"
+          decoding="async"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": undefined,
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+        <noscript>
+          <img
+            alt="3rd testimonial giver"
+            data-nimg="intrinsic"
+            decoding="async"
+            loading="lazy"
+            src="/_next/image?url=%2Fimages%2Ftestimonial-3.png&w=256&q=75"
+            srcSet="/_next/image?url=%2Fimages%2Ftestimonial-3.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Ftestimonial-3.png&w=256&q=75 2x"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+        </noscript>
+      </span>
+      <h3
+        className="my-3 text-xl font-medium lg:text-2xl xl:text-2xl"
+      >
+        Omer, Hacker
+      </h3>
+      <p
+        className="text-center text-gray-500 lg:text-lg xl:text-xl"
+      >
+        "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description."
+      </p>
+    </div>
+  </div>,
+  <div
+    className="mx-4 my-4 flex h-[35rem] gap-4 md:mx-5 lg:mx-32"
+  >
+    <div
+      className="flex w-1/2 flex-col gap-4"
+    >
+      <div
+        className="h-full rounded-lg bg-cover bg-center bg-no-repeat"
+        style={
+          Object {
+            "backgroundImage": "url(/images/FourPhotos-1.png)",
+          }
+        }
+      />
+      <div
+        className="h-1/2 rounded-lg bg-cover bg-right bg-no-repeat"
+        style={
+          Object {
+            "backgroundImage": "url(/images/FourPhotos-2.png)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="flex w-1/2 flex-col gap-4"
+    >
+      <div
+        className="h-1/2 rounded-lg bg-cover bg-right bg-no-repeat"
+        style={
+          Object {
+            "backgroundImage": "url(/images/FourPhotos-3.png)",
+          }
+        }
+      />
+      <div
+        className="h-1/2 rounded-lg bg-cover bg-center bg-no-repeat"
+        style={
+          Object {
+            "backgroundImage": "url(/images/FourPhotos-4.png)",
+          }
+        }
+      />
+    </div>
+  </div>,
+]
+`;
