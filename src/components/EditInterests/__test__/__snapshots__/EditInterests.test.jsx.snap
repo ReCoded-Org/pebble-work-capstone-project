@@ -167,16 +167,5 @@ exports[`renders correctly 1`] = `
       </button>
     </div>
   </div>
-  <div
-    className="mt-6 mb-12 flex flex-row justify-end"
-  >
-    <button
-      className="mt-1 mb-1 w-24 md:w-44 lg:w-48 h-8 md:h-14 lg:h-14 text-[11px] md:text-xl lg:text-xl bg-secondary-300  undefined hover:undefined text-white font-medium  py-1  px-2  hover:undefined rounded  hover:shadow-lg undefined"
-      onClick={[Function]}
-      type="button"
-    >
-      Save Changes
-    </button>
-  </div>
 </div>
 `;

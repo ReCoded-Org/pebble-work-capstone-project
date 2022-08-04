@@ -201,19 +201,6 @@ const EditInterests = () => {
                     />
                 </div>
             </div>
-            <div className='mt-6 mb-12 flex flex-row justify-end'>
-                <Button
-                    label='Save Changes'
-                    bgColor='bg-secondary-300'
-                    textColor='text-white'
-                    fontWeight='font-medium'
-                    width='w-24 md:w-44 lg:w-48'
-                    height='h-8 md:h-14 lg:h-14'
-                    borderColor=''
-                    fontSize='text-[11px] md:text-xl lg:text-xl'
-                    border=''
-                />
-            </div>
         </div>
     );
 };
