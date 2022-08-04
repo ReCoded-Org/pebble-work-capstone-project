@@ -8,6 +8,9 @@ const EventCreation = () => {
     const [Location, setLocation] = useState("");
     return (
         <>
+            <div className='mb-4 mt-3 flex flex-col items-center justify-center  py-3 text-3xl  font-semibold '>
+                <h1>Create an Event</h1>
+            </div>
             <div className='mx-8 mt-3 mb-4 divide-y'>
                 <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
                     <div>
