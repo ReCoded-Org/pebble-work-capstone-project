@@ -12,7 +12,6 @@ export default function Layout({ children }) {
             <header>
                 <Navbar />
             </header>
-            <Signupin title='Sign up' />
             {children}
             <Footer />
         </>
