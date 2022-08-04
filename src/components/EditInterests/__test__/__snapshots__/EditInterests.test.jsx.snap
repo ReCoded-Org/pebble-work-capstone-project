@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="m-4 mt-12 md:m-12"
+>
+  <h2
+    className="text-md m-4 font-medium md:m-6 md:text-2xl lg:mt-16 lg:ml-12 lg:text-3xl"
+  >
+    Your Interests
+  </h2>
+  <div
+    className="flex flex-wrap items-center justify-center overflow-hidden lg:ml-8 lg:flex-row lg:flex-wrap lg:items-start lg:justify-start"
+  >
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-20 md:w-44 lg:w-40 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        No Poverty
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-[400px] lg:w-[400px] h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Industry, Innovation and Infrastructure
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-52 lg:w-52 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Quality Education
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-96 lg:w-96 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Sustainable Cities and Communities
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-52 lg:w-52 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Gender Equality
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-80 lg:w-80 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Affordable and Clean Energy
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-96 lg:w-96 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Decent Work and Economic Growth
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-64 lg:w-64 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Reduced Inequalities
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-80 lg:w-80 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Good Health and Well-Being
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-72 lg:w-80 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Clean Water and Sanitation
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-[440px] lg:w-[440px] h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Responsible Consumption and Production
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-52 lg:w-52 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Life Below Water
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-44 lg:w-52 h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Life On Land
+      </button>
+    </div>
+    <div
+      className="m-1 md:m-2"
+    >
+      <button
+        className="mt-1 mb-1 w-30 md:w-[400px] lg:w-[400px] h-8 md:h-14 lg:h-14 text-[9px] md:text-xl lg:text-xl bg-white border lg:border-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Peace, Justice and Strong Institutions
+      </button>
+    </div>
+  </div>
+  <div
+    className="mt-6 mb-12 flex flex-row justify-end"
+  >
+    <button
+      className="mt-1 mb-1 w-24 md:w-44 lg:w-48 h-8 md:h-14 lg:h-14 text-[11px] md:text-xl lg:text-xl bg-secondary-300  undefined hover:undefined text-white font-medium  py-1  px-2  hover:undefined rounded  hover:shadow-lg undefined"
+      onClick={[Function]}
+      type="button"
+    >
+      Save Changes
+    </button>
+  </div>
+</div>
+`;
