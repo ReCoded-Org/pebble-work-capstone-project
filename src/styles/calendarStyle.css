@@ -1,0 +1,17 @@
+.rdrCalendarWrapper {
+    border-radius: 8px;
+    overflow: hidden;
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    .rdrCalendarWrapper {
+        transform: scaleX(0.9) !important;
+    }
+    .wrapper {
+        scale: 0.8 !important;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    .calendarWrap {
+        height: 18rem !important;
+    }
+}

@@ -23,7 +23,7 @@ const EventCards = () => {
         );
     }
     return (
-        <div className='m-5 rounded-md border shadow-lg '>
+        <div className='mx-6 rounded-md border shadow-lg sm:mx-4'>
             <div className='mx-4 mt-4 flex flex-col text-center sm:flex-row sm:justify-between'>
                 <h2 className='mb-2 sm:mb-0'>FRI, JUL -7:00 PM GMT+3</h2>
                 <div className='flex flex-col justify-between sm:flex-row sm:gap-2'>
@@ -34,7 +34,7 @@ const EventCards = () => {
                 </div>
             </div>
             <div className='m-4 grid-cols-3 content-center gap-4 sm:grid'>
-                <div className='relative col-span-1 mb-4 h-48 overflow-hidden rounded-md border-2 border-black sm:mb-0'>
+                <div className='relative col-span-1 mb-4 h-36 overflow-hidden rounded-md border-2 border-black sm:mb-0'>
                     <Image
                         src='/images/event-image.jpg'
                         alt='event-card-image'
@@ -47,7 +47,7 @@ const EventCards = () => {
                         <h1 className='text-2xl font-bold line-clamp-1'>
                             Title Of The Event
                         </h1>
-                        <p className='line-clamp-4'>
+                        <p className='line-clamp-4 sm:line-clamp-2'>
                             Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Reprehenderit tempore placeat voluptate
                             officia illo harum enim nulla sunt corporis illum
@@ -66,6 +66,7 @@ const EventCards = () => {
                             borderColor='border-primary-200'
                             height='h-10'
                             width='w-24'
+                            customStyle='mx-2 my-0'
                             onClick={handleJoinClick}
                         />
                     </div>
