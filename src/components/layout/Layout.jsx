@@ -12,7 +12,6 @@ export default function Layout({ children }) {
             <header>
                 <Navbar />
             </header>
-            <EventCreation />
             {children}
             <Footer />
         </>
