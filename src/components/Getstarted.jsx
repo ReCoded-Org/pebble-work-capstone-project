@@ -1,6 +1,6 @@
 import React from "react";
 
-import Button from "../components/Button";
+import Button from "./Button";
 const Getstarted = () => {
     return (
         <div className='m-2 flex flex-col justify-center gap-10'>

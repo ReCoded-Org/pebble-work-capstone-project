@@ -104,15 +104,16 @@ const LocationComp = ({ style }) => {
                     <InputComponent
                         type='text'
                         id='cities'
-                        placeholder='Seach Event Location'
+                        placeholder='Seach Location'
                         value={searchTerm}
                         callback={handleSearch}
-                        className='w-3/4 rounded-md  text-base shadow-sm focus:border-secondary-300 sm:w-full'
+                        className='mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full'
                     />
                     <Button
                         onClick={() => onSearch(searchTerm)}
                         label='SEARCH'
-                        customStyle='text-base bg-primary-200 border text-white'
+                        height='h-9'
+                        customStyle='text-base bg-primary-200 border rounded text-white ml-2'
                     />
                 </div>
                 <div>

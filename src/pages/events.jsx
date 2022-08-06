@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import Button from "@/components/Button";
 import CalendarComp from "@/components/CalendarComp";
@@ -22,6 +22,50 @@ const EventsPage = () => {
     function handleLocationButtonClick() {
         setIsLocationButtonClicked(!isLocationButtonClicked);
     }
+    const refOne = useRef(null);
+    const refTwo = useRef(null);
+    const refThree = useRef(null);
+    const refIntBtn = useRef(null);
+    const refLocBtn = useRef(null);
+    const refDateBtn = useRef(null);
+    useEffect(() => {
+        function interestClickedOutside(e) {
+            if (refOne.current && !refOne.current.contains(e.target)) {
+                if (refIntBtn.current.contains(e.target)) {
+                    setIsInterestButtonClicked(true);
+                } else {
+                    setIsInterestButtonClicked(false);
+                }
+            }
+        }
+        function locationClickedOutside(e) {
+            if (refTwo.current && !refTwo.current.contains(e.target)) {
+                if (refLocBtn.current.contains(e.target)) {
+                    setIsLocationButtonClicked(true);
+                } else {
+                    setIsLocationButtonClicked(false);
+                }
+            }
+        }
+        function dateClickedOutside(e) {
+            if (refThree.current && !refThree.current.contains(e.target)) {
+                if (refDateBtn.current.contains(e.target)) {
+                    setIsDateButtonClicked(true);
+                } else {
+                    setIsDateButtonClicked(false);
+                }
+            }
+        }
+        document.addEventListener("click", interestClickedOutside, true);
+        document.addEventListener("click", locationClickedOutside, true);
+        document.addEventListener("click", dateClickedOutside, true);
+        return () => {
+            document.removeEventListener("click", interestClickedOutside, true);
+            document.removeEventListener("click", locationClickedOutside, true);
+            document.removeEventListener("click", dateClickedOutside, true);
+        };
+    });
+
     return (
         <Layout>
             <div className='flex justify-center text-center sm:mx-12 sm:grid sm:grid-cols-3  sm:text-start'>
@@ -36,50 +80,65 @@ const EventsPage = () => {
             </div>
             <div className='my-4 sm:mx-6 sm:grid sm:grid-cols-3 md:mx-6 lg:mx-12'>
                 <div>
-                    <div className='mx-5 grid grid-cols-3 justify-between gap-2 sm:mx-5 sm:block'>
-                        <Button
-                            label='Change Date'
-                            onClick={handleDateButtonClick}
-                            width='w-full'
-                            customStyle='m-0 sm:mb-2'
-                            borderColor='border rounded-lg shadow-sm hover:border-black sm:hidden'
-                        />
+                    <div className='mx-7 grid grid-cols-3 justify-between gap-2 sm:mx-5 sm:block'>
+                        <div ref={refDateBtn}>
+                            <Button
+                                label='Change Date'
+                                onClick={handleDateButtonClick}
+                                width='w-full'
+                                height='h-full'
+                                customStyle='m-0 sm:mb-2'
+                                bgColor='bg-white'
+                                textColor='text-black'
+                                borderColor='border rounded-lg shadow-sm hover:border-black sm:hidden'
+                            />
+                        </div>
                         <div className='hidden sm:block '>
                             <CalendarComp />
                             <hr className='mb-4 mt-2' />
                         </div>
-                        <Button
-                            label='Change Location'
-                            onClick={handleLocationButtonClick}
-                            width='w-full'
-                            customStyle='m-0 sm:mb-2'
-                            borderColor='border rounded-lg shadow-sm sm:hidden hover:border-black '
-                        />
+                        <div ref={refLocBtn}>
+                            <Button
+                                label='Change Location'
+                                onClick={handleLocationButtonClick}
+                                width='w-full'
+                                bgColor='bg-white'
+                                textColor='text-black'
+                                height='h-full'
+                                customStyle='m-0 sm:mb-2'
+                                borderColor='border rounded-lg shadow-sm sm:hidden hover:border-black '
+                            />
+                        </div>
                         <div className='hidden sm:block'>
                             <LocationComp />
-                            <hr className='my-2 mb-4 hidden sm:block' />
+                            <hr className='my-4 mb-4 hidden sm:block' />
                         </div>
-                        <Button
-                            label='Pick Your Interests'
-                            onClick={handleInterestButtonClick}
-                            width='w-full'
-                            customStyle='m-0 sm:mb-2'
-                            borderColor='border rounded-lg shadow-sm hover:border-black '
-                        />
+                        <div ref={refIntBtn}>
+                            <Button
+                                label='Pick Your Interests'
+                                onClick={handleInterestButtonClick}
+                                width='w-full'
+                                bgColor='bg-white'
+                                textColor='text-black'
+                                height='h-full'
+                                customStyle='m-0 sm:mb-2'
+                                borderColor='border rounded-lg shadow-sm hover:border-black '
+                            />
+                        </div>
                     </div>
                     {isInterestButtonClicked ? (
-                        <div>
+                        <div ref={refOne}>
                             <CategoryCheckboxes />
                         </div>
                     ) : null}
                     {isLocationButtonClicked ? (
-                        <div>
+                        <div ref={refTwo}>
                             <hr className='my-4 mx-3 text-black sm:hidden' />
                             <LocationComp style='sm:hidden' />
                         </div>
                     ) : null}
                     {isDateButtonClicked ? (
-                        <div>
+                        <div ref={refThree}>
                             <CalendarComp style='sm:hidden' />
                         </div>
                     ) : null}

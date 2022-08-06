@@ -15,7 +15,7 @@ const CategoryCheckboxes = ({
                                 type='checkbox'
                                 name='all'
                                 id='all'
-                                value='all'
+                                Value='all'
                                 label=' All'
                                 className={style}
                             />

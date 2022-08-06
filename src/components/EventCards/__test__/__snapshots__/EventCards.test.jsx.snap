@@ -495,7 +495,7 @@ exports[`renders correctly 1`] = `
         className="mt-2 flex items-end justify-center sm:justify-end "
       >
         <button
-          className="m-2 w-24 h-10 bg-primary-200  hover:undefined text-white undefined  py-1  px-2 border-primary-200 hover:undefined  rounded hover:shadow-xl mx-2 my-0"
+          className="m-2 w-24 h-10 bg-primary-200  hover:undefined text-white undefined  py-1  px-2 border-primary-200 hover:undefined rounded  hover:shadow-xl"
           onClick={[Function]}
           type="button"
         >
