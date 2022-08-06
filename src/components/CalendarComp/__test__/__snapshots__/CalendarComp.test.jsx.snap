@@ -9,10 +9,10 @@ exports[`renders correctly 1`] = `
       className="flex flex-col items-center justify-center text-2xl sm:relative sm:mb-2 "
     >
       <div
-        className="wrapper mt-4 w-fit origin-top sm:mt-0"
+        className="wrapper mt-4 flex w-fit origin-top flex-col items-center sm:mt-0"
       >
         <div
-          className="rdrCalendarWrapper rdrDateRangeWrapper calendarElement border-2"
+          className="rdrCalendarWrapper rdrDateRangeWrapper calendarElement mb-2 border-2"
           onMouseLeave={[Function]}
           onMouseUp={[Function]}
         >
@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Early"
                   readOnly={false}
-                  value="Aug 5, 2022"
+                  value="Aug 6, 2022"
                 />
               </span>
               <span
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Continuous"
                   readOnly={false}
-                  value="Aug 5, 2022"
+                  value="Aug 6, 2022"
                 />
               </span>
             </div>
@@ -945,7 +945,33 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay rdrDayToday"
+                  className="rdrDay"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onPauseCapture={[Function]}
+                  style={
+                    Object {
+                      "color": "#3d91ff",
+                    }
+                  }
+                  type="button"
+                >
+                  <span
+                    className="rdrDayNumber"
+                  >
+                    <span>
+                      5
+                    </span>
+                  </span>
+                </button>
+                <button
+                  className="rdrDay rdrDayToday rdrDayWeekend rdrDayEndOfWeek"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -970,32 +996,6 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                  <span
-                    className="rdrDayNumber"
-                  >
-                    <span>
-                      5
-                    </span>
-                  </span>
-                </button>
-                <button
-                  className="rdrDay rdrDayWeekend rdrDayEndOfWeek"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onPauseCapture={[Function]}
-                  style={
-                    Object {
-                      "color": "#3d91ff",
-                    }
-                  }
-                  type="button"
-                >
                   <span
                     className="rdrDayNumber"
                   >
@@ -1739,6 +1739,13 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
         </div>
+        <button
+          className="mt-1 mb-1 w-30 h-10 undefined bg-primary-200 undefined undefined hover:undefined text-white font-normal  py-1  px-2 border-primary-200 hover:undefined rounded  hover:shadow-lg text-base rounded"
+          onClick={[Function]}
+          type="submit"
+        >
+          SUBMIT
+        </button>
       </div>
     </div>
   </div>

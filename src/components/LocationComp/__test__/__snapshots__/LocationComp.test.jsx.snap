@@ -16,16 +16,16 @@ exports[`renders correctly 1`] = `
         Search Event Location
       </h1>
       <input
-        className="w-3/4 rounded-md text-base shadow-sm focus:border-secondary-300 sm:w-full"
+        className="mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full"
         id="cities"
         onChange={[Function]}
-        placeholder="Seach Event Location"
+        placeholder="Seach Location"
         type="text"
         value=""
       />
       <label />
       <button
-        className="m-2 undefined undefined undefined  hover:undefined undefined undefined  py-1  px-2 undefined hover:undefined  rounded hover:shadow-xl text-base bg-primary-200 border text-white"
+        className="mt-1 mb-1 w-30 h-9 undefined bg-secondary-300 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-base bg-primary-200 border rounded text-white ml-2"
         onClick={[Function]}
         type="button"
       >

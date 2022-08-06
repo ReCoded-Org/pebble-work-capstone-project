@@ -23,7 +23,6 @@ exports[`renders correctly 1`] = `
             name="all"
             placeholder="Your input here"
             type="checkbox"
-            value="all"
           />
           <label
             htmlFor="all"
