@@ -149,10 +149,11 @@ exports[`renders correctly 1`] = `
     >
       <input
         className="h-full w-full rounded-md border-2 border-black p-2"
+        name="Name"
         placeholder="Name"
+        required={true}
         type="text"
       />
-      <label />
     </div>
     <label
       className="text-[12px] font-medium md:text-xl lg:text-xl"
