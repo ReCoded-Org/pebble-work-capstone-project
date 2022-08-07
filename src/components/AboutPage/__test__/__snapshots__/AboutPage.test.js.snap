@@ -1,0 +1,2496 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className=""
+>
+  <div
+    className="relative"
+  >
+    <span
+      style={
+        Object {
+          "background": "none",
+          "border": 0,
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "initial",
+          "margin": 0,
+          "opacity": 1,
+          "overflow": "hidden",
+          "padding": 0,
+          "position": "relative",
+          "width": "initial",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "background": "none",
+            "border": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": "initial",
+            "margin": 0,
+            "opacity": 1,
+            "padding": 0,
+            "paddingTop": "60%",
+            "width": "initial",
+          }
+        }
+      />
+      <img
+        alt="About Page Image"
+        className="w-full"
+        data-nimg="responsive"
+        decoding="async"
+        onError={[Function]}
+        onLoad={[Function]}
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style={
+          Object {
+            "border": "none",
+            "bottom": 0,
+            "boxSizing": "border-box",
+            "display": "block",
+            "height": 0,
+            "left": 0,
+            "margin": "auto",
+            "maxHeight": "100%",
+            "maxWidth": "100%",
+            "minHeight": "100%",
+            "minWidth": "100%",
+            "objectFit": "contain",
+            "objectPosition": undefined,
+            "padding": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": 0,
+          }
+        }
+      />
+      <noscript>
+        <img
+          alt="About Page Image"
+          className="w-full"
+          data-nimg="responsive"
+          decoding="async"
+          loading="lazy"
+          sizes="100vw"
+          src="/_next/image?url=%2Fimages%2FaboutPage.png&w=3840&q=75"
+          srcSet="/_next/image?url=%2Fimages%2FaboutPage.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2FaboutPage.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2FaboutPage.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2FaboutPage.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2FaboutPage.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2FaboutPage.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2FaboutPage.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2FaboutPage.png&w=3840&q=75 3840w"
+          style={
+            Object {
+              "border": "none",
+              "bottom": 0,
+              "boxSizing": "border-box",
+              "display": "block",
+              "height": 0,
+              "left": 0,
+              "margin": "auto",
+              "maxHeight": "100%",
+              "maxWidth": "100%",
+              "minHeight": "100%",
+              "minWidth": "100%",
+              "objectFit": "contain",
+              "objectPosition": undefined,
+              "padding": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+              "width": 0,
+            }
+          }
+        />
+      </noscript>
+    </span>
+    <div
+      className="absolute top-0 left-0 right-0 bottom-0"
+    >
+      <div
+        className="flex h-full w-full flex-col items-center justify-center"
+      >
+        <h3
+          className="m-1 text-center text-2xl md:m-4 md:text-4xl lg:text-5xl"
+        >
+          About Pebble Work
+        </h3>
+        <p
+          className="mr-12 ml-12 text-center text-sm font-light md:ml-24 md:mr-24 md:text-xl lg:ml-32 lg:mr-32 lg:text-2xl"
+        >
+          Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="m-10 min-h-[450px] overflow-hidden rounded-md bg-[#fef1e6] md:m-20 md:min-h-[900px] lg:m-44"
+  >
+    <h2
+      className="p-4 text-center md:p-8 md:text-3xl lg:p-12 lg:text-4xl"
+    >
+      Our Team
+    </h2>
+    <div
+      className="flex flex-row flex-wrap justify-center"
+    >
+      <div>
+        <div
+          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+        >
+          <div
+            className="mt-2 flex justify-center md:mt-3 lg:mt-4"
+          >
+            <div
+              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "left": 0,
+                    "margin": 0,
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt="User"
+                  data-nimg="fill"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": "cover",
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+          <h4
+            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+          >
+            Dilara Katuk
+          </h4>
+          <div
+            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+          >
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+        >
+          <div
+            className="mt-2 flex justify-center md:mt-3 lg:mt-4"
+          >
+            <div
+              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "left": 0,
+                    "margin": 0,
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt="User"
+                  data-nimg="fill"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": "cover",
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+          <h4
+            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+          >
+            Ömer Faruk Ataş
+          </h4>
+          <div
+            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+          >
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+        >
+          <div
+            className="mt-2 flex justify-center md:mt-3 lg:mt-4"
+          >
+            <div
+              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "left": 0,
+                    "margin": 0,
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt="User"
+                  data-nimg="fill"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": "cover",
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+          <h4
+            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+          >
+            Mayce Al-Azawii
+          </h4>
+          <div
+            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+          >
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+        >
+          <div
+            className="mt-2 flex justify-center md:mt-3 lg:mt-4"
+          >
+            <div
+              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "left": 0,
+                    "margin": 0,
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt="User"
+                  data-nimg="fill"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": "cover",
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+          <h4
+            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+          >
+            Jangis Marifet
+          </h4>
+          <div
+            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+          >
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+        >
+          <div
+            className="mt-2 flex justify-center md:mt-3 lg:mt-4"
+          >
+            <div
+              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "left": 0,
+                    "margin": 0,
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt="User"
+                  data-nimg="fill"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": "cover",
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="fill"
+                    decoding="async"
+                    loading="lazy"
+                    sizes="100vw"
+                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": "cover",
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+          <h4
+            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+          >
+            Öznur Ergen
+          </h4>
+          <div
+            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+          >
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+            <div
+              className="m-px h-4 w-4 md:h-8 md:w-8"
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "inline-block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "width": "initial",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                >
+                  <img
+                    alt=""
+                    aria-hidden={true}
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                    style={
+                      Object {
+                        "background": "none",
+                        "border": 0,
+                        "display": "block",
+                        "height": "initial",
+                        "margin": 0,
+                        "maxWidth": "100%",
+                        "opacity": 1,
+                        "padding": 0,
+                        "width": "initial",
+                      }
+                    }
+                  />
+                </span>
+                <img
+                  alt="User"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+                <noscript>
+                  <img
+                    alt="User"
+                    data-nimg="intrinsic"
+                    decoding="async"
+                    loading="lazy"
+                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    style={
+                      Object {
+                        "border": "none",
+                        "bottom": 0,
+                        "boxSizing": "border-box",
+                        "display": "block",
+                        "height": 0,
+                        "left": 0,
+                        "margin": "auto",
+                        "maxHeight": "100%",
+                        "maxWidth": "100%",
+                        "minHeight": "100%",
+                        "minWidth": "100%",
+                        "objectFit": undefined,
+                        "objectPosition": undefined,
+                        "padding": 0,
+                        "position": "absolute",
+                        "right": 0,
+                        "top": 0,
+                        "width": 0,
+                      }
+                    }
+                  />
+                </noscript>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="m-16 md:m-36"
+  >
+    <h2
+      className="mb-2 text-center text-lg md:text-3xl"
+    >
+      Technologies Used and Project Structure
+    </h2>
+    <p
+      className="text-center text-sm font-light md:text-xl"
+    >
+      Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+    </p>
+  </div>
+</div>
+`;
