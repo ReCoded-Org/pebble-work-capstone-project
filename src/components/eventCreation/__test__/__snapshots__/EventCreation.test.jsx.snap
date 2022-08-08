@@ -3,6 +3,13 @@
 exports[`renders correctly 1`] = `
 Array [
   <div
+    className="mb-4 mt-3 flex flex-col items-center justify-center py-3 text-3xl font-semibold "
+  >
+    <h1>
+      Create an Event
+    </h1>
+  </div>,
+  <div
     className="mx-8 mt-3 mb-4 divide-y"
   >
     <div
@@ -181,28 +188,28 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 text-secondary-300 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 text-secondary-300 border-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             No Poverty
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Zero Hunger
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Clean Water and Sanitation
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
@@ -213,28 +220,28 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52 hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Industry, Innovation, and Infrastructure
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Reduced Inequalities
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Climate Action
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
@@ -245,28 +252,28 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Life on Land
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white hover:border-primary-200 hover:border-primary-200 undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white hover:border-primary-200 hover:border-primary-200 text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Quality Educationg
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Sustainable Cities and Communities
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
@@ -278,7 +285,7 @@ Array [
           className="md:flex md:flex-col"
         >
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
@@ -286,14 +293,14 @@ Array [
           </button>
            
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
             Responsible Consumption/Production
           </button>
           <button
-            className="m-2 undefined undefined undefined  hover:bg-primary-200 border hover:text-white  undefined undefined  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-xl"
+            className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:bg-primary-200 border hover:text-white  text-white font-normal  py-1  px-2 border-secondary-300 text-secondary-300 w-full rounded-full hover:border-primary-200 md:w-52  hover:undefined rounded  hover:shadow-lg undefined"
             onClick={[Function]}
             type="button"
           >
