@@ -5,10 +5,10 @@ const GetStarted = () => {
     return (
         <div className='m-2  flex  flex-col justify-center gap-2 py-48'>
             <div className='mx-4 text-center'>
-                <h1 className=' flex items-center justify-center text-4xl font-bold md:px-52 lg:px-52'>
+                <h1 className=' flex items-center justify-center text-4xl font-bold  lg:px-52'>
                     Become the change you wish to see in the world.
                 </h1>
-                <p className='mt-5 md:px-52 lg:px-52'>
+                <p className='mt-5 md:px-24 lg:px-52'>
                     Body placeholder for text paragraph. A paragraph is a
                     self-contained unit of text dealing with a particular point
                     or idea.
