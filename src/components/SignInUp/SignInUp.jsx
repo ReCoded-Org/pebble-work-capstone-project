@@ -10,7 +10,7 @@ const Signupin = ({ title }) => {
     return (
         <>
             {domLoaded && (
-                <div className=' mt-5 flex flex-col items-center  justify-around   md:m-4 md:mt-8 md:mb-24 lg:mb-10 lg:flex-row'>
+                <div className=' mt-5 flex flex-col items-center  justify-around   md:m-4 md:mt-6 md:mb-24 lg:mb-8 lg:flex-row'>
                     <div className='h-100 flex w-96 flex-col items-center justify-center text-center'>
                         <Image
                             src='/svg/signupinMan.svg'
@@ -121,7 +121,7 @@ const Signupin = ({ title }) => {
                                 </button>
                             </div>
                             <div className='flex justify-center py-1'>
-                                <button className='flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200'>
+                                <button className='mb-4 flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200'>
                                     <Image
                                         style={{ paddingRight: "3px" }}
                                         src='/svg/twitter.svg'
