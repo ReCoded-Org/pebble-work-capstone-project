@@ -1,5 +1,6 @@
-import Button from "../Button";
 import Image from "next/image";
+
+import Button from "../Button";
 import InputComponent from "../InputComponent";
 
 const NameLocation = () => {
