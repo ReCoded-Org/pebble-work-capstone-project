@@ -102,12 +102,13 @@ exports[`renders correctly 1`] = `
       className="pt-2 pb-2 text-center text-[10px] font-medium md:pb-2 md:pt-2 md:text-[24px]"
     />
     <div
-      className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
+      className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-8"
     >
       <div
         className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
       >
         <a
+          rel="noopener noreferrer"
           target="_blank"
         >
           <span
@@ -232,6 +233,7 @@ exports[`renders correctly 1`] = `
         className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
       >
         <a
+          rel="noopener noreferrer"
           target="_blank"
         >
           <span
@@ -356,6 +358,7 @@ exports[`renders correctly 1`] = `
         className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
       >
         <a
+          rel="noopener noreferrer"
           target="_blank"
         >
           <span

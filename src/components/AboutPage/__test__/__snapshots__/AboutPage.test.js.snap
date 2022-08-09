@@ -239,13 +239,14 @@ exports[`renders correctly 1`] = `
             Dilara Katuk
           </h4>
           <div
-            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-8"
           >
             <div
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
                 href="https://www.linkedin.com/in/dilara-katuk-0bab56211/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -371,6 +372,7 @@ exports[`renders correctly 1`] = `
             >
               <a
                 href="https://github.com/DKatuk"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -495,7 +497,8 @@ exports[`renders correctly 1`] = `
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
-                href="https://www.instagram.com/nasa/"
+                href="https://www.instagram.com/dkdilara_/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -722,13 +725,14 @@ exports[`renders correctly 1`] = `
             Ömer Faruk Ataş
           </h4>
           <div
-            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-8"
           >
             <div
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
                 href="https://www.linkedin.com/in/omerfarukatas/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -854,6 +858,7 @@ exports[`renders correctly 1`] = `
             >
               <a
                 href="https://github.com/omerfarukatas"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -978,7 +983,8 @@ exports[`renders correctly 1`] = `
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
-                href="https://www.instagram.com/nasa/"
+                href="https://www.instagram.com/omerfarukatas/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -1205,13 +1211,14 @@ exports[`renders correctly 1`] = `
             Mayce Al-Azawii
           </h4>
           <div
-            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-8"
           >
             <div
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
                 href="https://www.linkedin.com/mwlite/in/mays-al-azzawi-58912a1a8"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -1337,6 +1344,7 @@ exports[`renders correctly 1`] = `
             >
               <a
                 href="https://github.com/MayceAlazzawi"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -1461,7 +1469,8 @@ exports[`renders correctly 1`] = `
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
-                href="https://www.instagram.com/nasa/"
+                href="https://www.instagram.com/mys_alazzawi/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -1653,8 +1662,8 @@ exports[`renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=%2Fimages%2Fdilara.jpeg&w=3840&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fdilara.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=3840&q=75 3840w"
+                    src="/_next/image?url=%2Fimages%2Fjangis.jpeg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fjangis.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fjangis.jpeg&w=3840&q=75 3840w"
                     style={
                       Object {
                         "border": "none",
@@ -1688,13 +1697,14 @@ exports[`renders correctly 1`] = `
             Jangis Marifet
           </h4>
           <div
-            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-8"
           >
             <div
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
-                href=""
+                href="https://www.linkedin.com/in/jangis-marifet-21504141/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -1819,7 +1829,8 @@ exports[`renders correctly 1`] = `
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
-                href=""
+                href="https://github.com/jangismarifet"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -1944,7 +1955,8 @@ exports[`renders correctly 1`] = `
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
-                href="https://www.instagram.com/nasa/"
+                href="https://www.instagram.com/jangismarifet/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -2171,13 +2183,14 @@ exports[`renders correctly 1`] = `
             Öznur Ergen
           </h4>
           <div
-            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-8"
           >
             <div
               className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
               <a
                 href="https://www.linkedin.com/in/oznuren/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -2303,6 +2316,7 @@ exports[`renders correctly 1`] = `
             >
               <a
                 href="https://www.github.com/oznuren/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
@@ -2428,6 +2442,7 @@ exports[`renders correctly 1`] = `
             >
               <a
                 href="https://www.instagram.com/nasa/"
+                rel="noopener noreferrer"
                 target="_blank"
               >
                 <span
