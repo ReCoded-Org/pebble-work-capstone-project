@@ -1,2 +1,2 @@
-import Signupin from "./Signupin";
+import Signupin from "./SignInUp";
 export default Signupin;

@@ -10,8 +10,8 @@ const Signupin = ({ title }) => {
     return (
         <>
             {domLoaded && (
-                <div className='m-4 flex flex-col items-center justify-center gap-12  md:flex-row'>
-                    <div className=' h-100 flex w-96 flex-col items-center justify-center text-center'>
+                <div className=' mt-5 flex flex-col items-center  justify-around   md:m-4 md:mt-8 md:mb-24 lg:mb-10 lg:flex-row'>
+                    <div className='h-100 flex w-96 flex-col items-center justify-center text-center'>
                         <Image
                             src='/svg/signupinMan.svg'
                             alt='logo'
@@ -19,7 +19,7 @@ const Signupin = ({ title }) => {
                             width={300}
                         />
                     </div>
-                    <div className='flex w-96 flex-col justify-center py-1 text-center'>
+                    <div className='flex  w-96 flex-col justify-center py-1 text-center'>
                         <h1 className='py-3 text-3xl font-semibold md:flex'>
                             {title}
                         </h1>
@@ -51,7 +51,7 @@ const Signupin = ({ title }) => {
                                     className='focus:shadow-outline w-96 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
                                     id='email'
                                     type='text'
-                                    placeholder='Email adress'
+                                    placeholder='Email address'
                                 />
                             </div>
                             <div className='py-1'>
@@ -78,7 +78,7 @@ const Signupin = ({ title }) => {
                                 </p>
                             ) : (
                                 <p className='signin m-1 flex text-xs italic text-gray-700'>
-                                    You dont have an account?
+                                    Don’t have an account?
                                     <Link href='/signup'>
                                         <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
                                             {title === "Sign up"
@@ -117,7 +117,7 @@ const Signupin = ({ title }) => {
                                         height={30}
                                         width={30}
                                     />
-                                    Countinue with Google
+                                    Continue with Google
                                 </button>
                             </div>
                             <div className='flex justify-center py-1'>
@@ -129,7 +129,7 @@ const Signupin = ({ title }) => {
                                         height={28}
                                         width={28}
                                     />
-                                    Countinue with Twitter
+                                    Continue with Twitter
                                 </button>
                             </div>
                         </div>
