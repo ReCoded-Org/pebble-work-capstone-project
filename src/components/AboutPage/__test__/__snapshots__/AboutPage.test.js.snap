@@ -113,12 +113,12 @@ exports[`renders correctly 1`] = `
         className="flex h-full w-full flex-col items-center justify-center"
       >
         <h3
-          className="m-1 text-center text-2xl md:m-4 md:text-4xl lg:text-5xl"
+          className="m-1 text-center text-3xl md:m-4 md:text-5xl md:font-bold lg:text-5xl lg:font-bold"
         >
-          About Pebble Work
+          About Pebble
         </h3>
         <p
-          className="mr-12 ml-12 text-center text-sm font-light md:ml-24 md:mr-24 md:text-xl lg:ml-32 lg:mr-32 lg:text-2xl"
+          className="text-md mr-12 ml-12 text-center md:ml-24 md:mr-24 md:text-2xl lg:ml-32 lg:mr-32 lg:text-2xl"
         >
           Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
         </p>
@@ -126,10 +126,10 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="m-10 min-h-[450px] overflow-hidden rounded-md bg-[#fef1e6] md:m-20 md:min-h-[900px] lg:m-44"
+    className="m-10 min-h-[320px] overflow-hidden rounded-3xl bg-[#fef1e6] md:m-20 md:min-h-[900px] lg:m-44"
   >
     <h2
-      className="p-4 text-center md:p-8 md:text-3xl lg:p-12 lg:text-4xl"
+      className="p-4 text-center text-2xl md:p-8 md:text-4xl md:font-bold lg:p-12 lg:text-5xl lg:font-bold"
     >
       Our Team
     </h2>
@@ -138,13 +138,13 @@ exports[`renders correctly 1`] = `
     >
       <div>
         <div
-          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+          className="m-4 h-28 w-28 overflow-hidden rounded-2xl bg-secondary-100 md:m-8 md:h-60 md:w-60 lg:m-12 lg:h-80 lg:w-80"
         >
           <div
             className="mt-2 flex justify-center md:mt-3 lg:mt-4"
           >
             <div
-              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+              className="relative h-12 w-12 overflow-hidden rounded-full pt-2 text-center md:mt-4 md:h-28 md:w-28 md:pt-4 lg:h-36 lg:w-36"
             >
               <span
                 style={
@@ -204,8 +204,8 @@ exports[`renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    src="/_next/image?url=%2Fimages%2Fdilara.jpeg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fdilara.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=3840&q=75 3840w"
                     style={
                       Object {
                         "border": "none",
@@ -234,33 +234,19 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <h4
-            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+            className="pt-2 pb-2 text-center text-[10px] font-medium md:pb-2 md:pt-2 md:text-[24px]"
           >
             Dilara Katuk
           </h4>
           <div
-            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
           >
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.linkedin.com/in/dilara-katuk-0bab56211/"
+                target="_blank"
               >
                 <span
                   style={
@@ -268,24 +254,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -295,46 +281,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -358,29 +331,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://github.com/DKatuk"
+                target="_blank"
               >
                 <span
                   style={
@@ -388,24 +379,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -415,46 +406,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -478,29 +456,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.instagram.com/nasa/"
+                target="_blank"
               >
                 <span
                   style={
@@ -508,24 +504,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -535,46 +531,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -598,21 +581,53 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div>
         <div
-          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+          className="m-4 h-28 w-28 overflow-hidden rounded-2xl bg-secondary-100 md:m-8 md:h-60 md:w-60 lg:m-12 lg:h-80 lg:w-80"
         >
           <div
             className="mt-2 flex justify-center md:mt-3 lg:mt-4"
           >
             <div
-              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+              className="relative h-12 w-12 overflow-hidden rounded-full pt-2 text-center md:mt-4 md:h-28 md:w-28 md:pt-4 lg:h-36 lg:w-36"
             >
               <span
                 style={
@@ -672,8 +687,8 @@ exports[`renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    src="/_next/image?url=%2Fimages%2Fomer.jpeg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fomer.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fomer.jpeg&w=3840&q=75 3840w"
                     style={
                       Object {
                         "border": "none",
@@ -702,33 +717,19 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <h4
-            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+            className="pt-2 pb-2 text-center text-[10px] font-medium md:pb-2 md:pt-2 md:text-[24px]"
           >
             Ömer Faruk Ataş
           </h4>
           <div
-            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
           >
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.linkedin.com/in/omerfarukatas/"
+                target="_blank"
               >
                 <span
                   style={
@@ -736,24 +737,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -763,46 +764,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -826,29 +814,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://github.com/omerfarukatas"
+                target="_blank"
               >
                 <span
                   style={
@@ -856,24 +862,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -883,46 +889,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -946,29 +939,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.instagram.com/nasa/"
+                target="_blank"
               >
                 <span
                   style={
@@ -976,24 +987,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1003,46 +1014,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -1066,21 +1064,53 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div>
         <div
-          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+          className="m-4 h-28 w-28 overflow-hidden rounded-2xl bg-secondary-100 md:m-8 md:h-60 md:w-60 lg:m-12 lg:h-80 lg:w-80"
         >
           <div
             className="mt-2 flex justify-center md:mt-3 lg:mt-4"
           >
             <div
-              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+              className="relative h-12 w-12 overflow-hidden rounded-full pt-2 text-center md:mt-4 md:h-28 md:w-28 md:pt-4 lg:h-36 lg:w-36"
             >
               <span
                 style={
@@ -1140,8 +1170,8 @@ exports[`renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    src="/_next/image?url=%2Fimages%2Fmayce.jpeg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fmayce.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fmayce.jpeg&w=3840&q=75 3840w"
                     style={
                       Object {
                         "border": "none",
@@ -1170,33 +1200,19 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <h4
-            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+            className="pt-2 pb-2 text-center text-[10px] font-medium md:pb-2 md:pt-2 md:text-[24px]"
           >
             Mayce Al-Azawii
           </h4>
           <div
-            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
           >
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.linkedin.com/mwlite/in/mays-al-azzawi-58912a1a8"
+                target="_blank"
               >
                 <span
                   style={
@@ -1204,24 +1220,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1231,46 +1247,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -1294,29 +1297,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://github.com/MayceAlazzawi"
+                target="_blank"
               >
                 <span
                   style={
@@ -1324,24 +1345,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1351,46 +1372,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -1414,29 +1422,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.instagram.com/nasa/"
+                target="_blank"
               >
                 <span
                   style={
@@ -1444,24 +1470,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1471,46 +1497,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -1534,21 +1547,53 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div>
         <div
-          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+          className="m-4 h-28 w-28 overflow-hidden rounded-2xl bg-secondary-100 md:m-8 md:h-60 md:w-60 lg:m-12 lg:h-80 lg:w-80"
         >
           <div
             className="mt-2 flex justify-center md:mt-3 lg:mt-4"
           >
             <div
-              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+              className="relative h-12 w-12 overflow-hidden rounded-full pt-2 text-center md:mt-4 md:h-28 md:w-28 md:pt-4 lg:h-36 lg:w-36"
             >
               <span
                 style={
@@ -1608,8 +1653,8 @@ exports[`renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    src="/_next/image?url=%2Fimages%2Fdilara.jpeg&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Fdilara.jpeg&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fdilara.jpeg&w=3840&q=75 3840w"
                     style={
                       Object {
                         "border": "none",
@@ -1638,33 +1683,19 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <h4
-            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+            className="pt-2 pb-2 text-center text-[10px] font-medium md:pb-2 md:pt-2 md:text-[24px]"
           >
             Jangis Marifet
           </h4>
           <div
-            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
           >
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href=""
+                target="_blank"
               >
                 <span
                   style={
@@ -1672,24 +1703,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1699,46 +1730,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -1762,29 +1780,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href=""
+                target="_blank"
               >
                 <span
                   style={
@@ -1792,24 +1828,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1819,46 +1855,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -1882,29 +1905,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.instagram.com/nasa/"
+                target="_blank"
               >
                 <span
                   style={
@@ -1912,24 +1953,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -1939,46 +1980,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -2002,21 +2030,53 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div>
         <div
-          className="m-4 h-24 w-24 overflow-hidden rounded-md bg-secondary-100 md:m-8 md:h-48 md:w-48 lg:m-12 lg:h-60 lg:w-60"
+          className="m-4 h-28 w-28 overflow-hidden rounded-2xl bg-secondary-100 md:m-8 md:h-60 md:w-60 lg:m-12 lg:h-80 lg:w-80"
         >
           <div
             className="mt-2 flex justify-center md:mt-3 lg:mt-4"
           >
             <div
-              className="relative h-9 w-9 pt-2 text-center md:h-20 md:w-20 md:pt-4 lg:h-28 lg:w-28"
+              className="relative h-12 w-12 overflow-hidden rounded-full pt-2 text-center md:mt-4 md:h-28 md:w-28 md:pt-4 lg:h-36 lg:w-36"
             >
               <span
                 style={
@@ -2076,8 +2136,8 @@ exports[`renders correctly 1`] = `
                     decoding="async"
                     loading="lazy"
                     sizes="100vw"
-                    src="/_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fuser.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Fuser.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Fuser.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Fuser.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Fuser.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Fuser.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Fuser.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Fuser.png&w=3840&q=75 3840w"
+                    src="/_next/image?url=%2Fimages%2Foznur.png&w=3840&q=75"
+                    srcSet="/_next/image?url=%2Fimages%2Foznur.png&w=640&q=75 640w, /_next/image?url=%2Fimages%2Foznur.png&w=750&q=75 750w, /_next/image?url=%2Fimages%2Foznur.png&w=828&q=75 828w, /_next/image?url=%2Fimages%2Foznur.png&w=1080&q=75 1080w, /_next/image?url=%2Fimages%2Foznur.png&w=1200&q=75 1200w, /_next/image?url=%2Fimages%2Foznur.png&w=1920&q=75 1920w, /_next/image?url=%2Fimages%2Foznur.png&w=2048&q=75 2048w, /_next/image?url=%2Fimages%2Foznur.png&w=3840&q=75 3840w"
                     style={
                       Object {
                         "border": "none",
@@ -2106,33 +2166,19 @@ exports[`renders correctly 1`] = `
             </div>
           </div>
           <h4
-            className="pt-2 pb-2 text-center text-[10px] md:pb-4 md:pt-4 md:text-lg"
+            className="pt-2 pb-2 text-center text-[10px] font-medium md:pb-2 md:pt-2 md:text-[24px]"
           >
             Öznur Ergen
           </h4>
           <div
-            className="align-start flex flex-row justify-center pb-2 md:ml-1"
+            className="align-start content-bottom flex flex-row justify-center pb-2 md:ml-1 md:mt-2 md:content-end lg:mt-4"
           >
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.linkedin.com/in/oznuren/"
+                target="_blank"
               >
                 <span
                   style={
@@ -2140,24 +2186,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -2167,46 +2213,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -2230,29 +2263,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Flinkedin.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flinkedin.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.github.com/oznuren/"
+                target="_blank"
               >
                 <span
                   style={
@@ -2260,24 +2311,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -2287,46 +2338,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -2350,29 +2388,47 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Fgithub.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Fgithub.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
             <div
-              className="m-px h-4 w-4 md:h-8 md:w-8"
+              className="m-px h-4 w-4 hover:cursor-pointer md:h-8 md:w-8 lg:h-12 lg:w-12"
             >
-              <span
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "boxSizing": "border-box",
-                    "display": "inline-block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "width": "initial",
-                  }
-                }
+              <a
+                href="https://www.instagram.com/nasa/"
+                target="_blank"
               >
                 <span
                   style={
@@ -2380,24 +2436,24 @@ exports[`renders correctly 1`] = `
                       "background": "none",
                       "border": 0,
                       "boxSizing": "border-box",
-                      "display": "block",
+                      "display": "inline-block",
                       "height": "initial",
                       "margin": 0,
                       "maxWidth": "100%",
                       "opacity": 1,
+                      "overflow": "hidden",
                       "padding": 0,
+                      "position": "relative",
                       "width": "initial",
                     }
                   }
                 >
-                  <img
-                    alt=""
-                    aria-hidden={true}
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                  <span
                     style={
                       Object {
                         "background": "none",
                         "border": 0,
+                        "boxSizing": "border-box",
                         "display": "block",
                         "height": "initial",
                         "margin": 0,
@@ -2407,46 +2463,33 @@ exports[`renders correctly 1`] = `
                         "width": "initial",
                       }
                     }
-                  />
-                </span>
-                <img
-                  alt="User"
-                  data-nimg="intrinsic"
-                  decoding="async"
-                  onError={[Function]}
-                  onLoad={[Function]}
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                  style={
-                    Object {
-                      "border": "none",
-                      "bottom": 0,
-                      "boxSizing": "border-box",
-                      "display": "block",
-                      "height": 0,
-                      "left": 0,
-                      "margin": "auto",
-                      "maxHeight": "100%",
-                      "maxWidth": "100%",
-                      "minHeight": "100%",
-                      "minWidth": "100%",
-                      "objectFit": undefined,
-                      "objectPosition": undefined,
-                      "padding": 0,
-                      "position": "absolute",
-                      "right": 0,
-                      "top": 0,
-                      "width": 0,
-                    }
-                  }
-                />
-                <noscript>
+                  >
+                    <img
+                      alt=""
+                      aria-hidden={true}
+                      src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%27100%27/%3e"
+                      style={
+                        Object {
+                          "background": "none",
+                          "border": 0,
+                          "display": "block",
+                          "height": "initial",
+                          "margin": 0,
+                          "maxWidth": "100%",
+                          "opacity": 1,
+                          "padding": 0,
+                          "width": "initial",
+                        }
+                      }
+                    />
+                  </span>
                   <img
                     alt="User"
                     data-nimg="intrinsic"
                     decoding="async"
-                    loading="lazy"
-                    src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
-                    srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                     style={
                       Object {
                         "border": "none",
@@ -2470,8 +2513,40 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                </noscript>
-              </span>
+                  <noscript>
+                    <img
+                      alt="User"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      loading="lazy"
+                      src="/_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75"
+                      srcSet="/_next/image?url=%2Fimages%2Finstagram.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Finstagram.png&w=256&q=75 2x"
+                      style={
+                        Object {
+                          "border": "none",
+                          "bottom": 0,
+                          "boxSizing": "border-box",
+                          "display": "block",
+                          "height": 0,
+                          "left": 0,
+                          "margin": "auto",
+                          "maxHeight": "100%",
+                          "maxWidth": "100%",
+                          "minHeight": "100%",
+                          "minWidth": "100%",
+                          "objectFit": undefined,
+                          "objectPosition": undefined,
+                          "padding": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </noscript>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -2482,12 +2557,12 @@ exports[`renders correctly 1`] = `
     className="m-16 md:m-36"
   >
     <h2
-      className="mb-2 text-center text-lg md:text-3xl"
+      className="mb-2 text-center text-2xl font-bold md:mb-4 md:text-4xl lg:mb-4 lg:text-4xl"
     >
       Technologies Used and Project Structure
     </h2>
     <p
-      className="text-center text-sm font-light md:text-xl"
+      className="text-center text-sm md:text-2xl"
     >
       Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
     </p>
