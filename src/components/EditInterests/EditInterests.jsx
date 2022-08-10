@@ -1,5 +1,6 @@
-import Button from "../Button";
 import { useState } from "react";
+
+import Button from "@/components/Button";
 
 const EditInterests = ({ beforeClick, afterClick }) => {
     const labels = [
