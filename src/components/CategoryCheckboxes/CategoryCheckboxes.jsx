@@ -103,7 +103,7 @@ const CategoryCheckboxes = ({
         }
     }
     function handleApplyFilters() {
-        //api call to get events based on filters
+        //api call to render events based on filters
         // console.log(checkedBoxes);
     }
 
