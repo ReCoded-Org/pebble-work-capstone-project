@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sm:block undefined"
+>
+  <div
+    className=" sm:relative sm:w-full sm:border-none sm:bg-transparent sm:shadow-none"
+  >
+    <div
+      className="flex flex-col items-center md:flex-row "
+    >
+      <h1
+        className="mb-2 text-center text-xl font-bold sm:hidden"
+      >
+        Search Event Location
+      </h1>
+      <input
+        className="mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full"
+        id="cities"
+        onChange={[Function]}
+        placeholder="Seach Location"
+        type="text"
+        value=""
+      />
+      <label />
+      <button
+        className="mt-1 mb-1 w-30 h-9 undefined bg-secondary-300 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-base bg-primary-200 border rounded text-white ml-2"
+        onClick={[Function]}
+        type="button"
+      >
+        SEARCH
+      </button>
+    </div>
+    <div />
+  </div>
+</div>
+`;

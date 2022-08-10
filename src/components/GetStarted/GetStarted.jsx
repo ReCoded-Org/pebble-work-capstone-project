@@ -1,7 +1,12 @@
 import React from "react";
 
+<<<<<<< HEAD:src/components/GetStarted/GetStarted.jsx
 import Button from "../Button/Button";
 const GetStarted = () => {
+=======
+import Button from "@/components/Button";
+const Getstarted = () => {
+>>>>>>> 948c247d914e954d1861158ec685c6b82f0c6a4a:src/components/Getstarted.jsx
     return (
         <div className='m-2  flex  flex-col justify-center gap-2 py-48'>
             <div className='mx-4 text-center'>

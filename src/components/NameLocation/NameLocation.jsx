@@ -1,6 +1,11 @@
 import Image from "next/image";
 
+<<<<<<< HEAD
 import Button from "../Button";
+=======
+import Button from "@/components/Button";
+
+>>>>>>> 948c247d914e954d1861158ec685c6b82f0c6a4a
 import InputComponent from "../InputComponent";
 
 const NameLocation = () => {

@@ -2,7 +2,7 @@ import Image from "next/image";
 import * as React from "react";
 import { useState } from "react";
 
-import Button from "../Button/Button";
+import Button from "@/components/Button";
 
 function EventBanner({
     title,

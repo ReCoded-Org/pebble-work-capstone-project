@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="m-5 rounded-md border shadow-lg "
+  className="mx-6 rounded-md border shadow-lg sm:mx-4"
 >
   <div
     className="mx-4 mt-4 flex flex-col text-center sm:flex-row sm:justify-between"
@@ -388,7 +388,7 @@ exports[`renders correctly 1`] = `
     className="m-4 grid-cols-3 content-center gap-4 sm:grid"
   >
     <div
-      className="relative col-span-1 mb-4 h-48 overflow-hidden rounded-md border-2 border-black sm:mb-0"
+      className="relative col-span-1 mb-4 h-36 overflow-hidden rounded-md border-2 border-black sm:mb-0"
     >
       <span
         style={
@@ -486,7 +486,7 @@ exports[`renders correctly 1`] = `
           Title Of The Event
         </h1>
         <p
-          className="line-clamp-4"
+          className="line-clamp-4 sm:line-clamp-2"
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit tempore placeat voluptate officia illo harum enim nulla sunt corporis illum mollitia explicabo ipsam sequi, provident labore perspiciatis tenetur. Magnam sunt, saepe ducimus facere blanditiis possimus tenetur odio error ab esse nobis aperiam alias iusto amet quam, accusantium magni animi eligendi.
         </p>
@@ -495,7 +495,7 @@ exports[`renders correctly 1`] = `
         className="mt-2 flex items-end justify-center sm:justify-end "
       >
         <button
-          className="mt-1 mb-1 w-24 h-10 undefined bg-primary-200 undefined undefined hover:undefined text-white font-normal  py-1  px-2 border-primary-200 hover:undefined rounded  hover:shadow-lg undefined"
+          className="mt-1 mb-1 w-24 h-10 undefined bg-primary-200 undefined undefined hover:undefined text-white font-normal  py-1  px-2 border-primary-200 hover:undefined rounded  hover:shadow-lg mx-2 my-0"
           onClick={[Function]}
           type="button"
         >
