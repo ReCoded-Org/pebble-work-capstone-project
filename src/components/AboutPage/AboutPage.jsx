@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import TeamCards from "@/components/AboutPage/TeamCards";
 
 const AboutPage = () => {
@@ -55,7 +56,7 @@ const AboutPage = () => {
                 />
                 <div className='absolute top-0 left-0 right-0 bottom-0'>
                     <div className='flex h-full w-full flex-col items-center justify-center'>
-                        <h3 className='m-1 text-center text-3xl md:m-4 md:text-5xl md:font-bold lg:text-5xl lg:font-bold'>
+                        <h3 className='m-1 text-center text-3xl font-bold md:m-4 md:text-5xl md:font-bold lg:text-5xl lg:font-bold'>
                             About Pebble
                         </h3>
 
@@ -68,7 +69,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className='m-10 min-h-[320px] overflow-hidden rounded-3xl bg-[#fef1e6] md:m-20 md:min-h-[900px] lg:m-44'>
-                <h2 className='p-4 text-center text-2xl md:p-8 md:text-4xl md:font-bold lg:p-12 lg:text-5xl lg:font-bold'>
+                <h2 className='p-4 text-center text-2xl font-medium md:p-8 md:text-4xl md:font-bold lg:p-12 lg:text-5xl lg:font-bold'>
                     Our Team
                 </h2>
                 <div className='flex flex-row flex-wrap justify-center'>
