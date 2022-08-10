@@ -5,7 +5,7 @@ import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 
-import Button from "../Button";
+import Button from "@/components/Button";
 
 const CalendarComp = ({ style }) => {
     const [range, setRange] = useState([
