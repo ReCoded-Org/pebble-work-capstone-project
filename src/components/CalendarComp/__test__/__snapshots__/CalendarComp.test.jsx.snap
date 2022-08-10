@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Early"
                   readOnly={false}
-                  value="Aug 6, 2022"
+                  value="Aug 10, 2022"
                 />
               </span>
               <span
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Continuous"
                   readOnly={false}
-                  value="Aug 6, 2022"
+                  value="Aug 10, 2022"
                 />
               </span>
             </div>
@@ -971,7 +971,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay rdrDayToday rdrDayWeekend rdrDayEndOfWeek"
+                  className="rdrDay rdrDayWeekend rdrDayEndOfWeek"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -988,14 +988,6 @@ exports[`renders correctly 1`] = `
                   }
                   type="button"
                 >
-                  <span
-                    className="rdrStartEdge rdrEndEdge"
-                    style={
-                      Object {
-                        "color": "#0180AB",
-                      }
-                    }
-                  />
                   <span
                     className="rdrDayNumber"
                   >
@@ -1083,7 +1075,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay"
+                  className="rdrDay rdrDayToday"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1100,6 +1092,14 @@ exports[`renders correctly 1`] = `
                   }
                   type="button"
                 >
+                  <span
+                    className="rdrStartEdge rdrEndEdge"
+                    style={
+                      Object {
+                        "color": "#0180AB",
+                      }
+                    }
+                  />
                   <span
                     className="rdrDayNumber"
                   >

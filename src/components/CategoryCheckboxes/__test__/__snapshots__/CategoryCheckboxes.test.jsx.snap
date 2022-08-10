@@ -17,266 +17,323 @@ exports[`renders correctly 1`] = `
           Choose Category
         </h1>
         <form>
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="all"
-            name="all"
-            placeholder="Your input here"
-            type="checkbox"
-          />
-          <label
-            htmlFor="all"
-          >
-             All
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="no-poverty"
-            name="no-poverty"
-            placeholder="Your input here"
-            type="checkbox"
-            value="no-poverty"
-          />
-          <label
-            htmlFor="no-poverty"
-          >
-             No Poverty
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="zero-hunger"
-            name="zero-hunger"
-            placeholder="Your input here"
-            type="checkbox"
-            value="zero-hunger"
-          />
-          <label
-            htmlFor="zero-hunger"
-          >
-             Zero Hunger
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="good-health-and-well-being"
-            name="good-health-and-well-being"
-            placeholder="Your input here"
-            type="checkbox"
-            value="good-health-and-well-being"
-          />
-          <label
-            htmlFor="good-health-and-well-being"
-          >
-             Good Health and Well-Being
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="quality-education"
-            name="quality-education"
-            placeholder="Your input here"
-            type="checkbox"
-            value="quality-education"
-          />
-          <label
-            htmlFor="quality-education"
-          >
-             Quality Education
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="gender-equality"
-            name="gender-equality"
-            placeholder="Your input here"
-            type="checkbox"
-            value="gender-equality"
-          />
-          <label
-            htmlFor="gender-equality"
-          >
-             Gender Equality
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="clean-water-and-sanitation"
-            name="clean-water-and-sanitation"
-            placeholder="Your input here"
-            type="checkbox"
-            value="clean-water-and-sanitation"
-          />
-          <label
-            htmlFor="clean-water-and-sanitation"
-          >
-             Clean Water and Sanitation
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="affordable-and-clean-energy"
-            name="affordable-and-clean-energy"
-            placeholder="Your input here"
-            type="checkbox"
-            value="affordable-and-clean-energy"
-          />
-          <label
-            htmlFor="affordable-and-clean-energy"
-          >
-             Affordable and Clean Energy
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="decent-work-and-economic-growth"
-            name="decent-work-and-economic-growth"
-            placeholder="Your input here"
-            type="checkbox"
-            value="decent-work-and-economic-growth"
-          />
-          <label
-            htmlFor="decent-work-and-economic-growth"
-          >
-             Decent Work and Economic Growth
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="industry-innovation-and-infrastructure"
-            name="industry-innovation-and-infrastructure"
-            placeholder="Your input here"
-            type="checkbox"
-            value="industry-innovation-and-infrastructure"
-          />
-          <label
-            htmlFor="industry-innovation-and-infrastructure"
-          >
-             Industry, Innovation and Infrastructure
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="reduced-inequalities"
-            name="reduced-inequalities"
-            placeholder="Your input here"
-            type="checkbox"
-            value="reduced-inequalities"
-          />
-          <label
-            htmlFor="reduced-inequalities"
-          >
-             Reduced Inequalities
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="sustainable-cities-and-communities"
-            name="sustainable-cities-and-communities"
-            placeholder="Your input here"
-            type="checkbox"
-            value="sustainable-cities-and-communities"
-          />
-          <label
-            htmlFor="sustainable-cities-and-communities"
-          >
-             Sustainable Cities and Communities
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="responsible-consumption-and-production"
-            name="responsible-consumption-and-production"
-            placeholder="Your input here"
-            type="checkbox"
-            value="responsible-consumption-and-production"
-          />
-          <label
-            htmlFor="responsible-consumption-and-production"
-          >
-             Responsible Consumption and Production
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="climate-action"
-            name="climate-action"
-            placeholder="Your input here"
-            type="checkbox"
-            value="climate-action"
-          />
-          <label
-            htmlFor="climate-action"
-          >
-             Climate Action
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="life-below-water"
-            name="life-below-water"
-            placeholder="Your input here"
-            type="checkbox"
-            value="life-below-water"
-          />
-          <label
-            htmlFor="life-below-water"
-          >
-             Life Below Water
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="life-on-land"
-            name="life-on-land"
-            placeholder="Your input here"
-            type="checkbox"
-            value="life-on-land"
-          />
-          <label
-            htmlFor="life-on-land"
-          >
-             Life on Land
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="peace-and-justice-and-strong-institutions"
-            name="peace-and-justice-and-strong-institutions"
-            placeholder="Your input here"
-            type="checkbox"
-            value="peace-and-justice-and-strong-institutions"
-          />
-          <label
-            htmlFor="peace-and-justice-and-strong-institutions"
-          >
-             Peace and Justice and Strong Institutions
-          </label>
-          <br />
-          <input
-            className="mb-2 h-6 w-6 rounded text-secondary-300"
-            id="partnership-for-the-goals"
-            name="partnership-for-the-goals"
-            placeholder="Your input here"
-            type="checkbox"
-            value="partnership-for-the-goals"
-          />
-          <label
-            htmlFor="partnership-for-the-goals"
-          >
-             Partnership for the Goals
-          </label>
-          <br />
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="all"
+              name="all"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="all"
+            />
+            <label
+              htmlFor="all"
+            >
+               All
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="no-poverty"
+              name="no-poverty"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="no-poverty"
+            />
+            <label
+              htmlFor="no-poverty"
+            >
+               No Poverty
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="zero-hunger"
+              name="zero-hunger"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="zero-hunger"
+            />
+            <label
+              htmlFor="zero-hunger"
+            >
+               Zero Hunger
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="good-health-and-well-being"
+              name="good-health-and-well-being"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="good-health-and-well-being"
+            />
+            <label
+              htmlFor="good-health-and-well-being"
+            >
+               Good Health and Well-being
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="quality-education"
+              name="quality-education"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="quality-education"
+            />
+            <label
+              htmlFor="quality-education"
+            >
+               Quality Education
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="gender-equality"
+              name="gender-equality"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="gender-equality"
+            />
+            <label
+              htmlFor="gender-equality"
+            >
+               Gender Equality
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="clean-water-and-sanitation"
+              name="clean-water-and-sanitation"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="clean-water-and-sanitation"
+            />
+            <label
+              htmlFor="clean-water-and-sanitation"
+            >
+               Clean Water and Sanitation
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="affordable-and-clean-energy"
+              name="affordable-and-clean-energy"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="affordable-and-clean-energy"
+            />
+            <label
+              htmlFor="affordable-and-clean-energy"
+            >
+               Affordable and Clean Energy
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="decent-work-and-economic-growth"
+              name="decent-work-and-economic-growth"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="decent-work-and-economic-growth"
+            />
+            <label
+              htmlFor="decent-work-and-economic-growth"
+            >
+               Decent Work and Economic Growth
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="industry-innovation-and-infrastructure"
+              name="industry-innovation-and-infrastructure"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="industry-innovation-and-infrastructure"
+            />
+            <label
+              htmlFor="industry-innovation-and-infrastructure"
+            >
+               Industry, Innovation and Infrastructure
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="reduced-inequalities"
+              name="reduced-inequalities"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="reduced-inequalities"
+            />
+            <label
+              htmlFor="reduced-inequalities"
+            >
+               Reduced Inequalities
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="responsible-consumption-and-production"
+              name="responsible-consumption-and-production"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="responsible-consumption-and-production"
+            />
+            <label
+              htmlFor="responsible-consumption-and-production"
+            >
+               Responsible Consumption and Production
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="sustainable-cities-and-communities"
+              name="sustainable-cities-and-communities"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="sustainable-cities-and-communities"
+            />
+            <label
+              htmlFor="sustainable-cities-and-communities"
+            >
+               Sustainable Cities and Communities
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="climate-action"
+              name="climate-action"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="climate-action"
+            />
+            <label
+              htmlFor="climate-action"
+            >
+               Climate Action
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="life-below-water"
+              name="life-below-water"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="life-below-water"
+            />
+            <label
+              htmlFor="life-below-water"
+            >
+               Life Below Water
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="life-on-land"
+              name="life-on-land"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="life-on-land"
+            />
+            <label
+              htmlFor="life-on-land"
+            >
+               Life on Land
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="peace-and-justice-and-strong-institutions"
+              name="peace-and-justice-and-strong-institutions"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="peace-and-justice-and-strong-institutions"
+            />
+            <label
+              htmlFor="peace-and-justice-and-strong-institutions"
+            >
+               Peace and Justice and Strong Institutions
+            </label>
+            <br />
+          </div>
+          <div>
+            <input
+              className="mb-2 h-6 w-6 rounded text-secondary-300"
+              id="partnership-for-the-goals"
+              name="partnership-for-the-goals"
+              onChange={[Function]}
+              placeholder="Your input here"
+              type="checkbox"
+              value="partnership-for-the-goals"
+            />
+            <label
+              htmlFor="partnership-for-the-goals"
+            >
+               Partnership for the Goals
+            </label>
+            <br />
+          </div>
         </form>
         <div
           className="fixed left-1/4 bottom-3 sm:static sm:bottom-0 sm:mx-auto"
         >
-          <form>
+          <form
+            onClick={[Function]}
+          >
             <input
               className="mt-2 w-48 rounded-md border-2 bg-secondary-300 text-white"
               placeholder="Your input here"
-              type="Submit"
+              type="button"
               value="Apply Filters"
             />
             <label />
