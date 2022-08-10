@@ -2,7 +2,7 @@ import React from "react";
 
 export default function FourPhotos() {
     return (
-        <div className='mx-4 my-4 flex h-[35rem] gap-4 md:mx-5 lg:mx-32'>
+        <div className='mx-4 my-4 mt-32 flex h-[35rem] gap-4 md:mx-5 lg:mx-32'>
             <div className='flex w-1/2 flex-col gap-4'>
                 <div
                     className='h-full rounded-lg bg-cover bg-center bg-no-repeat'
