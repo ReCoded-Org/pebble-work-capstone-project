@@ -1,19 +1,16 @@
 import Image from "next/image";
 const SustainableGoals = () => {
     return (
-        <div className='flex flex-col justify-center gap-10'>
+        <div className='flex flex-col justify-center gap-10 md:mx-8'>
             <div className='mx-4 text-center'>
                 <h1 className='text-4xl font-bold'>
                     Sustainable Development Goals
                 </h1>
-                <p className='mt-5'>
-                    The 2030 Agenda for Sustainable Development, adopted by all
-                    United Nations Member States in 2015, provides a shared
-                    blueprint for peace and prosperity for people and the
-                    planet, now and into the future. At its heart are the 17
-                    Sustainable Development Goals (SDGs), which are an urgent
-                    call for action by all countries - developed and developing
-                    - in a global partnership.
+                <p className='mt-5 text-xl md:mx-24'>
+                    Sustainable Development, adopted by all United Nations
+                    Member States in 2015, provides a shared blueprint for peace
+                    and prosperity for people and the planet, now and into the
+                    future.
                 </p>
             </div>
             <div className='mx-4 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6'>
