@@ -1,7 +1,7 @@
 import Image from "next/image";
 const SustainableGoals = () => {
     return (
-        <div className='flex flex-col justify-center gap-10 md:mx-8'>
+        <div className='flex flex-col justify-center gap-10 md:mx-8 md:my-10'>
             <div className='mx-4 text-center'>
                 <h1 className='text-4xl font-bold'>
                     Sustainable Development Goals

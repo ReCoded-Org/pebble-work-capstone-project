@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex flex-col justify-center gap-10 md:mx-8"
+  className="flex flex-col justify-center gap-10 md:mx-8 md:my-10"
 >
   <div
     className="mx-4 text-center"
