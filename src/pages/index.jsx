@@ -3,11 +3,9 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
-
 import Getstarted from "@/components/Getstarted";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
-
 import Layout from "@/components/layout/Layout";
 import SustainableGoals from "@/components/SustainableGoals";
 import TestimonialsFourPhotos from "@/components/TestimonialsFourPhotos";

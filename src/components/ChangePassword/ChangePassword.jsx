@@ -1,5 +1,6 @@
+import Button from "@/components/Button";
+
 import InputComponent from "../InputComponent";
-import Button from "../Button";
 
 const ChangePassword = () => {
     return (
