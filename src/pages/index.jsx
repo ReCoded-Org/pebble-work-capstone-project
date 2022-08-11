@@ -3,7 +3,7 @@
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
 
-import Getstarted from "@/components/Getstarted";
+import Getstarted from "@/components/GetStarted/GetStarted";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
 import Layout from "@/components/layout/Layout";
