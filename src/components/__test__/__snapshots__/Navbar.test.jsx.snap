@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className="shadow"
+  className="mb-1 shadow"
   style={
     Object {
       "backgroundColor": "transparent",
@@ -271,7 +271,7 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-400 "
+              className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-800 hover:text-orange-400 "
               href="/login"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -279,7 +279,7 @@ exports[`renders correctly 1`] = `
               Log In
             </a>
             <button
-              className="rounded-full py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg "
+              className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg "
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
