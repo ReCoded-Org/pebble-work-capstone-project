@@ -13,16 +13,18 @@ Array [
     className="mx-8 mt-3 mb-4 divide-y"
   >
     <div
-      className="mb-4 flex flex-col gap-10 py-3 md:flex-row md:justify-between"
+      className="mb-4 flex flex-col items-center gap-10 py-3 md:flex-row md:justify-around"
     >
-      <div>
+      <div
+        className="flex flex-col items-center justify-center"
+      >
         <h2
           className="py-1 text-xl font-medium text-black"
         >
           First, set your events’s location:
         </h2>
         <p
-          className="my-1 w-full text-gray-500"
+          className="my-1 text-gray-500"
         >
           Pebble events can be both local or online. Choose where you want to host your event.
         </p>
@@ -150,20 +152,18 @@ Array [
             </span>
           </div>
           <input
-            className="w-full rounded border border-black px-9 py-2 shadow hover:border-primary-200 focus:outline-none"
+            className="block w-full rounded-md border-black pl-8 text-base focus:border-secondary-300 sm:mb-0 sm:w-full lg:w-full"
+            id="searchBox"
             onChange={[Function]}
-            placeholder="Search for a city"
-            type="text"
+            placeholder="Seach Location"
+            type="search"
+            value=""
           />
           <label />
+          <div
+            className="absolute my-px flex w-full origin-top-right flex-col divide-y rounded bg-white shadow"
+          />
         </div>
-      </div>
-      <div
-        className="flex w-full items-center justify-center "
-      >
-        <div
-          className="my-10 flex items-center justify-center text-center text-6xl font-bold text-primary-200 "
-        />
       </div>
     </div>
     <div
