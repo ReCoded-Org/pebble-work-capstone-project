@@ -11,7 +11,6 @@ const Navbar = () => {
 
     const Mobiledropdown = useRef(null);
     useEffect(() => {
-        // only add the event listener when the dropdown is opened
         if (showMobileDropdown) return;
         function handleClick(event) {
             if (
@@ -22,7 +21,6 @@ const Navbar = () => {
             }
         }
         window.addEventListener("click", handleClick);
-        // clean up
         return () => window.removeEventListener("click", handleClick);
     }, [showMobileDropdown]);
 
@@ -41,10 +39,8 @@ const Navbar = () => {
         return () => window.removeEventListener("click", handleClick);
     }, [showDropdown]);
 
-    // create a React ref for the dropdown element
     const profileDropdown = useRef(null);
     useEffect(() => {
-        // only add the event listener when the dropdown is opened
         if (profileShowDropdown) return;
         function handleClick(event) {
             if (
@@ -55,12 +51,14 @@ const Navbar = () => {
             }
         }
         window.addEventListener("click", handleClick);
-        // clean up
         return () => window.removeEventListener("click", handleClick);
     }, [profileShowDropdown]);
 
     return (
-        <nav className='shadow' style={{ backgroundColor: "transparent" }}>
+        <nav
+            className='mb-1  shadow'
+            style={{ backgroundColor: "transparent" }}
+        >
             <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 '>
                 <div className='relative flex h-16 items-center justify-between'>
                     <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
@@ -187,7 +185,6 @@ const Navbar = () => {
                                             aria-labelledby='user-menu-button'
                                             tabIndex='-1'
                                         >
-                                            {/* <!-- Active: "bg-gray-100", Not Active: "" --> */}
                                             <a
                                                 href='#'
                                                 className=' flex  px-3 py-2 text-sm text-gray-700  hover:text-orange-400 '
@@ -199,7 +196,7 @@ const Navbar = () => {
                                             </a>
                                             <a
                                                 href='#'
-                                                className=' flex  px-3 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                                className=' flex  px-3 py-2 text-sm text-gray-800 hover:text-orange-400'
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
@@ -210,12 +207,12 @@ const Navbar = () => {
                                     )}
                                 </div>
                                 <Link href='/login'>
-                                    <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-700  hover:text-orange-400  '>
+                                    <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
                                         Log In
                                     </a>
                                 </Link>
                                 <Link href='/signup'>
-                                    <button className='rounded-full py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg '>
+                                    <button className='rounded-full bg-primary-200 py-1  px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg '>
                                         Sign up
                                     </button>
                                 </Link>
@@ -271,7 +268,6 @@ const Navbar = () => {
                                     >
                                         Your events
                                     </a>
-                                    {/* <!-- Active: "bg-gray-100", Not Active: "" --> */}
                                     <a
                                         href='#'
                                         className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
@@ -305,7 +301,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            {/* <!-- Mobile menu, show/hide based on menu state. --> */}
             {showDropdown && (
                 <div
                     ref={Mobiledropdown}
