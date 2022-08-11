@@ -5,19 +5,106 @@ import Button from "../Button";
 import InputComponent from "../InputComponent";
 
 const EventCreation = () => {
-    const [Location, setLocation] = useState("");
+    const citiesOfTurkey = [
+        "Adana",
+        "Adiyaman",
+        "Afyon",
+        "Agri",
+        "Aksaray",
+        "Amasya",
+        "Ankara",
+        "Antalya",
+        "Ardahan",
+        "Artvin",
+        "Aydin",
+        "Balikesir",
+        "Bartin",
+        "Batman",
+        "Bayburt",
+        "Bilecik",
+        "Bingol",
+        "Bitlis",
+        "Bolu",
+        "Burdur",
+        "Bursa",
+        "Canakkale",
+        "Cankiri",
+        "Corum",
+        "Denizli",
+        "Diyarbakir",
+        "Duzce",
+        "Edirne",
+        "Elazig",
+        "Erzincan",
+        "Erzurum",
+        "Eskisehir",
+        "Gaziantep",
+        "Giresun",
+        "Gumushane",
+        "Hakkari",
+        "Hatay",
+        "Igdir",
+        "Isparta",
+        "Istanbul",
+        "Izmir",
+        "Kahramanmaras",
+        "Karabuk",
+        "Karaman",
+        "Kars",
+        "Kastamonu",
+        "Kayseri",
+        "Kilis",
+        "Kirikkale",
+        "Kirklareli",
+        "Kirsehir",
+        "Kocaeli",
+        "Konya",
+        "Kutahya",
+        "Malatya",
+        "Manisa",
+        "Mardin",
+        "Mersin",
+        "Mugla",
+        "Mus",
+        "Nevsehir",
+        "Nigde",
+        "Ordu",
+        "Osmaniye",
+        "Rize",
+        "Sakarya",
+        "Samsun",
+        "Sanliurfa",
+        "Siirt",
+        "Sinop",
+        "Sirnak",
+        "Sivas",
+        "Tekirdag",
+        "Tokat",
+        "Trabzon",
+        "Tunceli",
+        "Usak",
+        "Van",
+        "Yalova",
+        "Yozgat",
+        "Zonguldak",
+    ];
+    const [searchTerm, setSearchTerm] = useState("");
+    function handleSearch(e) {
+        setSearchTerm(e.target.value);
+    }
+
     return (
         <>
             <div className='mb-4 mt-3 flex flex-col items-center justify-center  py-3 text-3xl  font-semibold '>
                 <h1>Create an Event</h1>
             </div>
             <div className='mx-8 mt-3 mb-4 divide-y'>
-                <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
-                    <div>
+                <div className='mb-4 flex flex-col  items-center gap-10 py-3 md:flex-row md:justify-around'>
+                    <div className='flex flex-col items-center justify-center'>
                         <h2 className='py-1 text-xl font-medium text-black'>
                             First, set your events’s location:
                         </h2>
-                        <p className='my-1 w-full text-gray-500'>
+                        <p className='my-1 text-gray-500'>
                             Pebble events can be both local or online. Choose
                             where you want to host your event.
                         </p>
@@ -31,21 +118,38 @@ const EventCreation = () => {
                                 />
                             </div>
                             <InputComponent
-                                placeholder='Search for a city'
-                                className='w-full rounded border border-black px-9 py-2 shadow hover:border-primary-200 focus:outline-none'
-                                callback={(event) => {
-                                    {
-                                        event.target.value.length === 0
-                                            ? setLocation("")
-                                            : setLocation(event.target.value);
-                                    }
-                                }}
+                                type='search'
+                                id='searchBox'
+                                placeholder='Seach Location'
+                                value={searchTerm}
+                                callback={handleSearch}
+                                className='block w-full rounded-md border-black pl-8 text-base focus:border-secondary-300 sm:mb-0  sm:w-full  lg:w-full'
                             />
-                        </div>
-                    </div>
-                    <div className='flex w-full items-center justify-center  '>
-                        <div className='my-10 flex items-center justify-center text-center  text-6xl font-bold text-primary-200 '>
-                            {Location}
+                            <div className='absolute my-px flex w-full origin-top-right flex-col  divide-y rounded   bg-white shadow'>
+                                {citiesOfTurkey
+                                    .filter((city) => {
+                                        const searchCity =
+                                            searchTerm.toLowerCase();
+                                        const cityData = city.toLowerCase();
+                                        return (
+                                            searchCity &&
+                                            cityData.includes(searchCity) &&
+                                            searchCity !== cityData
+                                        );
+                                    })
+                                    .slice(0, 5)
+                                    .map((city, index) => (
+                                        <div
+                                            key={index}
+                                            onClick={() => {
+                                                setSearchTerm(city);
+                                            }}
+                                            className='p-2'
+                                        >
+                                            {city}
+                                        </div>
+                                    ))}
+                            </div>
                         </div>
                     </div>
                 </div>
