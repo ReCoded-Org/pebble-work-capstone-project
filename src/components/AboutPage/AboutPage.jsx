@@ -5,6 +5,13 @@ import TeamCards from "@/components/AboutPage/TeamCards";
 const AboutPage = () => {
     const team = [
         {
+            name: "Salah Al-Dhaferi",
+            github: "https://github.com/tech-chieftain",
+            linkedin: "https://www.linkedin.com/in/salah-aldhaferi/",
+            instagram: "https://www.instagram.com/nasa",
+            imageLink: "/images/salah.jpeg",
+        },
+        {
             name: "Dilara Katuk",
             github: "https://github.com/DKatuk",
             linkedin: "https://www.linkedin.com/in/dilara-katuk-0bab56211/",
