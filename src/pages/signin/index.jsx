@@ -1,16 +1,16 @@
 import React from "react";
 
-import EventCreation from "@/components/EventCreation";
 import Layout from "@/components/layout/Layout";
+import Signupin from "@/components/SignInUp";
 
-const Eventcreation = () => {
+const Signupinpage = () => {
     return (
         <div>
             <Layout>
-                <EventCreation />
+                <Signupin title='Sign in' />
             </Layout>
         </div>
     );
 };
 
-export default Eventcreation;
+export default Signupinpage;

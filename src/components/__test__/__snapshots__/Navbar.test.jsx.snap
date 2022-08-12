@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className="shadow"
+  className="mb-1 shadow"
   style={
     Object {
       "backgroundColor": "transparent",
@@ -70,8 +70,23 @@ exports[`renders correctly 1`] = `
       <div
         className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
       >
-        <div
-          className="flex flex-shrink-0 items-center"
+        <span
+          style={
+            Object {
+              "background": "none",
+              "border": 0,
+              "boxSizing": "border-box",
+              "display": "inline-block",
+              "height": "initial",
+              "margin": 0,
+              "maxWidth": "100%",
+              "opacity": 1,
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "width": "initial",
+            }
+          }
         >
           <span
             style={
@@ -79,24 +94,24 @@ exports[`renders correctly 1`] = `
                 "background": "none",
                 "border": 0,
                 "boxSizing": "border-box",
-                "display": "inline-block",
+                "display": "block",
                 "height": "initial",
                 "margin": 0,
                 "maxWidth": "100%",
                 "opacity": 1,
-                "overflow": "hidden",
                 "padding": 0,
-                "position": "relative",
                 "width": "initial",
               }
             }
           >
-            <span
+            <img
+              alt=""
+              aria-hidden={true}
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%2740%27/%3e"
               style={
                 Object {
                   "background": "none",
                   "border": 0,
-                  "boxSizing": "border-box",
                   "display": "block",
                   "height": "initial",
                   "margin": 0,
@@ -106,34 +121,52 @@ exports[`renders correctly 1`] = `
                   "width": "initial",
                 }
               }
-            >
-              <img
-                alt=""
-                aria-hidden={true}
-                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27100%27%20height=%2740%27/%3e"
-                style={
-                  Object {
-                    "background": "none",
-                    "border": 0,
-                    "display": "block",
-                    "height": "initial",
-                    "margin": 0,
-                    "maxWidth": "100%",
-                    "opacity": 1,
-                    "padding": 0,
-                    "width": "initial",
-                  }
-                }
-              />
-            </span>
+            />
+          </span>
+          <img
+            alt="logo"
+            className="hover:cursor-pointer"
+            data-nimg="intrinsic"
+            decoding="async"
+            onClick={[Function]}
+            onError={[Function]}
+            onLoad={[Function]}
+            onMouseEnter={[Function]}
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style={
+              Object {
+                "border": "none",
+                "bottom": 0,
+                "boxSizing": "border-box",
+                "display": "block",
+                "height": 0,
+                "left": 0,
+                "margin": "auto",
+                "maxHeight": "100%",
+                "maxWidth": "100%",
+                "minHeight": "100%",
+                "minWidth": "100%",
+                "objectFit": undefined,
+                "objectPosition": undefined,
+                "padding": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+                "width": 0,
+              }
+            }
+          />
+          <noscript>
             <img
               alt="logo"
               className="hover:cursor-pointer"
               data-nimg="intrinsic"
               decoding="async"
-              onError={[Function]}
-              onLoad={[Function]}
-              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              loading="lazy"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
+              srcSet="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -157,41 +190,8 @@ exports[`renders correctly 1`] = `
                 }
               }
             />
-            <noscript>
-              <img
-                alt="logo"
-                className="hover:cursor-pointer"
-                data-nimg="intrinsic"
-                decoding="async"
-                loading="lazy"
-                src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
-                srcSet="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
-                style={
-                  Object {
-                    "border": "none",
-                    "bottom": 0,
-                    "boxSizing": "border-box",
-                    "display": "block",
-                    "height": 0,
-                    "left": 0,
-                    "margin": "auto",
-                    "maxHeight": "100%",
-                    "maxWidth": "100%",
-                    "minHeight": "100%",
-                    "minWidth": "100%",
-                    "objectFit": undefined,
-                    "objectPosition": undefined,
-                    "padding": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": 0,
-                  }
-                }
-              />
-            </noscript>
-          </span>
-        </div>
+          </noscript>
+        </span>
       </div>
       <div
         className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
@@ -271,7 +271,7 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
             <a
-              className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-400 "
+              className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-800 hover:text-orange-400 "
               href="/login"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -279,7 +279,7 @@ exports[`renders correctly 1`] = `
               Log In
             </a>
             <button
-              className="rounded-full py-1 px-3 text-sm font-semibold text-gray-900 hover:bg-primary-100 hover:shadow-lg "
+              className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg "
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
