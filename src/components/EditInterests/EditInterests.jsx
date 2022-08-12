@@ -51,7 +51,7 @@ const EditInterests = ({ beforeClick, afterClick }) => {
                             customStyle={
                                 selected.includes(label)
                                     ? `${afterClick}`
-                                    : `${beforeClick}`
+                                    : `text-black ${beforeClick}`
                             }
                             onClick={() => handleClick(label)}
                         />
