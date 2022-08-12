@@ -32,10 +32,7 @@ const EditInterests = ({ beforeClick, afterClick }) => {
     };
 
     return (
-        <div className='m-4 mt-12 md:m-12'>
-            <h2 className='text-md m-4 font-medium md:m-6 md:text-2xl lg:mt-16 lg:ml-12 lg:text-3xl'>
-                Your Interests
-            </h2>
+        <div className='m-4 md:m-12'>
             <div className='flex flex-wrap items-center justify-center overflow-hidden lg:ml-8 lg:flex-row lg:flex-wrap lg:items-start lg:justify-start'>
                 {labels.map((label) => (
                     <div key={label} className='m-1 md:m-2 lg:m-3'>
@@ -54,7 +51,7 @@ const EditInterests = ({ beforeClick, afterClick }) => {
                             customStyle={
                                 selected.includes(label)
                                     ? `${afterClick}`
-                                    : `${beforeClick}`
+                                    : `text-black ${beforeClick}`
                             }
                             onClick={() => handleClick(label)}
                         />
