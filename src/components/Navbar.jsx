@@ -181,7 +181,7 @@ const Navbar = () => {
                                     {showDropdown && (
                                         <div
                                             ref={dropdown}
-                                            className='w-25 absolute right-0 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white py-1 shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
+                                            className='z-50 w-25 absolute right-0 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white py-1 shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
                                             role='menu'
                                             aria-orientation='vertical'
                                             aria-labelledby='user-menu-button'
