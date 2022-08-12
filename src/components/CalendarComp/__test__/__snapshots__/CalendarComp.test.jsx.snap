@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Early"
                   readOnly={false}
-                  value="Aug 10, 2022"
+                  value="Aug 12, 2022"
                 />
               </span>
               <span
@@ -52,7 +52,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Continuous"
                   readOnly={false}
-                  value="Aug 10, 2022"
+                  value="Aug 12, 2022"
                 />
               </span>
             </div>
