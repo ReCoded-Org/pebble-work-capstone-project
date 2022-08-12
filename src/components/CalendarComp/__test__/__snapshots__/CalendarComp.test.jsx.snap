@@ -1101,7 +1101,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay"
+                  className="rdrDay rdrDayToday"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1118,6 +1118,14 @@ exports[`renders correctly 1`] = `
                   }
                   type="button"
                 >
+                  <span
+                    className="rdrStartEdge rdrEndEdge"
+                    style={
+                      Object {
+                        "color": "#0180AB",
+                      }
+                    }
+                  />
                   <span
                     className="rdrDayNumber"
                   >
