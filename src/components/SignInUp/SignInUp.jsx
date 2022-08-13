@@ -10,7 +10,7 @@ const Signupin = ({ title }) => {
     return (
         <>
             {domLoaded && (
-                <div className=' m-5 flex flex-col items-center  justify-around   md:mb-24  md:mt-6 lg:mt-2 lg:mb-16  lg:flex-row'>
+                <div className='  m-5 flex h-full  flex-col  items-center  justify-around  lg:flex-row'>
                     <div className='h-100 flex w-96 flex-col items-center justify-center text-center'>
                         <Image
                             src='/svg/signupinMan.svg'
