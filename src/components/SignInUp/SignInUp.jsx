@@ -10,7 +10,7 @@ const Signupin = ({ title }) => {
     return (
         <>
             {domLoaded && (
-                <div className='  m-5 flex h-full  flex-col  items-center  justify-around  lg:flex-row'>
+                <form className='  m-5 flex h-full  flex-col  items-center  justify-around  lg:flex-row'>
                     <div className='h-100 flex w-96 flex-col items-center justify-center text-center'>
                         <Image
                             src='/svg/signupinMan.svg'
@@ -28,7 +28,7 @@ const Signupin = ({ title }) => {
                                 <div className=' flex flex-row justify-between py-1'>
                                     <div className='w-80'>
                                         <input
-                                            className='focus:shadow-outline mx-px  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                            className='focus:shadow-outline mx-px  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                             id='name'
                                             type='text'
                                             placeholder='Name'
@@ -36,7 +36,7 @@ const Signupin = ({ title }) => {
                                     </div>
                                     <div>
                                         <input
-                                            className='focus:shadow-outline  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                            className='focus:shadow-outline  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                             id='surname'
                                             type='text'
                                             placeholder='Surname'
@@ -46,15 +46,15 @@ const Signupin = ({ title }) => {
                             )}
                             <div className='ml-px w-80'>
                                 <input
-                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                     id='email'
-                                    type='text'
+                                    type='email'
                                     placeholder='Email address'
                                 />
                             </div>
                             <div className='ml-px py-1'>
                                 <input
-                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                     id='password'
                                     type='password'
                                     placeholder='Password'
@@ -76,9 +76,9 @@ const Signupin = ({ title }) => {
                                 </p>
                             ) : (
                                 <p className='signin m-1 flex text-xs italic text-gray-700'>
-                                    Don’t have an account?
+                                    Don&apos;t have an account? &nbsp;
                                     <Link href='/signup'>
-                                        <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
+                                        <div className='cursor-pointer border-b border-primary-200 text-primary-200'>
                                             {title === "Sign up"
                                                 ? "Sign in"
                                                 : "Sign up"}
@@ -132,7 +132,7 @@ const Signupin = ({ title }) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             )}
         </>
     );

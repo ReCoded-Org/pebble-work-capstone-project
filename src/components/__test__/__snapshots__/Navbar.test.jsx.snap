@@ -272,11 +272,11 @@ exports[`renders correctly 1`] = `
             </div>
             <a
               className=" rounded-md px-3 py-2 text-sm font-semibold text-gray-800 hover:text-orange-400 "
-              href="/login"
+              href="/signin"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              Log In
+              Sign In
             </a>
             <button
               className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg "
