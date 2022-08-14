@@ -139,7 +139,6 @@ exports[`renders correctly 1`] = `
             href="/posts/first-post"
             onClick={[Function]}
             onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             landingPage.howItWorks.signUp
              
@@ -291,7 +290,6 @@ exports[`renders correctly 1`] = `
             href="/posts/first-post"
             onClick={[Function]}
             onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             landingPage.howItWorks.exploreEvents
              
@@ -443,7 +441,6 @@ exports[`renders correctly 1`] = `
             href="/posts/first-post"
             onClick={[Function]}
             onMouseEnter={[Function]}
-            onTouchStart={[Function]}
           >
             landingPage.howItWorks.createEvents
              

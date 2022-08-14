@@ -1,6 +1,6 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 const HeroSection = () => {
     const { t } = useTranslation("common");
