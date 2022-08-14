@@ -7,7 +7,7 @@ exports[`renders correctly 1`] = `
   <h1
     className="mt-5 flex justify-center text-xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl"
   >
-    How It Works
+    landingPage.howItWorks.title
   </h1>
   <div
     className="flex flex-col items-center justify-center lg:flex-row"
@@ -120,12 +120,12 @@ exports[`renders correctly 1`] = `
         <div
           className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
-          Register
+          landingPage.howItWorks.register
         </div>
         <p
           className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
-          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+          landingPage.howItWorks.registerDescription
         </p>
       </div>
       <div
@@ -139,8 +139,9 @@ exports[`renders correctly 1`] = `
             href="/posts/first-post"
             onClick={[Function]}
             onMouseEnter={[Function]}
+            onTouchStart={[Function]}
           >
-            Sign up
+            landingPage.howItWorks.signUp
              
             <svg
               aria-hidden="true"
@@ -271,12 +272,12 @@ exports[`renders correctly 1`] = `
         <div
           className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
-          Attend events
+          landingPage.howItWorks.attendEvents
         </div>
         <p
           className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
-          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+          landingPage.howItWorks.attendEventsDescription
         </p>
       </div>
       <div
@@ -290,8 +291,9 @@ exports[`renders correctly 1`] = `
             href="/posts/first-post"
             onClick={[Function]}
             onMouseEnter={[Function]}
+            onTouchStart={[Function]}
           >
-            View events
+            landingPage.howItWorks.exploreEvents
              
             <svg
               aria-hidden="true"
@@ -422,12 +424,12 @@ exports[`renders correctly 1`] = `
         <div
           className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
-          Organize on your own!
+          landingPage.howItWorks.organizeYourOwn
         </div>
         <p
           className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
-          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+          landingPage.howItWorks.organizeYourOwnDescription
         </p>
       </div>
       <div
@@ -441,8 +443,9 @@ exports[`renders correctly 1`] = `
             href="/posts/first-post"
             onClick={[Function]}
             onMouseEnter={[Function]}
+            onTouchStart={[Function]}
           >
-            Get started
+            landingPage.howItWorks.createEvents
              
             <svg
               aria-hidden="true"

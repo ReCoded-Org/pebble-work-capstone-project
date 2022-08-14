@@ -132,6 +132,7 @@ exports[`renders correctly 1`] = `
             onError={[Function]}
             onLoad={[Function]}
             onMouseEnter={[Function]}
+            onTouchStart={[Function]}
             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
             style={
               Object {
@@ -165,6 +166,7 @@ exports[`renders correctly 1`] = `
               loading="lazy"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
               src="/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75"
               srcSet="/_next/image?url=%2Fimages%2Flogo.png&w=128&q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&w=256&q=75 2x"
               style={
@@ -207,16 +209,18 @@ exports[`renders correctly 1`] = `
               href="/events"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
-              Events
+              common.nav.events
             </a>
             <a
               className=" hidden rounded-md px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-400"
               href="/about"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
-              About
+              common.nav.about
             </a>
             <div
               className=" relative ml-3 hidden sm:ml-6 sm:block"
@@ -275,15 +279,17 @@ exports[`renders correctly 1`] = `
               href="/login"
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
-              Log In
+              common.nav.login
             </a>
             <button
               className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg "
               onClick={[Function]}
               onMouseEnter={[Function]}
+              onTouchStart={[Function]}
             >
-              Sign up
+              common.nav.signUp
             </button>
           </div>
         </div>
