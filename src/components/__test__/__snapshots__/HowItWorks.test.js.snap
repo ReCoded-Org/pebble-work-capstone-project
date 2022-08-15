@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="how-it-works"
 >
   <h1
-    className="mt-5 flex justify-center text-4xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl"
+    className="mt-5 flex justify-center text-xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl"
   >
     landingPage.howItWorks.title
   </h1>
@@ -118,12 +118,12 @@ exports[`renders correctly 1`] = `
         className="px-6 py-4"
       >
         <div
-          className="m-2 flex justify-center text-center text-2xl font-bold md:text-3xl lg:text-lg"
+          className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
           landingPage.howItWorks.register
         </div>
         <p
-          className="text-center text-gray-700 md:text-2xl lg:text-lg"
+          className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
           landingPage.howItWorks.registerDescription
         </p>
@@ -269,12 +269,12 @@ exports[`renders correctly 1`] = `
         className="px-6 py-4"
       >
         <div
-          className="m-2 flex justify-center text-center text-2xl font-bold md:text-3xl lg:text-lg"
+          className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
           landingPage.howItWorks.attendEvents
         </div>
         <p
-          className="text-center text-gray-700 md:text-2xl lg:text-lg"
+          className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
           landingPage.howItWorks.attendEventsDescription
         </p>
@@ -420,12 +420,12 @@ exports[`renders correctly 1`] = `
         className="px-6 py-4"
       >
         <div
-          className="m-2 flex justify-center text-center text-2xl font-bold md:text-3xl lg:text-lg"
+          className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
           landingPage.howItWorks.organizeYourOwn
         </div>
         <p
-          className="text-center text-gray-700 md:text-2xl lg:text-lg"
+          className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
           landingPage.howItWorks.organizeYourOwnDescription
         </p>

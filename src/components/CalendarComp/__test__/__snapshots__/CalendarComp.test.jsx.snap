@@ -1179,7 +1179,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay rdrDayToday rdrDayWeekend rdrDayStartOfWeek"
+                  className="rdrDay rdrDayWeekend rdrDayStartOfWeek"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1197,18 +1197,36 @@ exports[`renders correctly 1`] = `
                   type="button"
                 >
                   <span
-                    className="rdrStartEdge rdrEndEdge"
-                    style={
-                      Object {
-                        "color": "#0180AB",
-                      }
-                    }
-                  />
-                  <span
                     className="rdrDayNumber"
                   >
                     <span>
                       14
+                    </span>
+                  </span>
+                </button>
+                <button
+                  className="rdrDay"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onPauseCapture={[Function]}
+                  style={
+                    Object {
+                      "color": "#3d91ff",
+                    }
+                  }
+                  type="button"
+                >
+                  <span
+                    className="rdrDayNumber"
+                  >
+                    <span>
+                      15
                     </span>
                   </span>
                 </button>
@@ -1238,32 +1256,6 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                  <span
-                    className="rdrDayNumber"
-                  >
-                    <span>
-                      15
-                    </span>
-                  </span>
-                </button>
-                <button
-                  className="rdrDay"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onPauseCapture={[Function]}
-                  style={
-                    Object {
-                      "color": "#3d91ff",
-                    }
-                  }
-                  type="button"
-                >
                   <span
                     className="rdrDayNumber"
                   >
