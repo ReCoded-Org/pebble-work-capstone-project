@@ -3,13 +3,13 @@ import Link from "next/link";
 import React from "react";
 import { useContext } from "react";
 
-import { UserContext } from '../../lib/context.js'
+import { UserContext } from "../../lib/context.js";
 import { auth } from "../../lib/firebase";
 
 const { useState, useEffect, useRef } = React;
 
 const Navbar = () => {
-    const { user } = useContext(UserContext) // at the start, there is no user signed in
+    const { user } = useContext(UserContext); // at the start, there is no user signed in
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -229,34 +229,33 @@ const Navbar = () => {
                                         </Link>
                                     </>
                                 )}
-                                
                             </div>
                         </div>
                         {/* if there is user, show profile menu */}
                         {user && (
                             <div className='relative ml-3'>
-                            <div>
-                                <button
-                                    type='button'
-                                    className='flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-400'
-                                    id='user-menu-button'
-                                    aria-expanded='false'
-                                    aria-haspopup='true'
-                                    onClick={() =>
-                                        setProfileShowDropdown((b) => !b)
-                                    }
-                                >
-                                    <span className='sr-only'>
-                                        Open user menu
-                                    </span>
-                                    <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
-                                    <Image 
-                                        src={user?.photoURL}
-                                        alt="user image" 
-                                        width={48}
-                                        height={48}
-                                    />
-                                    {/* <svg
+                                <div>
+                                    <button
+                                        type='button'
+                                        className='flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-400'
+                                        id='user-menu-button'
+                                        aria-expanded='false'
+                                        aria-haspopup='true'
+                                        onClick={() =>
+                                            setProfileShowDropdown((b) => !b)
+                                        }
+                                    >
+                                        <span className='sr-only'>
+                                            Open user menu
+                                        </span>
+                                        <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
+                                            <Image
+                                                src={user?.photoURL}
+                                                alt='user image'
+                                                width={48}
+                                                height={48}
+                                            />
+                                            {/* <svg
                                             className='absolute -left-1 h-12 w-12 text-orange-300'
                                             fill='currentColor'
                                             viewBox='0 0 20 20'
@@ -268,60 +267,59 @@ const Navbar = () => {
                                                 clipRule='evenodd'
                                             ></path>
                                         </svg> */}
-                                    </div>
-                                </button>
-                            </div>
-                            {profileShowDropdown && (
-                                <div
-                                    ref={profileDropdown}
-                                    className='absolute right-0 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
-                                    role='menu'
-                                    aria-orientation='vertical'
-                                    aria-labelledby='user-menu-button'
-                                    tabIndex='-1'
-                                >
-                                    <a
-                                        href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-0'
-                                    >
-                                        Your events
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-0'
-                                    >
-                                        Your profile
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-1'
-                                    >
-                                        Settings
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-2'
-                                        onClick={() => auth.signOut()}
-                                    >
-                                        Sign out
-                                    </a>
+                                        </div>
+                                    </button>
                                 </div>
-                            )}
-                        </div>
+                                {profileShowDropdown && (
+                                    <div
+                                        ref={profileDropdown}
+                                        className='absolute right-0 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                        role='menu'
+                                        aria-orientation='vertical'
+                                        aria-labelledby='user-menu-button'
+                                        tabIndex='-1'
+                                    >
+                                        <a
+                                            href='#'
+                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            Your events
+                                        </a>
+                                        <a
+                                            href='#'
+                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            Your profile
+                                        </a>
+                                        <a
+                                            href='#'
+                                            className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-1'
+                                        >
+                                            Settings
+                                        </a>
+                                        <a
+                                            href='#'
+                                            className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-2'
+                                            onClick={() => auth.signOut()}
+                                        >
+                                            Sign out
+                                        </a>
+                                    </div>
+                                )}
+                            </div>
                         )}
-                        
                     </div>
                 </div>
             </div>

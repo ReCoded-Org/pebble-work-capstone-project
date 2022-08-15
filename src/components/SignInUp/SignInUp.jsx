@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-import { auth, googleAuthProvider } from '../../../lib/firebase';
-
+import { auth, googleAuthProvider } from "../../../lib/firebase";
 
 const Signupin = ({ title }) => {
     const [domLoaded, setDomLoaded] = useState(false);
@@ -116,7 +115,10 @@ const Signupin = ({ title }) => {
                                 />
                             </div>
                             <div className='flex justify-center py-1'>
-                                <button className=' flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200' onClick={signInWithGoogle}>
+                                <button
+                                    className=' flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200'
+                                    onClick={signInWithGoogle}
+                                >
                                     <Image
                                         className='px-1'
                                         src='/svg/Google.svg'
@@ -146,7 +148,5 @@ const Signupin = ({ title }) => {
         </>
     );
 };
-
-
 
 export default Signupin;
