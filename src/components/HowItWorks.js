@@ -10,11 +10,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function HowItWorks() {
     return (
         <div className='how-it-works'>
-            <h1 className='mt-5 flex justify-center text-xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl'>
+            <h1 className='mt-5 flex justify-center text-4xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl'>
                 How It Works
             </h1>
             <div className='flex flex-col items-center justify-center lg:flex-row'>
-                <div className='w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80'>
+                <div className='m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80'>
                     <Image
                         class='w-full'
                         src='/images/register.png'
@@ -24,10 +24,10 @@ function HowItWorks() {
                         layout='responsive'
                     />
                     <div className='px-6 py-4'>
-                        <div className='m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg'>
+                        <div className='m-2 flex justify-center text-center text-2xl font-bold md:text-3xl lg:text-lg'>
                             Register
                         </div>
-                        <p className='text-center text-sm text-gray-700 md:text-xl lg:text-lg'>
+                        <p className='text-center text-gray-700 md:text-2xl lg:text-lg'>
                             Body placeholder for text paragraph, a paragraph is
                             a self-contained unit of text description.
                         </p>
@@ -44,7 +44,7 @@ function HowItWorks() {
                         </h1>
                     </div>
                 </div>
-                <div className='w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80'>
+                <div className='m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80'>
                     <Image
                         class='w-full'
                         src='/images/attend.png'
@@ -54,10 +54,10 @@ function HowItWorks() {
                         layout='responsive'
                     />
                     <div className='px-6 py-4'>
-                        <div className='m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg'>
+                        <div className='m-2 flex justify-center text-center text-2xl font-bold md:text-3xl lg:text-lg'>
                             Attend events
                         </div>
-                        <p className='text-center text-sm text-gray-700 md:text-xl lg:text-lg'>
+                        <p className='text-center text-gray-700 md:text-2xl lg:text-lg'>
                             Body placeholder for text paragraph, a paragraph is
                             a self-contained unit of text description.
                         </p>
@@ -74,7 +74,7 @@ function HowItWorks() {
                         </h1>
                     </div>
                 </div>
-                <div className='w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80'>
+                <div className='m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80'>
                     <Image
                         class='w-full'
                         src='/images/organize.png'
@@ -84,10 +84,10 @@ function HowItWorks() {
                         layout='responsive'
                     />
                     <div className='px-6 py-4'>
-                        <div className='m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg'>
+                        <div className='m-2 flex justify-center text-center text-2xl font-bold md:text-3xl lg:text-lg'>
                             Organize on your own!
                         </div>
-                        <p className='text-center text-sm text-gray-700 md:text-xl lg:text-lg'>
+                        <p className='text-center text-gray-700 md:text-2xl lg:text-lg'>
                             Body placeholder for text paragraph, a paragraph is
                             a self-contained unit of text description.
                         </p>
