@@ -1,3 +1,65 @@
 {
-    "test": "Merhaba"
+    "test": "Merhaba",
+    "common": {
+        "nav": {
+            "login": "Giriş",
+            "signIn": "Giriş",
+            "signUp": "Üye Ol",
+            "english": "İngilizce",
+            "turkish": "Türkçe",
+            "allEvents": "Etkinlikler",
+            "events": "Etkinlikler",
+            "about": "Hakkımızdda",
+            "howItWorks": "Nasıl Çalışır",
+            "aboutUs": "Hakkımızda",
+            "yourEvents": "Etkinliklerim",
+            "yourProfile": "Profilim",
+            "settings": "Ayarlar",
+            "signOut": "Çıkış"
+        },
+        "footer": {
+            "events": "Etkinlikler",
+            "about": "Hakkımızda",
+            "howItWorks": "Nasıl Çalışır",
+            "pebble": "Pebble A.Ş, 2022"
+        }
+    },
+    "landingPage": {
+        "heroSection": {
+            "title": "Sizin için mükemmel etkinliği bulun",
+            "paragraph": "Dünyada bir değişiklik yapmak mı istiyorsun? Yalnız olmak istemiyor musun? Doğru yerdesin. Benzer düşünen insanları bul. Dünyayı değiştirecek etkinlikler yarat veya katıl.",
+            "getStarted": "Başlayın"
+        },
+        "howItWorks": {
+            "title": "Nasıl Çalışır",
+            "register": "Kayıt Ol",
+            "registerDescription": "Kendi etkinliklerinizi oluşturmak ve etkinliklere katılmak için şimdi kaydolun",
+            "signUp": "Üye Ol",
+            "attendEvents": "Etkinliklere Katıl",
+            "attendEventsDescription": "Diğer kullanıcılar tarafından oluşturulan veya kendi oluşturduğunuz etkinliklere katılın",
+            "exploreEvents": "Etkinlikleri Keşfet",
+            "organizeYourOwn": "Kendiniz Organize Edin",
+            "organizeYourOwnDescription": "Fikirleriniz benzersizdir ve onları gerçekleştirecek olan sizsiniz.",
+            "createEvents": "Etkinlik Oluştur"
+        },
+        "sustainableGoals": {
+            "title": "Sürdürülebilir Kalkınma Hedefleri",
+            "sustainableGoalsDescription": "2015 yılında tüm Birleşmiş Milletler Üye Devletleri tarafından kabul edilen Sürdürülebilir Kalkınma, şimdi ve gelecekte insanlar ve gezegen için barış ve refah için ortak bir plan sağlar."
+        },
+        "testimonials": {
+            "title": "Gönüllülerden Dinleyin",
+            "personOne": "John Doe, Deniz Biyoloğu",
+            "personOneQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir",
+            "personTwo": "Joe Schmoe, Yazılım Geliştirici",
+            "personTwoQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir",
+            "personThree": "Jane Doe, Yoga Öğretmeni",
+            "personThreeQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir"
+        },
+        "getStarted": {
+            "title": "Dünyada görmek istediğin değişimin kendisi ol.",
+            "description": "Net bir vizyonunuz mu var? Dünyayı değiştirmek mi istiyorsun? Bunu gerçekleştirecek olan sensin. Dünyada kalıcı bir etki yaratmak için bize katılın ve başkalarıyla işbirliği yapın.",
+            "getStarted": "Başlayın",
+            "whoAreWe": "Biz Kimiz?"
+        }
+    }
 }

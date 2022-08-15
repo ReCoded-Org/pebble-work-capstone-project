@@ -1,3 +1,65 @@
 {
-    "test": "Hello"
+    "test": "Hello",
+    "common": {
+        "nav": {
+            "login": "Log In",
+            "signIn": "Sign In",
+            "signUp": "Sign Up",
+            "english": "English",
+            "turkish": "Turkish",
+            "allEvents": "All Events",
+            "events": "Events",
+            "about": "About",
+            "howItWorks": "How It Works",
+            "aboutUs": "About Us",
+            "yourEvents": "Your Events",
+            "yourProfile": "Your Profile",
+            "settings": "Settings",
+            "signOut": "Sign Out"
+        },
+        "footer": {
+            "events": "Events",
+            "about": "About",
+            "howItWorks": "How It Works",
+            "pebble": "Pebble Inc, 2022"
+        }
+    },
+    "landingPage": {
+        "heroSection": {
+            "title": "Find the perfect event for you",
+            "paragraph": "Do you want to make a change in the world? Not want to be alone? You are in the perfect place. Find like-minded people. Create or Participate in events to change the world.",
+            "getStarted": "Get Started"
+        },
+        "howItWorks": {
+            "title": "How It Works",
+            "register": "Register",
+            "registerDescription": "Register now to create your own events and to join events",
+            "signUp": "Sign Up",
+            "attendEvents": "Attend Events",
+            "attendEventsDescription": "Attend events created by other users and participate in events created by you",
+            "exploreEvents": "Explore Events",
+            "organizeYourOwn": "Organize Your Own",
+            "organizeYourOwnDescription": "Your ideas are unique and you are the one who is going to make them happen",
+            "createEvents": "Create Events"
+        },
+        "sustainableGoals": {
+            "title": "Sustainable Development Goals",
+            "sustainableGoalsDescription": "Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future."
+        },
+        "testimonials": {
+            "title": "Hear it from volunteers",
+            "personOne": "John Doe, Marine Biologist",
+            "personOneQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description",
+            "personTwo": "Joe Schmoe, Software Developer",
+            "personTwoQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description",
+            "personThree": "Jane Doe, Yoga Teacher",
+            "personThreeQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description"
+        },
+        "getStarted": {
+            "title": "Become the change you wish to see in the world.",
+            "description": "You have a clear vision? You want to change the world? You are the one who is going to make it happen. Join us and collaborate with others to make a lasting impact in the world.",
+            "getStarted": "Get Started",
+            "whoAreWe": "Who are we?"
+        }
+    }
 }

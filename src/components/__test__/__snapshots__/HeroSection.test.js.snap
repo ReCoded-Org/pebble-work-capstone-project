@@ -16,19 +16,19 @@ exports[`renders correctly 1`] = `
       <h1
         className="// mb-4 text-center text-4xl font-bold text-black md:w-auto md:text-center md:font-extrabold md:text-black lg:w-4/5 lg:text-left lg:font-bold lg:text-black"
       >
-        Medium title placeholder text
+        landingPage.heroSection.title
       </h1>
       <p
         className="// text-center text-gray-500 md:w-3/5 md:text-xl md:text-black lg:w-4/5 lg:text-left lg:text-lg lg:text-gray-500 xl:text-xl"
       >
-        Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+        landingPage.heroSection.paragraph
          
       </p>
     </div>
     <button
       className="mt-6 w-28 rounded-lg bg-cyan-600 py-2 font-semibold text-white lg:w-32 lg:text-lg xl:w-40 xl:text-xl"
     >
-      Get started
+      landingPage.heroSection.getStarted
     </button>
   </div>
   <div
