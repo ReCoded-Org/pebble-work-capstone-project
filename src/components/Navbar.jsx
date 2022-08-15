@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useContext } from "react";
+
+import { UserContext } from '../../lib/context.js'
+import { auth } from "../../lib/firebase";
 
 const { useState, useEffect, useRef } = React;
 
 const Navbar = () => {
+    const { user } = useContext(UserContext) // at the start, there is no user signed in
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -209,20 +214,27 @@ const Navbar = () => {
                                         </div>
                                     )}
                                 </div>
-                                <Link href='/login'>
-                                    <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
-                                        Log In
-                                    </a>
-                                </Link>
-                                <Link href='/signup'>
-                                    <button className='rounded-full bg-primary-200 py-1  px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg '>
-                                        Sign up
-                                    </button>
-                                </Link>
+                                {/* if no user, then show login and signup buttons */}
+                                {!user && (
+                                    <>
+                                        <Link href='/signin'>
+                                            <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
+                                                Log In
+                                            </a>
+                                        </Link>
+                                        <Link href='/signup'>
+                                            <button className='rounded-full bg-primary-200 py-1  px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg '>
+                                                Sign up
+                                            </button>
+                                        </Link>
+                                    </>
+                                )}
+                                
                             </div>
                         </div>
-                        {/* profile menu */}
-                        <div className='relative ml-3 hidden '>
+                        {/* if there is user, show profile menu */}
+                        {user && (
+                            <div className='relative ml-3'>
                             <div>
                                 <button
                                     type='button'
@@ -238,7 +250,13 @@ const Navbar = () => {
                                         Open user menu
                                     </span>
                                     <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
-                                        <svg
+                                    <Image 
+                                        src={user?.photoURL}
+                                        alt="user image" 
+                                        width={48}
+                                        height={48}
+                                    />
+                                    {/* <svg
                                             className='absolute -left-1 h-12 w-12 text-orange-300'
                                             fill='currentColor'
                                             viewBox='0 0 20 20'
@@ -249,7 +267,7 @@ const Navbar = () => {
                                                 d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'
                                                 clipRule='evenodd'
                                             ></path>
-                                        </svg>
+                                        </svg> */}
                                     </div>
                                 </button>
                             </div>
@@ -295,12 +313,15 @@ const Navbar = () => {
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='user-menu-item-2'
+                                        onClick={() => auth.signOut()}
                                     >
                                         Sign out
                                     </a>
                                 </div>
                             )}
                         </div>
+                        )}
+                        
                     </div>
                 </div>
             </div>

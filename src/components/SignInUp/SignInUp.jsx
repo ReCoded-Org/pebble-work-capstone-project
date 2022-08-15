@@ -1,11 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+
+import { auth, googleAuthProvider } from '../../../lib/firebase';
+
+
 const Signupin = ({ title }) => {
     const [domLoaded, setDomLoaded] = useState(false);
     useEffect(() => {
         setDomLoaded(true);
     }, []);
+
+    // function to handle click of "Sign in with Google" button
+    const signInWithGoogle = async () => {
+        await auth.signInWithPopup(googleAuthProvider);
+    };
 
     return (
         <>
@@ -13,7 +22,7 @@ const Signupin = ({ title }) => {
                 <div className=' m-5 flex flex-col items-center  justify-around   md:mb-24  md:mt-6 lg:mt-2 lg:mb-16  lg:flex-row'>
                     <div className='h-100 flex w-96 flex-col items-center justify-center text-center'>
                         <Image
-                            src='/svg/signupinMan.svg'
+                            src='/svg/SignupinMan.svg'
                             alt='logo'
                             height={300}
                             width={300}
@@ -93,24 +102,24 @@ const Signupin = ({ title }) => {
                             </div>
                             <div className='flex flex-row items-center justify-center py-1'>
                                 <Image
-                                    src='/svg/line.svg'
+                                    src='/svg/Line.svg'
                                     alt='line'
                                     width={190}
                                     height={2}
                                 />
                                 <div className='text-sm text-gray-400'>OR</div>
                                 <Image
-                                    src='/svg/line.svg'
+                                    src='/svg/Line.svg'
                                     alt='line'
                                     width={190}
                                     height={2}
                                 />
                             </div>
                             <div className='flex justify-center py-1'>
-                                <button className=' flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200'>
+                                <button className=' flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200' onClick={signInWithGoogle}>
                                     <Image
                                         className='px-1'
-                                        src='/svg/google.svg'
+                                        src='/svg/Google.svg'
                                         alt='google'
                                         height={30}
                                         width={30}
@@ -122,7 +131,7 @@ const Signupin = ({ title }) => {
                                 <button className=' flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200'>
                                     <Image
                                         style={{ paddingRight: "3px" }}
-                                        src='/svg/twitter.svg'
+                                        src='/svg/Twitter.svg'
                                         alt='twitter'
                                         height={28}
                                         width={28}
@@ -137,5 +146,7 @@ const Signupin = ({ title }) => {
         </>
     );
 };
+
+
 
 export default Signupin;
