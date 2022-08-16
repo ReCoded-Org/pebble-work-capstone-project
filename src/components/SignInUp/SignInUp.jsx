@@ -11,7 +11,7 @@ const Signupin = ({ title }) => {
         <>
             {domLoaded && (
                 <form className='m-5  flex h-full flex-col  items-center  justify-around   lg:flex-row'>
-                    <div className='h-100 flex w-96 flex-col items-center justify-center text-center xl:scale-150 '>
+                    <div className='h-100 flex w-96 flex-col items-center justify-center text-center 2xl:scale-150 '>
                         <Image
                             src='/svg/signupinMan.svg'
                             alt='logo'
@@ -19,7 +19,7 @@ const Signupin = ({ title }) => {
                             width={300}
                         />
                     </div>
-                    <div className='flex w-96 flex-col items-center justify-center py-1 text-center lg:items-start  xl:scale-150'>
+                    <div className='flex w-96 flex-col items-center justify-center py-1 text-center lg:items-start  2xl:scale-150'>
                         <h1 className='py-3 text-3xl font-semibold md:flex'>
                             {title}
                         </h1>
