@@ -1,16 +1,17 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 const SustainableGoals = () => {
+    const { t } = useTranslation("common");
     return (
         <div className='flex flex-col justify-center gap-10 md:mx-8 md:mt-20 md:mb-36 lg:mx-32'>
             <div className='mx-4 text-center'>
                 <h1 className='text-4xl font-bold'>
-                    Sustainable Development Goals
+                    {t("landingPage.sustainableGoals.title")}
                 </h1>
                 <p className='mt-5 text-xl md:mx-24'>
-                    Sustainable Development, adopted by all United Nations
-                    Member States in 2015, provides a shared blueprint for peace
-                    and prosperity for people and the planet, now and into the
-                    future.
+                    {t(
+                        "landingPage.sustainableGoals.sustainableGoalsDescription"
+                    )}
                 </p>
             </div>
             <div className='mx-4 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6'>

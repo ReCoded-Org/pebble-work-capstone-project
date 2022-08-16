@@ -208,7 +208,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              Events
+              common.nav.events
             </a>
             <a
               className=" hidden rounded-md px-3 py-2 text-sm font-semibold text-gray-700 hover:text-orange-400"
@@ -216,7 +216,7 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              About
+              common.nav.about
             </a>
             <div
               className=" relative ml-3 hidden sm:ml-6 sm:block"
@@ -276,14 +276,14 @@ exports[`renders correctly 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              Sign In
+              common.nav.login
             </a>
             <button
               className="rounded-full bg-primary-200 py-1 px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg "
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
-              Sign up
+              common.nav.signUp
             </button>
           </div>
         </div>
