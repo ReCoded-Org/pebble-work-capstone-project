@@ -16,7 +16,7 @@ function HowItWorks() {
                 {t("landingPage.howItWorks.title")}
             </h1>
             <div className='flex flex-col items-center justify-center lg:flex-row'>
-                <div className='w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80'>
+                <div className='m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80'>
                     <Image
                         class='w-full'
                         src='/images/register.png'
@@ -45,7 +45,7 @@ function HowItWorks() {
                         </h1>
                     </div>
                 </div>
-                <div className='w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80'>
+                <div className='m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80'>
                     <Image
                         class='w-full'
                         src='/images/attend.png'
@@ -76,7 +76,7 @@ function HowItWorks() {
                         </h1>
                     </div>
                 </div>
-                <div className='w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80'>
+                <div className='m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80'>
                     <Image
                         class='w-full'
                         src='/images/organize.png'
