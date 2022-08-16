@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import React from "react";
 
 const { useState, useEffect, useRef } = React;
 
 const Navbar = () => {
+    const { t } = useTranslation("common");
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -123,12 +125,12 @@ const Navbar = () => {
                             <div className='flex items-center space-x-3'>
                                 <Link href='/events'>
                                     <a className=' hidden rounded-md px-3 py-2 text-sm font-semibold  text-gray-700  hover:text-orange-400'>
-                                        Events
+                                        {t("common.nav.events")}
                                     </a>
                                 </Link>
                                 <Link href='/about'>
                                     <a className=' hidden rounded-md px-3 py-2 text-sm font-semibold  text-gray-700  hover:text-orange-400'>
-                                        About
+                                        {t("common.nav.about")}
                                     </a>
                                 </Link>
                                 {/* Languages menu */}
@@ -189,34 +191,36 @@ const Navbar = () => {
                                             tabIndex='-1'
                                         >
                                             <a
-                                                href='#'
+                                                href='/en'
                                                 className=' flex  px-3 py-2 text-sm text-gray-700  hover:text-orange-400 '
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
                                             >
-                                                English
+                                                {t("common.nav.english")}
                                             </a>
                                             <a
-                                                href='#'
+                                                href='/tr'
                                                 className=' flex  px-3 py-2 text-sm text-gray-800 hover:text-orange-400'
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
                                             >
-                                                Turkish
+                                                {t("common.nav.turkish")}
                                             </a>
                                         </div>
                                     )}
                                 </div>
                                 <Link href='/signin'>
                                     <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
-                                        Sign In
+
+                                        {t("common.nav.login")}
+
                                     </a>
                                 </Link>
                                 <Link href='/signup'>
                                     <button className='rounded-full bg-primary-200 py-1  px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg '>
-                                        Sign up
+                                        {t("common.nav.signUp")}
                                     </button>
                                 </Link>
                             </div>
@@ -269,7 +273,7 @@ const Navbar = () => {
                                         tabIndex='-1'
                                         id='user-menu-item-0'
                                     >
-                                        Your events
+                                        {t("common.nav.yourEvents")}
                                     </a>
                                     <a
                                         href='#'
@@ -278,7 +282,7 @@ const Navbar = () => {
                                         tabIndex='-1'
                                         id='user-menu-item-0'
                                     >
-                                        Your profile
+                                        {t("common.nav.yourProfile")}
                                     </a>
                                     <a
                                         href='#'
@@ -287,7 +291,7 @@ const Navbar = () => {
                                         tabIndex='-1'
                                         id='user-menu-item-1'
                                     >
-                                        Settings
+                                        {t("common.nav.settings")}
                                     </a>
                                     <a
                                         href='#'
@@ -296,7 +300,7 @@ const Navbar = () => {
                                         tabIndex='-1'
                                         id='user-menu-item-2'
                                     >
-                                        Sign out
+                                        {t("commmon.nav.signOut")}
                                     </a>
                                 </div>
                             )}
@@ -317,7 +321,7 @@ const Navbar = () => {
                                 className='block rounded-md  px-3 py-2 text-base font-medium text-gray-700'
                                 aria-current='page'
                             >
-                                All Events
+                                {t("common.nav.allEvents")}
                             </Link>
                         </div>
                         <div className='p-2'>
@@ -325,7 +329,7 @@ const Navbar = () => {
                                 href='/howitworks'
                                 className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
                             >
-                                How it works
+                                {t("common.nav.howItWorks")}
                             </Link>
                         </div>
                         <div className='p-2'>
@@ -333,30 +337,30 @@ const Navbar = () => {
                                 href='/aboutus'
                                 className='block rounded-md px-3 py-2 text-base font-medium text-gray-700'
                             >
-                                About Us
+                                {t("common.nav.aboutUs")}
                             </Link>
                         </div>
 
                         {/* mobile's languages menu */}
                         <div className='flex flex-row items-center '>
                             <a
-                                href='#'
+                                href='/en'
                                 className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
                                 role='menuitem'
                                 tabIndex='-1'
                                 id='user-menu-item-0'
                             >
-                                English
+                                {t("common.nav.english")}
                             </a>
                             <p className='text-orange-400'>|</p>
                             <a
-                                href='#'
+                                href='/tr'
                                 className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
                                 role='menuitem'
                                 tabIndex='-1'
                                 id='user-menu-item-0'
                             >
-                                Turkish
+                                {t("common.nav.turkish")}
                             </a>
                         </div>
                         <div className='flex w-full flex-row items-center justify-center border-t'>
@@ -365,7 +369,7 @@ const Navbar = () => {
                                     href='/signin'
                                     className='block  rounded-md border-t px-3 py-2 text-base font-medium '
                                 >
-                                    Sign in
+                                    {t("common.nav.signIn")}
                                 </Link>
                             </div>
                             <p className='text-orange-400'>|</p>
@@ -374,7 +378,7 @@ const Navbar = () => {
                                     href='/signup'
                                     className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
                                 >
-                                    Sign up
+                                    {t("common.nav.signUp")}
                                 </Link>
                             </div>
                         </div>

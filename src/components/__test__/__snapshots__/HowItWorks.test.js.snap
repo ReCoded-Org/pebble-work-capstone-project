@@ -7,13 +7,13 @@ exports[`renders correctly 1`] = `
   <h1
     className="mt-5 flex justify-center text-xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl"
   >
-    How It Works
+    landingPage.howItWorks.title
   </h1>
   <div
     className="flex flex-col items-center justify-center lg:flex-row"
   >
     <div
-      className="w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80"
+      className="m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80"
     >
       <span
         style={
@@ -120,12 +120,12 @@ exports[`renders correctly 1`] = `
         <div
           className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
-          Register
+          landingPage.howItWorks.register
         </div>
         <p
           className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
-          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+          landingPage.howItWorks.registerDescription
         </p>
       </div>
       <div
@@ -140,7 +140,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Sign up
+            landingPage.howItWorks.signUp
              
             <svg
               aria-hidden="true"
@@ -164,7 +164,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80"
+      className="m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80"
     >
       <span
         style={
@@ -271,12 +271,12 @@ exports[`renders correctly 1`] = `
         <div
           className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
-          Attend events
+          landingPage.howItWorks.attendEvents
         </div>
         <p
           className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
-          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+          landingPage.howItWorks.attendEventsDescription
         </p>
       </div>
       <div
@@ -291,7 +291,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            View events
+            landingPage.howItWorks.exploreEvents
              
             <svg
               aria-hidden="true"
@@ -315,7 +315,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="w-30 m-4 overflow-hidden rounded pb-6 md:m-4 md:w-4/5 md:pb-0 lg:m-8 lg:w-80"
+      className="m-4 w-64 overflow-hidden rounded pb-6 md:m-4 md:w-2/3 md:pb-0 lg:m-8 lg:w-80"
     >
       <span
         style={
@@ -422,12 +422,12 @@ exports[`renders correctly 1`] = `
         <div
           className="m-2 flex justify-center text-center font-bold md:text-3xl lg:text-lg"
         >
-          Organize on your own!
+          landingPage.howItWorks.organizeYourOwn
         </div>
         <p
           className="text-center text-sm text-gray-700 md:text-xl lg:text-lg"
         >
-          Body placeholder for text paragraph, a paragraph is a self-contained unit of text description.
+          landingPage.howItWorks.organizeYourOwnDescription
         </p>
       </div>
       <div
@@ -442,7 +442,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Get started
+            landingPage.howItWorks.createEvents
              
             <svg
               aria-hidden="true"

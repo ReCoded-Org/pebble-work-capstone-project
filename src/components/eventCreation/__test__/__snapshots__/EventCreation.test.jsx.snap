@@ -1,0 +1,525 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="mb-4 mt-3 flex flex-col items-center justify-center py-3 text-3xl font-semibold "
+  >
+    <h1>
+      Create an Event
+    </h1>
+  </div>,
+  <div
+    className="mx-8 mt-3 mb-4 divide-y"
+  >
+    <div
+      className="mb-4 flex flex-col items-center gap-10 py-3 md:flex-row md:justify-around"
+    >
+      <div
+        className="flex flex-col items-center justify-center"
+      >
+        <h2
+          className="py-1 text-xl font-medium text-black"
+        >
+          First, set your events’s location:
+        </h2>
+        <p
+          className="my-1 text-gray-500"
+        >
+          Pebble events can be both local or online. Choose where you want to host your event.
+        </p>
+        <div
+          className="relative w-full py-5"
+        >
+          <div
+            className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+          >
+            <span
+              style={
+                Object {
+                  "background": "none",
+                  "border": 0,
+                  "boxSizing": "border-box",
+                  "display": "inline-block",
+                  "height": "initial",
+                  "margin": 0,
+                  "maxWidth": "100%",
+                  "opacity": 1,
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "relative",
+                  "width": "initial",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "background": "none",
+                    "border": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": "initial",
+                    "margin": 0,
+                    "maxWidth": "100%",
+                    "opacity": 1,
+                    "padding": 0,
+                    "width": "initial",
+                  }
+                }
+              >
+                <img
+                  alt=""
+                  aria-hidden={true}
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2718%27%20height=%2718%27/%3e"
+                  style={
+                    Object {
+                      "background": "none",
+                      "border": 0,
+                      "display": "block",
+                      "height": "initial",
+                      "margin": 0,
+                      "maxWidth": "100%",
+                      "opacity": 1,
+                      "padding": 0,
+                      "width": "initial",
+                    }
+                  }
+                />
+              </span>
+              <img
+                alt="search"
+                data-nimg="intrinsic"
+                decoding="async"
+                onError={[Function]}
+                onLoad={[Function]}
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style={
+                  Object {
+                    "border": "none",
+                    "bottom": 0,
+                    "boxSizing": "border-box",
+                    "display": "block",
+                    "height": 0,
+                    "left": 0,
+                    "margin": "auto",
+                    "maxHeight": "100%",
+                    "maxWidth": "100%",
+                    "minHeight": "100%",
+                    "minWidth": "100%",
+                    "objectFit": undefined,
+                    "objectPosition": undefined,
+                    "padding": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": 0,
+                  }
+                }
+              />
+              <noscript>
+                <img
+                  alt="search"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  loading="lazy"
+                  src="/svg/search.svg"
+                  srcSet="/svg/search.svg 1x, /svg/search.svg 2x"
+                  style={
+                    Object {
+                      "border": "none",
+                      "bottom": 0,
+                      "boxSizing": "border-box",
+                      "display": "block",
+                      "height": 0,
+                      "left": 0,
+                      "margin": "auto",
+                      "maxHeight": "100%",
+                      "maxWidth": "100%",
+                      "minHeight": "100%",
+                      "minWidth": "100%",
+                      "objectFit": undefined,
+                      "objectPosition": undefined,
+                      "padding": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 0,
+                    }
+                  }
+                />
+              </noscript>
+            </span>
+          </div>
+          <input
+            className="focus:ring-blacksm:mb-0 block w-full rounded-md border-black pl-8 text-base focus:border-black focus:outline-none focus:ring-0 sm:w-full lg:w-full"
+            id="searchBox"
+            onChange={[Function]}
+            placeholder="Seach Location"
+            type="search"
+            value=""
+          />
+          <label />
+          <div
+            className="absolute my-px flex w-full origin-top-right cursor-pointer flex-col divide-y rounded bg-white shadow"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex flex-col pt-3 "
+    >
+      <div>
+        <h2
+          className="py-1 text-xl font-medium text-black"
+        >
+          Choose event type:
+        </h2>
+        <p
+          className="mt-1 pr-20 text-gray-500 "
+        >
+          Every pebble event should serve at least one of the sustainable development goals of United Nations. Which goal do you want to help in? Select all that apply.
+        </p>
+      </div>
+      <div
+        className="md:flex md:justify-between"
+      >
+        <div
+          className="m-4 md:m-12"
+        >
+          <div
+            className="flex flex-wrap items-center justify-center overflow-hidden lg:ml-8 lg:flex-row lg:flex-wrap lg:items-start lg:justify-start"
+          >
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                No Poverty
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Zero Hunger
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Good Health and Well-Being
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Quality Education
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Gender Equality
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Clean Water and Sanitation
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Affordable and Clean Energy
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Decent Work and Economic Growth
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Industry, Innovation and Infrastructure
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Reduced Inequalities
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Sustainable Cities and Communities
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Responsible Consumption and Production
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Climate Action
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Life Below Water
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Life On Land
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Peace, Justice and Strong Institutions
+              </button>
+            </div>
+            <div
+              className="m-1 md:m-2 lg:m-3"
+            >
+              <button
+                className="mt-1 mb-1 w-auto h-7 md:h-12 lg:h-12 text-[9px] md:text-xl lg:text-lg bg-white border lg:border-2 undefined hover:undefined text-white font-medium  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-black text-primary-200 border-primary-200"
+                onClick={[Function]}
+                type="button"
+              >
+                Partnerships to achieve the Goal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-4 flex flex-col gap-10 py-3 md:flex-row md:justify-between"
+    >
+      <div>
+        <h2
+          className="py-1 text-xl font-medium text-black"
+        >
+          Event title:
+        </h2>
+        <p
+          className="my-1 pr-20 text-gray-500 md:w-full"
+        >
+          Choose a title that will give people a clear idea of what the event is about. Feel free to be creative! You canedit this later if you change your mind.
+        </p>
+        <div
+          className=" py-5 md:w-96 "
+        >
+          <input
+            className="w-full rounded border border-black px-3 py-2 shadow focus:border-black focus:outline-none focus:ring-0 focus:ring-black"
+            placeholder="Izmir Clean Energy Brainstorm meeting"
+            type="text"
+          />
+          <label />
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-4 flex flex-col gap-10 py-3 md:flex-row md:justify-between"
+    >
+      <div>
+        <h2
+          className="py-1 text-xl font-medium text-black"
+        >
+          Event Description:
+        </h2>
+        <p
+          className="my-1 w-full pr-20 text-gray-500"
+        >
+          Describe the purpose of your event. Who should join and what will you do at the event?
+        </p>
+        <div
+          className=" w-full py-3 pr-20"
+        >
+          <textarea
+            className="h-40 w-full rounded border-black px-3 py-2 shadow focus:border-black focus:outline-none focus:ring-0 focus:ring-black"
+            placeholder="Please write at least 50 characters"
+            style={
+              Object {
+                "resize": "none",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-4 flex flex-col gap-10 py-3 pr-20 md:w-full md:flex-row md:justify-between"
+    >
+      <div>
+        <h2
+          className="py-1 text-xl font-medium text-black"
+        >
+          Event Image:
+        </h2>
+        <p
+          className="my-1 w-full text-gray-500"
+        >
+          We have found that listings with a photo attract more interest.
+        </p>
+        <div
+          className="relative py-5 md:w-full md:pr-0 "
+        >
+          <div
+            className="w-25 absolute inset-y-0 left-0 flex items-center hover:border-primary-200 "
+          >
+            <button
+              className="ml-0 h-11 w-full cursor-pointer rounded border-2 border-b-4 border-r-4 border-black px-2 hover:border-primary-200 hover:text-primary-200 "
+            >
+              Browse
+            </button>
+          </div>
+          <input
+            className="w-full rounded border border-l-0 border-black pl-20 focus:border-black focus:outline-none focus:ring-0 focus:ring-black"
+            placeholder="Your input here"
+            type="text"
+          />
+          <label />
+        </div>
+      </div>
+    </div>
+    <div
+      className="mb-3 flex flex-col gap-10 py-3 md:flex-row md:justify-between"
+    >
+      <div>
+        <h2
+          className="py-1 text-xl font-medium text-black"
+        >
+          Almost Done! Just take a minute to review our guidlines.
+        </h2>
+        <p
+          className="my-2 w-full text-gray-500"
+        >
+          Pebble is all about helping people with the help of volunteers like you. This means that all events should:
+        </p>
+        <ul
+          className=" my-1 w-full list-disc pl-5 text-black"
+        >
+          <li>
+            Be transparent about the event’s intentions.
+          </li>
+          <li>
+            Encourage real human interactions in person or online
+          </li>
+          <li>
+             Have the host present in all events
+          </li>
+        </ul>
+        <p
+          className=" my-1 w-full pl-1 text-gray-400"
+        >
+          You can read more about all of this in our
+          <a
+            className="p-1 text-blue-600 hover:text-primary-200"
+            href="#"
+          >
+            Community guidlines
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="mb-4 flex w-full flex-col items-center justify-center gap-10 py-3 "
+  >
+    <button
+      className="rounded border border-b-4 border-r-4 border-black py-4 px-4 hover:border-primary-200 hover:text-primary-200 md:w-96"
+    >
+      Agree with terms and create event!
+    </button>
+  </div>,
+]
+`;

@@ -69,21 +69,21 @@ exports[`renders correctly 1`] = `
           href="#events"
         >
           <b>
-            Events
+            common.footer.events
           </b>
         </a>
         <a
           href="#about"
         >
           <b>
-            About
+            common.footer.about
           </b>
         </a>
         <a
           href="#howItWorks"
         >
           <b>
-            How It Works
+            common.footer.howItWorks
           </b>
         </a>
       </div>
@@ -144,7 +144,8 @@ exports[`renders correctly 1`] = `
   <div
     className="flex justify-center"
   >
-    ©Pebble Inc, 2022
+    ©
+    common.footer.pebble
   </div>
 </div>
 `;

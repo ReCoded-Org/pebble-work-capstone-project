@@ -10,12 +10,12 @@ exports[`renders correctly 1`] = `
     <h1
       className=" flex items-center justify-center text-4xl font-bold lg:px-52"
     >
-      Become the change you wish to see in the world.
+      landingPage.getStarted.title
     </h1>
     <p
       className="mt-5 md:px-24 lg:px-52"
     >
-      Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+      landingPage.getStarted.description
     </p>
   </div>
   <div
@@ -26,12 +26,12 @@ exports[`renders correctly 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Get started
+      landingPage.getStarted.getStarted
     </button>
     <button
       className="m-2 flex rounded p-2 hover:bg-primary-200 hover:text-white hover:shadow-xl"
     >
-      Who are we?
+      landingPage.getStarted.whoAreWe
       <svg
         className="h-6 w-6"
         fill="none"
