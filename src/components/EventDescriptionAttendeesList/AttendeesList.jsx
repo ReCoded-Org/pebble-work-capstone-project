@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-function AttendeesList({ attendees }) {
+function AttendeesList({ attendees, attendeeProfileURLs }) {
     let attendeeAvatars = [];
     for (let i = 0; i < attendees.length; i++) {
         attendeeAvatars.push(
             <div key={i + 1} className='flex h-full flex-col space-y-2'>
                 <Image
                     className='rounded-full object-contain'
-                    src='/images/userAvatar.jpeg'
+                    src={attendeeProfileURLs[i]}
                     alt={`${attendees[i]} avatar image`}
                     width={48}
                     height={48}

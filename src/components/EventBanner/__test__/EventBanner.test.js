@@ -9,7 +9,7 @@ it("renders correctly", () => {
                 title='This is some title This is some title This is some title'
                 imageSrc='/images/sampleEventImage.jpg'
                 city='Izmir'
-                neighborhood='Torbaci'
+                country='Turkey'
                 address='11th Street South, Arlington, Virginia'
                 attendees={[
                     "steve",

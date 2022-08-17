@@ -1,4 +1,6 @@
 import Image from "next/image";
+// import Link from "next/link";
+// import { useTranslation } from "next-i18next";
 import * as React from "react";
 import { useState } from "react";
 
@@ -8,11 +10,14 @@ function EventBanner({
     title,
     imageSrc,
     city,
-    neighborhood,
+    country,
     address,
     attendees,
+    attendeeProfileURLs,
     host,
+    hostProfileURL,
 }) {
+    // const { t } = useTranslation("eventViewPage");
     const [join, setJoin] = useState("Join");
     function handleJoinClick() {
         if (join === "Join") {
@@ -22,30 +27,51 @@ function EventBanner({
         }
     }
     let attendeeAvatars = [];
-    attendeeAvatars.push(
-        <div className=''>
-            <Image
-                className='rounded-full'
-                src='/images/userAvatar.jpeg'
-                alt={`${title},image`}
-                width={48}
-                height={48}
-            />
-        </div>
-    );
-    for (let i = 0; i < 3; i++) {
+    if (attendees.length > 0) {
         attendeeAvatars.push(
-            <div className='-ml-6'>
+            <div className=''>
                 <Image
                     className='rounded-full'
-                    src='/images/userAvatar.jpeg'
-                    alt={`${title},image`}
+                    src={attendeeProfileURLs[0]}
+                    alt={`${title} image`}
                     width={48}
                     height={48}
                 />
             </div>
         );
+        if (attendees.length < 3) {
+            for (let i = 1; i < attendees.length; i++) {
+                attendeeAvatars.push(
+                    <div className='-ml-6'>
+                        <Image
+                            className='rounded-full'
+                            src={attendeeProfileURLs[i]}
+                            alt={`${title},image`}
+                            width={48}
+                            height={48}
+                        />
+                    </div>
+                );
+            }
+        } else {
+            for (let i = 1; i < 3; i++) {
+                attendeeAvatars.push(
+                    <div className='-ml-6'>
+                        <Image
+                            className='rounded-full'
+                            src={attendeeProfileURLs[i]}
+                            alt={`${title},image`}
+                            width={48}
+                            height={48}
+                        />
+                    </div>
+                );
+            }
+        }
     }
+    
+    
+    
     return (
         <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:p-6'>
             <h1 className='order-1 col-span-1 p-6 text-center text-2xl font-semibold md:order-first md:col-span-3 md:text-left md:text-4xl md:font-normal'>
@@ -78,18 +104,22 @@ function EventBanner({
                         <p>
                             <b>{city}</b>
                         </p>
-                        <p>{neighborhood}</p>
+                        <p>{country}</p>
                         <p>{address}</p>
                     </div>
                 </div>
                 <div className='flex items-center pt-6'>
                     {attendeeAvatars}
-                    <p className='pl-6'>{`+${attendees.length} Attendees`}</p>
+                    <p className='pl-6'>
+                        {attendees.length===0?
+                        "There are no attendees yet.":
+                        attendees.length===1?"1 Attendee":`${attendees.length} Attendees`}
+                    </p>
                 </div>
                 <div className='flex items-center pt-6 pb-12'>
                     <Image
                         className='rounded-full'
-                        src='/images/userAvatar.jpeg'
+                        src={hostProfileURL}
                         alt='avatar image'
                         width={48}
                         height={48}

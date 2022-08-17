@@ -61,5 +61,20 @@
             "getStarted": "Get Started",
             "whoAreWe": "Who are we?"
         }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Join",
+            "leave": "Leave",
+            "noAttendees": "There are no attendees yet.",
+            "oneAttendee": "1 Attendee",
+            "manyAttendees": "Attendees"
+        },
+        "eventDescription": {
+
+        },
+        "attendeesList": {
+
+        }
     }
 }
