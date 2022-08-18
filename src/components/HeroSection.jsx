@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import React from "react";
 
@@ -16,9 +17,11 @@ const HeroSection = () => {
                         {t("landingPage.heroSection.paragraph")}{" "}
                     </p>
                 </div>
-                <button className='mt-6 w-28 rounded-lg bg-cyan-600 py-2 font-semibold text-white lg:w-32 lg:text-lg xl:w-40 xl:text-xl'>
-                    {t("landingPage.heroSection.getStarted")}
-                </button>
+                <Link href='/signup'>
+                    <button className='mt-6 w-28 rounded-lg bg-cyan-600 py-2 font-semibold text-white lg:w-32 lg:text-lg xl:w-40 xl:text-xl'>
+                        {t("landingPage.heroSection.getStarted")}
+                    </button>
+                </Link>
             </div>
             <div className='mt-6 md:mt-auto lg:w-1/2 xl:w-auto'>
                 <Image
