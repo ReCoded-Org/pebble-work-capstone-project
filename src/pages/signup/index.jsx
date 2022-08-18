@@ -1,7 +1,7 @@
 import React from "react";
 
 import Layout from "@/components/layout/Layout";
-import SignInUp from "@/components/SignInUp";
+import SignInUp from "@/components/SignInUp/SignInUp";
 
 const SignIninpage = () => {
     return (

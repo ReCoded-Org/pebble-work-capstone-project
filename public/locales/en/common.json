@@ -1,6 +1,7 @@
 {
     "test": "Hello",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Log In",
             "signIn": "Sign In",
@@ -71,10 +72,10 @@
             "manyAttendees": "Attendees"
         },
         "eventDescription": {
-
+            "description": "Description:"
         },
         "attendeesList": {
-
+            "attendees": "Attendees:"
         }
     }
 }

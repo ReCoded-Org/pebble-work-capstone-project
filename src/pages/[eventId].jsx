@@ -16,17 +16,17 @@ import EventBanner from "@/components/EventBanner";
 import EventDescriptionAttendeesList from "@/components/EventDescriptionAttendeesList";
 import Layout from "@/components/layout/Layout";
 
+
 export async function getStaticPaths() {
     const events = await fetch('https://pebble-work.herokuapp.com/api/event/').then(r => r.json());
+    let eventPaths = [];
+    events.map(event => {
+        const eventId = event._id;
+        eventPaths.push({ params: {eventId: eventId}, locale: 'en' });
+        eventPaths.push({ params: {eventId: eventId}, locale: 'tr' });
+    });
     return {
-        paths: events.map(event => {
-            const eventId = event._id;
-            return {
-                params: {
-                    eventId
-                }
-            }
-        }),
+        paths: eventPaths,
         fallback: false
     }
 }
@@ -48,6 +48,7 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export default function EventViewPage({ event }) {
+    console.log(event);
     const volunteers = [];
     const volunteerProfileURLs = []
     for (let i = 0; i < event.confirmedVolunteers.length; i++) {
@@ -62,10 +63,11 @@ export default function EventViewPage({ event }) {
                 city={event.address.city}
                 country={event.address.country}
                 address={event.address.addressLine}
+                dateTime={event.date}
                 attendees={volunteers}
                 attendeeProfileURLs={volunteerProfileURLs}
                 host={event.publisherId?event.publisherId.firstName:'N/A'}
-                hostProfileURL={event.publisherId?event.publisherId.profileImage:'/images/userAvatar.jpeg'}
+                hostProfileURL={event.publisherId?event.publisherId.profileImage:"/images/userAvatar.jpeg"}
             />
             <EventDescriptionAttendeesList
                 description={event.content}
