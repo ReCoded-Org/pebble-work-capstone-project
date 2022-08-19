@@ -36,7 +36,7 @@ function HowItWorks() {
                     <div className='mb-4 p-2 px-6 pt-4'>
                         <h1 className='title text-center font-bold md:text-2xl lg:text-lg'>
                             {" "}
-                            <Link href='/posts/first-post'>
+                            <Link href='/signup'>
                                 <a>
                                     {t("landingPage.howItWorks.signUp")}{" "}
                                     <FontAwesomeIcon icon={faChevronRight} />
@@ -67,7 +67,7 @@ function HowItWorks() {
                     <div className='mb-4 p-2 px-6 pt-4'>
                         <h1 className='title text-center font-bold md:text-2xl lg:text-lg'>
                             {" "}
-                            <Link href='/posts/first-post'>
+                            <Link href='/events'>
                                 <a>
                                     {t("landingPage.howItWorks.exploreEvents")}{" "}
                                     <FontAwesomeIcon icon={faChevronRight} />
@@ -98,7 +98,7 @@ function HowItWorks() {
                     <div className='mb-4 p-2 px-6 pt-4'>
                         <h1 className='title text-center font-bold md:text-2xl lg:text-lg'>
                             {" "}
-                            <Link href='/posts/first-post'>
+                            <Link href='/signup'>
                                 <a>
                                     {t("landingPage.howItWorks.createEvents")}{" "}
                                     <FontAwesomeIcon icon={faChevronRight} />

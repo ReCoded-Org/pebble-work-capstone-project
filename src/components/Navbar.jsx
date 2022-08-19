@@ -215,7 +215,7 @@ const Navbar = () => {
                                         </div>
                                     )}
                                 </div>
-                                <Link href='/login'>
+                                <Link href='/signin'>
                                     <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
                                         {t("common.nav.login")}
                                     </a>

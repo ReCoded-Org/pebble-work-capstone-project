@@ -27,39 +27,39 @@
     },
     "landingPage": {
         "heroSection": {
-            "title": "Sizin için mükemmel etkinliği bulun",
-            "paragraph": "Dünyada bir değişiklik yapmak mı istiyorsun? Yalnız olmak istemiyor musun? Doğru yerdesin. Benzer düşünen insanları bul. Dünyayı değiştirecek etkinlikler yarat veya katıl.",
-            "getStarted": "Başlayın"
+            "title": "Dünyayı değiştirelim. El ele, etkinliklerle!",
+            "paragraph": "Sürdürülebilir Kalkınma Hedeflerinden ilham alan gönüllü etkinliklere katılın ve organize edin. Dünya üzerindeki etkinizi arttırmak için sizin düşünen bireylerle birlikte çalışın.",
+            "getStarted": "Bize katıl"
         },
         "howItWorks": {
-            "title": "Nasıl Çalışır",
+            "title": "Nasıl Çalışır?",
             "register": "Kayıt Ol",
-            "registerDescription": "Kendi etkinliklerinizi oluşturmak ve etkinliklere katılmak için şimdi kaydolun",
+            "registerDescription": "Pebble'ın gönüllü ağının bir parçası olmak için hesabınızı oluşturun.",
             "signUp": "Üye Ol",
             "attendEvents": "Etkinliklere Katıl",
-            "attendEventsDescription": "Diğer kullanıcılar tarafından oluşturulan veya kendi oluşturduğunuz etkinliklere katılın",
+            "attendEventsDescription": "Etkinliklere göz atın ve kayıt olun! Tarih, konum ve Hedefler’e göre filtreleyebilirsiniz.",
             "exploreEvents": "Etkinlikleri Keşfet",
-            "organizeYourOwn": "Kendiniz Organize Edin",
-            "organizeYourOwnDescription": "Fikirleriniz benzersizdir ve onları gerçekleştirecek olan sizsiniz.",
-            "createEvents": "Etkinlik Oluştur"
+            "organizeYourOwn": "Etkinlik Organize Edin",
+            "organizeYourOwnDescription": "Başkalarını dahil etmek istediğiniz bir fikriniz mi var? Kendi etkinliğinizi düzenleyin!",
+            "createEvents": "Başla"
         },
         "sustainableGoals": {
             "title": "Sürdürülebilir Kalkınma Hedefleri",
-            "sustainableGoalsDescription": "2015 yılında tüm Birleşmiş Milletler Üye Devletleri tarafından kabul edilen Sürdürülebilir Kalkınma, şimdi ve gelecekte insanlar ve gezegen için barış ve refah için ortak bir plan sağlar."
+            "sustainableGoalsDescription": "Pebble'daki tüm etkinlikler, BM'nin 17 Sürdürülebilir Kalkınma Hedefi’nden (SKH) birini baz alır. 2030 yılına kadar ulaşılması amaçlanan SKH'ler, herkes için daha iyi ve daha sürdürülebilir bir gelecek kurmayı amaçlar."
         },
         "testimonials": {
             "title": "Gönüllülerden Dinleyin",
-            "personOne": "John Doe, Deniz Biyoloğu",
-            "personOneQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir",
-            "personTwo": "Joe Schmoe, Yazılım Geliştirici",
-            "personTwoQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir",
-            "personThree": "Jane Doe, Yoga Öğretmeni",
-            "personThreeQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir"
+            "personOne": "John, öğretmen",
+            "personOneQuote": "Pebble'ı iyi bir amaç için çalışmak isteyen gençlerle bağlantı kurmama yardım ettiği için çok seviyorum.",
+            "personTwo": "Ahmet, öğrenci",
+            "personTwoQuote": "Pebble, insanları Sürdürülebilir Kalkınma Hedefleri etrafında harekete geçirmede çok önemli bir rol üstleniyor.",
+            "personThree": "Saanvi, doktor",
+            "personThreeQuote": "Pebble'da her zaman katılmaktan heyecan duyduğum bir etkinlik oluyor. Yoksa da kendim organize edebilirim!"
         },
         "getStarted": {
             "title": "Dünyada görmek istediğin değişimin kendisi ol.",
-            "description": "Net bir vizyonunuz mu var? Dünyayı değiştirmek mi istiyorsun? Bunu gerçekleştirecek olan sensin. Dünyada kalıcı bir etki yaratmak için bize katılın ve başkalarıyla işbirliği yapın.",
-            "getStarted": "Başlayın",
+            "description": "2030 yılına kadar Sürdürülebilir Kalkınma Hedefleri’ne ulaşmak istiyorsak birlikte ve çok çalışmamız gerekiyor. Harekete geçin: Pebble'a katılın.",
+            "getStarted": "Harekete geç",
             "whoAreWe": "Biz Kimiz?"
         }
     },

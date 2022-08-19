@@ -27,6 +27,8 @@ exports[`renders correctly 1`] = `
     </div>
     <button
       className="mt-6 w-28 rounded-lg bg-cyan-600 py-2 font-semibold text-white lg:w-32 lg:text-lg xl:w-40 xl:text-xl"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
     >
       landingPage.heroSection.getStarted
     </button>

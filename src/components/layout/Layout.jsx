@@ -7,12 +7,14 @@ export default function Layout({ children }) {
     // Put Header or Footer around the children element
 
     return (
-        <>
+        <div className='flex min-h-screen flex-col justify-between '>
             <header>
                 <Navbar />
             </header>
             {children}
-            <Footer />
-        </>
+            <footer className='flex  items-center justify-center'>
+                <Footer />
+            </footer>
+        </div>
     );
 }
