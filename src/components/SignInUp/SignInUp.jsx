@@ -1,12 +1,51 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 const Signupin = ({ title }) => {
+    const router = useRouter();
     const [domLoaded, setDomLoaded] = useState(false);
+    const [email, setEmail] = useState("");
+    const [firstName, setFirstName] = useState("");
+    const [password, setPassword] = useState("");
+    const [lastName, setLastName] = useState("");
+
     useEffect(() => {
         setDomLoaded(true);
     }, []);
 
+    const submitSignin = async () => {
+        await fetch("https://pebble-work.herokuapp.com/api/auth/signin", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            credentails: "include",
+            body: JSON.stringify({
+                email,
+                password,
+            }),
+        });
+        await router.push("/events");
+    };
+
+    const submit = async () => {
+        await fetch("https://pebble-work.herokuapp.com/api/auth/user/signup", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email,
+                password,
+                firstName,
+                lastName,
+                dateOfBirth: "2000-01-01",
+                gender: "female",
+            }),
+        });
+        await router.push("/events");
+    };
     return (
         <>
             {domLoaded && (
@@ -32,6 +71,9 @@ const Signupin = ({ title }) => {
                                             id='name'
                                             type='text'
                                             placeholder='Name'
+                                            onChange={(e) =>
+                                                setFirstName(e.target.value)
+                                            }
                                         />
                                     </div>
                                     <div>
@@ -40,6 +82,9 @@ const Signupin = ({ title }) => {
                                             id='surname'
                                             type='text'
                                             placeholder='Surname'
+                                            onChange={(e) =>
+                                                setLastName(e.target.value)
+                                            }
                                         />
                                     </div>
                                 </div>
@@ -50,6 +95,7 @@ const Signupin = ({ title }) => {
                                     id='email'
                                     type='text'
                                     placeholder='Email address'
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <div className='ml-px py-1'>
@@ -58,6 +104,9 @@ const Signupin = ({ title }) => {
                                     id='password'
                                     type='password'
                                     placeholder='Password'
+                                    onChange={(e) =>
+                                        setPassword(e.target.value)
+                                    }
                                 />
                             </div>
                             <p className='hidden text-xs italic text-red-500'>
@@ -87,7 +136,10 @@ const Signupin = ({ title }) => {
                                 </p>
                             )}
                             <div className=' py-1'>
-                                <button className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '>
+                                <button
+                                    onClick={(submit, submitSignin)}
+                                    className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
+                                >
                                     {title}
                                 </button>
                             </div>
