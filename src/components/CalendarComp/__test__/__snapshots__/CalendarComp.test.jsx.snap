@@ -38,11 +38,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Early"
                   readOnly={false}
-<<<<<<< HEAD
                   value="Aug 19, 2022"
-=======
-                  value="Aug 17, 2022"
->>>>>>> efdd82c824a118a1277e834781a1cd1c436a1313
                 />
               </span>
               <span
@@ -56,11 +52,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Continuous"
                   readOnly={false}
-<<<<<<< HEAD
-                  value="Aug 19, 2022"
-=======
-                  value="Aug 17, 2022"
->>>>>>> efdd82c824a118a1277e834781a1cd1c436a1313
+                  value="Aug 16, 2022"
                 />
               </span>
             </div>
