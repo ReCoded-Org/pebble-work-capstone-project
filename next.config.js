@@ -11,10 +11,7 @@ module.exports = {
 
     // Uncoment to add domain whitelist
     images: {
-      domains: [
-        'storage.googleapis.com',
-        "images.unsplash.com",
-      ],
+        domains: ["storage.googleapis.com", "images.unsplash.com"],
     },
 
     // SVGR

@@ -5,14 +5,14 @@ exports[`renders correctly 1`] = `
   className="flex flex-col md:justify-center lg:flex-row"
 >
   <div
-    className="flex-1"
+    className="flex-1 lg:pl-6"
   >
     <div
       className="p-6"
     >
       <p>
         <b>
-          Event Description:
+          eventViewPage.eventDescription.description
         </b>
       </p>
       <p>
@@ -21,7 +21,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="flex-1"
+    className="flex-1 "
   >
     <div
       className="p-6"
@@ -30,7 +30,7 @@ exports[`renders correctly 1`] = `
         className="pb-6"
       >
         <b>
-          Attendees:
+          eventViewPage.attendeesList.attendees
         </b>
       </p>
       <div
@@ -130,8 +130,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -257,8 +257,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -384,8 +384,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -511,8 +511,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -638,8 +638,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -765,8 +765,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -892,8 +892,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -1019,8 +1019,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -1146,8 +1146,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -1273,8 +1273,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -1400,8 +1400,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",
@@ -1527,8 +1527,8 @@ exports[`renders correctly 1`] = `
                 data-nimg="intrinsic"
                 decoding="async"
                 loading="lazy"
-                src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-                srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+                src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+                srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
                 style={
                   Object {
                     "border": "none",

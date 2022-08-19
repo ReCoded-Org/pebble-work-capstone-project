@@ -11,6 +11,7 @@ it("renders correctly", () => {
                 city='Izmir'
                 country='Turkey'
                 address='11th Street South, Arlington, Virginia'
+                dateTime='2022-01-03T00:00:00.000Z'
                 attendees={[
                     "steve",
                     "jane",
@@ -19,7 +20,16 @@ it("renders correctly", () => {
                     "beyonce",
                     "bomm",
                 ]}
+                attendeeProfileURLs={[
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                ]}
                 host='Jangis Khan'
+                hostProfileURL='/images/sampleEventImage.jpg'
             />
         )
         .toJSON();

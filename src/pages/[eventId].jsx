@@ -16,23 +16,26 @@ import EventBanner from "@/components/EventBanner";
 import EventDescriptionAttendeesList from "@/components/EventDescriptionAttendeesList";
 import Layout from "@/components/layout/Layout";
 
-
 export async function getStaticPaths() {
-    const events = await fetch('https://pebble-work.herokuapp.com/api/event/').then(r => r.json());
+    const events = await fetch(
+        "https://pebble-work.herokuapp.com/api/event/"
+    ).then((r) => r.json());
     let eventPaths = [];
-    events.map(event => {
+    events.map((event) => {
         const eventId = event._id;
-        eventPaths.push({ params: {eventId: eventId}, locale: 'en' });
-        eventPaths.push({ params: {eventId: eventId}, locale: 'tr' });
+        eventPaths.push({ params: { eventId: eventId }, locale: "en" });
+        eventPaths.push({ params: { eventId: eventId }, locale: "tr" });
     });
     return {
         paths: eventPaths,
-        fallback: false
-    }
+        fallback: false,
+    };
 }
 
 export async function getStaticProps({ params, locale }) {
-    const events = await fetch('https://pebble-work.herokuapp.com/api/event/').then(r => r.json());
+    const events = await fetch(
+        "https://pebble-work.herokuapp.com/api/event/"
+    ).then((r) => r.json());
     let event;
     for (let i = 0; i < events.length; i++) {
         if (events[i]._id === params.eventId) {
@@ -42,18 +45,21 @@ export async function getStaticProps({ params, locale }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common"])),
-            event
-        }
-    }
+            event,
+        },
+    };
 }
 
 export default function EventViewPage({ event }) {
-    console.log(event);
     const volunteers = [];
-    const volunteerProfileURLs = []
+    const volunteerProfileURLs = [];
     for (let i = 0; i < event.confirmedVolunteers.length; i++) {
         volunteers.push(event.confirmedVolunteers[i].firstName);
-        volunteerProfileURLs.push(event.confirmedVolunteers[i].profileImage===undefined?'/images/userAvatar.jpeg':event.confirmedVolunteers[i].profileImage)
+        volunteerProfileURLs.push(
+            event.confirmedVolunteers[i].profileImage === undefined
+                ? "/images/userAvatar.jpeg"
+                : event.confirmedVolunteers[i].profileImage
+        );
     }
     return (
         <Layout>
@@ -66,8 +72,12 @@ export default function EventViewPage({ event }) {
                 dateTime={event.date}
                 attendees={volunteers}
                 attendeeProfileURLs={volunteerProfileURLs}
-                host={event.publisherId?event.publisherId.firstName:'N/A'}
-                hostProfileURL={event.publisherId?event.publisherId.profileImage:"/images/userAvatar.jpeg"}
+                host={event.publisherId ? event.publisherId.firstName : "N/A"}
+                hostProfileURL={
+                    event.publisherId
+                        ? event.publisherId.profileImage
+                        : "/images/userAvatar.jpeg"
+                }
             />
             <EventDescriptionAttendeesList
                 description={event.content}
@@ -77,5 +87,3 @@ export default function EventViewPage({ event }) {
         </Layout>
     );
 }
-
-
