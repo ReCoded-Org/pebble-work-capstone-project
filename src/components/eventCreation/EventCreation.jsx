@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
+import ImageUploader from "./ImageUploader";
 import EditInterests from "../EditInterests";
 import InputComponent from "../InputComponent";
 
@@ -216,14 +217,7 @@ const EventCreation = () => {
                             We have found that listings with a photo attract
                             more interest.
                         </p>
-                        <div className='relative py-5 md:w-full md:pr-0 '>
-                            <div className='w-25  absolute inset-y-0 left-0 flex items-center hover:border-primary-200  '>
-                                <button className='ml-0 h-11 w-full cursor-pointer rounded border-2 border-b-4 border-r-4  border-black px-2 hover:border-primary-200 hover:text-primary-200 '>
-                                    Browse
-                                </button>
-                            </div>
-                            <InputComponent className='w-full  rounded border border-l-0 border-black pl-20 focus:border-black   focus:outline-none focus:ring-0 focus:ring-black' />
-                        </div>
+                        <ImageUploader />
                     </div>
                 </div>
                 <div className='mb-3 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
