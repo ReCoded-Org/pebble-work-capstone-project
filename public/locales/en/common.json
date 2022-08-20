@@ -8,7 +8,7 @@
             "english": "English",
             "turkish": "Turkish",
             "allEvents": "All Events",
-            
+
             "events": "Events",
             "about": "About",
             "howItWorks": "How It Works",
@@ -24,7 +24,6 @@
             "howItWorks": "How It Works",
             "pebble": "Pebble Inc, 2022"
         }
-       
     },
     "landingPage": {
         "heroSection": {
@@ -63,16 +62,15 @@
             "getStarted": "Get Started",
             "whoAreWe": "Who are we?"
         }
-        
     },
     "signInUpPage": {
         "haveAccount": " Already have an account? ",
         "dontHaveAccount": "Don't have an account? ",
-        "google":"Continue with Google ",
-        "twitter":"Continue with Twitter",
-        "mail":"Email adress",
+        "google": "Continue with Google ",
+        "twitter": "Continue with Twitter",
+        "mail": "Email adress",
         "password": "Password",
-        "name": "Name" ,
-        "surname": "Surname"          
+        "name": "Name",
+        "surname": "Surname"
     }
-  }
+}
