@@ -1,9 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect,useRef, useState } from 'react';
+import { useContext,useEffect,useRef, useState } from 'react';
+
+import axios from '@/api/axios';
+import AuthContext from '@/context/AuthProvider';
+
+const SIGNIN_URL = "/api/auth/signin";
 
 function SignIn() {
   const [domLoaded, setDomLoaded] = useState(false);
+
+  const { setAuth } = useContext(AuthContext);
 
   const emailRef = useRef();
   const errRef = useRef();
@@ -27,10 +34,36 @@ function SignIn() {
 
   const handleSignIn = async (e) => {
     e.preventDefault();
-    console.log(email, pwd);
-    setEmail('');
-    setPwd('');
-    setSuccess(true);
+    const user = {
+      email: email,
+      password: pwd
+    }
+
+    try {
+      const response = await axios.post(SIGNIN_URL, 
+        JSON.stringify(user),
+        {
+          headers: { 'Content-Type': 'application/json'}
+        }
+      );
+      //console.log(JSON.stringify(response?.data));
+      //console.log(JSON.stringify(HttpContext.Request.Cookies));
+      //console.log(response.cookie);
+      const accessToken = response?.data?.auth_token;
+      console.log(accessToken)
+      setAuth({ email, pwd, accessToken})
+      setEmail('');
+      setPwd('');
+    } catch (err) {
+      if (!err?.response) {
+        setErrMsg('No Server Response');
+      } else if (err.response?.status === 400) {
+        setErrMsg('Invalid email or password');
+      } else {
+        setErrMsg('Login Failed');
+      }
+      errRef.current.focus();
+    }
   }
 
   return (
@@ -64,7 +97,6 @@ function SignIn() {
             {errMsg}
           </p>
           <div className='w-80'>
-            <div className=' flex flex-row justify-between py-1'>
               <div className='ml-px w-80'>
                 <input
                   type='email'
@@ -122,7 +154,6 @@ function SignIn() {
               </div>
             </div>
           </div>
-        </div>
       </form>
       )
     )}
