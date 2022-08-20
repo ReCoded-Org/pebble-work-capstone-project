@@ -1,13 +1,13 @@
 import React from "react";
 
 import Layout from "@/components/layout/Layout";
-import SignInUp from "@/components/SignInUp";
+import SignUp from "@/components/SignInUp/SignUp";
 
 const SignIninpage = () => {
     return (
         <div>
             <Layout>
-                <SignInUp title='Sign up' />
+                <SignUp />
             </Layout>
         </div>
     );
