@@ -14,7 +14,8 @@ const Signupin = ({ title }) => {
         setDomLoaded(true);
     }, []);
 
-    const submitSignin = async () => {
+    const submitSignIn = async (e) => {
+        e.preventDefault();
         await fetch("https://pebble-work.herokuapp.com/api/auth/signin", {
             method: "POST",
             headers: {
@@ -26,10 +27,11 @@ const Signupin = ({ title }) => {
                 password,
             }),
         });
-        await router.push("/events");
+        await router.push("/");
     };
 
-    const submit = async () => {
+    const submit = async (e) => {
+        e.preventDefault();
         await fetch("https://pebble-work.herokuapp.com/api/auth/user/signup", {
             method: "POST",
             headers: {
@@ -44,13 +46,13 @@ const Signupin = ({ title }) => {
                 gender: "female",
             }),
         });
-        await router.push("/events");
+        await router.push("/signin");
     };
     return (
         <>
             {domLoaded && (
-                <div className=' m-5 flex flex-col items-center  justify-around   md:mb-24  md:mt-6 lg:mt-2 lg:mb-16  lg:flex-row'>
-                    <div className='h-100 flex w-96 flex-col items-center justify-center text-center'>
+                <form className='m-5  flex h-full flex-col  items-center  justify-around   lg:flex-row'>
+                    <div className='h-100 flex w-96 flex-col items-center justify-center text-center 2xl:scale-150 '>
                         <Image
                             src='/svg/signupinMan.svg'
                             alt='logo'
@@ -58,7 +60,7 @@ const Signupin = ({ title }) => {
                             width={300}
                         />
                     </div>
-                    <div className='flex w-96 flex-col items-center justify-center py-1 text-center lg:items-start'>
+                    <div className='flex w-96 flex-col items-center justify-center py-1 text-center lg:items-start  2xl:scale-150'>
                         <h1 className='py-3 text-3xl font-semibold md:flex'>
                             {title}
                         </h1>
@@ -67,7 +69,7 @@ const Signupin = ({ title }) => {
                                 <div className=' flex flex-row justify-between py-1'>
                                     <div className='w-80'>
                                         <input
-                                            className='focus:shadow-outline mx-px  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                            className='focus:shadow-outline mx-px  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                             id='name'
                                             type='text'
                                             placeholder='Name'
@@ -78,7 +80,7 @@ const Signupin = ({ title }) => {
                                     </div>
                                     <div>
                                         <input
-                                            className='focus:shadow-outline  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                            className='focus:shadow-outline  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                             id='surname'
                                             type='text'
                                             placeholder='Surname'
@@ -91,16 +93,16 @@ const Signupin = ({ title }) => {
                             )}
                             <div className='ml-px w-80'>
                                 <input
-                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                     id='email'
-                                    type='text'
+                                    type='email'
                                     placeholder='Email address'
                                     onChange={(e) => setEmail(e.target.value)}
                                 />
                             </div>
                             <div className='ml-px py-1'>
                                 <input
-                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
+                                    className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
                                     id='password'
                                     type='password'
                                     placeholder='Password'
@@ -125,9 +127,9 @@ const Signupin = ({ title }) => {
                                 </p>
                             ) : (
                                 <p className='signin m-1 flex text-xs italic text-gray-700'>
-                                    Don’t have an account?
+                                    Don&apos;t have an account? &nbsp;
                                     <Link href='/signup'>
-                                        <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
+                                        <div className='cursor-pointer border-b border-primary-200 text-primary-200'>
                                             {title === "Sign up"
                                                 ? "Sign in"
                                                 : "Sign up"}
@@ -136,12 +138,21 @@ const Signupin = ({ title }) => {
                                 </p>
                             )}
                             <div className=' py-1'>
-                                <button
-                                    onClick={(submit, submitSignin)}
-                                    className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
-                                >
-                                    {title}
-                                </button>
+                                {title === "Sign up" ? (
+                                    <button
+                                        onClick={submit}
+                                        className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
+                                    >
+                                        Sign up
+                                    </button>
+                                ) : (
+                                    <button
+                                        onClick={submitSignIn}
+                                        className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
+                                    >
+                                        Sign in
+                                    </button>
+                                )}
                             </div>
                             <div className='flex flex-row items-center justify-center py-1'>
                                 <Image
@@ -184,7 +195,7 @@ const Signupin = ({ title }) => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             )}
         </>
     );
