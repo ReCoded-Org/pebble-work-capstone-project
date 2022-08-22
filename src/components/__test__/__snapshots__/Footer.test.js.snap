@@ -65,27 +65,27 @@ exports[`renders correctly 1`] = `
       <div
         className="flex justify-center space-x-6 md:justify-evenly"
       >
-        <a
-          href="#events"
+        <b
+          className="cursor-pointer"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <b>
-            common.footer.events
-          </b>
-        </a>
-        <a
-          href="#about"
+          common.footer.events
+        </b>
+        <b
+          className="cursor-pointer"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <b>
-            common.footer.about
-          </b>
-        </a>
-        <a
-          href="#howItWorks"
+          common.footer.about
+        </b>
+        <b
+          className="cursor-pointer "
+          onClick={[Function]}
+          onMouseEnter={[Function]}
         >
-          <b>
-            common.footer.howItWorks
-          </b>
-        </a>
+          common.footer.howItWorks
+        </b>
       </div>
     </div>
     <div
