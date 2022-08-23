@@ -16,12 +16,12 @@ const Signupin = ({ title }) => {
 
     const submitSignIn = async (e) => {
         e.preventDefault();
-        await fetch("https://pebble-work.herokuapp.com/api/auth/signin", {
+        await fetch("http://localhost:8000/api/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            credentails: "include",
+            credentails: true,
             body: JSON.stringify({
                 email,
                 password,
@@ -32,22 +32,19 @@ const Signupin = ({ title }) => {
 
     const submit = async (e) => {
         e.preventDefault();
-        await fetch("https://pebble-work.herokuapp.com/api/auth/user/signup", {
+
+        await fetch("http://localhost:8000/api/login", {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 email,
                 password,
-                firstName,
-                lastName,
-                dateOfBirth: "2000-01-01",
-                gender: "female",
             }),
         });
-        await router.push("/signin");
+
+        await router.push("/");
     };
+
     return (
         <>
             {domLoaded && (

@@ -3,7 +3,7 @@
 import axios from "axios";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import Getstarted from "@/components/GetStarted/GetStarted";
 import HeroSection from "@/components/HeroSection";
@@ -14,17 +14,17 @@ import TestimonialsFourPhotos from "@/components/TestimonialsFourPhotos";
 
 export default function HomePage() {
     // const { t } = useTranslation("common");
-    const [message, setMessage] = useState();
-    useEffect(() => {
-        (async () => {
-            const response = axios.get("https://pebble-work.herokuapp.com/", {
-                withCredentials: true,
-            });
-            // const content = await response.json();
-            console.log(response);
-            // setMessage(`Hi ${content}`);
-        })();
-    });
+    // const [message, setMessage] = useState();
+    // useEffect(() => {
+    //     (async () => {
+    //         const response = axios.get("https://pebble-work.herokuapp.com/", {
+    //             withCredentials: true,
+    //         });
+    //         // const content = await response.json();
+    //         console.log(response);
+    //         // setMessage(`Hi ${content}`);
+    //     })();
+    // });
     return (
         <Layout>
             {/* <p>{t("test")}</p>
