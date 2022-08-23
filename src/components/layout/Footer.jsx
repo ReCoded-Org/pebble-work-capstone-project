@@ -69,7 +69,7 @@ function Footer() {
                                 {t("common.footer.about")}
                             </b>
                         </Link>
-                        <Link href='#how-it-works'>
+                        <Link href='/#how-it-works'>
                             <b className='cursor-pointer '>
                                 {t("common.footer.howItWorks")}
                             </b>

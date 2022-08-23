@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function HowItWorks() {
     const { t } = useTranslation("common");
     return (
-        <div className='how-it-works' id="how-it-works">
+        <div className='how-it-works' id='how-it-works'>
             <h1 className='mt-5 flex justify-center text-xl font-bold md:m-3 md:text-4xl lg:mb-9 lg:text-4xl'>
                 {t("landingPage.howItWorks.title")}
             </h1>
