@@ -38,20 +38,24 @@ function SignIn() {
       email: email,
       password: pwd
     }
-
     try {
       const response = await axios.post(SIGNIN_URL, 
         JSON.stringify(user),
         {
-          headers: { 'Content-Type': 'application/json'}
+          headers: { 'Content-Type': 'application/json'},
+          withCredentials: true
         }
       );
-      //console.log(JSON.stringify(response?.data));
+      //document.cookie = response
+      console.log(JSON.stringify(response));
+      // let setting = browser.cookies.set(
+      //   details               // object
+      // )
       //console.log(JSON.stringify(HttpContext.Request.Cookies));
       //console.log(response.cookie);
-      const accessToken = response?.data?.auth_token;
-      console.log(accessToken)
-      setAuth({ email, pwd, accessToken})
+      //const accessToken = response?.data?.auth_token;
+      //console.log(accessToken)
+      //setAuth({ email, pwd, accessToken})
       setEmail('');
       setPwd('');
     } catch (err) {
