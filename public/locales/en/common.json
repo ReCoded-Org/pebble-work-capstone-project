@@ -88,7 +88,7 @@
         "eventInfo": {
             "eventTitle": "Event title:",
             "titleDesc": "Choose a title that will give people a clear idea of what the event is about. Feel free to be creative! You can edit this later if you change your mind.",
-            "eventDescription": "Event description:",
+            "eventDesc": "Event description:",
             "descriptionDesc": "Describe the purpose of your event. Who should join and what will you do at the event?",
             "eventImg": "Event image:",
             "imgDesc": "We have found that listings with a photo attract more interest.",

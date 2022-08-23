@@ -88,7 +88,7 @@
         "eventInfo": {
             "eventTitle": "Etkinlik başlığı:",
             "titleDesc": "İnsanlara etkinliğin ne ile ilgili olduğu hakkında net bir fikir verecek bir başlık seçin. Yaratıcı olmaktan çekinmeyin! Fikrinizi değiştirirseniz bunu daha sonra düzenleyebilirsiniz.",
-            "eventDescription": "Etkinlik açıklaması:",
+            "eventDesc": "Etkinlik açıklaması:",
             "descriptionDesc": "Etkinliğinizin amacını açıklayın. Kimler katılmalı ve etkinlikte ne yapacaksınız?",
             "eventImg": "Etkinlik görseli:",
             "imgDesc": "Fotoğraflı ilanların daha fazla ilgi gördüğünü saptadık.",
