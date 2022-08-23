@@ -187,7 +187,7 @@ const EventCreation = () => {
                 <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
-                            {t("eventCreation.eventInfo.eventDescription")}
+                            {t("eventCreation.eventInfo.eventDesc")}
                         </h2>
                         <p className='my-1 w-full pr-20 text-gray-500'>
                             {t("eventCreation.eventInfo.descriptionDesc")}

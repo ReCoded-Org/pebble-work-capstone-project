@@ -414,7 +414,7 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          eventCreation.eventInfo.eventDescription
+          eventCreation.eventInfo.eventDesc
         </h2>
         <p
           className="my-1 w-full pr-20 text-gray-500"
