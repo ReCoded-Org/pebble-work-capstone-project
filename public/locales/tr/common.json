@@ -61,5 +61,46 @@
             "getStarted": "Başlayın",
             "whoAreWe": "Biz Kimiz?"
         }
+    },
+    "eventsPage": {
+        "welcome": "Hoşgeldin,",
+        "description": "Keşfet ve Etkinliklere Katıl.",
+        "calendarComp": {
+            "changeDate": "Tarih Değiştir",
+            "submit": "GÖNDER"
+        },
+        "locationComp": {
+            "changeLocation": "Konum Değiştir",
+            "searchLocation": "Konum Ara",
+            "search": "ARA"
+        },
+        "categoryCheckboxes": {
+            "chooseCategory": "Kategori Seç",
+            "pickYourInterests": "İlgi alanlarınızı seçin",
+            "all": "Tüm Kategoriler",
+            "noPoverty": "Sıfır Yoksulluk",
+            "zeroHunger": "Sıfır Açlık",
+            "goodHealthAndWellbeing": "İyi Sağlık ve Refah",
+            "qualityEducation": "Kaliteli eğitim",
+            "genderEquality": "Cinsiyet eşitliği",
+            "cleanWaterAndSanitation": "Temiz Su ve Sanitasyon",
+            "affordableAndCleanEnergy": "Uygun Fiyatlı ve Temiz Enerji",
+            "decentWorkAndEconomicGrowth": "İnsana Yakışır İş ve Ekonomik Büyüme",
+            "industryInnovationAndInfrastructure": "Sanayi, İnovasyon ve Altyapı",
+            "reducedInequalities": "Azaltılmış Eşitsizlikler",
+            "responsibleConsumptionAndProduction": "Sorumlu Tüketim ve Üretim",
+            "sustainableCitiesAndCommunities": "Sürdürülebilir Şehirler ve Topluluklar",
+            "climateAction": "İklim Eylemi",
+            "lifeBelowWater": "Su Altında Yaşam",
+            "lifeOnLand": "Karada Yaşam",
+            "peaceJusticeAndStrongInstitutions": "Barış, Adalet ve Güçlü Kurumlar",
+            "partnershipForTheGoals": "Hedefler için Ortaklık",
+            "applyFilters": "Filtreleri Uygula"
+        },
+        "eventCards": {
+            "attendees": "Katılımcı",
+            "join": "KATIL",
+            "leave": "AYRIL"
+        }
     }
 }

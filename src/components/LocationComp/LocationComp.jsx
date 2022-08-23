@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useTranslation } from "next-i18next";
 
 import Button from "../Button";
 import InputComponent from "../InputComponent";
-const LocationComp = ({ style }) => {
+const LocationComp = ({
+    style,
+    searchTerm = "",
+    handleSearch,
+    onSearch,
+    setSearchTerm,
+}) => {
+    const { t } = useTranslation("common");
     const citiesOfTurkey = [
         "Adana",
         "Adiyaman",
@@ -86,17 +93,9 @@ const LocationComp = ({ style }) => {
         "Yozgat",
         "Zonguldak",
     ];
-    const [searchTerm, setSearchTerm] = useState("");
-    function handleSearch(e) {
-        setSearchTerm(e.target.value);
-    }
-    function onSearch(e) {
-        //api to fetch the results
-        setSearchTerm(e);
-    }
     return (
         <div className={`sm:block ${style}`}>
-            <div className='     sm:relative sm:w-full sm:border-none sm:bg-transparent sm:shadow-none'>
+            <div className='sm:relative sm:w-full sm:border-none sm:bg-transparent sm:shadow-none'>
                 <div className='flex flex-col items-center md:flex-row '>
                     <h1 className='mb-2 text-center text-xl font-bold sm:hidden'>
                         Search Event Location
@@ -104,14 +103,16 @@ const LocationComp = ({ style }) => {
                     <InputComponent
                         type='text'
                         id='cities'
-                        placeholder='Seach Location'
+                        placeholder={t(
+                            "eventsPage.locationComp.searchLocation"
+                        )}
                         value={searchTerm}
                         callback={handleSearch}
                         className='mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full'
                     />
                     <Button
                         onClick={() => onSearch(searchTerm)}
-                        label='SEARCH'
+                        label={t("eventsPage.locationComp.search")}
                         height='h-9'
                         customStyle='text-base bg-primary-200 border rounded text-white ml-2'
                     />
