@@ -1,9 +1,8 @@
 // import Link from "next/link";
 // import { useTranslation } from "next-i18next";
-import axios from "axios";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Getstarted from "@/components/GetStarted/GetStarted";
 import HeroSection from "@/components/HeroSection";
@@ -14,17 +13,26 @@ import TestimonialsFourPhotos from "@/components/TestimonialsFourPhotos";
 
 export default function HomePage() {
     // const { t } = useTranslation("common");
-    // const [message, setMessage] = useState();
-    // useEffect(() => {
-    //     (async () => {
-    //         const response = axios.get("https://pebble-work.herokuapp.com/", {
-    //             withCredentials: true,
-    //         });
-    //         // const content = await response.json();
-    //         console.log(response);
-    //         // setMessage(`Hi ${content}`);
-    //     })();
-    // });
+    const [message, setMessage] = useState("");
+    const [auth, setAuth] = useState(false);
+
+    useEffect(() => {
+        (async () => {
+            try {
+                const response = await fetch("http://localhost:8000/api/user", {
+                    credentials: "include",
+                });
+
+                const content = await response.json();
+
+                setMessage(`Hi ${content.name}`);
+                setAuth(true);
+            } catch (e) {
+                setMessage("You are not logged in");
+                setAuth(false);
+            }
+        })();
+    });
     return (
         <Layout>
             {/* <p>{t("test")}</p>

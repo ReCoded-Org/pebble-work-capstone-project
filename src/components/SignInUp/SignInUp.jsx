@@ -21,7 +21,7 @@ const Signupin = ({ title }) => {
             headers: {
                 "Content-Type": "application/json",
             },
-            credentails: true,
+            credentials: "include",
             body: JSON.stringify({
                 email,
                 password,
@@ -33,16 +33,17 @@ const Signupin = ({ title }) => {
     const submit = async (e) => {
         e.preventDefault();
 
-        await fetch("http://localhost:8000/api/login", {
+        await fetch("http://localhost:8000/api/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
+                name: firstName,
                 email,
                 password,
             }),
         });
 
-        await router.push("/");
+        await router.push("/signin");
     };
 
     return (
