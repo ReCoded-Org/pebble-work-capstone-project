@@ -18,7 +18,6 @@ export default function Layout({ children }) {
                 });
 
                 const content = await response.json();
-                // ${t("common.nav.SignedInAs")}
                 setMessage(`Hi, ${content.name}`);
                 setAuth(true);
             } catch (e) {

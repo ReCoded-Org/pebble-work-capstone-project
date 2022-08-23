@@ -8,7 +8,7 @@ const Signupin = ({ title }) => {
     const [email, setEmail] = useState("");
     const [firstName, setFirstName] = useState("");
     const [password, setPassword] = useState("");
-    const [lastName, setLastName] = useState("");
+    // const [lastName, setLastName] = useState("");
 
     useEffect(() => {
         setDomLoaded(true);
@@ -82,9 +82,9 @@ const Signupin = ({ title }) => {
                                             id='surname'
                                             type='text'
                                             placeholder='Surname'
-                                            onChange={(e) =>
-                                                setLastName(e.target.value)
-                                            }
+                                            // onChange={(e) =>
+                                            //     setLastName(e.target.value)
+                                            // }
                                         />
                                     </div>
                                 </div>
