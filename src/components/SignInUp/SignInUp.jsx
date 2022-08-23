@@ -32,7 +32,6 @@ const Signupin = ({ title }) => {
 
     const submit = async (e) => {
         e.preventDefault();
-
         await fetch("http://localhost:8000/api/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
