@@ -61,5 +61,48 @@
             "getStarted": "Başlayın",
             "whoAreWe": "Biz Kimiz?"
         }
+    },
+    "aboutPage": {
+        "header": {
+            "title": "Pebble Hakkında",
+            "description": "Pebble, 17 Sürdürülebilir Kalkınma Hedefinden birini veya daha fazlasını desteklemek için yerel hareketler ve toplantılar bulabileceğiniz ve başlatabileceğiniz bir yerdir. Dünyayı daha iyi bir yer haline getirmek için kararlı insanları bir araya getiriyoruz. Büyüyen topluluğumuz, yaptığımız şey konusunda bizi daha tutkulu kılıyor."
+        },
+        "team": {
+            "ourTeam": "Takımımız"
+        },
+        "stack": {
+            "techTitle": "Kullanılan Teknolojiler ve Proje Yapısı",
+            "techDesc": "HTML, JavaScript, ReactJS, NextJS, npm - Test: Jest -  Formatlama: Prettier, ESLint - Stil: CSS, TailwindCSS - Çeviri: i18next - Versiyon kontrol: git, GitHub"
+        }
+    },
+    "eventCreation": {
+        "header": {
+            "title": "Etkinlik Oluştur",
+            "subtitle": "İlk olarak, etkinliğinizin konumunu belirleyin:",
+            "description": "Pebble etkinlikleri hem yerel hem de çevrimiçi olabilir. Etkinliğinize ev sahipliği yapmak istediğiniz yeri seçin."
+        },
+        "eventType": {
+            "title": "Etkinlik türünü seçin:",
+            "description": "Her Pebble etkinliği, Birleşmiş Milletler'in sürdürülebilir kalkınma hedeflerinden en az birine hizmet etmelidir. Hangi hedefe yardım etmek istiyorsunuz? Geçerli olanların tümünü seçin."
+        },
+        "eventInfo": {
+            "eventTitle": "Etkinlik başlığı:",
+            "titleDesc": "İnsanlara etkinliğin ne ile ilgili olduğu hakkında net bir fikir verecek bir başlık seçin. Yaratıcı olmaktan çekinmeyin! Fikrinizi değiştirirseniz bunu daha sonra düzenleyebilirsiniz.",
+            "eventDescription": "Etkinlik açıklaması:",
+            "descriptionDesc": "Etkinliğinizin amacını açıklayın. Kimler katılmalı ve etkinlikte ne yapacaksınız?",
+            "eventImg": "Etkinlik görseli:",
+            "imgDesc": "Fotoğraflı ilanların daha fazla ilgi gördüğünü saptadık.",
+            "browse": "Ara"
+        },
+        "guidelines": {
+            "title": "Neredeyse bitti! Yönergelerimizi incelemek için bir dakikanızı ayırın.",
+            "description": "Pebble, sizin gibi gönüllülerin desteğiyle insanlara yardım etmekle ilgilidir. Bu nedenle tüm etkinlikerden şunlar beklenir:",
+            "li1": "Etkinliğin niyetleri konusunda şeffaf olun.",
+            "li2": "Gerçek insan etkileşimlerini şahsen veya çevrimiçi olarak teşvik edin.",
+            "li3": "Etkinlik sahibinin tüm etkinliklerde bulunmasını sağlayın.",
+            "community": "Tüm bunlar hakkında daha fazla bilgi için",
+            "communityLink": "Topluluk Rehberleri",
+            "agree": "Şartları kabul edin ve etkinlik oluşturun!"
+        }
     }
 }
