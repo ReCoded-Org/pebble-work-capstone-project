@@ -1,6 +1,6 @@
 import React from "react";
 
-import EventCreation from "@/components/EventCreation";
+import EventCreation from "@/components/eventCreation";
 import Layout from "@/components/layout/Layout";
 
 const Eventcreation = () => {
