@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="sm:block undefined"
 >
   <div
-    className=" sm:relative sm:w-full sm:border-none sm:bg-transparent sm:shadow-none"
+    className="sm:relative sm:w-full sm:border-none sm:bg-transparent sm:shadow-none"
   >
     <div
       className="flex flex-col items-center md:flex-row "
@@ -18,8 +18,7 @@ exports[`renders correctly 1`] = `
       <input
         className="mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full"
         id="cities"
-        onChange={[Function]}
-        placeholder="Seach Location"
+        placeholder="eventsPage.locationComp.searchLocation"
         type="text"
         value=""
       />
@@ -29,7 +28,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        SEARCH
+        eventsPage.locationComp.search
       </button>
     </div>
     <div />

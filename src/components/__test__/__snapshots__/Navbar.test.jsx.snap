@@ -287,42 +287,6 @@ exports[`renders correctly 1`] = `
             </button>
           </div>
         </div>
-        <div
-          className="relative ml-3 hidden "
-        >
-          <div>
-            <button
-              aria-expanded="false"
-              aria-haspopup="true"
-              className="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-400"
-              id="user-menu-button"
-              onClick={[Function]}
-              type="button"
-            >
-              <span
-                className="sr-only"
-              >
-                Open user menu
-              </span>
-              <div
-                className="bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200"
-              >
-                <svg
-                  className="absolute -left-1 h-12 w-12 text-orange-300"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clipRule="evenodd"
-                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   </div>

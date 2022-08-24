@@ -1,6 +1,7 @@
 {
     "test": "Merhaba",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Giriş",
             "signIn": "Giriş",
@@ -9,15 +10,17 @@
             "turkish": "Türkçe",
             "allEvents": "Etkinlikler",
             "events": "Etkinlikler",
+
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
-            "yourEvents": "Etkinliklerim",
-            "yourProfile": "Profilim",
-            "settings": "Ayarlar",
+            "yourEvents": "Etkinlikler",
+            "yourProfile": "Profil Ayarları",
+            "settings": "Etkinlik Yarat",
             "signOut": "Çıkış"
         },
         "footer": {
+            "google": "Google ile devam et",
             "events": "Etkinlikler",
             "about": "Hakkımızda",
             "howItWorks": "Nasıl Çalışır",
@@ -104,5 +107,71 @@
             "communityLink": "Topluluk Rehberleri",
             "agree": "Şartları kabul edin ve etkinlik oluşturun!"
         }
+    },
+    "eventsPage": {
+        "welcome": "Hoşgeldin,",
+        "description": "Keşfet ve Etkinliklere Katıl.",
+        "calendarComp": {
+            "changeDate": "Tarih Değiştir",
+            "submit": "GÖNDER"
+        },
+        "locationComp": {
+            "changeLocation": "Konum Değiştir",
+            "searchLocation": "Konum Ara",
+            "search": "ARA"
+        },
+        "categoryCheckboxes": {
+            "chooseCategory": "Kategori Seç",
+            "pickYourInterests": "İlgi alanlarınızı seçin",
+            "all": "Tüm Kategoriler",
+            "noPoverty": "Sıfır Yoksulluk",
+            "zeroHunger": "Sıfır Açlık",
+            "goodHealthAndWellbeing": "İyi Sağlık ve Refah",
+            "qualityEducation": "Kaliteli eğitim",
+            "genderEquality": "Cinsiyet eşitliği",
+            "cleanWaterAndSanitation": "Temiz Su ve Sanitasyon",
+            "affordableAndCleanEnergy": "Uygun Fiyatlı ve Temiz Enerji",
+            "decentWorkAndEconomicGrowth": "İnsana Yakışır İş ve Ekonomik Büyüme",
+            "industryInnovationAndInfrastructure": "Sanayi, İnovasyon ve Altyapı",
+            "reducedInequalities": "Azaltılmış Eşitsizlikler",
+            "responsibleConsumptionAndProduction": "Sorumlu Tüketim ve Üretim",
+            "sustainableCitiesAndCommunities": "Sürdürülebilir Şehirler ve Topluluklar",
+            "climateAction": "İklim Eylemi",
+            "lifeBelowWater": "Su Altında Yaşam",
+            "lifeOnLand": "Karada Yaşam",
+            "peaceJusticeAndStrongInstitutions": "Barış, Adalet ve Güçlü Kurumlar",
+            "partnershipForTheGoals": "Hedefler için Ortaklık",
+            "applyFilters": "Filtreleri Uygula"
+        },
+        "eventCards": {
+            "attendees": "Katılımcı",
+            "join": "KATIL",
+            "leave": "AYRIL"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Katıl",
+            "leave": "Çık",
+            "noAttendees": "Henüz katılımcı yok.",
+            "oneAttendee": "1 Katılımcı",
+            "manyAttendees": "Katılımcı"
+        },
+        "eventDescription": {
+            "description": "Açıklama:"
+        },
+        "attendeesList": {
+            "attendees": "Katılımcılar:"
+        }
+    },
+    "signInUpPage": {
+        "haveAccount": "Zaten hesabım var,",
+        "dontHaveAccount": "Hesabım yok,",
+        "google": "Google ile devam et",
+        "twitter": "Twitter ile devam et",
+        "mail": "E-posta",
+        "password": "Şifre",
+        "name": "Ad",
+        "surname": "Soyadı"
     }
 }

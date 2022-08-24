@@ -1,5 +1,4 @@
-import { addDays } from "date-fns";
-import { useState } from "react";
+import { useTranslation } from "next-i18next";
 import { DateRange } from "react-date-range";
 
 import "react-date-range/dist/styles.css";
@@ -7,14 +6,8 @@ import "react-date-range/dist/theme/default.css";
 
 import Button from "@/components/Button";
 
-const CalendarComp = ({ style }) => {
-    const [range, setRange] = useState([
-        {
-            startDate: new Date(),
-            endDate: addDays(new Date(), 0),
-            key: "selection",
-        },
-    ]);
+const CalendarComp = ({ style, setRange, range, handleDateSubmit }) => {
+    const { t } = useTranslation("common");
 
     return (
         <div className={style}>
@@ -34,13 +27,14 @@ const CalendarComp = ({ style }) => {
                         />
                         <Button
                             type='submit'
-                            label='SUBMIT'
+                            label={t("eventsPage.calendarComp.submit")}
                             textColor='text-white'
                             bgColor='bg-primary-200'
                             borderColor='border-primary-200'
                             height='h-10'
                             widht='w-32'
                             customStyle='text-base rounded'
+                            onClick={handleDateSubmit}
                         />
                     </div>
                 </div>
