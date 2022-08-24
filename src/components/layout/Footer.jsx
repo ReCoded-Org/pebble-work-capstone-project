@@ -1,11 +1,11 @@
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import React from "react";
-
 function Footer() {
     const { t } = useTranslation("common");
 
     return (
-        <div className='mx-auto flex flex-col justify-center bg-primary-200 p-6'>
+        <div className='mx-auto flex w-full flex-col justify-center bg-primary-200 p-6'>
             <div className='flex flex-col items-center space-y-6  p-6 md:flex-row md:items-center md:justify-evenly md:p-6 md:px-4'>
                 <div className='basis-1/4'>
                     <svg
@@ -59,15 +59,21 @@ function Footer() {
                 </div>
                 <div className='flex basis-1/2 flex-col justify-center space-y-6'>
                     <div className='flex justify-center space-x-6 md:justify-evenly'>
-                        <a href='#events'>
-                            <b>{t("common.footer.events")}</b>
-                        </a>
-                        <a href='#about'>
-                            <b>{t("common.footer.about")}</b>
-                        </a>
-                        <a href='#howItWorks'>
-                            <b>{t("common.footer.howItWorks")}</b>
-                        </a>
+                        <Link href='/events'>
+                            <b className='cursor-pointer'>
+                                {t("common.footer.events")}
+                            </b>
+                        </Link>
+                        <Link href='/about'>
+                            <b className='cursor-pointer'>
+                                {t("common.footer.about")}
+                            </b>
+                        </Link>
+                        <Link href='/#how-it-works'>
+                            <b className='cursor-pointer '>
+                                {t("common.footer.howItWorks")}
+                            </b>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex basis-1/4 justify-center space-x-6'>

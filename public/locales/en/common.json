@@ -8,6 +8,7 @@
             "english": "English",
             "turkish": "Turkish",
             "allEvents": "All Events",
+
             "events": "Events",
             "about": "About",
             "howItWorks": "How It Works",
@@ -26,38 +27,38 @@
     },
     "landingPage": {
         "heroSection": {
-            "title": "Find the perfect event for you",
-            "paragraph": "Do you want to make a change in the world? Not want to be alone? You are in the perfect place. Find like-minded people. Create or Participate in events to change the world.",
+            "title": "Come together to change the world, one event at a time.",
+            "paragraph": "Join and organize volunteer events inspired by the Sustainable Development Goals. Collaborate with like-minded peers to multiply your impact on the world.",
             "getStarted": "Get Started"
         },
         "howItWorks": {
             "title": "How It Works",
-            "register": "Register",
-            "registerDescription": "Register now to create your own events and to join events",
+            "register": "Join us",
+            "registerDescription": "Create your account to become a part of Pebble’s volunteer network.",
             "signUp": "Sign Up",
             "attendEvents": "Attend Events",
-            "attendEventsDescription": "Attend events created by other users and participate in events created by you",
+            "attendEventsDescription": "Browse events and join them! You can sort by date, location, and the SDGs.",
             "exploreEvents": "Explore Events",
             "organizeYourOwn": "Organize Your Own",
-            "organizeYourOwnDescription": "Your ideas are unique and you are the one who is going to make them happen",
-            "createEvents": "Create Events"
+            "organizeYourOwnDescription": "Got a brilliant idea you want to pursue with others? Organize your own event!",
+            "createEvents": "Get started"
         },
         "sustainableGoals": {
             "title": "Sustainable Development Goals",
-            "sustainableGoalsDescription": "Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future."
+            "sustainableGoalsDescription": "All events at Pebble fall under one of UN’s 17 Sustainable Development Goals (SDG). The SDGs, intended to be achieved by 2030, are the blueprint to achieve a better and more sustainable future for all."
         },
         "testimonials": {
-            "title": "Hear it from volunteers",
-            "personOne": "John Doe, Marine Biologist",
-            "personOneQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description",
-            "personTwo": "Joe Schmoe, Software Developer",
-            "personTwoQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description",
-            "personThree": "Jane Doe, Yoga Teacher",
-            "personThreeQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description"
+            "title": "Hear it from the volunteers",
+            "personOne": "John, teacher",
+            "personOneQuote": "I love Pebble for helping me connect with young people like me who want to work toward a good cause.",
+            "personTwo": "Ahmet, student",
+            "personTwoQuote": "Pebble fills a crucial role in helping mobilize people around the Sustainable Development Goals.",
+            "personThree": "Saanvi, doctor",
+            "personThreeQuote": "At Pebble, there is always an event that I am excited to join. If there isn’t, I can always organize one myself!"
         },
         "getStarted": {
-            "title": "Become the change you wish to see in the world.",
-            "description": "You have a clear vision? You want to change the world? You are the one who is going to make it happen. Join us and collaborate with others to make a lasting impact in the world.",
+            "title": "Be the change you wish to see in the world.",
+            "description": "We need to work together—and work hard, if we want to reach the SDGs by 2030. Join Pebble now and start taking action.",
             "getStarted": "Get Started",
             "whoAreWe": "Who are we?"
         }
@@ -102,5 +103,15 @@
             "join": "JOIN",
             "leave": "LEAVE"
         }
-    }
+    },
+    "signInUpPage": {
+        "haveAccount": " Already have an account? ",
+        "dontHaveAccount": "Don't have an account? ",
+        "google": "Continue with Google ",
+        "twitter": "Continue with Twitter",
+        "mail": "Email adress",
+        "password": "Password",
+        "name": "Name",
+        "surname": "Surname"
+  }
 }

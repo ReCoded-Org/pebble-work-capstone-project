@@ -18,7 +18,49 @@ exports[`renders correctly 1`] = `
         >
           <div
             className="rdrDateDisplayWrapper"
+<<<<<<< HEAD
           />
+=======
+          >
+            <div
+              className="rdrDateDisplay"
+              style={
+                Object {
+                  "color": "#0180AB",
+                }
+              }
+            >
+              <span
+                className="rdrDateInput rdrDateDisplayItem rdrDateDisplayItemActive"
+              >
+                <input
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Early"
+                  readOnly={false}
+                  value="Aug 23, 2022"
+                />
+              </span>
+              <span
+                className="rdrDateInput rdrDateDisplayItem"
+              >
+                <input
+                  disabled={false}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="Continuous"
+                  readOnly={false}
+                  value="Aug 23, 2022"
+                />
+              </span>
+            </div>
+          </div>
+>>>>>>> e3fccfe89ece41a641e8df1cadd6fcd2d82160a1
           <div
             className="rdrMonthAndYearWrapper"
             onMouseUp={[Function]}
@@ -1375,7 +1417,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay"
+                  className="rdrDay rdrDayToday"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1392,6 +1434,14 @@ exports[`renders correctly 1`] = `
                   }
                   type="button"
                 >
+                  <span
+                    className="rdrStartEdge rdrEndEdge"
+                    style={
+                      Object {
+                        "color": "#0180AB",
+                      }
+                    }
+                  />
                   <span
                     className="rdrDayNumber"
                   >

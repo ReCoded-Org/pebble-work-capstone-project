@@ -11,7 +11,7 @@ const NameLocation = () => {
                 Edit Profile
             </h1>
             <div className='flex flex-row items-center justify-center overflow-hidden lg:ml-8 lg:justify-start'>
-                <div className='m-1 mr-2 w-20 overflow-hidden md:mr-6 md:w-40 lg:w-44'>
+                <div className='m-1 mr-2 w-20 overflow-hidden rounded-full md:mr-6 md:w-40 lg:w-44'>
                     <Image
                         src='/images/user.png'
                         alt='name-location'
