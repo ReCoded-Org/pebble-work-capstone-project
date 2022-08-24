@@ -25,7 +25,7 @@ export async function getServerSideProps({ locale, query }) {
     }
     //If only one category is selected and it is not an array
     else {
-        categoryParams = `?category=${query.categories}`;
+        categoryParams = `?categories[]=${query.categories}`;
     }
 
     let cityParams = "";
@@ -53,7 +53,6 @@ export async function getServerSideProps({ locale, query }) {
 const EventsPage = ({ events }) => {
     const { t } = useTranslation("common");
     const router = useRouter();
-
     // CATEGORY SELECTION
     const categories = [
         {
