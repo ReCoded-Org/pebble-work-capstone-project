@@ -10,12 +10,10 @@ import Layout from "@/components/layout/Layout";
 import SustainableGoals from "@/components/SustainableGoals";
 import TestimonialsFourPhotos from "@/components/TestimonialsFourPhotos";
 
-
 export default function HomePage() {
     // const { t } = useTranslation("common");
 
     return (
-        
         <Layout>
             {/* <p>{t("test")}</p>
             <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
