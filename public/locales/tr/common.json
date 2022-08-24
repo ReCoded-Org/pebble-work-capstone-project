@@ -1,6 +1,7 @@
 {
     "test": "Merhaba",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Giriş",
             "signIn": "Giriş",
@@ -62,6 +63,21 @@
             "description": "2030 yılına kadar Sürdürülebilir Kalkınma Hedefleri’ne ulaşmak istiyorsak birlikte ve çok çalışmamız gerekiyor. Harekete geçin: Pebble'a katılın.",
             "getStarted": "Harekete geç",
             "whoAreWe": "Biz Kimiz?"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Katıl",
+            "leave": "Çık",
+            "noAttendees": "Henüz katılımcı yok.",
+            "oneAttendee": "1 Katılımcı",
+            "manyAttendees": "Katılımcı"
+        },
+        "eventDescription": {
+            "description": "Açıklama:"
+        },
+        "attendeesList": {
+            "attendees": "Katılımcılar:"
         }
     },
     "signInUpPage": {

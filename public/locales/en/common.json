@@ -1,6 +1,7 @@
 {
     "test": "Hello",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Log In",
             "signIn": "Sign In",
@@ -61,6 +62,21 @@
             "description": "We need to work together—and work hard, if we want to reach the SDGs by 2030. Join Pebble now and start taking action.",
             "getStarted": "Get Started",
             "whoAreWe": "Who are we?"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Join",
+            "leave": "Leave",
+            "noAttendees": "There are no attendees yet.",
+            "oneAttendee": "1 Attendee",
+            "manyAttendees": "Attendees"
+        },
+        "eventDescription": {
+            "description": "Description:"
+        },
+        "attendeesList": {
+            "attendees": "Attendees:"
         }
     },
     "signInUpPage": {

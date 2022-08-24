@@ -6,7 +6,7 @@ exports[`renders correctly 1`] = `
 >
   <p>
     <b>
-      Event Description:
+      eventViewPage.eventDescription.description
     </b>
   </p>
   <p>

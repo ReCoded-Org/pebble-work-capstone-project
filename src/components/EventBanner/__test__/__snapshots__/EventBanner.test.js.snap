@@ -156,10 +156,38 @@ exports[`renders correctly 1`] = `
           </b>
         </p>
         <p>
-          Torbaci
+          Turkey
         </p>
         <p>
           11th Street South, Arlington, Virginia
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex pt-6 pl-2"
+    >
+      <svg
+        fill="none"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14ZM19.9909 17.5546L15.2727 12.8365V5.72727C15.2727 5.02436 14.7029 4.45455 14 4.45455C13.2971 4.45455 12.7273 5.02436 12.7273 5.72727V13.3636C12.7273 13.7012 12.8614 14.0249 13.1 14.2636L18.191 19.3545C18.688 19.8515 19.4938 19.8515 19.9909 19.3545C20.4879 18.8575 20.4879 18.0516 19.9909 17.5546Z"
+          fill="#1A1A1A"
+          fillRule="evenodd"
+        />
+      </svg>
+      <div
+        className="pl-2"
+      >
+        <p>
+          03.01.2022
+        </p>
+        <p>
+          00:00:00
         </p>
       </div>
     </div>
@@ -223,7 +251,7 @@ exports[`renders correctly 1`] = `
             />
           </span>
           <img
-            alt="This is some title This is some title This is some title,image"
+            alt="This is some title This is some title This is some title image"
             className="rounded-full"
             data-nimg="intrinsic"
             decoding="async"
@@ -255,13 +283,13 @@ exports[`renders correctly 1`] = `
           />
           <noscript>
             <img
-              alt="This is some title This is some title This is some title,image"
+              alt="This is some title This is some title This is some title image"
               className="rounded-full"
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
-              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -382,8 +410,8 @@ exports[`renders correctly 1`] = `
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
-              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -504,130 +532,8 @@ exports[`renders correctly 1`] = `
               data-nimg="intrinsic"
               decoding="async"
               loading="lazy"
-              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
-              style={
-                Object {
-                  "border": "none",
-                  "bottom": 0,
-                  "boxSizing": "border-box",
-                  "display": "block",
-                  "height": 0,
-                  "left": 0,
-                  "margin": "auto",
-                  "maxHeight": "100%",
-                  "maxWidth": "100%",
-                  "minHeight": "100%",
-                  "minWidth": "100%",
-                  "objectFit": undefined,
-                  "objectPosition": undefined,
-                  "padding": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                  "width": 0,
-                }
-              }
-            />
-          </noscript>
-        </span>
-      </div>
-      <div
-        className="-ml-6"
-      >
-        <span
-          style={
-            Object {
-              "background": "none",
-              "border": 0,
-              "boxSizing": "border-box",
-              "display": "inline-block",
-              "height": "initial",
-              "margin": 0,
-              "maxWidth": "100%",
-              "opacity": 1,
-              "overflow": "hidden",
-              "padding": 0,
-              "position": "relative",
-              "width": "initial",
-            }
-          }
-        >
-          <span
-            style={
-              Object {
-                "background": "none",
-                "border": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": "initial",
-                "margin": 0,
-                "maxWidth": "100%",
-                "opacity": 1,
-                "padding": 0,
-                "width": "initial",
-              }
-            }
-          >
-            <img
-              alt=""
-              aria-hidden={true}
-              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2748%27%20height=%2748%27/%3e"
-              style={
-                Object {
-                  "background": "none",
-                  "border": 0,
-                  "display": "block",
-                  "height": "initial",
-                  "margin": 0,
-                  "maxWidth": "100%",
-                  "opacity": 1,
-                  "padding": 0,
-                  "width": "initial",
-                }
-              }
-            />
-          </span>
-          <img
-            alt="This is some title This is some title This is some title,image"
-            className="rounded-full"
-            data-nimg="intrinsic"
-            decoding="async"
-            onError={[Function]}
-            onLoad={[Function]}
-            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-            style={
-              Object {
-                "border": "none",
-                "bottom": 0,
-                "boxSizing": "border-box",
-                "display": "block",
-                "height": 0,
-                "left": 0,
-                "margin": "auto",
-                "maxHeight": "100%",
-                "maxWidth": "100%",
-                "minHeight": "100%",
-                "minWidth": "100%",
-                "objectFit": undefined,
-                "objectPosition": undefined,
-                "padding": 0,
-                "position": "absolute",
-                "right": 0,
-                "top": 0,
-                "width": 0,
-              }
-            }
-          />
-          <noscript>
-            <img
-              alt="This is some title This is some title This is some title,image"
-              className="rounded-full"
-              data-nimg="intrinsic"
-              decoding="async"
-              loading="lazy"
-              src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-              srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+              src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+              srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
               style={
                 Object {
                   "border": "none",
@@ -657,7 +563,7 @@ exports[`renders correctly 1`] = `
       <p
         className="pl-6"
       >
-        +6 Attendees
+        6 EventViewPage.eventBanner.manyAttendees
       </p>
     </div>
     <div
@@ -754,8 +660,8 @@ exports[`renders correctly 1`] = `
             data-nimg="intrinsic"
             decoding="async"
             loading="lazy"
-            src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-            srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+            src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
             style={
               Object {
                 "border": "none",
@@ -792,7 +698,7 @@ exports[`renders correctly 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Join
+      eventViewPage.eventBanner.leave
     </button>
   </div>
 </div>

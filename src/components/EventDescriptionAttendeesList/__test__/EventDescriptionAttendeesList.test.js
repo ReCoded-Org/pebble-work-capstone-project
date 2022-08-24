@@ -22,6 +22,20 @@ it("renders correctly", () => {
                     "Madonna",
                     "The Rock",
                 ]}
+                attendeeProfileURLs={[
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                    "/images/sampleEventImage.jpg",
+                ]}
             />
         )
         .toJSON();
