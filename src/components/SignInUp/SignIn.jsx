@@ -7,6 +7,23 @@ import AuthContext from '@/context/AuthProvider';
 
 const SIGNIN_URL = "/api/auth/signin";
 
+const exampleEvent = {
+  title: 'New Event',
+  content: 'This here is the content of the event.',
+  coverImage: 'sadsa',
+  date: '2022-08-24',
+  categories: ['Good Health And Well-Being','Quality Education','Gender Equality'],
+  address: {
+    city: "Izmir",
+    country: "Turkey",
+    addressLine: "12321 Sok. 123/12"
+  },
+  location: {
+    lat: 41.01,
+    log: 28.97
+  }
+}
+
 function SignIn() {
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -32,6 +49,23 @@ function SignIn() {
     setErrMsg('');
   }, [email, pwd])
 
+  const handleEventSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const responseEventPost = await axios.post('/api/event/', 
+        JSON.stringify(exampleEvent),
+        {
+          headers: { 'Content-Type': 'application/json'},
+          withCredentials: true
+        }
+        );
+        console.log(JSON.stringify(responseEventPost.data));
+    }
+    catch (err) {
+      console.log(err)
+    }
+  }
+
   const handleSignIn = async (e) => {
     e.preventDefault();
     const user = {
@@ -45,9 +79,11 @@ function SignIn() {
           headers: { 'Content-Type': 'application/json'},
           withCredentials: true
         }
-      );
+        );
       //document.cookie = response
       console.log(JSON.stringify(response));
+      
+     
       // let setting = browser.cookies.set(
       //   details               // object
       // )
@@ -55,7 +91,7 @@ function SignIn() {
       //console.log(response.cookie);
       //const accessToken = response?.data?.auth_token;
       //console.log(accessToken)
-      //setAuth({ email, pwd, accessToken})
+      // setAuth({ email, pwd, accessToken})
       setEmail('');
       setPwd('');
     } catch (err) {
@@ -154,6 +190,11 @@ function SignIn() {
                     className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto ' 
                     onClick={handleSignIn}>
                     Sign In
+                </button>
+                <button
+                    className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto ' 
+                    onClick={handleEventSubmit}>
+                    Post Event
                 </button>
               </div>
             </div>
