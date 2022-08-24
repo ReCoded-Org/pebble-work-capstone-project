@@ -64,6 +64,47 @@
             "whoAreWe": "Who are we?"
         }
     },
+    "eventsPage": {
+        "welcome": "Welcome,",
+        "description": "Explore and Join Events.",
+        "calendarComp": {
+            "changeDate": "Change Date",
+            "submit": "SUBMIT"
+        },
+        "locationComp": {
+            "changeLocation": "Change Location",
+            "searchLocation": "Search Location",
+            "search": "SEARCH"
+        },
+        "categoryCheckboxes": {
+            "chooseCategory": "Choose Category",
+            "pickYourInterests": "Pick your interests",
+            "all": "All",
+            "noPoverty": "No Poverty",
+            "zeroHunger": "Zero Hunger",
+            "goodHealthAndWellbeing": "Good Health and Wellbeing",
+            "qualityEducation": "Quality Education",
+            "genderEquality": "Gender Equality",
+            "cleanWaterAndSanitation": "Clean Water and Sanitation",
+            "affordableAndCleanEnergy": "Affordable and Clean Energy",
+            "decentWorkAndEconomicGrowth": "Decent Work and Economic Growth",
+            "industryInnovationAndInfrastructure": "Industry, Innovation and Infrastructure",
+            "reducedInequalities": "Reduced Inequalities",
+            "responsibleConsumptionAndProduction": "Responsible Consumption and Production",
+            "sustainableCitiesAndCommunities": "Sustainable Cities and Communities",
+            "climateAction": "Climate Action",
+            "lifeBelowWater": "Life Below Water",
+            "lifeOnLand": "Life On Land",
+            "peaceJusticeAndStrongInstitutions": "Peace, Justice and Strong Institutions",
+            "partnershipForTheGoals": "Partnership for the Goals",
+            "applyFilters": "Apply Filters"
+        },
+        "eventCards": {
+            "attendees": "Attendees",
+            "join": "JOIN",
+            "leave": "LEAVE"
+        }
+    },
     "eventViewPage": {
         "eventBanner": {
             "join": "Join",

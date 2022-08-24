@@ -18,45 +18,7 @@ exports[`renders correctly 1`] = `
         >
           <div
             className="rdrDateDisplayWrapper"
-          >
-            <div
-              className="rdrDateDisplay"
-              style={
-                Object {
-                  "color": "#0180AB",
-                }
-              }
-            >
-              <span
-                className="rdrDateInput rdrDateDisplayItem rdrDateDisplayItemActive"
-              >
-                <input
-                  disabled={false}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Early"
-                  readOnly={false}
-                  value="Aug 24, 2022"
-                />
-              </span>
-              <span
-                className="rdrDateInput rdrDateDisplayItem"
-              >
-                <input
-                  disabled={false}
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  placeholder="Continuous"
-                  readOnly={false}
-                  value="Aug 24, 2022"
-                />
-              </span>
-            </div>
-          </div>
+          />
           <div
             className="rdrMonthAndYearWrapper"
             onMouseUp={[Function]}
@@ -1457,14 +1419,6 @@ exports[`renders correctly 1`] = `
                   type="button"
                 >
                   <span
-                    className="rdrStartEdge rdrEndEdge"
-                    style={
-                      Object {
-                        "color": "#0180AB",
-                      }
-                    }
-                  />
-                  <span
                     className="rdrDayNumber"
                   >
                     <span>
@@ -1744,7 +1698,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           type="submit"
         >
-          SUBMIT
+          eventsPage.calendarComp.submit
         </button>
       </div>
     </div>
