@@ -38,7 +38,11 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Early"
                   readOnly={false}
+<<<<<<< HEAD
                   value="Aug 19, 2022"
+=======
+                  value="Aug 23, 2022"
+>>>>>>> e3fccfe89ece41a641e8df1cadd6fcd2d82160a1
                 />
               </span>
               <span
@@ -52,7 +56,11 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Continuous"
                   readOnly={false}
+<<<<<<< HEAD
                   value="Aug 19, 2022"
+=======
+                  value="Aug 23, 2022"
+>>>>>>> e3fccfe89ece41a641e8df1cadd6fcd2d82160a1
                 />
               </span>
             </div>
@@ -1421,7 +1429,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay"
+                  className="rdrDay rdrDayToday"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1438,6 +1446,14 @@ exports[`renders correctly 1`] = `
                   }
                   type="button"
                 >
+                  <span
+                    className="rdrStartEdge rdrEndEdge"
+                    style={
+                      Object {
+                        "color": "#0180AB",
+                      }
+                    }
+                  />
                   <span
                     className="rdrDayNumber"
                   >

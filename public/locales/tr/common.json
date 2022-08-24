@@ -10,6 +10,7 @@
             "turkish": "Türkçe",
             "allEvents": "Etkinlikler",
             "events": "Etkinlikler",
+
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
@@ -19,6 +20,7 @@
             "signOut": "Çıkış"
         },
         "footer": {
+            "google": "Google ile devam et",
             "events": "Etkinlikler",
             "about": "Hakkımızda",
             "howItWorks": "Nasıl Çalışır",
@@ -77,5 +79,15 @@
         "attendeesList": {
             "attendees": "Katılımcılar:"
         }
+    },
+    "signInUpPage": {
+        "haveAccount": "Zaten hesabım var,",
+        "dontHaveAccount": "Hesabım yok,",
+        "google": "Google ile devam et",
+        "twitter": "Twitter ile devam et",
+        "mail": "E-posta",
+        "password": "Şifre",
+        "name": "Ad",
+        "surname": "Soyadı"
     }
 }
