@@ -1,6 +1,7 @@
 {
     "test": "Merhaba",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Giriş",
             "signIn": "Giriş",
@@ -64,6 +65,7 @@
             "whoAreWe": "Biz Kimiz?"
         }
     },
+
     "eventsPage": {
         "welcome": "Hoşgeldin,",
         "description": "Keşfet ve Etkinliklere Katıl.",
@@ -103,6 +105,21 @@
             "attendees": "Katılımcı",
             "join": "KATIL",
             "leave": "AYRIL"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Katıl",
+            "leave": "Çık",
+            "noAttendees": "Henüz katılımcı yok.",
+            "oneAttendee": "1 Katılımcı",
+            "manyAttendees": "Katılımcı"
+        },
+        "eventDescription": {
+            "description": "Açıklama:"
+        },
+        "attendeesList": {
+            "attendees": "Katılımcılar:"
         }
     },
     "signInUpPage": {

@@ -1,6 +1,7 @@
 {
     "test": "Hello",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Log In",
             "signIn": "Sign In",
@@ -102,6 +103,21 @@
             "attendees": "Attendees",
             "join": "JOIN",
             "leave": "LEAVE"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Join",
+            "leave": "Leave",
+            "noAttendees": "There are no attendees yet.",
+            "oneAttendee": "1 Attendee",
+            "manyAttendees": "Attendees"
+        },
+        "eventDescription": {
+            "description": "Description:"
+        },
+        "attendeesList": {
+            "attendees": "Attendees:"
         }
     },
     "signInUpPage": {
