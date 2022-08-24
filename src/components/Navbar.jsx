@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import React from "react";
 
@@ -12,9 +13,9 @@ const { useState, useEffect, useRef } = React;
 const Navbar = () => {
     const { t } = useTranslation("common");
 
-    // we get the user information with useAuth.
+  // we get the user information with useAuth.
     const { auth, setAuth } = useAuth();
-
+    const { asPath } = useRouter();
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -211,24 +212,26 @@ const Navbar = () => {
                                             aria-labelledby='user-menu-button'
                                             tabIndex='-1'
                                         >
-                                            <a
-                                                href='/en'
+                                            <Link
+                                                href={asPath}
+                                                locale='en'
                                                 className=' flex  px-3 py-2 text-sm text-gray-700  hover:text-orange-400 '
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
                                             >
                                                 {t("common.nav.english")}
-                                            </a>
-                                            <a
-                                                href='/tr'
+                                            </Link>
+                                            <Link
+                                                href={asPath}
+                                                locale='tr'
                                                 className=' flex  px-3 py-2 text-sm text-gray-800 hover:text-orange-400'
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
                                             >
                                                 {t("common.nav.turkish")}
-                                            </a>
+                                            </Link>
                                         </div>
                                     )}
                                 </div>
@@ -376,25 +379,27 @@ const Navbar = () => {
 
                         {/* mobile's languages menu */}
                         <div className='flex flex-row items-center '>
-                            <a
-                                href='/en'
+                            <Link
+                                href={asPath}
+                                locale='en'
                                 className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
                                 role='menuitem'
                                 tabIndex='-1'
                                 id='user-menu-item-0'
                             >
                                 {t("common.nav.english")}
-                            </a>
+                            </Link>
                             <p className='text-orange-400'>|</p>
-                            <a
-                                href='/tr'
+                            <Link
+                                href={asPath}
+                                locale='tr'
                                 className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
                                 role='menuitem'
                                 tabIndex='-1'
                                 id='user-menu-item-0'
                             >
                                 {t("common.nav.turkish")}
-                            </a>
+                            </Link>
                         </div>
                         <div className='flex w-full flex-row items-center justify-center border-t'>
                             <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>

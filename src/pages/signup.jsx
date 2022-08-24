@@ -4,6 +4,7 @@ import React from "react";
 import Layout from "@/components/layout/Layout";
 import SignUp from "@/components/SignInUp/SignUp";
 
+
 const SignInUpPage = () => {
     return (
         <div>
