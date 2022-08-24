@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
 import useAuth from "@/hooks/useAuth";
@@ -8,31 +9,11 @@ import axios from "@/api/axios";
 
 const SIGNIN_URL = "/api/auth/signin";
 
-const exampleEvent = {
-    title: "New Event",
-    content: "This here is the content of the event.",
-    coverImage: "sadsa",
-    date: "2022-08-24",
-    categories: [
-        "Good Health And Well-Being",
-        "Quality Education",
-        "Gender Equality",
-    ],
-    address: {
-        city: "Izmir",
-        country: "Turkey",
-        addressLine: "12321 Sok. 123/12",
-    },
-    location: {
-        lat: 41.01,
-        log: 28.97,
-    },
-};
-
 function SignIn() {
     const [domLoaded, setDomLoaded] = useState(false);
 
-    const { setAuth } = useAuth();
+    const { auth, setAuth } = useAuth();
+    const router = useRouter();
 
     const emailRef = useRef();
     const errRef = useRef();
@@ -40,36 +21,15 @@ function SignIn() {
     const [email, setEmail] = useState("");
     const [pwd, setPwd] = useState("");
     const [errMsg, setErrMsg] = useState("");
-    const [success, setSuccess] = useState(false);
 
     useEffect(() => {
         setDomLoaded(true);
     }, []);
 
-    // useEffect(() => {
-    //   emailRef.current.focus();
-    // }, [])
-
     useEffect(() => {
         setErrMsg("");
     }, [email, pwd]);
 
-    const handleEventSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const responseEventPost = await axios.post(
-                "/api/event/",
-                JSON.stringify(exampleEvent),
-                {
-                    headers: { "Content-Type": "application/json" },
-                    withCredentials: true,
-                }
-            );
-            console.log(JSON.stringify(responseEventPost.data));
-        } catch (err) {
-            console.log(err);
-        }
-    };
 
     const handleSignIn = async (e) => {
         e.preventDefault();
@@ -86,20 +46,11 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
-            //document.cookie = response
-            console.log(JSON.stringify(response));
-            setSuccess(true);
-
-            // let setting = browser.cookies.set(
-            //   details               // object
-            // )
-            //console.log(JSON.stringify(HttpContext.Request.Cookies));
-            //console.log(response.cookie);
-            //const accessToken = response?.data?.auth_token;
-            //console.log(accessToken)
-            setAuth({ email });
+            auth.email = email;
+            setAuth(auth);
             setEmail("");
             setPwd("");
+            router.push("/events")
         } catch (err) {
             if (!err?.response) {
                 setErrMsg("No Server Response");
@@ -113,16 +64,6 @@ function SignIn() {
     };
 
     return (
-        <>
-            {success ? (
-                <section>
-                    <h1>You are logged in!</h1>
-                    <br />
-                    <p>
-                        <Link href='/'>Go to Home</Link>
-                    </p>
-                </section>
-            ) : (
                 domLoaded && (
                     <form className='m-5  flex h-full flex-col  items-center  justify-around   lg:flex-row'>
                         <div className='h-100 flex w-96 flex-col items-center justify-center text-center 2xl:scale-150 '>
@@ -208,19 +149,11 @@ function SignIn() {
                                     >
                                         Sign In
                                     </button>
-                                    <button
-                                        className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
-                                        onClick={handleEventSubmit}
-                                    >
-                                        Post Event
-                                    </button>
                                 </div>
                             </div>
                         </div>
                     </form>
                 )
-            )}
-        </>
     );
 }
 
