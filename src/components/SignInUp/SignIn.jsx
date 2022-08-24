@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
 import useAuth from "@/hooks/useAuth";
@@ -8,31 +9,12 @@ import axios from "@/api/axios";
 
 const SIGNIN_URL = "/api/auth/signin";
 
-const exampleEvent = {
-    title: "New Event",
-    content: "This here is the content of the event.",
-    coverImage: "sadsa",
-    date: "2022-08-24",
-    categories: [
-        "Good Health And Well-Being",
-        "Quality Education",
-        "Gender Equality",
-    ],
-    address: {
-        city: "Izmir",
-        country: "Turkey",
-        addressLine: "12321 Sok. 123/12",
-    },
-    location: {
-        lat: 41.01,
-        log: 28.97,
-    },
-};
-
 function SignIn() {
     const [domLoaded, setDomLoaded] = useState(false);
 
     const { setAuth } = useAuth();
+
+    const router = useRouter();
 
     const emailRef = useRef();
     const errRef = useRef();
@@ -53,23 +35,6 @@ function SignIn() {
     useEffect(() => {
         setErrMsg("");
     }, [email, pwd]);
-
-    const handleEventSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const responseEventPost = await axios.post(
-                "/api/event/",
-                JSON.stringify(exampleEvent),
-                {
-                    headers: { "Content-Type": "application/json" },
-                    withCredentials: true,
-                }
-            );
-            console.log(JSON.stringify(responseEventPost.data));
-        } catch (err) {
-            console.log(err);
-        }
-    };
 
     const handleSignIn = async (e) => {
         e.preventDefault();
@@ -100,6 +65,7 @@ function SignIn() {
             setAuth({ email });
             setEmail("");
             setPwd("");
+            router.push("/");
         } catch (err) {
             if (!err?.response) {
                 setErrMsg("No Server Response");
@@ -207,12 +173,6 @@ function SignIn() {
                                         onClick={handleSignIn}
                                     >
                                         Sign In
-                                    </button>
-                                    <button
-                                        className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
-                                        onClick={handleEventSubmit}
-                                    >
-                                        Post Event
                                     </button>
                                 </div>
                             </div>
