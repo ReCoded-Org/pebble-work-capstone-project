@@ -14,9 +14,9 @@
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
-            "yourEvents": "Etkinliklerim",
-            "yourProfile": "Profilim",
-            "settings": "Ayarlar",
+            "yourEvents": "Etkinlikler",
+            "yourProfile": "Profil Ayarları",
+            "settings": "Etkinlik Yarat",
             "signOut": "Çıkış"
         },
         "footer": {

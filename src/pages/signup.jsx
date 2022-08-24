@@ -2,13 +2,13 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import React from "react";
 
 import Layout from "@/components/layout/Layout";
-import SignInUp from "@/components/SignInUp/SignInUp";
+import SignUp from "@/components/SignInUp/SignUp";
 
 const SignInUpPage = () => {
     return (
         <div>
             <Layout>
-                <SignInUp title='Sign up' />
+                <SignUp />
             </Layout>
         </div>
     );

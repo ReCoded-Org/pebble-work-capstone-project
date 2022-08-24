@@ -14,9 +14,9 @@
             "about": "About",
             "howItWorks": "How It Works",
             "aboutUs": "About Us",
-            "yourEvents": "Your Events",
-            "yourProfile": "Your Profile",
-            "settings": "Settings",
+            "yourEvents": "All Events",
+            "yourProfile": "Edit Profile",
+            "settings": "Create Event",
             "signOut": "Sign Out"
         },
         "footer": {
