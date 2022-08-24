@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import React, { useState } from "react";
 
 import EditInterests from "../EditInterests";
 import InputComponent from "../InputComponent";
 
 const EventCreation = () => {
+    const { t } = useTranslation("common");
     const citiesOfTurkey = [
         "Adana",
         "Adiyaman",
@@ -96,17 +98,16 @@ const EventCreation = () => {
     return (
         <>
             <div className='mb-4 mt-3 flex flex-col items-center justify-center  py-3 text-3xl  font-semibold '>
-                <h1>Create an Event</h1>
+                <h1>{t("eventCreation.header.title")}</h1>
             </div>
             <div className='mx-8 mt-3 mb-4 divide-y'>
                 <div className='mb-4 flex flex-col  items-center gap-10 py-3 md:flex-row md:justify-around'>
                     <div className='flex flex-col items-center justify-center'>
                         <h2 className='py-1 text-xl font-medium text-black'>
-                            First, set your events’s location:
+                            {t("eventCreation.header.subtitle")}
                         </h2>
                         <p className='my-1 text-gray-500'>
-                            Pebble events can be both local or online. Choose
-                            where you want to host your event.
+                            {t("eventCreation.header.description")}
                         </p>
                         <div className='relative w-full py-5'>
                             <div className='pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3'>
@@ -156,13 +157,10 @@ const EventCreation = () => {
                 <div className='flex flex-col pt-3 '>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
-                            Choose event type:
+                            {t("eventCreation.eventType.title")}
                         </h2>
                         <p className='mt-1 pr-20  text-gray-500 '>
-                            Every pebble event should serve at least one of the
-                            sustainable development goals of United Nations.
-                            Which goal do you want to help in? Select all that
-                            apply.
+                            {t("eventCreation.eventType.description")}
                         </p>
                     </div>
                     <div className='md:flex md:justify-between'>
@@ -172,12 +170,10 @@ const EventCreation = () => {
                 <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
-                            Event title:
+                            {t("eventCreation.eventInfo.eventTitle")}
                         </h2>
                         <p className='my-1 pr-20 text-gray-500 md:w-full'>
-                            Choose a title that will give people a clear idea of
-                            what the event is about. Feel free to be creative!
-                            You canedit this later if you change your mind.
+                            {t("eventCreation.eventInfo.titleDesc")}
                         </p>
                         <div className=' py-5 md:w-96 '>
                             <InputComponent
@@ -191,11 +187,10 @@ const EventCreation = () => {
                 <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
-                            Event Description:
+                            {t("eventCreation.eventInfo.eventDesc")}
                         </h2>
                         <p className='my-1 w-full pr-20 text-gray-500'>
-                            Describe the purpose of your event. Who should join
-                            and what will you do at the event?
+                            {t("eventCreation.eventInfo.descriptionDesc")}
                         </p>
                         <div className=' w-full py-3 pr-20'>
                             <textarea
@@ -210,16 +205,15 @@ const EventCreation = () => {
                 <div className='mb-4 flex flex-col gap-10 py-3 pr-20 md:w-full md:flex-row md:justify-between'>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
-                            Event Image:
+                            {t("eventCreation.eventInfo.eventImg")}
                         </h2>
                         <p className='my-1 w-full text-gray-500'>
-                            We have found that listings with a photo attract
-                            more interest.
+                            {t("eventCreation.eventInfo.imgDesc")}
                         </p>
                         <div className='relative py-5 md:w-full md:pr-0 '>
                             <div className='w-25  absolute inset-y-0 left-0 flex items-center hover:border-primary-200  '>
                                 <button className='ml-0 h-11 w-full cursor-pointer rounded border-2 border-b-4 border-r-4  border-black px-2 hover:border-primary-200 hover:text-primary-200 '>
-                                    Browse
+                                    {t("eventCreation.eventInfo.browse")}
                                 </button>
                             </div>
                             <InputComponent className='w-full  rounded border border-l-0 border-black pl-20 focus:border-black   focus:outline-none focus:ring-0 focus:ring-black' />
@@ -229,31 +223,23 @@ const EventCreation = () => {
                 <div className='mb-3 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
-                            Almost Done! Just take a minute to review our
-                            guidlines.
+                            {t("eventCreation.guidelines.title")}
                         </h2>
                         <p className='my-2 w-full text-gray-500'>
-                            Pebble is all about helping people with the help of
-                            volunteers like you. This means that all events
-                            should:
+                            {t("eventCreation.guidelines.description")}
                         </p>
                         <ul className=' my-1 w-full list-disc pl-5 text-black'>
-                            <li>
-                                Be transparent about the event’s intentions.
-                            </li>
-                            <li>
-                                Encourage real human interactions in person or
-                                online
-                            </li>
-                            <li> Have the host present in all events</li>
+                            <li>{t("eventCreation.guidelines.li1")}</li>
+                            <li>{t("eventCreation.guidelines.li2")}</li>
+                            <li> {t("eventCreation.guidelines.li3")}</li>
                         </ul>
                         <p className=' my-1 w-full pl-1 text-gray-400'>
-                            You can read more about all of this in our
+                            {t("eventCreation.guidelines.community")}
                             <a
                                 href='#'
                                 className='p-1 text-blue-600 hover:text-primary-200'
                             >
-                                Community guidlines
+                                {t("eventCreation.guidelines.communityLink")}
                             </a>
                         </p>
                     </div>
@@ -261,7 +247,7 @@ const EventCreation = () => {
             </div>
             <div className='mb-4 flex w-full flex-col items-center  justify-center gap-10 py-3 '>
                 <button className='rounded border border-b-4 border-r-4 border-black py-4 px-4  hover:border-primary-200 hover:text-primary-200  md:w-96'>
-                    Agree with terms and create event!
+                    {t("eventCreation.guidelines.agree")}
                 </button>
             </div>
         </>

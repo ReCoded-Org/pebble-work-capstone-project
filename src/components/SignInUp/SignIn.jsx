@@ -30,7 +30,6 @@ function SignIn() {
         setErrMsg("");
     }, [email, pwd]);
 
-
     const handleSignIn = async (e) => {
         e.preventDefault();
         const user = {
@@ -48,8 +47,6 @@ function SignIn() {
             );
             auth.email = email;
             setAuth(auth);
-            setEmail("");
-            setPwd("");
             router.push("/events")
         } catch (err) {
             if (!err?.response) {
@@ -63,8 +60,7 @@ function SignIn() {
         }
     };
 
-    return (
-                domLoaded && (
+    return (domLoaded && (
                     <form className='m-5  flex h-full flex-col  items-center  justify-around   lg:flex-row'>
                         <div className='h-100 flex w-96 flex-col items-center justify-center text-center 2xl:scale-150 '>
                             <Image
