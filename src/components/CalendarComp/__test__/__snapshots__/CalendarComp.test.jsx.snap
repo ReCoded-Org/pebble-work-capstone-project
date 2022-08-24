@@ -38,11 +38,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Early"
                   readOnly={false}
-<<<<<<< HEAD
-                  value="Aug 19, 2022"
-=======
-                  value="Aug 23, 2022"
->>>>>>> e3fccfe89ece41a641e8df1cadd6fcd2d82160a1
+                  value="Aug 24, 2022"
                 />
               </span>
               <span
@@ -56,11 +52,7 @@ exports[`renders correctly 1`] = `
                   onKeyDown={[Function]}
                   placeholder="Continuous"
                   readOnly={false}
-<<<<<<< HEAD
-                  value="Aug 19, 2022"
-=======
-                  value="Aug 23, 2022"
->>>>>>> e3fccfe89ece41a641e8df1cadd6fcd2d82160a1
+                  value="Aug 24, 2022"
                 />
               </span>
             </div>
@@ -1317,7 +1309,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay rdrDayToday"
+                  className="rdrDay"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1334,14 +1326,6 @@ exports[`renders correctly 1`] = `
                   }
                   type="button"
                 >
-                  <span
-                    className="rdrStartEdge rdrEndEdge"
-                    style={
-                      Object {
-                        "color": "#0180AB",
-                      }
-                    }
-                  />
                   <span
                     className="rdrDayNumber"
                   >
@@ -1429,6 +1413,32 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
+                  className="rdrDay"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onPauseCapture={[Function]}
+                  style={
+                    Object {
+                      "color": "#3d91ff",
+                    }
+                  }
+                  type="button"
+                >
+                  <span
+                    className="rdrDayNumber"
+                  >
+                    <span>
+                      23
+                    </span>
+                  </span>
+                </button>
+                <button
                   className="rdrDay rdrDayToday"
                   onBlur={[Function]}
                   onFocus={[Function]}
@@ -1454,32 +1464,6 @@ exports[`renders correctly 1`] = `
                       }
                     }
                   />
-                  <span
-                    className="rdrDayNumber"
-                  >
-                    <span>
-                      23
-                    </span>
-                  </span>
-                </button>
-                <button
-                  className="rdrDay"
-                  onBlur={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onPauseCapture={[Function]}
-                  style={
-                    Object {
-                      "color": "#3d91ff",
-                    }
-                  }
-                  type="button"
-                >
                   <span
                     className="rdrDayNumber"
                   >
