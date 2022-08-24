@@ -65,7 +65,7 @@ function SignIn() {
             setAuth({ email });
             setEmail("");
             setPwd("");
-            router.push("/");
+            router.push("/events");
         } catch (err) {
             if (!err?.response) {
                 setErrMsg("No Server Response");
