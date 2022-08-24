@@ -302,7 +302,7 @@ const Navbar = () => {
                                         tabIndex='-1'
                                         id='user-menu-item-2'
                                     >
-                                        {t("commmon.nav.signOut")}
+                                        {t("common.nav.signOut")}
                                     </a>
                                 </div>
                             )}
