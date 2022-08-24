@@ -11,6 +11,7 @@ import CategoryCheckboxes from "@/components/CategoryCheckboxes";
 import EventCards from "@/components/EventCards";
 import Layout from "@/components/layout/Layout";
 import LocationComp from "@/components/LocationComp";
+import Pagination from "@/components/Pagination/Pagination";
 
 export async function getServerSideProps({ locale, query }) {
     let categoryParams = "";
@@ -51,6 +52,14 @@ export async function getServerSideProps({ locale, query }) {
 }
 
 const EventsPage = ({ events }) => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(5);
+
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     const { t } = useTranslation("common");
     const router = useRouter();
     // CATEGORY SELECTION
@@ -391,9 +400,14 @@ const EventsPage = ({ events }) => {
 
                 <div className='mx-4 sm:col-span-2 sm:mx-0'>
                     <EventCards
-                        events={events}
+                        events={currentPosts}
                         isJoined={isJoined}
                         handleJoinClick={handleJoinClick}
+                    />
+                    <Pagination
+                        postsPerPage={postsPerPage}
+                        totalPosts={events.length}
+                        paginate={paginate}
                     />
                 </div>
             </div>
