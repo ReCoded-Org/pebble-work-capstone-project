@@ -13,7 +13,7 @@ const { useState, useEffect, useRef } = React;
 const Navbar = () => {
     const { t } = useTranslation("common");
 
-  // we get the user information with useAuth.
+    // we get the user information with useAuth.
     const { auth, setAuth } = useAuth();
     const { asPath } = useRouter();
     const [showDropdown, setShowDropdown] = useState(false);
