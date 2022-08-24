@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import React from "react";
-
 function Footer() {
     const { t } = useTranslation("common");
 
@@ -59,15 +59,21 @@ function Footer() {
                 </div>
                 <div className='flex basis-1/2 flex-col justify-center space-y-6'>
                     <div className='flex justify-center space-x-6 md:justify-evenly'>
-                        <a href='#events'>
-                            <b>{t("common.footer.events")}</b>
-                        </a>
-                        <a href='#about'>
-                            <b>{t("common.footer.about")}</b>
-                        </a>
-                        <a href='#howItWorks'>
-                            <b>{t("common.footer.howItWorks")}</b>
-                        </a>
+                        <Link href='/events'>
+                            <b className='cursor-pointer'>
+                                {t("common.footer.events")}
+                            </b>
+                        </Link>
+                        <Link href='/about'>
+                            <b className='cursor-pointer'>
+                                {t("common.footer.about")}
+                            </b>
+                        </Link>
+                        <Link href='/#how-it-works'>
+                            <b className='cursor-pointer '>
+                                {t("common.footer.howItWorks")}
+                            </b>
+                        </Link>
                     </div>
                 </div>
                 <div className='flex basis-1/4 justify-center space-x-6'>

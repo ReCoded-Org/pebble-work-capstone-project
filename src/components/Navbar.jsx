@@ -1,12 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import React from "react";
+
+import useAuth from "@/hooks/useAuth";
+
+import axios from "@/api/axios";
 
 const { useState, useEffect, useRef } = React;
 
 const Navbar = () => {
     const { t } = useTranslation("common");
+
+    // we get the user information with useAuth.
+    const { auth, setAuth } = useAuth();
+
+    const router = useRouter();
+
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -55,6 +66,22 @@ const Navbar = () => {
         window.addEventListener("click", handleClick);
         return () => window.removeEventListener("click", handleClick);
     }, [profileShowDropdown]);
+
+    const handleSignOut = async () => {
+        try {
+            const response = await axios.get('/api/auth/signout', 
+                {
+                  headers: { 'Content-Type': 'application/json'},
+                  withCredentials: true
+                }
+            );
+            console.log(response);
+            setAuth({ });
+        }
+        catch (err) {
+            console.log(err);
+        }
+    }
 
     return (
         <nav
@@ -211,7 +238,10 @@ const Navbar = () => {
                                         </div>
                                     )}
                                 </div>
-                                <Link href='/signin'>
+                                {/* If there is NO authorized email, then user is not signed in. Show the sign in and out buttons */}
+                                {!auth?.email && (
+                                    <>
+                                    <Link href='/signin'>
                                     <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
                                         {t("common.nav.login")}
                                     </a>
@@ -221,10 +251,14 @@ const Navbar = () => {
                                         {t("common.nav.signUp")}
                                     </button>
                                 </Link>
+                                </>
+                                )}
                             </div>
                         </div>
                         {/* profile menu */}
-                        <div className='relative ml-3 hidden '>
+                        {/* If there is authorized email, then user is signed in. Show profile menu */}
+                        {auth?.email && (
+                            <div className='relative ml-3'>
                             <div>
                                 <button
                                     type='button'
@@ -255,54 +289,63 @@ const Navbar = () => {
                                     </div>
                                 </button>
                             </div>
+                            {/* The z-50 index below is to make the menu dropdown show over content, instead of showing behind */}
                             {profileShowDropdown && (
                                 <div
                                     ref={profileDropdown}
-                                    className='absolute right-0 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                    className=' absolute z-50 right-0 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
                                     role='menu'
                                     aria-orientation='vertical'
                                     aria-labelledby='user-menu-button'
                                     tabIndex='-1'
                                 >
-                                    <a
-                                        href='#'
+                                    <Link
+                                        href='/events'
                                         className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='user-menu-item-0'
                                     >
                                         {t("common.nav.yourEvents")}
-                                    </a>
-                                    <a
-                                        href='#'
+                                    </Link>
+                                    <br />
+                                    <Link
+                                        href='/editprofile'
                                         className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='user-menu-item-0'
                                     >
                                         {t("common.nav.yourProfile")}
-                                    </a>
-                                    <a
-                                        href='#'
+                                    </Link>
+                                    <br />
+                                    <Link
+                                        href='/eventcreation'
                                         className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='user-menu-item-1'
                                     >
                                         {t("common.nav.settings")}
-                                    </a>
-                                    <a
-                                        href='#'
+                                    </Link>
+                                    <br />
+                                    <button onClick={handleSignOut}>
+                                    <Link
+                                        href='/'
                                         className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
                                         role='menuitem'
                                         tabIndex='-1'
                                         id='user-menu-item-2'
+                                        
                                     >
-                                        {t("commmon.nav.signOut")}
-                                    </a>
+                                        {t("common.nav.signOut")}
+                                    </Link>
+                                    </button>
                                 </div>
                             )}
                         </div>
+                        )}
+                        
                     </div>
                 </div>
             </div>

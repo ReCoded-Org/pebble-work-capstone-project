@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useContext,useEffect,useRef, useState } from 'react';
+import { useRouter } from 'next/router';
+import { useEffect, useRef, useState } from 'react';
+
+import useAuth from '@/hooks/useAuth';
 
 import axios from '@/api/axios';
-import AuthContext from '@/context/AuthProvider';
 
 const SIGNIN_URL = "/api/auth/signin";
 
@@ -27,7 +29,7 @@ const exampleEvent = {
 function SignIn() {
   const [domLoaded, setDomLoaded] = useState(false);
 
-  const { setAuth } = useContext(AuthContext);
+  const { setAuth } = useAuth();
 
   const emailRef = useRef();
   const errRef = useRef();
@@ -36,6 +38,8 @@ function SignIn() {
   const [pwd, setPwd] = useState('');
   const [errMsg, setErrMsg] = useState('')
   const [success, setSuccess] = useState(false);
+
+  const router = useRouter();
 
   useEffect(() => {
     setDomLoaded(true);
@@ -82,6 +86,7 @@ function SignIn() {
         );
       //document.cookie = response
       console.log(JSON.stringify(response));
+      setSuccess(true);
       
      
       // let setting = browser.cookies.set(
@@ -91,9 +96,10 @@ function SignIn() {
       //console.log(response.cookie);
       //const accessToken = response?.data?.auth_token;
       //console.log(accessToken)
-      // setAuth({ email, pwd, accessToken})
+      setAuth({ email })
       setEmail('');
       setPwd('');
+      // router.push("/");
     } catch (err) {
       if (!err?.response) {
         setErrMsg('No Server Response');

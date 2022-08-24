@@ -8,13 +8,14 @@
             "english": "English",
             "turkish": "Turkish",
             "allEvents": "All Events",
+
             "events": "Events",
             "about": "About",
             "howItWorks": "How It Works",
             "aboutUs": "About Us",
-            "yourEvents": "Your Events",
-            "yourProfile": "Your Profile",
-            "settings": "Settings",
+            "yourEvents": "All Events",
+            "yourProfile": "Edit Profile",
+            "settings": "Create Event",
             "signOut": "Sign Out"
         },
         "footer": {
@@ -61,5 +62,15 @@
             "getStarted": "Get Started",
             "whoAreWe": "Who are we?"
         }
+    },
+    "signInUpPage": {
+        "haveAccount": " Already have an account? ",
+        "dontHaveAccount": "Don't have an account? ",
+        "google": "Continue with Google ",
+        "twitter": "Continue with Twitter",
+        "mail": "Email adress",
+        "password": "Password",
+        "name": "Name",
+        "surname": "Surname"
     }
 }
