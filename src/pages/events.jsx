@@ -5,6 +5,8 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useEffect, useRef, useState } from "react";
 
+import useAuth from "@/hooks/useAuth";
+
 import Button from "@/components/Button";
 import CalendarComp from "@/components/CalendarComp";
 import CategoryCheckboxes from "@/components/CategoryCheckboxes";
@@ -52,6 +54,7 @@ export async function getServerSideProps({ locale, query }) {
 
 const EventsPage = ({ events }) => {
     const { t } = useTranslation("common");
+    const { auth } = useAuth();
     const router = useRouter();
     // CATEGORY SELECTION
     const categories = [
@@ -285,7 +288,7 @@ const EventsPage = ({ events }) => {
             <div className='flex justify-center text-center sm:mx-12 sm:grid sm:grid-cols-3  sm:text-start'>
                 <div className='col-start-2 mx-4 mt-6'>
                     <h1 className='text-xl font-bold sm:text-3xl'>
-                        {t("eventsPage.welcome")} Dilara!
+                        {t("eventsPage.welcome")}{auth?.firstName ? `, ${auth.firstName}!` : "!"}
                     </h1>
                     <p className='mt-2 text-xs sm:text-base'>
                         {t("eventsPage.description")}

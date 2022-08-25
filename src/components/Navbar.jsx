@@ -401,25 +401,28 @@ const Navbar = () => {
                                 {t("common.nav.turkish")}
                             </Link>
                         </div>
-                        <div className='flex w-full flex-row items-center justify-center border-t'>
-                            <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
-                                <Link
-                                    href='/signin'
-                                    className='block  rounded-md border-t px-3 py-2 text-base font-medium '
-                                >
-                                    {t("common.nav.signIn")}
-                                </Link>
+                        {!auth?.email && (
+                            <div className='flex w-full flex-row items-center justify-center border-t'>
+                                <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
+                                    <Link
+                                        href='/signin'
+                                        className='block  rounded-md border-t px-3 py-2 text-base font-medium '
+                                    >
+                                        {t("common.nav.signIn")}
+                                    </Link>
+                                </div>
+                                <p className='text-orange-400'>|</p>
+                                <div className=' flex  w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
+                                    <Link
+                                        href='/signup'
+                                        className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
+                                    >
+                                        {t("common.nav.signUp")}
+                                    </Link>
+                                </div>
                             </div>
-                            <p className='text-orange-400'>|</p>
-                            <div className=' flex  w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
-                                <Link
-                                    href='/signup'
-                                    className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
-                                >
-                                    {t("common.nav.signUp")}
-                                </Link>
-                            </div>
-                        </div>
+                        )}
+                        
                     </div>
                 </div>
             )}

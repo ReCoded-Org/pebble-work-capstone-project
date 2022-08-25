@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 
+import useAuth from "@/hooks/useAuth";
+
 import Button from "@/components/Button";
 
 const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
     const { t } = useTranslation("common");
-
+    const { auth } = useAuth();
     let attendeeAvatars = [];
     for (let i = 0; i < 3; i++) {
         attendeeAvatars.push(
@@ -58,26 +60,55 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     </p>
                                 </div>
                                 <div className='mt-2 flex items-end justify-center sm:justify-end '>
-                                    <Button
-                                        label={
-                                            isJoined[event._id]
-                                                ? t(
-                                                      "eventsPage.eventCards.leave"
-                                                  )
-                                                : t(
-                                                      "eventsPage.eventCards.join"
-                                                  )
-                                        }
-                                        textColor='text-white'
-                                        bgColor='bg-primary-200'
-                                        borderColor='border-primary-200'
-                                        height='h-10'
-                                        width='w-24'
-                                        customStyle='mx-2 my-0'
-                                        onClick={() =>
-                                            handleJoinClick(event._id)
-                                        }
-                                    />
+                                    {/* if user signed in show join leave buttons */}
+                                    {auth?.email && (
+                                        <Button
+                                            label={
+                                                isJoined[event._id]
+                                                    ? t(
+                                                        "eventsPage.eventCards.leave"
+                                                    )
+                                                    : t(
+                                                        "eventsPage.eventCards.join"
+                                                    )
+                                            }
+                                            textColor='text-white'
+                                            bgColor='bg-primary-200'
+                                            borderColor='border-primary-200'
+                                            height='h-10'
+                                            width='w-24'
+                                            customStyle='mx-2 my-0'
+                                            onClick={() =>
+                                                handleJoinClick(event._id)
+                                            }
+                                        />
+                                    )}
+                                    {/* if user is NOT signed in show sign in or sign up buttons */}
+                                    {!auth?.email && (
+                                        <div className="flex flex-row items-center">
+                                        <Button
+                                            label={t("common.nav.signIn")}
+                                            textColor='text-white'
+                                            bgColor='bg-primary-200'
+                                            borderColor='border-primary-200'
+                                            height='h-10'
+                                            width='w-24'
+                                            customStyle='mx-2 my-0'
+                                            href="/signin"
+                                        />
+                                        <p>OR</p>
+                                        <Button
+                                            label={t("common.nav.signUp")}
+                                            textColor='text-white'
+                                            bgColor='bg-primary-200'
+                                            borderColor='border-primary-200'
+                                            height='h-10'
+                                            width='w-24'
+                                            customStyle='mx-2 my-0'
+                                            href="/signup"
+                                        />
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>
