@@ -52,7 +52,7 @@ function SignIn() {
             authData["email"] = email;
             console.log(auth);
             setAuth(authData);
-            //router.push("/events")
+            router.push("/events")
         } catch (err) {
             console.log(err);
             if (!err?.response) {
