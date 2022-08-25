@@ -46,15 +46,11 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
-            console.log({ response });
-            console.log(email);
             const authData = { ...auth };
             authData["email"] = email;
-            console.log(auth);
             setAuth(authData);
             router.push("/events");
         } catch (err) {
-            console.log(err);
             if (!err?.response) {
                 setErrMsg("No Server Response", err);
             } else if (err.response?.status === 400) {
