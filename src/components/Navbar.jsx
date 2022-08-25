@@ -6,50 +6,27 @@ import React from "react";
 
 import useAuth from "@/hooks/useAuth";
 
+import LanguagesDropdown from "@/components/LanguagesDropdown";
+
 import axios from "@/api/axios";
 
 const { useState, useEffect, useRef } = React;
 
-const Navbar = () => {
+const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
     const { t } = useTranslation("common");
-
     // we get the user information with useAuth.
     const { auth, setAuth } = useAuth();
     const { asPath } = useRouter();
-    const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
-    const [showMobileDropdown, setShowMobileDropdown] = useState(false);
-
+    // const [showMobileDropdown, setShowMobileDropdown] = useState(false);
     const Mobiledropdown = useRef(null);
-    useEffect(() => {
-        if (showMobileDropdown) return;
-        function handleClick(event) {
-            if (
-                showMobileDropdown.current &&
-                !showMobileDropdown.current.contains(event.target)
-            ) {
-                setShowMobileDropdown(false);
-            }
-        }
-        window.addEventListener("click", handleClick);
-        return () => window.removeEventListener("click", handleClick);
-    }, [showMobileDropdown]);
 
-    // languages dropdown
-    const dropdown = useRef(null);
-    useEffect(() => {
-        // only add the event listener when the dropdown is opened
-        if (showDropdown) return;
-        function handleClick(event) {
-            if (dropdown.current && !dropdown.current.contains(event.target)) {
-                setShowDropdown(false);
-            }
-        }
-        window.addEventListener("click", handleClick);
-        // clean up
-        return () => window.removeEventListener("click", handleClick);
-    }, [showDropdown]);
-
+    const close = () => {
+        setProfileShowDropdown(false);
+    };
+    // const closeMobileMenu = () => {
+    //     setShowMobileDropdown(false);
+    // };
     const profileDropdown = useRef(null);
     useEffect(() => {
         if (profileShowDropdown) return;
@@ -80,21 +57,21 @@ const Navbar = () => {
 
     return (
         <nav
-            className='mb-1  shadow'
-            style={{ backgroundColor: "transparent" }}
+            className='relative z-50 mb-1 bg-white shadow-md'
+            // style={{ backgroundColor: "transparent" }}
         >
-            <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 '>
+            <div className='mx-auto max-w-7xl  sm:px-6  lg:px-8  '>
                 <div className='relative flex h-16 items-center justify-between'>
-                    <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+                    <div className='absolute inset-y-0 left-0 flex w-full items-center sm:hidden '>
                         {/* <!-- Mobile menu button--> */}
                         <button
                             type='button'
-                            className='inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:text-white focus:outline-none '
+                            className='inline-flex items-center justify-center rounded-md p-2 px-4 text-gray-400  hover:text-white focus:outline-none '
                             aria-controls='mobile-menu'
                             aria-expanded='false'
-                            onClick={() => setShowDropdown((b) => !b)}
+                            onClick={open}
+                            onBlur={closeMobileMenu}
                         >
-                            <span className='sr-only'>Open main menu</span>
                             <svg
                                 style={{ stroke: "#56c1e6" }}
                                 className=' block h-6 w-6 '
@@ -127,6 +104,88 @@ const Navbar = () => {
                                 />
                             </svg>
                         </button>
+                        {showMobileDropdown && (
+                            <div
+                                ref={Mobiledropdown}
+                                className=' absolute z-50  w-full '
+                                id='mobile-menu'
+                            >
+                                <div className='absolute z-50  mt-8 flex  w-full  flex-col  items-center border-b  bg-white pt-2 pb-1  shadow-lg '>
+                                    <div className='p-2'>
+                                        <Link
+                                            href='/allevents'
+                                            className='block rounded-md  px-3 py-2 text-base font-medium text-gray-700'
+                                            aria-current='page'
+                                        >
+                                            {t("common.nav.allEvents")}
+                                        </Link>
+                                    </div>
+                                    <div className='p-2'>
+                                        <Link
+                                            href='/howitworks'
+                                            className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
+                                        >
+                                            {t("common.nav.howItWorks")}
+                                        </Link>
+                                    </div>
+                                    <div className='p-2'>
+                                        <Link
+                                            href='/aboutus'
+                                            className='block rounded-md px-3 py-2 text-base font-medium text-gray-700'
+                                        >
+                                            {t("common.nav.aboutUs")}
+                                        </Link>
+                                    </div>
+
+                                    {/* mobile's languages menu */}
+                                    <div className='flex flex-row items-center py-1  '>
+                                        <Link
+                                            href={asPath}
+                                            locale='en'
+                                            className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            {t("common.nav.english")}
+                                        </Link>
+
+                                        <p className='mx-3 text-orange-400'>
+                                            |
+                                        </p>
+                                        <Link
+                                            href={asPath}
+                                            locale='tr'
+                                            className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            {t("common.nav.turkish")}
+                                        </Link>
+                                    </div>
+                                    <div className='flex w-full flex-row items-center justify-center border-t'>
+                                        <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
+                                            <Link
+                                                href='/signin'
+                                                className='block  rounded-md border-t px-3 py-2 text-base font-medium '
+                                            >
+                                                {t("common.nav.signIn")}
+                                            </Link>
+                                        </div>
+                                        <p className='text-orange-400'>|</p>
+                                        <div className=' flex  w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
+                                            <Link
+                                                href='/signup'
+                                                className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
+                                            >
+                                                {t("common.nav.signUp")}
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                     <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                         <Link
@@ -156,86 +215,7 @@ const Navbar = () => {
                                     </a>
                                 </Link>
                                 {/* Languages menu */}
-                                <div className=' relative ml-3 hidden sm:ml-6 sm:block'>
-                                    <div>
-                                        <button
-                                            type='button'
-                                            className='flex text-sm  '
-                                            id='user-menu-button'
-                                            aria-expanded='false'
-                                            aria-haspopup='true'
-                                            onClick={() =>
-                                                setShowDropdown((b) => !b)
-                                            }
-                                        >
-                                            <div className=' w-15 relative flex h-10 flex-row items-center overflow-hidden  text-gray-700  hover:text-orange-400 '>
-                                                <svg
-                                                    xmlns='http://www.w3.org/2000/svg'
-                                                    className='h-5 w-5 '
-                                                    fill='none'
-                                                    viewBox='0 0 24 24'
-                                                    stroke='currentColor'
-                                                    strokeWidth='2'
-                                                >
-                                                    <path
-                                                        strokeLinecap='round'
-                                                        strokeLinejoin='round'
-                                                        d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'
-                                                    />
-                                                </svg>
-                                                <svg
-                                                    xmlns='http://www.w3.org/2000/svg'
-                                                    className='h-3 w-3'
-                                                    fill='none'
-                                                    viewBox='0 0 24 24'
-                                                    stroke='currentColor'
-                                                    strokeWidth={2}
-                                                >
-                                                    <path
-                                                        strokeLinecap='round'
-                                                        strokeLinejoin='round'
-                                                        d='M19 9l-7 7-7-7'
-                                                    />
-                                                </svg>
-                                            </div>
-                                        </button>
-                                    </div>
-                                    {showDropdown && (
-                                        <div
-                                            ref={dropdown}
-                                            className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white  shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
-                                            role='menu'
-                                            aria-orientation='vertical'
-                                            aria-labelledby='user-menu-button'
-                                            tabIndex='-1'
-                                        >
-                                            <div className='rounded px-2  py-1 hover:bg-gray-100'>
-                                                <Link
-                                                    href={asPath}
-                                                    locale='en'
-                                                    className=' flex text-sm text-gray-700  hover:text-orange-400 '
-                                                    role='menuitem'
-                                                    tabIndex='-1'
-                                                    id='user-menu-item-0'
-                                                >
-                                                    {t("common.nav.english")}
-                                                </Link>
-                                            </div>
-                                            <div className='rounded px-2  py-1 hover:bg-gray-100'>
-                                                <Link
-                                                    href={asPath}
-                                                    locale='tr'
-                                                    className=' flex text-sm text-gray-800 hover:text-orange-400'
-                                                    role='menuitem'
-                                                    tabIndex='-1'
-                                                    id='user-menu-item-0'
-                                                >
-                                                    {t("common.nav.turkish")}
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
+                                <LanguagesDropdown />
                                 {/* If there is NO authorized email, then user is not signed in. Show the sign in and out buttons */}
                                 {!auth?.email && (
                                     <>
@@ -256,7 +236,7 @@ const Navbar = () => {
                         {/* profile menu */}
                         {/* If there is authorized email, then user is signed in. Show profile menu */}
                         {auth?.email && (
-                            <div className='relative ml-3'>
+                            <div className='relative ml-3 sm:pr-2'>
                                 <div>
                                     <button
                                         type='button'
@@ -267,10 +247,8 @@ const Navbar = () => {
                                         onClick={() =>
                                             setProfileShowDropdown((b) => !b)
                                         }
+                                        onBlur={close}
                                     >
-                                        <span className='sr-only'>
-                                            Open user menu
-                                        </span>
                                         <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
                                             <svg
                                                 className='absolute -left-1 h-12 w-12 text-orange-300'
@@ -351,85 +329,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            {showDropdown && (
-                <div
-                    ref={Mobiledropdown}
-                    className='sm:hidden'
-                    id='mobile-menu'
-                >
-                    <div className='flex w-full flex-col items-center space-y-1 px-2 pt-2 pb-1'>
-                        <div className='p-2'>
-                            <Link
-                                href='/allevents'
-                                className='block rounded-md  px-3 py-2 text-base font-medium text-gray-700'
-                                aria-current='page'
-                            >
-                                {t("common.nav.allEvents")}
-                            </Link>
-                        </div>
-                        <div className='p-2'>
-                            <Link
-                                href='/howitworks'
-                                className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
-                            >
-                                {t("common.nav.howItWorks")}
-                            </Link>
-                        </div>
-                        <div className='p-2'>
-                            <Link
-                                href='/aboutus'
-                                className='block rounded-md px-3 py-2 text-base font-medium text-gray-700'
-                            >
-                                {t("common.nav.aboutUs")}
-                            </Link>
-                        </div>
-
-                        {/* mobile's languages menu */}
-                        <div className='flex flex-row items-center '>
-                            <Link
-                                href={asPath}
-                                locale='en'
-                                className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
-                                role='menuitem'
-                                tabIndex='-1'
-                                id='user-menu-item-0'
-                            >
-                                {t("common.nav.english")}
-                            </Link>
-                            <p className='text-orange-400'>|</p>
-                            <Link
-                                href={asPath}
-                                locale='tr'
-                                className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
-                                role='menuitem'
-                                tabIndex='-1'
-                                id='user-menu-item-0'
-                            >
-                                {t("common.nav.turkish")}
-                            </Link>
-                        </div>
-                        <div className='flex w-full flex-row items-center justify-center border-t'>
-                            <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
-                                <Link
-                                    href='/signin'
-                                    className='block  rounded-md border-t px-3 py-2 text-base font-medium '
-                                >
-                                    {t("common.nav.signIn")}
-                                </Link>
-                            </div>
-                            <p className='text-orange-400'>|</p>
-                            <div className=' flex  w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
-                                <Link
-                                    href='/signup'
-                                    className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
-                                >
-                                    {t("common.nav.signUp")}
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
         </nav>
     );
 };
