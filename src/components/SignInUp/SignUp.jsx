@@ -204,7 +204,7 @@ const SignUp = () => {
                                                 : "hidden"
                                         }
                                     >
-                                        Email address already in use.
+                                        Email needs to include an @ sign.
                                     </p>
                                 </div>
                                 <div className='ml-px py-1'>

@@ -78,6 +78,29 @@ function SignIn() {
         }
     };
 
+    const handleGoogleSignIn = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.get(
+                "/api/google-auth/google",
+                {
+                    withCredentials: true
+                }
+            );
+            console.log(JSON.stringify(response));
+        } catch (err) {
+            console.log(err)
+            // if (!err?.response) {
+            //     setErrMsg("No Server Response");
+            // } else if (err.response?.status === 400) {
+            //     setErrMsg("Invalid email or password");
+            // } else {
+            //     setErrMsg("Login Failed");
+            // }
+            // errRef.current.focus();
+        }
+    }
+
     return (
         <>
             {success ? (
@@ -158,6 +181,21 @@ function SignIn() {
                                         width={190}
                                         height={2}
                                     />
+                                </div>
+                                <div className='flex justify-center py-1'>
+                                    <button 
+                                        className=' flex w-96 flex-row items-center justify-center rounded border-2 border-b-4  border-black bg-transparent py-1 font-normal text-black hover:border-primary-200 hover:text-primary-200'
+                                        onClick={handleGoogleSignIn}
+                                        >
+                                        <Image
+                                            className='px-1'
+                                            src='/svg/google.svg'
+                                            alt='google'
+                                            height={30}
+                                            width={30}
+                                        />
+                                        Continue with Google
+                                    </button>
                                 </div>
                                 <p className='m-1 flex text-xs italic text-gray-700'>
                                     Don&apos;t have an account? &nbsp;
