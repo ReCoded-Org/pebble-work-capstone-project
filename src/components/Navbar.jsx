@@ -71,10 +71,10 @@ const Navbar = () => {
                 headers: { "Content-Type": "application/json" },
                 withCredentials: true,
             });
-            console.log(response);
             setAuth({});
+            //console.log(response)
         } catch (err) {
-            console.log(err);
+            //console.log(err);
         }
     };
 
@@ -422,7 +422,6 @@ const Navbar = () => {
                                 </div>
                             </div>
                         )}
-                        
                     </div>
                 </div>
             )}

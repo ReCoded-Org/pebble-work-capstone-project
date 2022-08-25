@@ -288,7 +288,8 @@ const EventsPage = ({ events }) => {
             <div className='flex justify-center text-center sm:mx-12 sm:grid sm:grid-cols-3  sm:text-start'>
                 <div className='col-start-2 mx-4 mt-6'>
                     <h1 className='text-xl font-bold sm:text-3xl'>
-                        {t("eventsPage.welcome")}{auth?.firstName ? `, ${auth.firstName}!` : "!"}
+                        {t("eventsPage.welcome")}
+                        {auth?.firstName ? `, ${auth.firstName}!` : "!"}
                     </h1>
                     <p className='mt-2 text-xs sm:text-base'>
                         {t("eventsPage.description")}

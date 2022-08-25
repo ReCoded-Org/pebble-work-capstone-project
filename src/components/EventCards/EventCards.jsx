@@ -66,11 +66,11 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                             label={
                                                 isJoined[event._id]
                                                     ? t(
-                                                        "eventsPage.eventCards.leave"
-                                                    )
+                                                          "eventsPage.eventCards.leave"
+                                                      )
                                                     : t(
-                                                        "eventsPage.eventCards.join"
-                                                    )
+                                                          "eventsPage.eventCards.join"
+                                                      )
                                             }
                                             textColor='text-white'
                                             bgColor='bg-primary-200'
@@ -85,28 +85,28 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     )}
                                     {/* if user is NOT signed in show sign in or sign up buttons */}
                                     {!auth?.email && (
-                                        <div className="flex flex-row items-center">
-                                        <Button
-                                            label={t("common.nav.signIn")}
-                                            textColor='text-white'
-                                            bgColor='bg-primary-200'
-                                            borderColor='border-primary-200'
-                                            height='h-10'
-                                            width='w-24'
-                                            customStyle='mx-2 my-0'
-                                            href="/signin"
-                                        />
-                                        <p>OR</p>
-                                        <Button
-                                            label={t("common.nav.signUp")}
-                                            textColor='text-white'
-                                            bgColor='bg-primary-200'
-                                            borderColor='border-primary-200'
-                                            height='h-10'
-                                            width='w-24'
-                                            customStyle='mx-2 my-0'
-                                            href="/signup"
-                                        />
+                                        <div className='flex flex-row items-center'>
+                                            <Button
+                                                label={t("common.nav.signIn")}
+                                                textColor='text-white'
+                                                bgColor='bg-primary-200'
+                                                borderColor='border-primary-200'
+                                                height='h-10'
+                                                width='w-24'
+                                                customStyle='mx-2 my-0'
+                                                href='/signin'
+                                            />
+                                            <p>OR</p>
+                                            <Button
+                                                label={t("common.nav.signUp")}
+                                                textColor='text-white'
+                                                bgColor='bg-primary-200'
+                                                borderColor='border-primary-200'
+                                                height='h-10'
+                                                width='w-24'
+                                                customStyle='mx-2 my-0'
+                                                href='/signup'
+                                            />
                                         </div>
                                     )}
                                 </div>
