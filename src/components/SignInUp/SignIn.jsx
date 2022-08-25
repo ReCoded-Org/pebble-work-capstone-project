@@ -46,13 +46,13 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
-            console.log({response});
-            console.log(email)
-            const authData = {...auth};
+            console.log({ response });
+            console.log(email);
+            const authData = { ...auth };
             authData["email"] = email;
             console.log(auth);
             setAuth(authData);
-            router.push("/events")
+            router.push("/events");
         } catch (err) {
             console.log(err);
             if (!err?.response) {
@@ -149,7 +149,6 @@ function SignIn() {
                                 Sign In
                             </button>
                         </div>
-
                     </div>
                 </div>
             </form>
