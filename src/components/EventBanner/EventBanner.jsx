@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 import * as React from "react";
 import { useState } from "react";
 
@@ -8,44 +9,69 @@ function EventBanner({
     title,
     imageSrc,
     city,
-    neighborhood,
+    country,
     address,
+    dateTime,
     attendees,
+    attendeeProfileURLs,
     host,
+    hostProfileURL,
 }) {
-    const [join, setJoin] = useState("Join");
+    const { t } = useTranslation("common");
+    const [join, setJoin] = useState(false);
     function handleJoinClick() {
-        if (join === "Join") {
-            setJoin("Leave");
-        } else {
-            setJoin("Join");
-        }
+        setJoin(!join);
     }
+    const date = dateTime.split("T")[0];
+    const dateArray = date.split("-");
+    const dateDayMonthYear = [dateArray[2], dateArray[1], dateArray[0]];
+    const longDate = dateDayMonthYear.join(".");
+
+    const time = dateTime.split("T")[1];
     let attendeeAvatars = [];
-    attendeeAvatars.push(
-        <div className=''>
-            <Image
-                className='rounded-full'
-                src='/images/userAvatar.jpeg'
-                alt={`${title},image`}
-                width={48}
-                height={48}
-            />
-        </div>
-    );
-    for (let i = 0; i < 3; i++) {
+    if (attendees.length > 0) {
         attendeeAvatars.push(
-            <div className='-ml-6'>
+            <div className=''>
                 <Image
                     className='rounded-full'
-                    src='/images/userAvatar.jpeg'
-                    alt={`${title},image`}
+                    src={attendeeProfileURLs[0]}
+                    alt={`${title} image`}
                     width={48}
                     height={48}
                 />
             </div>
         );
+        if (attendees.ength < 3) {
+            for (let i = 1; i < attendees.length; i++) {
+                attendeeAvatars.push(
+                    <div className='-ml-6'>
+                        <Image
+                            className='rounded-full'
+                            src={attendeeProfileURLs[i]}
+                            alt={`${title},image`}
+                            width={48}
+                            height={48}
+                        />
+                    </div>
+                );
+            }
+        } else {
+            for (let i = 1; i < 3; i++) {
+                attendeeAvatars.push(
+                    <div className='-ml-6'>
+                        <Image
+                            className='rounded-full'
+                            src={attendeeProfileURLs[i]}
+                            alt={`${title},image`}
+                            width={48}
+                            height={48}
+                        />
+                    </div>
+                );
+            }
+        }
     }
+
     return (
         <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:p-6'>
             <h1 className='order-1 col-span-1 p-6 text-center text-2xl font-semibold md:order-first md:col-span-3 md:text-left md:text-4xl md:font-normal'>
@@ -78,18 +104,47 @@ function EventBanner({
                         <p>
                             <b>{city}</b>
                         </p>
-                        <p>{neighborhood}</p>
+                        <p>{country}</p>
                         <p>{address}</p>
                     </div>
                 </div>
+                <div className='flex pt-6 pl-2'>
+                    <svg
+                        width='28'
+                        height='28'
+                        viewBox='0 0 28 28'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'
+                    >
+                        <path
+                            fillRule='evenodd'
+                            clipRule='evenodd'
+                            d='M0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0C6.26801 0 0 6.26801 0 14ZM19.9909 17.5546L15.2727 12.8365V5.72727C15.2727 5.02436 14.7029 4.45455 14 4.45455C13.2971 4.45455 12.7273 5.02436 12.7273 5.72727V13.3636C12.7273 13.7012 12.8614 14.0249 13.1 14.2636L18.191 19.3545C18.688 19.8515 19.4938 19.8515 19.9909 19.3545C20.4879 18.8575 20.4879 18.0516 19.9909 17.5546Z'
+                            fill='#1A1A1A'
+                        />
+                    </svg>
+                    <div className='pl-2'>
+                        <p>{longDate}</p>
+                        <p>{time.slice(0, 8)}</p>
+                    </div>
+                </div>
+
                 <div className='flex items-center pt-6'>
                     {attendeeAvatars}
-                    <p className='pl-6'>{`+${attendees.length} Attendees`}</p>
+                    <p className='pl-6'>
+                        {attendees.length === 0
+                            ? t("eventViewPage.eventBanner.noAttendees")
+                            : attendees.length === 1
+                            ? t("eventViewPage.eventBanner.oneAttendee")
+                            : attendees.length +
+                              " " +
+                              t("EventViewPage.eventBanner.manyAttendees")}
+                    </p>
                 </div>
                 <div className='flex items-center pt-6 pb-12'>
                     <Image
                         className='rounded-full'
-                        src='/images/userAvatar.jpeg'
+                        src={hostProfileURL}
                         alt='avatar image'
                         width={48}
                         height={48}
@@ -97,7 +152,11 @@ function EventBanner({
                     <p className='pl-6'>{`Organized by ${host}`}</p>
                 </div>
                 <Button
-                    label={join}
+                    label={
+                        join
+                            ? t("eventViewPage.eventBanner.join")
+                            : t("eventViewPage.eventBanner.leave")
+                    }
                     bgColor='bg-primary-200'
                     textColor='text-white'
                     height='h-12'

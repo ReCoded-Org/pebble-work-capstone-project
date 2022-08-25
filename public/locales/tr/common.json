@@ -1,6 +1,7 @@
 {
     "test": "Merhaba",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Giriş",
             "signIn": "Giriş",
@@ -9,15 +10,17 @@
             "turkish": "Türkçe",
             "allEvents": "Etkinlikler",
             "events": "Etkinlikler",
+
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
-            "yourEvents": "Etkinliklerim",
-            "yourProfile": "Profilim",
-            "settings": "Ayarlar",
+            "yourEvents": "Etkinlikler",
+            "yourProfile": "Profil Ayarları",
+            "settings": "Etkinlik Yarat",
             "signOut": "Çıkış"
         },
         "footer": {
+            "google": "Google ile devam et",
             "events": "Etkinlikler",
             "about": "Hakkımızda",
             "howItWorks": "Nasıl Çalışır",
@@ -26,40 +29,149 @@
     },
     "landingPage": {
         "heroSection": {
-            "title": "Sizin için mükemmel etkinliği bulun",
-            "paragraph": "Dünyada bir değişiklik yapmak mı istiyorsun? Yalnız olmak istemiyor musun? Doğru yerdesin. Benzer düşünen insanları bul. Dünyayı değiştirecek etkinlikler yarat veya katıl.",
-            "getStarted": "Başlayın"
+            "title": "Dünyayı değiştirelim. El ele, etkinliklerle!",
+            "paragraph": "Sürdürülebilir Kalkınma Hedeflerinden ilham alan gönüllü etkinliklere katılın ve organize edin. Dünya üzerindeki etkinizi arttırmak için sizin düşünen bireylerle birlikte çalışın.",
+            "getStarted": "Bize katıl"
         },
         "howItWorks": {
-            "title": "Nasıl Çalışır",
+            "title": "Nasıl Çalışır?",
             "register": "Kayıt Ol",
-            "registerDescription": "Kendi etkinliklerinizi oluşturmak ve etkinliklere katılmak için şimdi kaydolun",
+            "registerDescription": "Pebble'ın gönüllü ağının bir parçası olmak için hesabınızı oluşturun.",
             "signUp": "Üye Ol",
             "attendEvents": "Etkinliklere Katıl",
-            "attendEventsDescription": "Diğer kullanıcılar tarafından oluşturulan veya kendi oluşturduğunuz etkinliklere katılın",
+            "attendEventsDescription": "Etkinliklere göz atın ve kayıt olun! Tarih, konum ve Hedefler’e göre filtreleyebilirsiniz.",
             "exploreEvents": "Etkinlikleri Keşfet",
-            "organizeYourOwn": "Kendiniz Organize Edin",
-            "organizeYourOwnDescription": "Fikirleriniz benzersizdir ve onları gerçekleştirecek olan sizsiniz.",
-            "createEvents": "Etkinlik Oluştur"
+            "organizeYourOwn": "Etkinlik Organize Edin",
+            "organizeYourOwnDescription": "Başkalarını dahil etmek istediğiniz bir fikriniz mi var? Kendi etkinliğinizi düzenleyin!",
+            "createEvents": "Başla"
         },
         "sustainableGoals": {
             "title": "Sürdürülebilir Kalkınma Hedefleri",
-            "sustainableGoalsDescription": "2015 yılında tüm Birleşmiş Milletler Üye Devletleri tarafından kabul edilen Sürdürülebilir Kalkınma, şimdi ve gelecekte insanlar ve gezegen için barış ve refah için ortak bir plan sağlar."
+            "sustainableGoalsDescription": "Pebble'daki tüm etkinlikler, BM'nin 17 Sürdürülebilir Kalkınma Hedefi’nden (SKH) birini baz alır. 2030 yılına kadar ulaşılması amaçlanan SKH'ler, herkes için daha iyi ve daha sürdürülebilir bir gelecek kurmayı amaçlar."
         },
         "testimonials": {
             "title": "Gönüllülerden Dinleyin",
-            "personOne": "John Doe, Deniz Biyoloğu",
-            "personOneQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir",
-            "personTwo": "Joe Schmoe, Yazılım Geliştirici",
-            "personTwoQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir",
-            "personThree": "Jane Doe, Yoga Öğretmeni",
-            "personThreeQuote": "Metin paragrafı için gövde yer tutucusu, paragraf bağımsız bir metin açıklaması birimidir"
+            "personOne": "John, öğretmen",
+            "personOneQuote": "Pebble'ı iyi bir amaç için çalışmak isteyen gençlerle bağlantı kurmama yardım ettiği için çok seviyorum.",
+            "personTwo": "Ahmet, öğrenci",
+            "personTwoQuote": "Pebble, insanları Sürdürülebilir Kalkınma Hedefleri etrafında harekete geçirmede çok önemli bir rol üstleniyor.",
+            "personThree": "Saanvi, doktor",
+            "personThreeQuote": "Pebble'da her zaman katılmaktan heyecan duyduğum bir etkinlik oluyor. Yoksa da kendim organize edebilirim!"
         },
         "getStarted": {
             "title": "Dünyada görmek istediğin değişimin kendisi ol.",
-            "description": "Net bir vizyonunuz mu var? Dünyayı değiştirmek mi istiyorsun? Bunu gerçekleştirecek olan sensin. Dünyada kalıcı bir etki yaratmak için bize katılın ve başkalarıyla işbirliği yapın.",
-            "getStarted": "Başlayın",
+            "description": "2030 yılına kadar Sürdürülebilir Kalkınma Hedefleri’ne ulaşmak istiyorsak birlikte ve çok çalışmamız gerekiyor. Harekete geçin: Pebble'a katılın.",
+            "getStarted": "Harekete geç",
             "whoAreWe": "Biz Kimiz?"
         }
+    },
+    "aboutPage": {
+        "header": {
+            "title": "Pebble Hakkında",
+            "description": "Pebble, 17 Sürdürülebilir Kalkınma Hedefinden birini veya daha fazlasını desteklemek için yerel hareketler ve toplantılar bulabileceğiniz ve başlatabileceğiniz bir yerdir. Dünyayı daha iyi bir yer haline getirmek için kararlı insanları bir araya getiriyoruz. Büyüyen topluluğumuz, yaptığımız şey konusunda bizi daha tutkulu kılıyor."
+        },
+        "team": {
+            "ourTeam": "Takımımız"
+        },
+        "stack": {
+            "techTitle": "Kullanılan Teknolojiler ve Proje Yapısı",
+            "techDesc": "HTML, JavaScript, ReactJS, NextJS, npm - Test: Jest -  Formatlama: Prettier, ESLint - Stil: CSS, TailwindCSS - Çeviri: i18next - Versiyon kontrol: git, GitHub"
+        }
+    },
+    "eventCreation": {
+        "header": {
+            "title": "Etkinlik Oluştur",
+            "subtitle": "İlk olarak, etkinliğinizin konumunu belirleyin:",
+            "description": "Pebble etkinlikleri hem yerel hem de çevrimiçi olabilir. Etkinliğinize ev sahipliği yapmak istediğiniz yeri seçin."
+        },
+        "eventType": {
+            "title": "Etkinlik türünü seçin:",
+            "description": "Her Pebble etkinliği, Birleşmiş Milletler'in sürdürülebilir kalkınma hedeflerinden en az birine hizmet etmelidir. Hangi hedefe yardım etmek istiyorsunuz? Geçerli olanların tümünü seçin."
+        },
+        "eventInfo": {
+            "eventTitle": "Etkinlik başlığı:",
+            "titleDesc": "İnsanlara etkinliğin ne ile ilgili olduğu hakkında net bir fikir verecek bir başlık seçin. Yaratıcı olmaktan çekinmeyin! Fikrinizi değiştirirseniz bunu daha sonra düzenleyebilirsiniz.",
+            "eventDesc": "Etkinlik açıklaması:",
+            "descriptionDesc": "Etkinliğinizin amacını açıklayın. Kimler katılmalı ve etkinlikte ne yapacaksınız?",
+            "eventImg": "Etkinlik görseli:",
+            "imgDesc": "Fotoğraflı ilanların daha fazla ilgi gördüğünü saptadık.",
+            "browse": "Ara"
+        },
+        "guidelines": {
+            "title": "Neredeyse bitti! Yönergelerimizi incelemek için bir dakikanızı ayırın.",
+            "description": "Pebble, sizin gibi gönüllülerin desteğiyle insanlara yardım etmekle ilgilidir. Bu nedenle tüm etkinlikerden şunlar beklenir:",
+            "li1": "Etkinliğin niyetleri konusunda şeffaf olun.",
+            "li2": "Gerçek insan etkileşimlerini şahsen veya çevrimiçi olarak teşvik edin.",
+            "li3": "Etkinlik sahibinin tüm etkinliklerde bulunmasını sağlayın.",
+            "community": "Tüm bunlar hakkında daha fazla bilgi için",
+            "communityLink": "Topluluk Rehberleri",
+            "agree": "Şartları kabul edin ve etkinlik oluşturun!"
+        }
+    },
+    "eventsPage": {
+        "welcome": "Hoşgeldin,",
+        "description": "Keşfet ve Etkinliklere Katıl.",
+        "calendarComp": {
+            "changeDate": "Tarih Değiştir",
+            "submit": "GÖNDER"
+        },
+        "locationComp": {
+            "changeLocation": "Konum Değiştir",
+            "searchLocation": "Konum Ara",
+            "search": "ARA"
+        },
+        "categoryCheckboxes": {
+            "chooseCategory": "Kategori Seç",
+            "pickYourInterests": "İlgi alanlarınızı seçin",
+            "all": "Tüm Kategoriler",
+            "noPoverty": "Sıfır Yoksulluk",
+            "zeroHunger": "Sıfır Açlık",
+            "goodHealthAndWellbeing": "İyi Sağlık ve Refah",
+            "qualityEducation": "Kaliteli eğitim",
+            "genderEquality": "Cinsiyet eşitliği",
+            "cleanWaterAndSanitation": "Temiz Su ve Sanitasyon",
+            "affordableAndCleanEnergy": "Uygun Fiyatlı ve Temiz Enerji",
+            "decentWorkAndEconomicGrowth": "İnsana Yakışır İş ve Ekonomik Büyüme",
+            "industryInnovationAndInfrastructure": "Sanayi, İnovasyon ve Altyapı",
+            "reducedInequalities": "Azaltılmış Eşitsizlikler",
+            "responsibleConsumptionAndProduction": "Sorumlu Tüketim ve Üretim",
+            "sustainableCitiesAndCommunities": "Sürdürülebilir Şehirler ve Topluluklar",
+            "climateAction": "İklim Eylemi",
+            "lifeBelowWater": "Su Altında Yaşam",
+            "lifeOnLand": "Karada Yaşam",
+            "peaceJusticeAndStrongInstitutions": "Barış, Adalet ve Güçlü Kurumlar",
+            "partnershipForTheGoals": "Hedefler için Ortaklık",
+            "applyFilters": "Filtreleri Uygula"
+        },
+        "eventCards": {
+            "attendees": "Katılımcı",
+            "join": "KATIL",
+            "leave": "AYRIL"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Katıl",
+            "leave": "Çık",
+            "noAttendees": "Henüz katılımcı yok.",
+            "oneAttendee": "1 Katılımcı",
+            "manyAttendees": "Katılımcı"
+        },
+        "eventDescription": {
+            "description": "Açıklama:"
+        },
+        "attendeesList": {
+            "attendees": "Katılımcılar:"
+        }
+    },
+    "signInUpPage": {
+        "haveAccount": "Zaten hesabım var,",
+        "dontHaveAccount": "Hesabım yok,",
+        "google": "Google ile devam et",
+        "twitter": "Twitter ile devam et",
+        "mail": "E-posta",
+        "password": "Şifre",
+        "name": "Ad",
+        "surname": "Soyadı"
     }
 }

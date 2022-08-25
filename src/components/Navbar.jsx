@@ -1,12 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import React from "react";
+
+import useAuth from "@/hooks/useAuth";
+
+import axios from "@/api/axios";
 
 const { useState, useEffect, useRef } = React;
 
 const Navbar = () => {
     const { t } = useTranslation("common");
+
+    // we get the user information with useAuth.
+    const { auth, setAuth } = useAuth();
+    const { asPath } = useRouter();
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
@@ -55,6 +64,19 @@ const Navbar = () => {
         window.addEventListener("click", handleClick);
         return () => window.removeEventListener("click", handleClick);
     }, [profileShowDropdown]);
+
+    const handleSignOut = async () => {
+        try {
+            const response = await axios.get("/api/auth/signout", {
+                headers: { "Content-Type": "application/json" },
+                withCredentials: true,
+            });
+            console.log(response);
+            setAuth({});
+        } catch (err) {
+            console.log(err);
+        }
+    };
 
     return (
         <nav
@@ -190,119 +212,135 @@ const Navbar = () => {
                                             aria-labelledby='user-menu-button'
                                             tabIndex='-1'
                                         >
-                                            <a
-                                                href='/en'
+                                            <Link
+                                                href={asPath}
+                                                locale='en'
                                                 className=' flex  px-3 py-2 text-sm text-gray-700  hover:text-orange-400 '
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
                                             >
                                                 {t("common.nav.english")}
-                                            </a>
-                                            <a
-                                                href='/tr'
+                                            </Link>
+                                            <Link
+                                                href={asPath}
+                                                locale='tr'
                                                 className=' flex  px-3 py-2 text-sm text-gray-800 hover:text-orange-400'
                                                 role='menuitem'
                                                 tabIndex='-1'
                                                 id='user-menu-item-0'
                                             >
                                                 {t("common.nav.turkish")}
-                                            </a>
+                                            </Link>
                                         </div>
                                     )}
                                 </div>
-                                <Link href='/login'>
-                                    <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
-                                        {t("common.nav.login")}
-                                    </a>
-                                </Link>
-                                <Link href='/signup'>
-                                    <button className='rounded-full bg-primary-200 py-1  px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg '>
-                                        {t("common.nav.signUp")}
-                                    </button>
-                                </Link>
+                                {/* If there is NO authorized email, then user is not signed in. Show the sign in and out buttons */}
+                                {!auth?.email && (
+                                    <>
+                                        <Link href='/signin'>
+                                            <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
+                                                {t("common.nav.login")}
+                                            </a>
+                                        </Link>
+                                        <Link href='/signup'>
+                                            <button className='rounded-full bg-primary-200 py-1  px-3 text-sm font-semibold text-gray-800 hover:bg-orange-400 hover:text-white hover:shadow-lg '>
+                                                {t("common.nav.signUp")}
+                                            </button>
+                                        </Link>
+                                    </>
+                                )}
                             </div>
                         </div>
                         {/* profile menu */}
-                        <div className='relative ml-3 hidden '>
-                            <div>
-                                <button
-                                    type='button'
-                                    className='flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-400'
-                                    id='user-menu-button'
-                                    aria-expanded='false'
-                                    aria-haspopup='true'
-                                    onClick={() =>
-                                        setProfileShowDropdown((b) => !b)
-                                    }
-                                >
-                                    <span className='sr-only'>
-                                        Open user menu
-                                    </span>
-                                    <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
-                                        <svg
-                                            className='absolute -left-1 h-12 w-12 text-orange-300'
-                                            fill='currentColor'
-                                            viewBox='0 0 20 20'
-                                            xmlns='http://www.w3.org/2000/svg'
-                                        >
-                                            <path
-                                                fillRule='evenodd'
-                                                d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'
-                                                clipRule='evenodd'
-                                            ></path>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                            {profileShowDropdown && (
-                                <div
-                                    ref={profileDropdown}
-                                    className='absolute right-0 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
-                                    role='menu'
-                                    aria-orientation='vertical'
-                                    aria-labelledby='user-menu-button'
-                                    tabIndex='-1'
-                                >
-                                    <a
-                                        href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-0'
+                        {/* If there is authorized email, then user is signed in. Show profile menu */}
+                        {auth?.email && (
+                            <div className='relative ml-3'>
+                                <div>
+                                    <button
+                                        type='button'
+                                        className='flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-orange-400'
+                                        id='user-menu-button'
+                                        aria-expanded='false'
+                                        aria-haspopup='true'
+                                        onClick={() =>
+                                            setProfileShowDropdown((b) => !b)
+                                        }
                                     >
-                                        {t("common.nav.yourEvents")}
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-0'
-                                    >
-                                        {t("common.nav.yourProfile")}
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-1'
-                                    >
-                                        {t("common.nav.settings")}
-                                    </a>
-                                    <a
-                                        href='#'
-                                        className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
-                                        role='menuitem'
-                                        tabIndex='-1'
-                                        id='user-menu-item-2'
-                                    >
-                                        {t("commmon.nav.signOut")}
-                                    </a>
+                                        <span className='sr-only'>
+                                            Open user menu
+                                        </span>
+                                        <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
+                                            <svg
+                                                className='absolute -left-1 h-12 w-12 text-orange-300'
+                                                fill='currentColor'
+                                                viewBox='0 0 20 20'
+                                                xmlns='http://www.w3.org/2000/svg'
+                                            >
+                                                <path
+                                                    fillRule='evenodd'
+                                                    d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'
+                                                    clipRule='evenodd'
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </button>
                                 </div>
-                            )}
-                        </div>
+                                {/* The z-50 index below is to make the menu dropdown show over content, instead of showing behind */}
+                                {profileShowDropdown && (
+                                    <div
+                                        ref={profileDropdown}
+                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                        role='menu'
+                                        aria-orientation='vertical'
+                                        aria-labelledby='user-menu-button'
+                                        tabIndex='-1'
+                                    >
+                                        <Link
+                                            href='/events'
+                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            {t("common.nav.yourEvents")}
+                                        </Link>
+                                        <br />
+                                        <Link
+                                            href='/editprofile'
+                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            {t("common.nav.yourProfile")}
+                                        </Link>
+                                        <br />
+                                        <Link
+                                            href='/eventcreation'
+                                            className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-1'
+                                        >
+                                            {t("common.nav.settings")}
+                                        </Link>
+                                        <br />
+                                        <button onClick={handleSignOut}>
+                                            <Link
+                                                href='/'
+                                                className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-2'
+                                            >
+                                                {t("common.nav.signOut")}
+                                            </Link>
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
@@ -341,25 +379,27 @@ const Navbar = () => {
 
                         {/* mobile's languages menu */}
                         <div className='flex flex-row items-center '>
-                            <a
-                                href='/en'
+                            <Link
+                                href={asPath}
+                                locale='en'
                                 className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
                                 role='menuitem'
                                 tabIndex='-1'
                                 id='user-menu-item-0'
                             >
                                 {t("common.nav.english")}
-                            </a>
+                            </Link>
                             <p className='text-orange-400'>|</p>
-                            <a
-                                href='/tr'
+                            <Link
+                                href={asPath}
+                                locale='tr'
                                 className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
                                 role='menuitem'
                                 tabIndex='-1'
                                 id='user-menu-item-0'
                             >
                                 {t("common.nav.turkish")}
-                            </a>
+                            </Link>
                         </div>
                         <div className='flex w-full flex-row items-center justify-center border-t'>
                             <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>

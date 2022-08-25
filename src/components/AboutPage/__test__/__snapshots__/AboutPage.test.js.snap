@@ -115,12 +115,12 @@ exports[`renders correctly 1`] = `
         <h3
           className="m-1 text-center text-3xl font-bold md:m-4 md:text-5xl md:font-bold lg:text-5xl lg:font-bold"
         >
-          About Pebble
+          aboutPage.header.title
         </h3>
         <p
           className="text-md mr-12 ml-12 text-center md:ml-24 md:mr-24 md:text-2xl lg:ml-32 lg:mr-32 lg:text-2xl"
         >
-          Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+          aboutPage.header.description
         </p>
       </div>
     </div>
@@ -131,7 +131,7 @@ exports[`renders correctly 1`] = `
     <h2
       className="p-4 text-center text-2xl font-medium md:p-8 md:text-4xl md:font-bold lg:p-12 lg:text-5xl lg:font-bold"
     >
-      Our Team
+      aboutPage.team.ourTeam
     </h2>
     <div
       className="flex flex-row flex-wrap justify-center"
@@ -3060,12 +3060,12 @@ exports[`renders correctly 1`] = `
     <h2
       className="mb-2 text-center text-2xl font-bold md:mb-4 md:text-4xl lg:mb-4 lg:text-4xl"
     >
-      Technologies Used and Project Structure
+      aboutPage.stack.techTitle
     </h2>
     <p
       className="text-center text-sm md:text-2xl"
     >
-      Body placeholder for text paragraph. A paragraph is a self-contained unit of text dealing with a particular point or idea.
+      aboutPage.stack.techDesc
     </p>
   </div>
 </div>

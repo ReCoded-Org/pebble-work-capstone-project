@@ -1,6 +1,7 @@
 {
     "test": "Hello",
     "common": {
+        "intlDateTime": "{{val, datetime}}",
         "nav": {
             "login": "Log In",
             "signIn": "Sign In",
@@ -8,13 +9,14 @@
             "english": "English",
             "turkish": "Turkish",
             "allEvents": "All Events",
+
             "events": "Events",
             "about": "About",
             "howItWorks": "How It Works",
             "aboutUs": "About Us",
-            "yourEvents": "Your Events",
-            "yourProfile": "Your Profile",
-            "settings": "Settings",
+            "yourEvents": "All Events",
+            "yourProfile": "Edit Profile",
+            "settings": "Create Event",
             "signOut": "Sign Out"
         },
         "footer": {
@@ -26,40 +28,149 @@
     },
     "landingPage": {
         "heroSection": {
-            "title": "Find the perfect event for you",
-            "paragraph": "Do you want to make a change in the world? Not want to be alone? You are in the perfect place. Find like-minded people. Create or Participate in events to change the world.",
+            "title": "Come together to change the world, one event at a time.",
+            "paragraph": "Join and organize volunteer events inspired by the Sustainable Development Goals. Collaborate with like-minded peers to multiply your impact on the world.",
             "getStarted": "Get Started"
         },
         "howItWorks": {
             "title": "How It Works",
-            "register": "Register",
-            "registerDescription": "Register now to create your own events and to join events",
+            "register": "Join us",
+            "registerDescription": "Create your account to become a part of Pebble’s volunteer network.",
             "signUp": "Sign Up",
             "attendEvents": "Attend Events",
-            "attendEventsDescription": "Attend events created by other users and participate in events created by you",
+            "attendEventsDescription": "Browse events and join them! You can sort by date, location, and the SDGs.",
             "exploreEvents": "Explore Events",
             "organizeYourOwn": "Organize Your Own",
-            "organizeYourOwnDescription": "Your ideas are unique and you are the one who is going to make them happen",
-            "createEvents": "Create Events"
+            "organizeYourOwnDescription": "Got a brilliant idea you want to pursue with others? Organize your own event!",
+            "createEvents": "Get started"
         },
         "sustainableGoals": {
             "title": "Sustainable Development Goals",
-            "sustainableGoalsDescription": "Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future."
+            "sustainableGoalsDescription": "All events at Pebble fall under one of UN’s 17 Sustainable Development Goals (SDG). The SDGs, intended to be achieved by 2030, are the blueprint to achieve a better and more sustainable future for all."
         },
         "testimonials": {
-            "title": "Hear it from volunteers",
-            "personOne": "John Doe, Marine Biologist",
-            "personOneQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description",
-            "personTwo": "Joe Schmoe, Software Developer",
-            "personTwoQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description",
-            "personThree": "Jane Doe, Yoga Teacher",
-            "personThreeQuote": "Body placeholder for text paragraph, a paragraph is a self-contained unit of text description"
+            "title": "Hear it from the volunteers",
+            "personOne": "John, teacher",
+            "personOneQuote": "I love Pebble for helping me connect with young people like me who want to work toward a good cause.",
+            "personTwo": "Ahmet, student",
+            "personTwoQuote": "Pebble fills a crucial role in helping mobilize people around the Sustainable Development Goals.",
+            "personThree": "Saanvi, doctor",
+            "personThreeQuote": "At Pebble, there is always an event that I am excited to join. If there isn’t, I can always organize one myself!"
         },
         "getStarted": {
-            "title": "Become the change you wish to see in the world.",
-            "description": "You have a clear vision? You want to change the world? You are the one who is going to make it happen. Join us and collaborate with others to make a lasting impact in the world.",
+            "title": "Be the change you wish to see in the world.",
+            "description": "We need to work together—and work hard, if we want to reach the SDGs by 2030. Join Pebble now and start taking action.",
             "getStarted": "Get Started",
             "whoAreWe": "Who are we?"
         }
+    },
+    "aboutPage": {
+        "header": {
+            "title": "About Pebble",
+            "description": "Pebble is a place where you can find and start local movements and gatherings to support one or more of the 17 Sustainable Development Goals. We bring determined people together to make the world a better place. Our growing community makes us more passionate about what we do."
+        },
+        "team": {
+            "ourTeam": "Our Team"
+        },
+        "stack": {
+            "techTitle": "Technologies Used and Project Structure",
+            "techDesc": "HTML, JavaScript, ReactJS, NextJS, npm - Testing: Jest -  Formatting: Prettier, ESLint - Styling: CSS, TailwindCSS - Translation: i18next - Version control: git, GitHub"
+        }
+    },
+    "eventCreation": {
+        "header": {
+            "title": "Create an Event",
+            "subtitle": "First, set your events’s location:",
+            "description": "Pebble events can be both local or online. Choose where you want to host your event."
+        },
+        "eventType": {
+            "title": "Choose event type:",
+            "description": "Every pebble event should serve at least one of the sustainable development goals of United Nations. Which goal do you want to help in? Select all that apply."
+        },
+        "eventInfo": {
+            "eventTitle": "Event title:",
+            "titleDesc": "Choose a title that will give people a clear idea of what the event is about. Feel free to be creative! You can edit this later if you change your mind.",
+            "eventDesc": "Event description:",
+            "descriptionDesc": "Describe the purpose of your event. Who should join and what will you do at the event?",
+            "eventImg": "Event image:",
+            "imgDesc": "We have found that listings with a photo attract more interest.",
+            "browse": "Browse"
+        },
+        "guidelines": {
+            "title": "Almost Done! Just take a minute to review our guidlines.",
+            "description": "Pebble is all about helping people with the help of volunteers like you. This means that all events should:",
+            "li1": "Be transparent about the event’s intentions.",
+            "li2": "Encourage real human interactions in person or online.",
+            "li3": "Have the host present in all events.",
+            "community": "You can read more about all of this in our",
+            "communityLink": "Community Guidelines",
+            "agree": "Agree with terms and create event!"
+        }
+    },
+    "eventsPage": {
+        "welcome": "Welcome,",
+        "description": "Explore and Join Events.",
+        "calendarComp": {
+            "changeDate": "Change Date",
+            "submit": "SUBMIT"
+        },
+        "locationComp": {
+            "changeLocation": "Change Location",
+            "searchLocation": "Search Location",
+            "search": "SEARCH"
+        },
+        "categoryCheckboxes": {
+            "chooseCategory": "Choose Category",
+            "pickYourInterests": "Pick your interests",
+            "all": "All",
+            "noPoverty": "No Poverty",
+            "zeroHunger": "Zero Hunger",
+            "goodHealthAndWellbeing": "Good Health and Wellbeing",
+            "qualityEducation": "Quality Education",
+            "genderEquality": "Gender Equality",
+            "cleanWaterAndSanitation": "Clean Water and Sanitation",
+            "affordableAndCleanEnergy": "Affordable and Clean Energy",
+            "decentWorkAndEconomicGrowth": "Decent Work and Economic Growth",
+            "industryInnovationAndInfrastructure": "Industry, Innovation and Infrastructure",
+            "reducedInequalities": "Reduced Inequalities",
+            "responsibleConsumptionAndProduction": "Responsible Consumption and Production",
+            "sustainableCitiesAndCommunities": "Sustainable Cities and Communities",
+            "climateAction": "Climate Action",
+            "lifeBelowWater": "Life Below Water",
+            "lifeOnLand": "Life On Land",
+            "peaceJusticeAndStrongInstitutions": "Peace, Justice and Strong Institutions",
+            "partnershipForTheGoals": "Partnership for the Goals",
+            "applyFilters": "Apply Filters"
+        },
+        "eventCards": {
+            "attendees": "Attendees",
+            "join": "JOIN",
+            "leave": "LEAVE"
+        }
+    },
+    "eventViewPage": {
+        "eventBanner": {
+            "join": "Join",
+            "leave": "Leave",
+            "noAttendees": "There are no attendees yet.",
+            "oneAttendee": "1 Attendee",
+            "manyAttendees": "Attendees"
+        },
+        "eventDescription": {
+            "description": "Description:"
+        },
+        "attendeesList": {
+            "attendees": "Attendees:"
+        }
+    },
+    "signInUpPage": {
+        "haveAccount": " Already have an account? ",
+        "dontHaveAccount": "Don't have an account? ",
+        "google": "Continue with Google ",
+        "twitter": "Continue with Twitter",
+        "mail": "Email adress",
+        "password": "Password",
+        "name": "Name",
+        "surname": "Surname"
     }
 }
