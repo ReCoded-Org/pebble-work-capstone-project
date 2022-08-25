@@ -168,9 +168,6 @@ const Navbar = () => {
                                                 setShowDropdown((b) => !b)
                                             }
                                         >
-                                            <span className='sr-only'>
-                                                Open user menu
-                                            </span>
                                             <div className=' w-15 relative flex h-10 flex-row items-center overflow-hidden  text-gray-700  hover:text-orange-400 '>
                                                 <svg
                                                     xmlns='http://www.w3.org/2000/svg'
@@ -206,32 +203,36 @@ const Navbar = () => {
                                     {showDropdown && (
                                         <div
                                             ref={dropdown}
-                                            className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white py-1 shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
+                                            className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white  shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
                                             role='menu'
                                             aria-orientation='vertical'
                                             aria-labelledby='user-menu-button'
                                             tabIndex='-1'
                                         >
-                                            <Link
-                                                href={asPath}
-                                                locale='en'
-                                                className=' flex  px-3 py-2 text-sm text-gray-700  hover:text-orange-400 '
-                                                role='menuitem'
-                                                tabIndex='-1'
-                                                id='user-menu-item-0'
-                                            >
-                                                {t("common.nav.english")}
-                                            </Link>
-                                            <Link
-                                                href={asPath}
-                                                locale='tr'
-                                                className=' flex  px-3 py-2 text-sm text-gray-800 hover:text-orange-400'
-                                                role='menuitem'
-                                                tabIndex='-1'
-                                                id='user-menu-item-0'
-                                            >
-                                                {t("common.nav.turkish")}
-                                            </Link>
+                                            <div className='rounded px-2  py-1 hover:bg-gray-100'>
+                                                <Link
+                                                    href={asPath}
+                                                    locale='en'
+                                                    className=' flex text-sm text-gray-700  hover:text-orange-400 '
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-0'
+                                                >
+                                                    {t("common.nav.english")}
+                                                </Link>
+                                            </div>
+                                            <div className='rounded px-2  py-1 hover:bg-gray-100'>
+                                                <Link
+                                                    href={asPath}
+                                                    locale='tr'
+                                                    className=' flex text-sm text-gray-800 hover:text-orange-400'
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-0'
+                                                >
+                                                    {t("common.nav.turkish")}
+                                                </Link>
+                                            </div>
                                         </div>
                                     )}
                                 </div>
@@ -290,53 +291,59 @@ const Navbar = () => {
                                 {profileShowDropdown && (
                                     <div
                                         ref={profileDropdown}
-                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
                                         role='menu'
                                         aria-orientation='vertical'
                                         aria-labelledby='user-menu-button'
                                         tabIndex='-1'
                                     >
-                                        <Link
-                                            href='/events'
-                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                            role='menuitem'
-                                            tabIndex='-1'
-                                            id='user-menu-item-0'
-                                        >
-                                            {t("common.nav.yourEvents")}
-                                        </Link>
-                                        <br />
-                                        <Link
-                                            href='/editprofile'
-                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                            role='menuitem'
-                                            tabIndex='-1'
-                                            id='user-menu-item-0'
-                                        >
-                                            {t("common.nav.yourProfile")}
-                                        </Link>
-                                        <br />
-                                        <Link
-                                            href='/eventcreation'
-                                            className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
-                                            role='menuitem'
-                                            tabIndex='-1'
-                                            id='user-menu-item-1'
-                                        >
-                                            {t("common.nav.settings")}
-                                        </Link>
-                                        <br />
-                                        <button onClick={handleSignOut}>
+                                        <div className='py-1 pl-2 hover:bg-gray-100'>
                                             <Link
-                                                href='/'
-                                                className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
+                                                href='/events'
+                                                className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
                                                 role='menuitem'
                                                 tabIndex='-1'
-                                                id='user-menu-item-2'
+                                                id='user-menu-item-0'
                                             >
-                                                {t("common.nav.signOut")}
+                                                {t("common.nav.yourEvents")}
                                             </Link>
-                                        </button>
+                                        </div>
+
+                                        <div className='py-1 pl-2 hover:bg-gray-100'>
+                                            <Link
+                                                href='/editprofile'
+                                                className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-0'
+                                            >
+                                                {t("common.nav.yourProfile")}
+                                            </Link>
+                                        </div>
+                                        <div className='py-1 pl-2 hover:bg-gray-100'>
+                                            <Link
+                                                href='/eventcreation'
+                                                className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-1'
+                                            >
+                                                {t("common.nav.settings")}
+                                            </Link>
+                                        </div>
+                                        <div className='border-t py-1 pl-2 hover:bg-primary-200 hover:text-white '>
+                                            <button onClick={handleSignOut}>
+                                                <Link
+                                                    href='/'
+                                                    className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-2'
+                                                >
+                                                    {t("common.nav.signOut")}
+                                                </Link>
+                                            </button>
+                                        </div>
                                     </div>
                                 )}
                             </div>
