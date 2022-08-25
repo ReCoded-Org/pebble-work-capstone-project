@@ -11,14 +11,13 @@ module.exports = {
 
     // Uncoment to add domain whitelist
     images: {
-<<<<<<< HEAD
       domains: [
         'res.cloudinary.com',
-        'picsum.photos'
+        'picsum.photos',
+        "storage.googleapis.com", 
+        "images.unsplash.com"
       ],
-=======
-        domains: ["storage.googleapis.com", "images.unsplash.com"],
->>>>>>> develop
+
     },
 
     // SVGR

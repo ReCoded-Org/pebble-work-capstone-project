@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 import axios from "@/api/axios";
@@ -101,25 +100,25 @@ const EventCreation = () => {
     const [valueState, setValueState] = useState("");
 
     async function submitEvent() {
+        var bodyFormData = new FormData();
+        bodyFormData.append('title', title);
+        bodyFormData.append('content', content);
+        bodyFormData.append('coverImage', valueState);
+        bodyFormData.append('date', new Date());
+        bodyFormData.append('categories', categories);
+        bodyFormData.append('address', {
+            city: searchTerm,
+            country: "Turkey",
+            addressLine: address
+        });
+        bodyFormData.append('location', {
+            lat: 41.01,
+            lon: 28.97
+        });
         const response = await axios.post("/api/event",
-            JSON.stringify({
-                title:{title},
-                content:{content},
-                coverImage:{valueState},
-                date: new Date(),
-                categories:{categories},
-                address:{
-                    city: {searchTerm},
-                    country: "Turkey",
-                    addressLine: {address}
-                },
-                location:{
-                    lat: 41.01,
-                    lon: 28.97
-                },
-            },
-        {headers: { "Content-Type": "application/json" }, withCredentials:true }
-        ))
+            bodyFormData,
+        {headers: { "Content-Type": "multipart/form-data" }, withCredentials:true }
+        )
         const data = await response.json()
         console.log(data);
         setEventId(data._id)
@@ -329,11 +328,11 @@ const EventCreation = () => {
                 </div>
             </div>
             <div className='mb-4 flex w-full flex-col items-center  justify-center gap-10 py-3 '>
-                <Link href={`/${eventId}`}>
+                {/* <Link href={`/${eventId}`}> */}
                 <button onClick={submitEvent} className='rounded border border-b-4 border-r-4 border-black py-4 px-4  hover:border-primary-200 hover:text-primary-200  md:w-96'>
                     Agree with the terms and create event!
                 </button>
-                </Link>
+                {/* </Link> */}
             </div>
         </>
     );
