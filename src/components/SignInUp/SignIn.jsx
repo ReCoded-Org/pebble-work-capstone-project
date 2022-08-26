@@ -48,8 +48,15 @@ function SignIn() {
             );
             //console.log(response.data.user);
             const authData = { ...auth };
-            authData["email"] = email;
-            authData["firstName"] = response.data.user.firstName;
+            authData.createdEvents = response.data.user.createdEvents;
+            authData.email = response.data.user.email;
+            authData.firstName = response.data.user.firstName;
+            authData.followedEvents = response.data.user.followedEvents;
+            authData.fullName = response.data.user.fullName;
+            authData.lastName = response.data.user.lastName;
+            authData.id = response.data.user.id;
+            authData.interests = response.data.user.interests;
+            authData.preferredCities = response.data.user.preferredCities;
             setAuth(authData);
             router.push("/events");
         } catch (err) {

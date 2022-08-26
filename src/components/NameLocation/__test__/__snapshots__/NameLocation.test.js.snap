@@ -68,7 +68,7 @@ exports[`renders correctly 1`] = `
               "maxWidth": "100%",
               "minHeight": "100%",
               "minWidth": "100%",
-              "objectFit": undefined,
+              "objectFit": "cover",
               "objectPosition": undefined,
               "padding": 0,
               "position": "absolute",
@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
                 "maxWidth": "100%",
                 "minHeight": "100%",
                 "minWidth": "100%",
-                "objectFit": undefined,
+                "objectFit": "cover",
                 "objectPosition": undefined,
                 "padding": 0,
                 "position": "absolute",
@@ -114,26 +114,13 @@ exports[`renders correctly 1`] = `
       </span>
     </div>
     <div
-      className="m-1 md:m-2"
+      className="m-1 flex flex-col md:m-2"
     >
-      <button
-        className="mt-1 mb-1 w-20 md:w-44 lg:w-48 h-8 md:h-14 lg:h-14 text-[11px] md:text-xl lg:text-xl bg-primary-200  undefined hover:undefined text-white font-medium  py-1  px-2  hover:undefined rounded  hover:shadow-lg undefined"
-        onClick={[Function]}
-        type="button"
-      >
-        Upload New
-      </button>
-    </div>
-    <div
-      className="m-1 md:m-2"
-    >
-      <button
-        className="mt-1 mb-1 w-30 md:w-60 lg:w-64 h-8 md:h-14 lg:h-14 text-[11px] md:text-xl lg:text-xl bg-white border border-b-2 border-r-2 undefined hover:undefined text-black font-medium  py-1  px-2 border-black hover:undefined rounded  hover:shadow-lg undefined"
-        onClick={[Function]}
-        type="button"
-      >
-        Choose From Library
-      </button>
+      <input
+        accept="image/x-png,image/gif,image/jpeg"
+        onChange={[Function]}
+        type="file"
+      />
     </div>
   </div>
   <div
