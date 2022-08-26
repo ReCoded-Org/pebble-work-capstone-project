@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
-import toast from 'react-hot-toast';
+import { useRef, useState } from "react";
+import toast from "react-hot-toast";
 
 import useAuth from "@/hooks/useAuth";
 
@@ -15,11 +15,12 @@ const NameLocation = () => {
     const { auth, setAuth } = useAuth();
     const [fileUpload, setFileUpload] = useState();
     const [toUpload, setToUpload] = useState(false);
-    const router = useRouter()
-    let profileImage = auth?.profileImage
+    const fileRef = useRef();
+    const router = useRouter();
+    let profileImage = auth?.profileImage;
     if (!auth?.profileImage) {
-        profileImage = '/images/user.png';
-    } 
+        profileImage = "/images/user.png";
+    }
 
     // handlePhoto handles the things to change when a photo is selected
     function handlePhoto(e) {
@@ -36,21 +37,22 @@ const NameLocation = () => {
                 method: "put",
                 url: "/api/user/",
                 data: photoData,
-                headers: { "Content-Type": "multipart/form-data" }, 
-                withCredentials:true 
-            })
+                headers: { "Content-Type": "multipart/form-data" },
+                withCredentials: true,
+            });
+            fileRef.current.value = "";
+            setFileUpload();
             profileImage = response.data.profileImage;
-            console.log("response",response);
+            console.log("response", response);
             const authData = { ...auth };
             authData.profileImage = profileImage;
             setAuth(authData);
-            toast.success('Photo submitted!');
+            toast.success("Photo submitted!");
             //router.reload(window.location.pathname)
-        } catch(err) {
-            console.log("error",err)
+        } catch (err) {
+            console.log("error", err);
         }
-        
-    }
+    };
     return (
         <div className='m-4 mt-4 md:m-12 lg:ml-16'>
             <h1 className='m-4 text-xl font-medium md:m-6 md:text-3xl lg:m-12 lg:text-5xl'>
@@ -64,25 +66,25 @@ const NameLocation = () => {
                         width='100%'
                         height='100%'
                         layout='responsive'
-                        objectFit="cover"
+                        objectFit='cover'
                     />
                 </div>
-                <div className='m-1 md:m-2'>
-                    <input 
-                        type="file" 
-                        label="Upload New Photo"
-                        onChange={handlePhoto} 
-                        accept="image/x-png,image/gif,image/jpeg" 
+                <div className='m-1 flex flex-col md:m-2'>
+                    <input
+                        ref={fileRef}
+                        type='file'
+                        onChange={handlePhoto}
+                        accept='image/x-png,image/gif,image/jpeg'
                     />
                     {toUpload && (
                         <Button
-                        label="Upload Photo"
-                        bgColor="bg-primary-200"
-                        textColor='text-white'
-                        onClick={submitPhoto}
+                            label='Upload Photo'
+                            bgColor='bg-primary-200'
+                            textColor='text-white'
+                            onClick={submitPhoto}
                         />
                     )}
-                    
+
                     {/* <Button
                         type="file"
                         label='Upload New'
@@ -97,7 +99,7 @@ const NameLocation = () => {
                         onClick={submitPhoto}
                     /> */}
                 </div>
-                <div className='m-1 md:m-2'>
+                {/* <div className='m-1 md:m-2'>
                     <Button
                         label='Choose From Library'
                         bgColor='bg-white'
@@ -109,7 +111,7 @@ const NameLocation = () => {
                         fontSize='text-[11px] md:text-xl lg:text-xl'
                         border='border border-b-2 border-r-2'
                     />
-                </div>
+                </div> */}
             </div>
             <div className='m-4 mt-8 md:m-8 md:mt-12'>
                 <label className='text-[12px] font-medium md:text-xl lg:text-xl'>

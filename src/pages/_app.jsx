@@ -1,5 +1,5 @@
 import { appWithTranslation } from "next-i18next";
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 
 import "@/styles/navbar.css";
 import "@/styles/globals.css";
