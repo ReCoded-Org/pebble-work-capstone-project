@@ -623,7 +623,7 @@ const EventsPage = ({ events }) => {
                 <div className='mx-4 sm:col-span-2 sm:mx-0'>
                     {events.length > 0 ? (
                         <EventCards
-                            events={events}
+                            events={currentPosts}
                             isJoined={isJoined}
                             handleJoinClick={handleJoinClick}
                         />
