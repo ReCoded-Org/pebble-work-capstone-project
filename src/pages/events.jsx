@@ -147,7 +147,7 @@ export async function getServerSideProps({ locale, query }) {
 
 const EventsPage = ({ events }) => {
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(5);
+    const [postsPerPage] = useState(10);
 
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -634,7 +634,7 @@ const EventsPage = ({ events }) => {
                             </p>
                         </div>
                     )}
-                
+
                     <Pagination
                         postsPerPage={postsPerPage}
                         totalPosts={events.length}
