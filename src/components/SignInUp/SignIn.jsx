@@ -50,7 +50,7 @@ function SignIn() {
             const authData = { ...auth };
 
             // initializing Auth data with the user object
-            authData.createdEvents = response.data.user.email;
+            authData.createdEvents = response.data.user.createdEvents;
             authData.email = response.data.user.email;
             authData.firstName = response.data.user.firstName;
             authData.followedEvents = response.data.user.followedEvents;
@@ -59,7 +59,6 @@ function SignIn() {
             authData.id = response.data.user.id;
             authData.interests = response.data.user.interests;
             authData.preferredCities = response.data.user.preferredCities;
-            authData.interests = response.data.user.interests;
             setAuth(authData);
             //router.push("/events");
         } catch (err) {

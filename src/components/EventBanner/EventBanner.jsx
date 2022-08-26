@@ -144,7 +144,7 @@ function EventBanner({
                 <div className='flex items-center pt-6 pb-12'>
                     <Image
                         className='rounded-full'
-                        src={hostProfileURL}
+                        src='/images/userAvatar.jpeg'
                         alt='avatar image'
                         width={48}
                         height={48}

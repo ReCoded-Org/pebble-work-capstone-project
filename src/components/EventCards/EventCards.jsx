@@ -9,7 +9,6 @@ import Button from "@/components/Button";
 const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
     const { t } = useTranslation("common");
     const { auth } = useAuth();
-
     let attendeeAvatars = [];
     for (let i = 0; i < 3; i++) {
         attendeeAvatars.push(
