@@ -79,9 +79,10 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                             height='h-10'
                                             width='w-24'
                                             customStyle='mx-2 my-0'
-                                            onClick={(e) => { e.preventDefault();
-                                                handleJoinClick(event._id) }
-                                            }
+                                            onClick={(e) => {
+                                                e.preventDefault();
+                                                handleJoinClick(event._id);
+                                            }}
                                         />
                                     )}
                                     {/* if user is NOT signed in show sign in or sign up buttons */}
