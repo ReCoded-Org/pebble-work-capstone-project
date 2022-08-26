@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
       </span>
     </div>
     <div
-      className="m-1 md:m-2 flex flex-col"
+      className="m-1 flex flex-col md:m-2"
     >
       <input
         accept="image/x-png,image/gif,image/jpeg"
