@@ -46,8 +46,10 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
+            //console.log(response.data.user);
             const authData = { ...auth };
             authData["email"] = email;
+            authData["firstName"] = response.data.user.firstName;
             setAuth(authData);
             router.push("/events");
         } catch (err) {

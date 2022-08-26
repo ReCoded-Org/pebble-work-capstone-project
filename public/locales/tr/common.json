@@ -109,7 +109,7 @@
         }
     },
     "eventsPage": {
-        "welcome": "Hoşgeldin,",
+        "welcome": "Hoşgeldin",
         "description": "Keşfet ve Etkinliklere Katıl.",
         "calendarComp": {
             "changeDate": "Tarih Değiştir",
