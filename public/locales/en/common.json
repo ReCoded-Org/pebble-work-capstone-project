@@ -64,8 +64,51 @@
             "whoAreWe": "Who are we?"
         }
     },
+    "aboutPage": {
+        "header": {
+            "title": "About Pebble",
+            "description": "Pebble is a place where you can find and start local movements and gatherings to support one or more of the 17 Sustainable Development Goals. We bring determined people together to make the world a better place. Our growing community makes us more passionate about what we do."
+        },
+        "team": {
+            "ourTeam": "Our Team"
+        },
+        "stack": {
+            "techTitle": "Technologies Used and Project Structure",
+            "techDesc": "HTML, JavaScript, ReactJS, NextJS, npm - Testing: Jest -  Formatting: Prettier, ESLint - Styling: CSS, TailwindCSS - Translation: i18next - Version control: git, GitHub"
+        }
+    },
+    "eventCreation": {
+        "header": {
+            "title": "Create an Event",
+            "subtitle": "First, set your events’s location:",
+            "description": "Pebble events can be both local or online. Choose where you want to host your event."
+        },
+        "eventType": {
+            "title": "Choose event type:",
+            "description": "Every pebble event should serve at least one of the sustainable development goals of United Nations. Which goal do you want to help in? Select all that apply."
+        },
+        "eventInfo": {
+            "eventTitle": "Event title:",
+            "titleDesc": "Choose a title that will give people a clear idea of what the event is about. Feel free to be creative! You can edit this later if you change your mind.",
+            "eventDesc": "Event description:",
+            "descriptionDesc": "Describe the purpose of your event. Who should join and what will you do at the event?",
+            "eventImg": "Event image:",
+            "imgDesc": "We have found that listings with a photo attract more interest.",
+            "browse": "Browse"
+        },
+        "guidelines": {
+            "title": "Almost Done! Just take a minute to review our guidlines.",
+            "description": "Pebble is all about helping people with the help of volunteers like you. This means that all events should:",
+            "li1": "Be transparent about the event’s intentions.",
+            "li2": "Encourage real human interactions in person or online.",
+            "li3": "Have the host present in all events.",
+            "community": "You can read more about all of this in our",
+            "communityLink": "Community Guidelines",
+            "agree": "Agree with terms and create event!"
+        }
+    },
     "eventsPage": {
-        "welcome": "Welcome,",
+        "welcome": "Welcome",
         "description": "Explore and Join Events.",
         "calendarComp": {
             "changeDate": "Change Date",
