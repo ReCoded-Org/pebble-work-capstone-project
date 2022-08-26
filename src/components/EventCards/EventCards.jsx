@@ -26,10 +26,10 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
     return (
         <div>
             {events.map((event) => (
-                <Link href={`/${event._id}`} key={event._id}>
+                <Link className='' href={`/${event._id}`} key={event._id}>
                     <div
                         key={event._id}
-                        className='mx-6 mb-4 rounded-md border shadow-lg sm:mx-4'
+                        className='mx-6 mb-4 rounded-md border shadow-lg hover:cursor-pointer sm:mx-4'
                     >
                         <div className='mx-4 mt-4 flex flex-col text-center sm:flex-row sm:justify-between'>
                             <h2 className='mb-2 sm:mb-0'>{event.date}</h2>
@@ -87,22 +87,32 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     )}
                                     {/* if user is NOT signed in show sign in or sign up buttons */}
                                     {!auth?.email && (
-                                        <div className='text-blue flex flex-row items-center '>
-                                            <Link
-                                                className='hover:pointer'
-                                                href='/signin'
-                                            >
-                                                <p className='text-primary-200 underline'>
-                                                    {t("common.nav.signIn")}
+                                        <div className='text-blue m-2 flex flex-row flex-wrap items-center hover:cursor-default'>
+                                            {t(
+                                                "eventsPage.eventCards.toJoinTurkish"
+                                            )}
+                                            &nbsp;
+                                            <Link className='' href='/signin'>
+                                                <p className='text-primary-200 underline hover:cursor-pointer'>
+                                                    {t(
+                                                        "eventsPage.eventCards.signIn"
+                                                    )}
                                                 </p>
                                             </Link>
-                                            &nbsp;OR&nbsp;
+                                            &nbsp;
+                                            {t("eventsPage.eventCards.or")}
+                                            &nbsp;
                                             <Link href='/signup'>
-                                                <p className='text-primary-200 underline'>
-                                                    {t("common.nav.signUp")}
+                                                <p className='text-primary-200 underline hover:cursor-pointer'>
+                                                    {t(
+                                                        "eventsPage.eventCards.signUp"
+                                                    )}
                                                 </p>
                                             </Link>
-                                            &nbsp;to join events.
+                                            &nbsp;
+                                            {t(
+                                                "eventsPage.eventCards.toJoinEnglish"
+                                            )}
                                         </div>
                                     )}
                                 </div>

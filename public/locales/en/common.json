@@ -145,7 +145,12 @@
         "eventCards": {
             "attendees": "Attendees",
             "join": "JOIN",
-            "leave": "LEAVE"
+            "leave": "LEAVE",
+            "toJoinTurkish": "",
+            "or": " OR ",
+            "signIn": "Sign In",
+            "signUp": "Sign Up",
+            "toJoinEnglish": "to join events."
         }
     },
     "eventViewPage": {

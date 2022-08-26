@@ -146,7 +146,12 @@
         "eventCards": {
             "attendees": "Katılımcı",
             "join": "KATIL",
-            "leave": "AYRIL"
+            "leave": "AYRIL",
+            "toJoinTurkish": "Etkinliklere katılmak için ",
+            "or": " yada ",
+            "signIn": "giriş yap",
+            "signUp": "kayıt ol",
+            "toJoinEnglish": ""
         }
     },
     "eventViewPage": {

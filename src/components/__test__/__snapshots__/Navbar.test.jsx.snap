@@ -2,34 +2,23 @@
 
 exports[`renders correctly 1`] = `
 <nav
-  className="mb-1 shadow"
-  style={
-    Object {
-      "backgroundColor": "transparent",
-    }
-  }
+  className="relative z-50 mb-1 bg-white shadow-md"
 >
   <div
-    className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 "
+    className="mx-auto max-w-7xl sm:px-6 lg:px-8 "
   >
     <div
       className="relative flex h-16 items-center justify-between"
     >
       <div
-        className="absolute inset-y-0 left-0 flex items-center sm:hidden"
+        className="absolute inset-y-0 left-0 flex w-full items-center sm:hidden "
       >
         <button
           aria-controls="mobile-menu"
           aria-expanded="false"
-          className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none "
-          onClick={[Function]}
+          className="inline-flex items-center justify-center rounded-md p-2 px-4 text-gray-400 hover:text-white focus:outline-none "
           type="button"
         >
-          <span
-            className="sr-only"
-          >
-            Open main menu
-          </span>
           <svg
             aria-hidden="true"
             className=" block h-6 w-6 "
@@ -227,14 +216,10 @@ exports[`renders correctly 1`] = `
                   aria-haspopup="true"
                   className="flex text-sm "
                   id="user-menu-button"
+                  onBlur={[Function]}
                   onClick={[Function]}
                   type="button"
                 >
-                  <span
-                    className="sr-only"
-                  >
-                    Open user menu
-                  </span>
                   <div
                     className=" w-15 relative flex h-10 flex-row items-center overflow-hidden text-gray-700 hover:text-orange-400 "
                   >
