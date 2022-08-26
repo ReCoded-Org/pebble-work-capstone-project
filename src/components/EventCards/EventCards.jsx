@@ -85,28 +85,22 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     )}
                                     {/* if user is NOT signed in show sign in or sign up buttons */}
                                     {!auth?.email && (
-                                        <div className='flex flex-row items-center'>
-                                            <Button
-                                                label={t("common.nav.signIn")}
-                                                textColor='text-white'
-                                                bgColor='bg-primary-200'
-                                                borderColor='border-primary-200'
-                                                height='h-10'
-                                                width='w-24'
-                                                customStyle='mx-2 my-0'
+                                        <div className='text-blue flex flex-row items-center '>
+                                            <Link
+                                                className='hover:pointer'
                                                 href='/signin'
-                                            />
-                                            <p>OR</p>
-                                            <Button
-                                                label={t("common.nav.signUp")}
-                                                textColor='text-white'
-                                                bgColor='bg-primary-200'
-                                                borderColor='border-primary-200'
-                                                height='h-10'
-                                                width='w-24'
-                                                customStyle='mx-2 my-0'
-                                                href='/signup'
-                                            />
+                                            >
+                                                <p className='text-primary-200 underline'>
+                                                    {t("common.nav.signIn")}
+                                                </p>
+                                            </Link>
+                                            &nbsp;OR&nbsp;
+                                            <Link href='/signup'>
+                                                <p className='text-primary-200 underline'>
+                                                    {t("common.nav.signUp")}
+                                                </p>
+                                            </Link>
+                                            &nbsp;to join events.
                                         </div>
                                     )}
                                 </div>
