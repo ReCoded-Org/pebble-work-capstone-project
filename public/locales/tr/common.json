@@ -109,7 +109,7 @@
         }
     },
     "eventsPage": {
-        "welcome": "Hoşgeldin,",
+        "welcome": "Hoşgeldin",
         "description": "Keşfet ve Etkinliklere Katıl.",
         "calendarComp": {
             "changeDate": "Tarih Değiştir",
@@ -144,9 +144,17 @@
             "applyFilters": "Filtreleri Uygula"
         },
         "eventCards": {
+            "in": ",",
+            "noAttendeesYet": "Hiç Katılımcı Yok",
+            "only1Attendee": "Sadece 1 Katılımcı",
             "attendees": "Katılımcı",
             "join": "KATIL",
-            "leave": "AYRIL"
+            "leave": "AYRIL",
+            "toJoinTurkish": "Etkinliklere katılmak için ",
+            "or": " yada ",
+            "signIn": "giriş yap",
+            "signUp": "kayıt ol",
+            "toJoinEnglish": ""
         }
     },
     "eventViewPage": {

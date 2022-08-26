@@ -5,42 +5,137 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useEffect, useRef, useState } from "react";
 
+import useAuth from "@/hooks/useAuth";
+
 import Button from "@/components/Button";
 import CalendarComp from "@/components/CalendarComp";
 import CategoryCheckboxes from "@/components/CategoryCheckboxes";
 import EventCards from "@/components/EventCards";
 import Layout from "@/components/layout/Layout";
 import LocationComp from "@/components/LocationComp";
+import Pagination from "@/components/Pagination/Pagination";
 
 export async function getServerSideProps({ locale, query }) {
-    let categoryParams = "";
-    //If no categories are selected
-    if (query.categories === undefined) {
-        categoryParams = "";
+    let totalParams = "";
+    // NO SELECTION
+    if (
+        query.categories === undefined &&
+        query.city === undefined &&
+        query.fromDate === undefined &&
+        query.toDate === undefined
+    ) {
+        totalParams = "";
     }
-    //If more than one category is selected
-    else if (Array.isArray(query.categories)) {
-        categoryParams =
-            "?" + "categories=" + query.categories.join("&categories=");
+    // - CATEGORY, + CITY, - DATE
+    else if (
+        query.categories === undefined &&
+        query.city !== undefined &&
+        query.fromDate === undefined &&
+        query.toDate === undefined
+    ) {
+        totalParams = `?city=${query.city}`;
     }
-    //If only one category is selected and it is not an array
-    else {
-        categoryParams = `?categories[]=${query.categories}`;
+    // - CATEGORY, - CITY, + DATE
+    else if (
+        query.categories === undefined &&
+        query.city === undefined &&
+        query.fromDate !== undefined &&
+        query.toDate !== undefined
+    ) {
+        totalParams = `?fromDate=${query.fromDate}&toDate=${query.toDate}`;
     }
-
-    let cityParams = "";
-    if (Object(query.city).length > 0) {
-        cityParams = "?" + "city=" + query.city;
+    // - CATEGORY, + CITY, + DATE
+    else if (
+        query.categories === undefined &&
+        query.city !== undefined &&
+        query.fromDate !== undefined &&
+        query.toDate !== undefined
+    ) {
+        totalParams = `?city=${query.city}&fromDate=${query.fromDate}&toDate=${query.toDate}`;
     }
-
-    let dateParams = "";
-    if (Object(query.fromDate).length > 0 && Object(query.toDate).length > 0) {
-        dateParams =
-            "?" + "fromDate=" + query.fromDate + "&toDate=" + query.toDate;
+    // + CATEGORY, - CITY, - DATE
+    else if (
+        typeof query.categories === "string" &&
+        query.city === undefined &&
+        query.fromDate === undefined &&
+        query.toDate === undefined
+    ) {
+        totalParams = `?categories[]=${query.categories}`;
+    }
+    // + CATEGORY, + CITY, - DATE
+    else if (
+        typeof query.categories === "string" &&
+        query.city !== undefined &&
+        query.fromDate === undefined &&
+        query.toDate === undefined
+    ) {
+        totalParams = `?categories[]=${query.categories}&city=${query.city}`;
+    }
+    // + CATEGORY, - CITY, + DATE
+    else if (
+        typeof query.categories === "string" &&
+        query.city === undefined &&
+        query.fromDate !== undefined &&
+        query.toDate !== undefined
+    ) {
+        totalParams = `?categories[]=${query.categories}&fromDate=${query.fromDate}&toDate=${query.toDate}`;
+    }
+    // + CATEGORY, + CITY, + DATE
+    else if (
+        typeof query.categories === "string" &&
+        query.city !== undefined &&
+        query.fromDate !== undefined &&
+        query.toDate !== undefined
+    ) {
+        totalParams = `?categories[]=${query.categories}&city=${query.city}&fromDate=${query.fromDate}&toDate=${query.toDate}`;
+    }
+    // + CATEGORIES, - CITY, - DATE
+    else if (
+        Array.isArray(query.categories) &&
+        query.city === undefined &&
+        query.fromDate === undefined &&
+        query.toDate === undefined
+    ) {
+        totalParams = `?categories=${query.categories.join("&categories=")}`;
+    }
+    // + CATEGORIES, + CITY, - DATE
+    else if (
+        Array.isArray(query.categories) &&
+        query.city !== undefined &&
+        query.fromDate === undefined &&
+        query.toDate === undefined
+    ) {
+        totalParams = `?categories=${query.categories.join(
+            "&categories="
+        )}&city=${query.city}`;
+    }
+    // + CATEGORIES, - CITY, + DATE
+    else if (
+        Array.isArray(query.categories) &&
+        query.city === undefined &&
+        query.fromDate !== undefined &&
+        query.toDate !== undefined
+    ) {
+        totalParams = `?categories=${query.categories.join(
+            "&categories="
+        )}&fromDate=${query.fromDate}&toDate=${query.toDate}`;
+    }
+    // + CATEGORIES, + CITY, + DATE
+    else if (
+        Array.isArray(query.categories) &&
+        query.city !== undefined &&
+        query.fromDate !== undefined &&
+        query.toDate !== undefined
+    ) {
+        totalParams = `?categories=${query.categories.join(
+            "&categories="
+        )}&city=${query.city}&fromDate=${query.fromDate}&toDate=${
+            query.toDate
+        }`;
     }
 
     const events = await fetch(
-        `https://pebble-work.herokuapp.com/api/event/${categoryParams}${cityParams}${dateParams}`
+        `https://pebble-work.herokuapp.com/api/event/${totalParams}`
     ).then((r) => r.json());
     return {
         props: {
@@ -51,8 +146,18 @@ export async function getServerSideProps({ locale, query }) {
 }
 
 const EventsPage = ({ events }) => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(10);
+
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     const { t } = useTranslation("common");
+    const { auth } = useAuth();
     const router = useRouter();
+
     // CATEGORY SELECTION
     const categories = [
         {
@@ -164,6 +269,14 @@ const EventsPage = ({ events }) => {
             document.getElementById("All").checked = false;
         }
     }
+
+    //FILTERING EVENTS
+    const [params, setParams] = useState({
+        categories: [],
+        city: "",
+        dateFilter: { fromDate: "", toDate: "" },
+    });
+
     // CATEGORY FILTERING
     let categoryFilterURL = "";
     function handleApplyFilters() {
@@ -171,7 +284,39 @@ const EventsPage = ({ events }) => {
         if (checkedBoxes.length > 0) {
             categoryFilterURL =
                 "?" + "categories=" + checkedBoxes.join("&categories=");
-            router.push(`${router.pathname}${categoryFilterURL}`);
+
+            setParams({ ...params, categories: checkedBoxes });
+            if (
+                params.city == "" &&
+                params.dateFilter.fromDate == "" &&
+                params.dateFilter.toDate == ""
+            ) {
+                router.push(`${router.pathname}${categoryFilterURL}`);
+            } else if (
+                params.city !== "" &&
+                params.dateFilter.fromDate == "" &&
+                params.dateFilter.toDate == ""
+            ) {
+                router.push(
+                    `${router.pathname}${categoryFilterURL}&city=${params.city}`
+                );
+            } else if (
+                params.city == "" &&
+                params.dateFilter.fromDate !== "" &&
+                params.dateFilter.toDate !== ""
+            ) {
+                router.push(
+                    `${router.pathname}${categoryFilterURL}&fromDate=${params.dateFilter.fromDate}&toDate=${params.dateFilter.toDate}`
+                );
+            } else if (
+                params.city !== "" &&
+                params.dateFilter.fromDate !== "" &&
+                params.dateFilter.toDate !== ""
+            ) {
+                router.push(
+                    `${router.pathname}${categoryFilterURL}&city=${params.city}&fromDate=${params.dateFilter.fromDate}&toDate=${params.dateFilter.toDate}`
+                );
+            }
         }
     }
     // LOCATION FILTERING
@@ -184,7 +329,46 @@ const EventsPage = ({ events }) => {
         //construct URL to render events based on city filters
         setSearchTerm(selectedCity);
         cityFilterURL = "?" + "city=" + selectedCity;
-        router.push(`${router.pathname}${cityFilterURL}`);
+        let cityURL = `&city=${selectedCity}`;
+
+        setParams({ ...params, city: selectedCity });
+        if (
+            params.categories.length == 0 &&
+            params.dateFilter.fromDate == "" &&
+            params.dateFilter.toDate == ""
+        ) {
+            router.push(`${router.pathname}${cityFilterURL}`);
+        } else if (
+            params.categories.length !== 0 &&
+            params.dateFilter.fromDate == "" &&
+            params.dateFilter.toDate == ""
+        ) {
+            router.push(
+                `${router.pathname}?categories=${params.categories.join(
+                    "&categories="
+                )}${cityURL}`
+            );
+        } else if (
+            params.categories.length == 0 &&
+            params.dateFilter.fromDate !== "" &&
+            params.dateFilter.toDate !== ""
+        ) {
+            router.push(
+                `${router.pathname}${cityFilterURL}&fromDate=${params.dateFilter.fromDate}&toDate=${params.dateFilter.toDate}`
+            );
+        } else if (
+            params.categories.length !== 0 &&
+            params.dateFilter.fromDate !== "" &&
+            params.dateFilter.toDate !== ""
+        ) {
+            router.push(
+                `${router.pathname}?categories=${params.categories.join(
+                    "&categories="
+                )}${cityURL}&fromDate=${params.dateFilter.fromDate}&toDate=${
+                    params.dateFilter.toDate
+                }`
+            );
+        }
     }
     // DATE FILTERING
     const [range, setRange] = useState([
@@ -201,7 +385,30 @@ const EventsPage = ({ events }) => {
         let fromDate = format(range[0].startDate, "yyyy-MM-dd");
         let toDate = format(range[0].endDate, "yyyy-MM-dd");
         dateFilterURL = "?" + "fromDate=" + fromDate + "&toDate=" + toDate;
-        router.push(`${router.pathname}${dateFilterURL}`);
+
+        setParams({
+            ...params,
+            dateFilter: { fromDate: fromDate, toDate: toDate },
+        });
+        if (params.categories.length == 0 && params.city == "") {
+            router.push(`${router.pathname}${dateFilterURL}`);
+        } else if (params.categories.length !== 0 && params.city == "") {
+            router.push(
+                `${router.pathname}?categories=${params.categories.join(
+                    "&categories="
+                )}&fromDate=${fromDate}&toDate=${toDate}`
+            );
+        } else if (params.categories.length == 0 && params.city !== "") {
+            router.push(
+                `${router.pathname}?city=${params.city}&fromDate=${fromDate}&toDate=${toDate}`
+            );
+        } else if (params.categories.length !== 0 && params.city !== "") {
+            router.push(
+                `${router.pathname}?categories=${params.categories.join(
+                    "&categories="
+                )}&city=${params.city}&fromDate=${fromDate}&toDate=${toDate}`
+            );
+        }
     }
 
     function handleDateSubmitDesktop() {
@@ -209,7 +416,30 @@ const EventsPage = ({ events }) => {
         let fromDate = format(range[0].startDate, "yyyy-MM-dd");
         let toDate = format(range[0].endDate, "yyyy-MM-dd");
         dateFilterURL = "?" + "fromDate=" + fromDate + "&toDate=" + toDate;
-        router.push(`${router.pathname}${dateFilterURL}`);
+
+        setParams({
+            ...params,
+            dateFilter: { fromDate: fromDate, toDate: toDate },
+        });
+        if (params.categories.length == 0 && params.city == "") {
+            router.push(`${router.pathname}${dateFilterURL}`);
+        } else if (params.categories.length !== 0 && params.city == "") {
+            router.push(
+                `${router.pathname}?categories=${params.categories.join(
+                    "&categories="
+                )}&fromDate=${fromDate}&toDate=${toDate}`
+            );
+        } else if (params.categories.length == 0 && params.city !== "") {
+            router.push(
+                `${router.pathname}?city=${params.city}&fromDate=${fromDate}&toDate=${toDate}`
+            );
+        } else if (params.categories.length !== 0 && params.city !== "") {
+            router.push(
+                `${router.pathname}?categories=${params.categories.join(
+                    "&categories="
+                )}&city=${params.city}&fromDate=${fromDate}&toDate=${toDate}`
+            );
+        }
     }
     // MOBILE FILTER BUTTONS CLICK & UNMOUNTING BY OUTSIDE CLICK
     const [isInterestButtonClicked, setIsInterestButtonClicked] =
@@ -285,7 +515,8 @@ const EventsPage = ({ events }) => {
             <div className='flex justify-center text-center sm:mx-12 sm:grid sm:grid-cols-3  sm:text-start'>
                 <div className='col-start-2 mx-4 mt-6'>
                     <h1 className='text-xl font-bold sm:text-3xl'>
-                        {t("eventsPage.welcome")} Dilara!
+                        {t("eventsPage.welcome")}
+                        {auth?.firstName ? `, ${auth.firstName}!` : "!"}
                     </h1>
                     <p className='mt-2 text-xs sm:text-base'>
                         {t("eventsPage.description")}
@@ -390,10 +621,24 @@ const EventsPage = ({ events }) => {
                 <hr className='my-4 mx-3 text-black sm:hidden' />
 
                 <div className='mx-4 sm:col-span-2 sm:mx-0'>
-                    <EventCards
-                        events={events}
-                        isJoined={isJoined}
-                        handleJoinClick={handleJoinClick}
+                    {events.length > 0 ? (
+                        <EventCards
+                            events={currentPosts}
+                            isJoined={isJoined}
+                            handleJoinClick={handleJoinClick}
+                        />
+                    ) : (
+                        <div className='flex justify-center text-center'>
+                            <p className='mt-2 text-xl font-bold'>
+                                No events found according to applied filters
+                            </p>
+                        </div>
+                    )}
+
+                    <Pagination
+                        postsPerPage={postsPerPage}
+                        totalPosts={events.length}
+                        paginate={paginate}
                     />
                 </div>
             </div>
