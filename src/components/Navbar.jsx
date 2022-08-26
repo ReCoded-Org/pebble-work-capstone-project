@@ -33,11 +33,15 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
     }, [showDropdown]);
     const dropdown = useRef(null);
     const close = () => {
-        setProfileShowDropdown(false);
+        setTimeout(() => {
+            setProfileShowDropdown(false);
+        }, 250);
     };
 
     const closeLanguagesMenu = () => {
-        setShowDropdown(false);
+        setTimeout(() => {
+            setShowDropdown(false);
+        }, 250);
     };
     const profileDropdown = useRef(null);
     useEffect(() => {
@@ -134,7 +138,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                     </div>
                                     <div className='p-2'>
                                         <Link
-                                            href='#howitworks'
+                                            href='/#how-it-works'
                                             className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
                                         >
                                             {t("common.nav.howItWorks")}
@@ -142,7 +146,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                     </div>
                                     <div className='p-2'>
                                         <Link
-                                            href='/aboutus'
+                                            href='/about'
                                             className='block rounded-md px-3 py-2 text-base font-medium text-gray-700'
                                         >
                                             {t("common.nav.aboutUs")}
@@ -274,6 +278,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                     </div>
                                     {showDropdown && (
                                         <div
+                                            id='langMenu'
                                             ref={dropdown}
                                             className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white  shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
                                             role='menu'
