@@ -6,7 +6,7 @@ Array [
     className="mb-4 mt-3 flex flex-col items-center justify-center py-3 text-3xl font-semibold "
   >
     <h1>
-      Create an Event
+      eventCreation.header.title
     </h1>
   </div>,
   <div
@@ -21,12 +21,12 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          First, set your event’s location:
+          eventCreation.header.subtitle
         </h2>
         <p
           className="my-1 text-gray-500"
         >
-          Choose where you want to host your event.
+          eventCreation.header.description
         </p>
         <div>
           <div
@@ -181,12 +181,12 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          Second, select the date and time of your event:
+          eventCreation.header.dateSubtitle
         </h2>
         <p
           className="my-1 text-gray-500"
         >
-          Choose when you want to host your event.
+          eventCreation.header.dateDescription
         </p>
         <div>
           <div
@@ -218,12 +218,12 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          Choose event type:
+          eventCreation.eventType.title
         </h2>
         <p
           className="mt-1 pr-20 text-gray-500 "
         >
-          Every pebble event should serve at least one of the sustainable development goals of United Nations. Which goal do you want to help in? Select all that apply.
+          eventCreation.eventType.description
         </p>
       </div>
       <div
@@ -433,12 +433,12 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          Event title:
+          eventCreation.eventInfo.eventTitle
         </h2>
         <p
           className="my-1 pr-20 text-gray-500 md:w-full"
         >
-          Choose a title that will give people a clear idea of what the event is about. Feel free to be creative! You canedit this later if you change your mind.
+          eventCreation.eventInfo.titleDesc
         </p>
         <div
           className=" py-5 md:w-96 "
@@ -461,12 +461,12 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          Event Description:
+          eventCreation.eventInfo.eventDesc
         </h2>
         <p
           className="my-1 w-full pr-20 text-gray-500"
         >
-          Describe the purpose of your event. Who should join and what will you do at the event?
+          eventCreation.eventInfo.descriptionDesc
         </p>
         <div
           className=" w-full py-3 pr-20"
@@ -492,12 +492,12 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          Event Image:
+          eventCreation.eventInfo.eventImg
         </h2>
         <p
           className="my-1 w-full text-gray-500"
         >
-          We have found that listings with a photo attract more interest.
+          eventCreation.eventInfo.imgDesc
         </p>
         <div
           className="relative py-5 md:w-full md:pr-0 "
@@ -517,35 +517,35 @@ Array [
         <h2
           className="py-1 text-xl font-medium text-black"
         >
-          Almost Done! Just take a minute to review our guidlines.
+          eventCreation.guidelines.title
         </h2>
         <p
           className="my-2 w-full text-gray-500"
         >
-          Pebble is all about helping people with the help of volunteers like you. This means that all events should:
+          eventCreation.guidelines.description
         </p>
         <ul
           className=" my-1 w-full list-disc pl-5 text-black"
         >
           <li>
-            Be transparent about the event’s intentions.
+            eventCreation.guidelines.li1
           </li>
           <li>
-            Encourage real human interactions in person or online
+            eventCreation.guidelines.li2
           </li>
           <li>
-             Have the host present in all events
+            eventCreation.guidelines.li3
           </li>
         </ul>
         <p
           className=" my-1 w-full pl-1 text-gray-400"
         >
-          You can read more about all of this in our
+          eventCreation.guidelines.community
           <a
             className="p-1 text-blue-600 hover:text-primary-200"
             href="#"
           >
-            Community guidlines
+            eventCreation.guidelines.communityLink
           </a>
         </p>
       </div>
@@ -559,7 +559,7 @@ Array [
       onClick={[Function]}
       onMouseEnter={[Function]}
     >
-      Agree with the terms and create event!
+      eventCreation.guidelines.agree
     </button>
   </div>,
 ]
