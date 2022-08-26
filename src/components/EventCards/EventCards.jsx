@@ -6,7 +6,6 @@ import Button from "@/components/Button";
 
 const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
     const { t } = useTranslation("common");
-
     let attendeeAvatars = [];
     for (let i = 0; i < 3; i++) {
         attendeeAvatars.push(
@@ -74,9 +73,10 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                         height='h-10'
                                         width='w-24'
                                         customStyle='mx-2 my-0'
-                                        onClick={() =>
-                                            handleJoinClick(event._id)
-                                        }
+                                        onClick={(e) => {
+                                            e.preventDefault();
+                                            handleJoinClick(event._id);
+                                        }}
                                     />
                                 </div>
                             </div>
