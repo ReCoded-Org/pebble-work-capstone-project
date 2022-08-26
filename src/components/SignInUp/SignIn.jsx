@@ -46,12 +46,22 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
-            //console.log(response.data.user);
+            console.log(response.data.user);
             const authData = { ...auth };
-            authData["email"] = email;
-            authData["firstName"] = response.data.user.firstName;
+
+            // initializing Auth data with the user object
+            authData.createdEvents = response.data.user.email;
+            authData.email = response.data.user.email;
+            authData.firstName = response.data.user.firstName;
+            authData.followedEvents = response.data.user.followedEvents;
+            authData.fullName = response.data.user.fullName;
+            authData.lastName = response.data.user.lastName;
+            authData.id = response.data.user.id;
+            authData.interests = response.data.user.interests;
+            authData.preferredCities = response.data.user.preferredCities;
+            authData.interests = response.data.user.interests;
             setAuth(authData);
-            router.push("/events");
+            //router.push("/events");
         } catch (err) {
             if (!err?.response) {
                 setErrMsg("No Server Response", err);
