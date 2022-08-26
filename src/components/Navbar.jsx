@@ -6,8 +6,6 @@ import React from "react";
 
 import useAuth from "@/hooks/useAuth";
 
-import LanguagesDropdown from "@/components/LanguagesDropdown";
-
 import axios from "@/api/axios";
 
 const { useState, useEffect, useRef } = React;
@@ -17,16 +15,30 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
     // we get the user information with useAuth.
     const { auth, setAuth } = useAuth();
     const { asPath } = useRouter();
+    const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
     // const [showMobileDropdown, setShowMobileDropdown] = useState(false);
     const Mobiledropdown = useRef(null);
-
+    useEffect(() => {
+        // only add the event listener when the dropdown is opened
+        if (showDropdown) return;
+        function handleClick(event) {
+            if (dropdown.current && !dropdown.current.contains(event.target)) {
+                setShowDropdown(false);
+            }
+        }
+        window.addEventListener("click", handleClick);
+        // clean up
+        return () => window.removeEventListener("click", handleClick);
+    }, [showDropdown]);
+    const dropdown = useRef(null);
     const close = () => {
         setProfileShowDropdown(false);
     };
-    // const closeMobileMenu = () => {
-    //     setShowMobileDropdown(false);
-    // };
+
+    const closeLanguagesMenu = () => {
+        setShowDropdown(false);
+    };
     const profileDropdown = useRef(null);
     useEffect(() => {
         if (profileShowDropdown) return;
@@ -51,7 +63,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
             console.log(response);
             setAuth({});
         } catch (err) {
-            console.log(err);
+            // console.log(err);
         }
     };
 
@@ -113,7 +125,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                 <div className='absolute z-50  mt-8 flex  w-full  flex-col  items-center border-b  bg-white pt-2 pb-1  shadow-lg '>
                                     <div className='p-2'>
                                         <Link
-                                            href='/allevents'
+                                            href='/events'
                                             className='block rounded-md  px-3 py-2 text-base font-medium text-gray-700'
                                             aria-current='page'
                                         >
@@ -122,7 +134,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                     </div>
                                     <div className='p-2'>
                                         <Link
-                                            href='/howitworks'
+                                            href='#howitworks'
                                             className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
                                         >
                                             {t("common.nav.howItWorks")}
@@ -202,7 +214,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                         </Link>
                     </div>
                     <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                        <div className='hidden sm:ml-6 sm:block'>
+                        <div className='hidden sm:ml-6  sm:block'>
                             <div className='flex items-center space-x-3'>
                                 <Link href='/events'>
                                     <a className=' hidden rounded-md px-3 py-2 text-sm font-semibold  text-gray-700  hover:text-orange-400'>
@@ -215,7 +227,88 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                     </a>
                                 </Link>
                                 {/* Languages menu */}
-                                <LanguagesDropdown />
+                                <div className=' relative ml-3 hidden sm:ml-6 sm:block'>
+                                    <div>
+                                        <button
+                                            type='button'
+                                            className='flex text-sm  '
+                                            id='user-menu-button'
+                                            aria-expanded='false'
+                                            aria-haspopup='true'
+                                            onClick={() =>
+                                                setShowDropdown((b) => !b)
+                                            }
+                                            onBlur={closeLanguagesMenu}
+                                        >
+                                            <div className=' w-15 relative flex h-10 flex-row items-center overflow-hidden  text-gray-700  hover:text-orange-400 '>
+                                                <svg
+                                                    xmlns='http://www.w3.org/2000/svg'
+                                                    className='h-5 w-5 '
+                                                    fill='none'
+                                                    viewBox='0 0 24 24'
+                                                    stroke='currentColor'
+                                                    strokeWidth='2'
+                                                >
+                                                    <path
+                                                        strokeLinecap='round'
+                                                        strokeLinejoin='round'
+                                                        d='M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9'
+                                                    />
+                                                </svg>
+                                                <svg
+                                                    xmlns='http://www.w3.org/2000/svg'
+                                                    className='h-3 w-3'
+                                                    fill='none'
+                                                    viewBox='0 0 24 24'
+                                                    stroke='currentColor'
+                                                    strokeWidth={2}
+                                                >
+                                                    <path
+                                                        strokeLinecap='round'
+                                                        strokeLinejoin='round'
+                                                        d='M19 9l-7 7-7-7'
+                                                    />
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    {showDropdown && (
+                                        <div
+                                            ref={dropdown}
+                                            className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white  shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
+                                            role='menu'
+                                            aria-orientation='vertical'
+                                            aria-labelledby='user-menu-button'
+                                            tabIndex='-1'
+                                        >
+                                            <div className='rounded px-2 py-1 hover:bg-gray-100'>
+                                                <Link
+                                                    href={asPath}
+                                                    locale='en'
+                                                    className=' flex text-sm text-gray-700 hover:text-orange-400 '
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-0'
+                                                >
+                                                    {t("common.nav.english")}
+                                                </Link>
+                                            </div>
+
+                                            <div className=' w-full rounded px-2 py-1 hover:bg-gray-100'>
+                                                <Link
+                                                    href={asPath}
+                                                    locale='tr'
+                                                    className=' flex text-sm text-gray-700 hover:text-orange-400'
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-0'
+                                                >
+                                                    {t("common.nav.turkish")}
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
                                 {/* If there is NO authorized email, then user is not signed in. Show the sign in and out buttons */}
                                 {!auth?.email && (
                                     <>
@@ -236,7 +329,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                         {/* profile menu */}
                         {/* If there is authorized email, then user is signed in. Show profile menu */}
                         {auth?.email && (
-                            <div className='relative ml-3 sm:pr-2'>
+                            <div className='relative ml-3 mr-2   hover:border-primary-200'>
                                 <div>
                                     <button
                                         type='button'
@@ -249,7 +342,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                         }
                                         onBlur={close}
                                     >
-                                        <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
+                                        <div className='  relative h-10 w-10 overflow-hidden rounded-full bg-sky-200 hover:border-primary-200'>
                                             <svg
                                                 className='absolute -left-1 h-12 w-12 text-orange-300'
                                                 fill='currentColor'
@@ -269,13 +362,13 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                 {profileShowDropdown && (
                                     <div
                                         ref={profileDropdown}
-                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white  shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right   rounded-md border border-gray-400 bg-white   shadow-lg  ring-1 ring-black ring-opacity-5 hover:border-primary-200 focus:outline-none'
                                         role='menu'
                                         aria-orientation='vertical'
                                         aria-labelledby='user-menu-button'
                                         tabIndex='-1'
                                     >
-                                        <div className='py-1 pl-2 hover:bg-gray-100'>
+                                        <div className='rounded  py-1 pl-2 hover:bg-gray-100'>
                                             <Link
                                                 href='/events'
                                                 className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
