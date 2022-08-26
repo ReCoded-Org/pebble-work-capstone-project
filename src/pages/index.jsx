@@ -10,7 +10,7 @@ import Layout from "@/components/layout/Layout";
 import SustainableGoals from "@/components/SustainableGoals";
 import TestimonialsFourPhotos from "@/components/TestimonialsFourPhotos";
 
-export default function HomePage({ninjas}) {
+export default function HomePage({ ninjas }) {
     // const { t } = useTranslation("common");
 
     return (
@@ -37,7 +37,6 @@ export default function HomePage({ninjas}) {
 }
 
 export async function getStaticProps({ locale }) {
-  
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common"])),

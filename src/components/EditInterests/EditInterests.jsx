@@ -2,7 +2,12 @@ import { useState } from "react";
 
 import Button from "@/components/Button";
 // ADDED PROPS: CATEGORIES AND SETCATEGORIES
-const EditInterests = ({ beforeClick, afterClick, setCategories, categories }) => {
+const EditInterests = ({
+    beforeClick,
+    afterClick,
+    setCategories,
+    categories,
+}) => {
     // Take a look at these these are the back end spelling of categories
     // 'No Poverty',
     // 'Zero Hunger',
@@ -22,23 +27,23 @@ const EditInterests = ({ beforeClick, afterClick, setCategories, categories }) =
     // 'Peace And Justice And Strong Institutions
     // 'Partnership For The Goals',
     const labels = [
-        'No Poverty',
-        'Zero Hunger',
-        'Good Health And Well-Being',
-        'Quality Education',
-        'Gender Equality',
-        'Clean Water And Sanitation',
-        'Affordable And Clean Energy',
-        'Decent Work And Economic Growth',
-        'Industry Innovation And Infrastructure',
-        'Reduced Inequalities',
-        'Sustainable Cities And Communities',
-        'Responsible Consumption And Production',
-        'Climate Action',
-        'Life Below Water',
-        'Life On Land',
-        'Peace And Justice And Strong Institutions',
-        'Partnership For The Goals',
+        "No Poverty",
+        "Zero Hunger",
+        "Good Health And Well-Being",
+        "Quality Education",
+        "Gender Equality",
+        "Clean Water And Sanitation",
+        "Affordable And Clean Energy",
+        "Decent Work And Economic Growth",
+        "Industry Innovation And Infrastructure",
+        "Reduced Inequalities",
+        "Sustainable Cities And Communities",
+        "Responsible Consumption And Production",
+        "Climate Action",
+        "Life Below Water",
+        "Life On Land",
+        "Peace And Justice And Strong Institutions",
+        "Partnership For The Goals",
     ];
     const [selected, setSelected] = useState([]);
 
@@ -47,7 +52,7 @@ const EditInterests = ({ beforeClick, afterClick, setCategories, categories }) =
         if (selected.includes(label)) {
             setSelected(selected.filter((item) => item !== label));
         }
-        setCategories([...categories, label]) // ADDED THIS HERE
+        setCategories([...categories, label]); // ADDED THIS HERE
         if (categories.includes(label)) {
             setCategories(categories.filter((item) => item !== label));
         }

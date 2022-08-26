@@ -22,6 +22,7 @@ function EventBanner({
     function handleJoinClick() {
         setJoin(!join);
     }
+    console.log(dateTime);
     const date = dateTime.split("T")[0];
     const dateArray = date.split("-");
     const dateDayMonthYear = [dateArray[2], dateArray[1], dateArray[0]];

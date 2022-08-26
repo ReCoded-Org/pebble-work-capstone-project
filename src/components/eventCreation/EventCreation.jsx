@@ -100,65 +100,64 @@ const EventCreation = () => {
     const [address, setAddress] = useState("");
     const [eventId, setEventId] = useState("");
     const [valueState, setValueState] = useState("");
+    const [dateInput, setDateInput] = useState();
+    const [timeInput, setTimeInput] = useState();
 
     const router = useRouter();
-    
-    async function submitEvent() {    
+
+    async function submitEvent() {
         var bodyFormData = new FormData();
-        bodyFormData.append('title', title);
-        bodyFormData.append('content', content);
-        bodyFormData.append('coverImage', valueState);
-        bodyFormData.append('date', '2022-11-14');
+        bodyFormData.append("title", title);
+        bodyFormData.append("content", content);
+        bodyFormData.append("coverImage", valueState);
+        bodyFormData.append("date", `${dateInput}T${timeInput}:00.000Z`);
         //bodyFormData.append('categories[]', categories)
         for (const a of categories) {
             bodyFormData.append("categories[]", a);
         }
-        bodyFormData.append('address[city]', searchTerm);
-        bodyFormData.append('address[country]', "Turkey");
-        bodyFormData.append('address[addressLine]', address);
-        bodyFormData.append('location[lat]', 41.01);
-        bodyFormData.append('location[log]', 28.97);
-//         formData.append("movie[screenshots][]", file1)
-// formData.append("movie[screenshots][]", file2)
+        bodyFormData.append("address[city]", searchTerm);
+        bodyFormData.append("address[country]", "Turkey");
+        bodyFormData.append("address[addressLine]", address);
+        bodyFormData.append("location[lat]", 41.01);
+        bodyFormData.append("location[log]", 28.97);
+        //         formData.append("movie[screenshots][]", file1)
+        // formData.append("movie[screenshots][]", file2)
         // for (let i = 0; i < categories.length; i++) {
         //     bodyFormData.append("categories[]", categories[i])
         // }
-        console.log(categories)
+        //console.log(categories);
         try {
             const response = await axios({
                 method: "post",
                 url: "/api/event/",
                 data: bodyFormData,
-                headers: { "Content-Type": "multipart/form-data" }, 
-                withCredentials:true 
-            })
+                headers: { "Content-Type": "multipart/form-data" },
+                withCredentials: true,
+            });
             //const data = await response.json()
-            console.log(response)
-            router.push(response.data._id)
-
+            // console.log(response);
+            router.push(response.data._id);
+        } catch (err) {
+            //console.log(err);
         }
-        catch (err) {
-            console.log(err);
-        } 
-        
     }
 
     function handleSearch(e) {
         setSearchTerm(e.target.value);
     }
-    
+
     function handleTitle(e) {
-        setTitle(e.target.value)
+        setTitle(e.target.value);
     }
 
     function handleFileUpload(e) {
-        const file = Array.from(e.target.files)[0]
-        setValueState(file)
+        const file = Array.from(e.target.files)[0];
+        setValueState(file);
         // console.log(file);
     }
 
     function handleContent(e) {
-        setContent(e.target.value)
+        setContent(e.target.value);
     }
 
     // function handleCoverImage(e) {
@@ -166,7 +165,13 @@ const EventCreation = () => {
     // }
 
     function handleAddress(e) {
-        setAddress(e.target.value)
+        setAddress(e.target.value);
+    }
+    function handleDate(e) {
+        setDateInput(e.target.value);
+    }
+    function handleTime(e) {
+        setTimeInput(e.target.value);
     }
 
     return (
@@ -234,6 +239,32 @@ const EventCreation = () => {
                             />
                         </div>
                     </div>
+                    <div className='flex flex-col items-center justify-center'>
+                        <h2 className='py-1 text-xl font-medium text-black'>
+                            Second, select the date and time of your event:
+                        </h2>
+                        <p className='my-1 text-gray-500'>
+                            Choose when you want to host your event.
+                        </p>
+                        <div>
+                            <div className='relative w-full py-5'>
+                                <InputComponent
+                                    type='date'
+                                    id='searchBox'
+                                    value={dateInput}
+                                    callback={handleDate}
+                                    className='focus:ring-blacksm:mb-0 block w-full rounded-md border-black pl-8  text-base   focus:border-black focus:outline-none focus:ring-0 sm:w-full  lg:w-full'
+                                    required
+                                />
+                            </div>
+                            <InputComponent
+                                type='time'
+                                value={timeInput}
+                                callback={handleTime}
+                                required
+                            />
+                        </div>
+                    </div>
                 </div>
                 <div className='flex flex-col pt-3 '>
                     <div>
@@ -248,7 +279,11 @@ const EventCreation = () => {
                         </p>
                     </div>
                     <div className='md:flex md:justify-between'>
-                        <EditInterests categories={categories} setCategories={setCategories} beforeClick='text-primary-200  border-primary-200' />
+                        <EditInterests
+                            categories={categories}
+                            setCategories={setCategories}
+                            beforeClick='text-primary-200  border-primary-200'
+                        />
                     </div>
                 </div>
                 <div className='mb-4 flex   flex-col gap-10 py-3 md:flex-row md:justify-between'>
@@ -265,7 +300,7 @@ const EventCreation = () => {
                             <InputComponent
                                 value={title}
                                 callback={handleTitle}
-                                placeholder='Izmir Clean Energy Brainstorm meeting'
+                                placeholder='Enter your event title here'
                                 className='w-full rounded border   border-black px-3 py-2 shadow  focus:border-black   focus:outline-none focus:ring-0 focus:ring-black'
                             />
                         </div>
@@ -303,12 +338,16 @@ const EventCreation = () => {
                             more interest.
                         </p>
                         <div className='relative py-5 md:w-full md:pr-0 '>
-                            <div className='w-25  absolute inset-y-0 left-0 flex items-center hover:border-primary-200  '>
+                            {/* <div className='w-25  absolute inset-y-0 left-0 flex items-center hover:border-primary-200  '>
                                 <button className='ml-0 h-11 w-full cursor-pointer rounded border-2 border-b-4 border-r-4  border-black px-2 hover:border-primary-200 hover:text-primary-200 '>
                                     Browse
                                 </button>
-                            </div>
-                            <input type="file" onChange={handleFileUpload} accept="image/x-png,image/gif,image/jpeg" />
+                            </div> */}
+                            <input
+                                type='file'
+                                onChange={handleFileUpload}
+                                accept='image/x-png,image/gif,image/jpeg'
+                            />
                             {/* <InputComponent value={coverImage} callback={handleCoverImage} className='w-full  rounded border border-l-0 border-black pl-20 focus:border-black   focus:outline-none focus:ring-0 focus:ring-black' /> */}
                         </div>
                     </div>
@@ -348,9 +387,12 @@ const EventCreation = () => {
             </div>
             <div className='mb-4 flex w-full flex-col items-center  justify-center gap-10 py-3 '>
                 <Link href={`/${eventId}`}>
-                <button onClick={submitEvent} className='rounded border border-b-4 border-r-4 border-black py-4 px-4  hover:border-primary-200 hover:text-primary-200  md:w-96'>
-                    Agree with the terms and create event!
-                </button>
+                    <button
+                        onClick={submitEvent}
+                        className='rounded border border-b-4 border-r-4 border-black py-4 px-4  hover:border-primary-200 hover:text-primary-200  md:w-96'
+                    >
+                        Agree with the terms and create event!
+                    </button>
                 </Link>
             </div>
         </>
