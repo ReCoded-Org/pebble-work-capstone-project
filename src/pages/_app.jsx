@@ -1,4 +1,5 @@
 import { appWithTranslation } from "next-i18next";
+import { Toaster } from 'react-hot-toast';
 
 import "@/styles/navbar.css";
 import "@/styles/globals.css";
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <AuthProvider>
             <Component {...pageProps} />
+            <Toaster />
         </AuthProvider>
     );
 }

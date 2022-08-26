@@ -271,7 +271,8 @@ const Navbar = () => {
                                             Open user menu
                                         </span>
                                         <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
-                                            <svg
+                                            {!auth?.profileImage && (
+                                                <svg
                                                 className='absolute -left-1 h-12 w-12 text-orange-300'
                                                 fill='currentColor'
                                                 viewBox='0 0 20 20'
@@ -283,6 +284,18 @@ const Navbar = () => {
                                                     clipRule='evenodd'
                                                 ></path>
                                             </svg>
+                                            )}
+                                            {auth?.profileImage && (
+                                                <Image
+                                                    src={auth.profileImage}
+                                                    alt={`${auth.firstName} profilephoto`}
+                                                    width='100%'
+                                                    height='100%'
+                                                    layout='responsive'
+                                                    objectFit="cover"
+                                                />   
+                                            )}
+                                            
                                         </div>
                                     </button>
                                 </div>
