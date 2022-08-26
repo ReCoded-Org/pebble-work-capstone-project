@@ -61,11 +61,9 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                 withCredentials: true,
             });
             setAuth({});
-            //console.log(response)
+            console.log(response);
         } catch (err) {
-
             //console.log(err);
-
         }
     };
 
