@@ -108,7 +108,7 @@
         }
     },
     "eventsPage": {
-        "welcome": "Welcome,",
+        "welcome": "Welcome",
         "description": "Explore and Join Events.",
         "calendarComp": {
             "changeDate": "Change Date",
