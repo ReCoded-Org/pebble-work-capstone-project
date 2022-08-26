@@ -144,6 +144,9 @@
             "applyFilters": "Filtreleri Uygula"
         },
         "eventCards": {
+            "in": ",",
+            "noAttendeesYet": "Hiç Katılımcı Yok",
+            "only1Attendee": "Sadece 1 Katılımcı",
             "attendees": "Katılımcı",
             "join": "KATIL",
             "leave": "AYRIL"
