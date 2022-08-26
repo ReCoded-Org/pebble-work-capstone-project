@@ -143,6 +143,9 @@
             "applyFilters": "Apply Filters"
         },
         "eventCards": {
+            "in": "in",
+            "noAttendeesYet": "No Attendees Yet",
+            "only1Attendee": "Only 1 Attendee",
             "attendees": "Attendees",
             "join": "JOIN",
             "leave": "LEAVE",
