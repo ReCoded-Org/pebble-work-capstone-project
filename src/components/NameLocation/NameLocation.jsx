@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { useRef, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -12,6 +13,7 @@ import axios from "@/api/axios";
 import InputComponent from "../InputComponent";
 
 const NameLocation = () => {
+    const { t } = useTranslation("common");
     const { auth, setAuth } = useAuth();
     const [fileUpload, setFileUpload] = useState();
     const [toUpload, setToUpload] = useState(false);
@@ -56,7 +58,7 @@ const NameLocation = () => {
     return (
         <div className='m-4 mt-4 md:m-12 lg:ml-16'>
             <h1 className='m-4 text-xl font-medium md:m-6 md:text-3xl lg:m-12 lg:text-5xl'>
-                Edit Profile
+                {t("editProfilePage.header")}
             </h1>
             <div className='flex flex-row items-center justify-center overflow-hidden lg:ml-8 lg:justify-start'>
                 <div className='m-1 mr-2 w-20 overflow-hidden rounded-full md:mr-6 md:w-40 lg:w-44'>
@@ -78,7 +80,7 @@ const NameLocation = () => {
                     />
                     {toUpload && (
                         <Button
-                            label='Upload Photo'
+                            label={t("editProfilePage.upload")}
                             bgColor='bg-primary-200'
                             textColor='text-white'
                             onClick={submitPhoto}
@@ -115,22 +117,24 @@ const NameLocation = () => {
             </div>
             <div className='m-4 mt-8 md:m-8 md:mt-12'>
                 <label className='text-[12px] font-medium md:text-xl lg:text-xl'>
-                    Name (Required)
+                    {t("editProfilePage.name")}
                 </label>
                 <div className='mt-1 mb-3 h-8 md:mt-2 md:mb-9 md:h-14 md:w-[490px] lg:h-12  lg:w-[600px]'>
                     <input
                         type='text'
                         name='Name'
-                        placeholder='Name'
+                        placeholder={t("editProfilePage.namePH")}
                         required
                         className='h-full w-full rounded-md border-2 border-black p-2'
                     />
                 </div>
                 <label className='text-[12px] font-medium md:text-xl lg:text-xl'>
-                    Your Location
+                    {t("editProfilePage.location")}
                 </label>
                 <div className='mt-1 mb-3 h-8 md:mt-2 md:mb-9 md:h-14 md:w-[490px] lg:h-12 lg:w-[600px]'>
-                    <InputComponent placeholder='Location' />
+                    <InputComponent
+                        placeholder={t("editProfilePage.locationPH")}
+                    />
                 </div>
             </div>
         </div>

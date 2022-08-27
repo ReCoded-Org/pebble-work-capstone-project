@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        No Poverty
+        editProfilePage.noPoverty
       </button>
     </div>
     <div
@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Zero Hunger
+        editProfilePage.zeroHunger
       </button>
     </div>
     <div
@@ -37,7 +37,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Good Health and Well-Being
+        editProfilePage.goodHealthAndWellbeing
       </button>
     </div>
     <div
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Quality Education
+        editProfilePage.qualityEducation
       </button>
     </div>
     <div
@@ -59,7 +59,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Gender Equality
+        editProfilePage.genderEquality
       </button>
     </div>
     <div
@@ -70,7 +70,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Clean Water and Sanitation
+        editProfilePage.cleanWaterAndSanitation
       </button>
     </div>
     <div
@@ -81,7 +81,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Affordable and Clean Energy
+        editProfilePage.affordableAndCleanEnergy
       </button>
     </div>
     <div
@@ -92,7 +92,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Decent Work and Economic Growth
+        editProfilePage.decentWorkAndEconomicGrowth
       </button>
     </div>
     <div
@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Industry, Innovation and Infrastructure
+        editProfilePage.industryInnovationAndInfrastructure
       </button>
     </div>
     <div
@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Reduced Inequalities
+        editProfilePage.reducedInequalities
       </button>
     </div>
     <div
@@ -125,7 +125,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Sustainable Cities and Communities
+        editProfilePage.sustainableCitiesAndCommunities
       </button>
     </div>
     <div
@@ -136,7 +136,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Responsible Consumption and Production
+        editProfilePage.responsibleConsumptionAndProduction
       </button>
     </div>
     <div
@@ -147,7 +147,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Climate Action
+        editProfilePage.climateAction
       </button>
     </div>
     <div
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Life Below Water
+        editProfilePage.lifeBelowWater
       </button>
     </div>
     <div
@@ -169,7 +169,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Life On Land
+        editProfilePage.lifeOnLand
       </button>
     </div>
     <div
@@ -180,7 +180,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Peace, Justice and Strong Institutions
+        editProfilePage.peaceJusticeAndStrongInstitutions
       </button>
     </div>
     <div
@@ -191,7 +191,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        Partnerships to achieve the Goal
+        editProfilePage.partnershipForTheGoals
       </button>
     </div>
   </div>
