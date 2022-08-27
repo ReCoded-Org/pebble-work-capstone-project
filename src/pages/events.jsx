@@ -146,14 +146,6 @@ export async function getServerSideProps({ locale, query }) {
 }
 
 const EventsPage = ({ events }) => {
-    const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(10);
-
-    const indexOfLastPost = currentPage * postsPerPage;
-    const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = events.slice(indexOfFirstPost, indexOfLastPost);
-    const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
     const { t } = useTranslation("common");
     const { auth } = useAuth();
     const router = useRouter();
@@ -271,6 +263,24 @@ const EventsPage = ({ events }) => {
     }
 
     //FILTERING EVENTS
+    let today = new Date();
+    let formattedToday = format(today, "yyyy-MM-dd");
+
+    const futureEvents = [];
+    events.map((e) => {
+        if (e.date.split("T")[0] >= formattedToday) {
+            futureEvents.push(e);
+        }
+    });
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(10);
+
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = futureEvents.slice(indexOfFirstPost, indexOfLastPost);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     const [params, setParams] = useState({
         categories: [],
         city: "",
