@@ -98,7 +98,7 @@ const LocationComp = ({
             <div className='sm:relative sm:w-full sm:border-none sm:bg-transparent sm:shadow-none'>
                 <div className='flex flex-col items-center md:flex-row '>
                     <h1 className='mb-2 text-center text-xl font-bold sm:hidden'>
-                        Search Event Location
+                        {t("eventsPage.locationComp.searchEventLocation")}
                     </h1>
                     <InputComponent
                         type='text'
@@ -108,16 +108,10 @@ const LocationComp = ({
                         )}
                         value={searchTerm}
                         callback={handleSearch}
-                        className='mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full'
-                    />
-                    <Button
-                        onClick={() => onSearch(searchTerm)}
-                        label={t("eventsPage.locationComp.search")}
-                        height='h-9'
-                        customStyle='text-base bg-primary-200 border rounded text-white ml-2'
+                        className='mb-2 h-9 w-3/4 rounded-md border-gray-200 text-base placeholder-black focus:border-secondary-300 sm:mb-0 sm:w-full'
                     />
                 </div>
-                <div>
+                <div className='mt-2 flex flex-col items-center'>
                     {citiesOfTurkey
                         .filter((city) => {
                             const searchCity = searchTerm.toLowerCase();
@@ -140,6 +134,11 @@ const LocationComp = ({
                                 {city}
                             </div>
                         ))}
+                    <Button
+                        onClick={() => onSearch(searchTerm)}
+                        label={t("eventsPage.locationComp.search")}
+                        customStyle='rounded-md border-2 mb-0 py-0 px-0 bg-white text-black shadow-sm w-48'
+                    />
                 </div>
             </div>
         </div>
