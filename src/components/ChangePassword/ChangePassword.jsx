@@ -20,7 +20,7 @@ const ChangePassword = () => {
                                     <InputComponent
                                         type='password'
                                         placeholder={t(
-                                            "editProfilePage.passwordPH"
+                                            "editProfilePage.passwordPh"
                                         )}
                                     />
                                 </div>
@@ -29,7 +29,7 @@ const ChangePassword = () => {
                                     <InputComponent
                                         type='password'
                                         placeholder={t(
-                                            "editProfilePage.retypePH"
+                                            "editProfilePage.retypePh"
                                         )}
                                     />
                                 </div>
