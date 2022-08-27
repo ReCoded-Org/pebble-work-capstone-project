@@ -12,11 +12,59 @@ import axios from "@/api/axios";
 import InputComponent from "../InputComponent";
 
 const NameLocation = () => {
+    const [email, setEmail] = useState("");
+    const [password, setpassword] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [gender, setGender] = useState("");
+    const [dateOfBirth, setDateOfBirth] = useState("");
+    const [intrests, setintrests] = useState([]);
+
+    async function submitEvent() {
+        var bodyFormData = new FormData();
+        bodyFormData.append("email", "test@gmail.com");
+        bodyFormData.append("password", "12341234");
+        bodyFormData.append("firstName", firstName);
+        bodyFormData.append("lastName", "m,sdf");
+        bodyFormData.append("gender", "female");
+        bodyFormData.append("dateOfBirth", "2000-01-01");
+        //bodyFormData.append('categories[]', categories)
+        for (const a of intrests) {
+            bodyFormData.append("intrests[]", "No Poverty");
+        }
+        bodyFormData.append("preferredCities[]", preferredCities);
+        try {
+            const response = await axios({
+                method: "put",
+                url: "/api/user/",
+                data: bodyFormData,
+                headers: { "Content-Type": "multipart/form-data" },
+                withCredentials: true,
+            });
+            //const data = await response.json()
+            console.log(response);
+            // router.push(response.data._id);
+        } catch (err) {
+            //console.log(err);
+        }
+    }
+
     const { auth, setAuth } = useAuth();
     const [fileUpload, setFileUpload] = useState();
     const [toUpload, setToUpload] = useState(false);
+    const [firstName, setFirstName] = useState();
+    const [preferredCities, setPreferredCities] = useState([]);
+
     const fileRef = useRef();
     const router = useRouter();
+    const handleName = (e) => {
+        setFirstName(e.target.value);
+        console.log(firstName);
+    };
+    const handlePreferredCities = (e) => {
+        setPreferredCities(e.target.value);
+        console.log(preferredCities);
+    };
+
     let profileImage = auth?.profileImage;
     if (!auth?.profileImage) {
         profileImage = "/images/user.png";
@@ -124,14 +172,34 @@ const NameLocation = () => {
                         placeholder='Name'
                         required
                         className='h-full w-full rounded-md border-2 border-black p-2'
+                        onChange={handleName}
                     />
                 </div>
                 <label className='text-[12px] font-medium md:text-xl lg:text-xl'>
                     Your Location
                 </label>
                 <div className='mt-1 mb-3 h-8 md:mt-2 md:mb-9 md:h-14 md:w-[490px] lg:h-12 lg:w-[600px]'>
-                    <InputComponent placeholder='Location' />
+                    <input
+                        type='text'
+                        name='Location'
+                        placeholder='Location'
+                        required
+                        className='h-full w-full rounded-md border-2 border-black p-2'
+                        onChange={handlePreferredCities}
+                    />
                 </div>
+                <Button
+                    label='Submit'
+                    bgColor='bg-primary-200'
+                    textColor='text-white'
+                    fontWeight='font-medium'
+                    width='w-20 md:w-32 lg:w-36'
+                    height='h-8 md:h-12 lg:h-12'
+                    borderColor=''
+                    fontSize='text-[11px] md:text-xl lg:text-xl'
+                    border=''
+                    onClick={submitEvent}
+                />
             </div>
         </div>
     );

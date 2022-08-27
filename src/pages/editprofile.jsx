@@ -1,13 +1,16 @@
 // import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import * as React from "react";
+import useState from "react";
 
 import ChangePassword from "@/components/ChangePassword";
 import EditInterests from "@/components/EditInterests";
 import Layout from "@/components/layout/Layout";
 import NameLocation from "@/components/NameLocation";
 
-export default function HomePage() {
+import axios from "@/api/axios";
+export default function editprofile() {
     // const { t } = useTranslation("common");
 
     return (
