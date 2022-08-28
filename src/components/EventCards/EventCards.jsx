@@ -123,7 +123,7 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     )}
                                     {/* if user is NOT signed in show sign in or sign up buttons */}
                                     {!auth?.email && (
-                                        <div className='text-blue m-2 flex flex-row flex-wrap items-center hover:cursor-default'>
+                                        <div className='text-blue m-2 flex flex-row flex-wrap justify-center hover:cursor-default'>
                                             {t(
                                                 "eventsPage.eventCards.toJoinTurkish"
                                             )}

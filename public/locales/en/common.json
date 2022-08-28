@@ -112,12 +112,13 @@
         "description": "Explore and Join Events.",
         "calendarComp": {
             "changeDate": "Change Date",
-            "submit": "SUBMIT"
+            "submit": "Change Date"
         },
         "locationComp": {
             "changeLocation": "Change Location",
-            "searchLocation": "Search Location",
-            "search": "SEARCH"
+            "searchLocation": "Type a Location...",
+            "searchEventLocation": "Search Event Location",
+            "search": "Search Location"
         },
         "categoryCheckboxes": {
             "chooseCategory": "Choose Category",
@@ -154,7 +155,14 @@
             "signIn": "Sign In",
             "signUp": "Sign Up",
             "toJoinEnglish": "to join events."
-        }
+        },
+        "resetFilters": "Reset Filters",
+        "toast": {
+            "noCategory": "Please select at least one category",
+            "noLocation": "Please select a city.",
+            "noFilters": "No filters to reset"
+        },
+        "noEvents": "No events found according to applied filters"
     },
     "eventViewPage": {
         "eventBanner": {
