@@ -20,7 +20,7 @@ const CalendarComp = ({ style, setRange, range, handleDateSubmit }) => {
                             moveRangeOnFirstSelection={false}
                             ranges={range}
                             months={1}
-                            fixedHeight={false}
+                            fixedHeight={true}
                             rangeColors={["#0180AB", "#BDD6D0"]}
                             direction='vertical'
                             className='calendarElement mb-2 border-2'
@@ -28,12 +28,7 @@ const CalendarComp = ({ style, setRange, range, handleDateSubmit }) => {
                         <Button
                             type='submit'
                             label={t("eventsPage.calendarComp.submit")}
-                            textColor='text-white'
-                            bgColor='bg-primary-200'
-                            borderColor='border-primary-200'
-                            height='h-10'
-                            widht='w-32'
-                            customStyle='text-base rounded'
+                            customStyle='text-base rounded-md bg-secondary-300 border-secondary-300 border-2 text-white mt-0 mb-0 py-0 px-0 bg-white shadow-sm w-48'
                             onClick={handleDateSubmit}
                         />
                     </div>
