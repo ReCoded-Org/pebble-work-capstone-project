@@ -1,8 +1,8 @@
 import renderer from "react-test-renderer";
 
-import CalendarComp from "../CalendarComp";
+import Quotes from "../Quotes";
 
 it("renders correctly", () => {
-    const tree = renderer.create(<CalendarComp />).toJSON();
+    const tree = renderer.create(<Quotes />).toJSON();
     expect(tree).toMatchSnapshot();
 });

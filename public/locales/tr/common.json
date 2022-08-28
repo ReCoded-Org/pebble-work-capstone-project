@@ -10,7 +10,7 @@
             "turkish": "Türkçe",
             "allEvents": "Etkinlikler",
             "events": "Etkinlikler",
-
+            "myEvents": "Etkinliklerim",
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
@@ -113,12 +113,13 @@
         "description": "Keşfet ve Etkinliklere Katıl.",
         "calendarComp": {
             "changeDate": "Tarih Değiştir",
-            "submit": "GÖNDER"
+            "submit": "Tarihi Değiştir"
         },
         "locationComp": {
             "changeLocation": "Konum Değiştir",
-            "searchLocation": "Konum Ara",
-            "search": "ARA"
+            "searchLocation": "Bir Konum İsmi Girin...",
+            "searchEventLocation": "Bir Konum Arayın",
+            "search": "Konum Ara"
         },
         "categoryCheckboxes": {
             "chooseCategory": "Kategori Seç",
@@ -144,10 +145,25 @@
             "applyFilters": "Filtreleri Uygula"
         },
         "eventCards": {
+            "in": ",",
+            "noAttendeesYet": "Hiç Katılımcı Yok",
+            "only1Attendee": "Sadece 1 Katılımcı",
             "attendees": "Katılımcı",
             "join": "KATIL",
-            "leave": "AYRIL"
-        }
+            "leave": "AYRIL",
+            "toJoinTurkish": "Etkinliklere katılmak için ",
+            "or": " yada ",
+            "signIn": "giriş yap",
+            "signUp": "kayıt ol",
+            "toJoinEnglish": ""
+        },
+        "resetFilters": "Filtreleri Sıfırla",
+        "toast": {
+            "noCategory": "Lütfen en az bir kategori seçin.",
+            "noLocation": "Lütfen bir şehir seçin.",
+            "noFilters": "Sıfırlanacak bir filtre uygulanmadı"
+        },
+        "noEvents": "Uygulanan filtrelere göre etkinlik bulunamadı"
     },
     "eventViewPage": {
         "eventBanner": {
@@ -173,5 +189,10 @@
         "password": "Şifre",
         "name": "Ad",
         "surname": "Soyadı"
+    },
+    "yourEvents": {
+        "yourUpcomingEvents": "Gelecek Etkinlikleriniz",
+        "notJoined": "Daha hiçbir etkinliğe katılmadınız",
+        "exploreEvents": "Etkinlikleri Keşfet"
     }
 }

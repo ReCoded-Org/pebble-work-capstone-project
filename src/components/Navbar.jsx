@@ -10,33 +10,15 @@ import axios from "@/api/axios";
 
 const { useState, useEffect, useRef } = React;
 
-const Navbar = () => {
+const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
     const { t } = useTranslation("common");
-
     // we get the user information with useAuth.
     const { auth, setAuth } = useAuth();
     const { asPath } = useRouter();
     const [showDropdown, setShowDropdown] = useState(false);
     const [profileShowDropdown, setProfileShowDropdown] = useState(false);
-    const [showMobileDropdown, setShowMobileDropdown] = useState(false);
-
+    // const [showMobileDropdown, setShowMobileDropdown] = useState(false);
     const Mobiledropdown = useRef(null);
-    useEffect(() => {
-        if (showMobileDropdown) return;
-        function handleClick(event) {
-            if (
-                showMobileDropdown.current &&
-                !showMobileDropdown.current.contains(event.target)
-            ) {
-                setShowMobileDropdown(false);
-            }
-        }
-        window.addEventListener("click", handleClick);
-        return () => window.removeEventListener("click", handleClick);
-    }, [showMobileDropdown]);
-
-    // languages dropdown
-    const dropdown = useRef(null);
     useEffect(() => {
         // only add the event listener when the dropdown is opened
         if (showDropdown) return;
@@ -49,7 +31,18 @@ const Navbar = () => {
         // clean up
         return () => window.removeEventListener("click", handleClick);
     }, [showDropdown]);
+    const dropdown = useRef(null);
+    const close = () => {
+        setTimeout(() => {
+            setProfileShowDropdown(false);
+        }, 250);
+    };
 
+    const closeLanguagesMenu = () => {
+        setTimeout(() => {
+            setShowDropdown(false);
+        }, 250);
+    };
     const profileDropdown = useRef(null);
     useEffect(() => {
         if (profileShowDropdown) return;
@@ -72,7 +65,7 @@ const Navbar = () => {
                 withCredentials: true,
             });
             setAuth({});
-            //console.log(response)
+            console.log(response);
         } catch (err) {
             //console.log(err);
         }
@@ -80,21 +73,21 @@ const Navbar = () => {
 
     return (
         <nav
-            className='mb-1  shadow'
-            style={{ backgroundColor: "transparent" }}
+            className='relative z-50 bg-white shadow-md'
+            // style={{ backgroundColor: "transparent" }}
         >
-            <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 '>
+            <div className='mx-auto max-w-7xl  sm:px-6  lg:px-8  '>
                 <div className='relative flex h-16 items-center justify-between'>
-                    <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+                    <div className='absolute inset-y-0 left-0 flex w-full items-center sm:hidden '>
                         {/* <!-- Mobile menu button--> */}
                         <button
                             type='button'
-                            className='inline-flex items-center justify-center rounded-md p-2 text-gray-400  hover:text-white focus:outline-none '
+                            className='inline-flex items-center justify-center rounded-md p-2 px-4 text-gray-400  hover:text-white focus:outline-none '
                             aria-controls='mobile-menu'
                             aria-expanded='false'
-                            onClick={() => setShowDropdown((b) => !b)}
+                            onClick={open}
+                            onBlur={closeMobileMenu}
                         >
-                            <span className='sr-only'>Open main menu</span>
                             <svg
                                 style={{ stroke: "#56c1e6" }}
                                 className=' block h-6 w-6 '
@@ -127,6 +120,88 @@ const Navbar = () => {
                                 />
                             </svg>
                         </button>
+                        {showMobileDropdown && (
+                            <div
+                                ref={Mobiledropdown}
+                                className=' absolute z-50  w-full '
+                                id='mobile-menu'
+                            >
+                                <div className='absolute z-50  mt-8 flex  w-full  flex-col  items-center border-b  bg-white pt-2 pb-1  shadow-lg '>
+                                    <div className='p-2'>
+                                        <Link
+                                            href='/events'
+                                            className='block rounded-md  px-3 py-2 text-base font-medium text-gray-700'
+                                            aria-current='page'
+                                        >
+                                            {t("common.nav.allEvents")}
+                                        </Link>
+                                    </div>
+                                    <div className='p-2'>
+                                        <Link
+                                            href='/#how-it-works'
+                                            className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
+                                        >
+                                            {t("common.nav.howItWorks")}
+                                        </Link>
+                                    </div>
+                                    <div className='p-2'>
+                                        <Link
+                                            href='/about'
+                                            className='block rounded-md px-3 py-2 text-base font-medium text-gray-700'
+                                        >
+                                            {t("common.nav.aboutUs")}
+                                        </Link>
+                                    </div>
+
+                                    {/* mobile's languages menu */}
+                                    <div className='flex flex-row items-center py-1  '>
+                                        <Link
+                                            href={asPath}
+                                            locale='en'
+                                            className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            {t("common.nav.english")}
+                                        </Link>
+
+                                        <p className='mx-3 text-orange-400'>
+                                            |
+                                        </p>
+                                        <Link
+                                            href={asPath}
+                                            locale='tr'
+                                            className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
+                                            role='menuitem'
+                                            tabIndex='-1'
+                                            id='user-menu-item-0'
+                                        >
+                                            {t("common.nav.turkish")}
+                                        </Link>
+                                    </div>
+                                    <div className='flex w-full flex-row items-center justify-center border-t'>
+                                        <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
+                                            <Link
+                                                href='/signin'
+                                                className='block  rounded-md border-t px-3 py-2 text-base font-medium '
+                                            >
+                                                {t("common.nav.signIn")}
+                                            </Link>
+                                        </div>
+                                        <p className='text-orange-400'>|</p>
+                                        <div className=' flex  w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
+                                            <Link
+                                                href='/signup'
+                                                className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
+                                            >
+                                                {t("common.nav.signUp")}
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
                     <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                         <Link
@@ -143,7 +218,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className='absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0'>
-                        <div className='hidden sm:ml-6 sm:block'>
+                        <div className='hidden sm:ml-6  sm:block'>
                             <div className='flex items-center space-x-3'>
                                 <Link href='/events'>
                                     <a className=' hidden rounded-md px-3 py-2 text-sm font-semibold  text-gray-700  hover:text-orange-400'>
@@ -167,10 +242,8 @@ const Navbar = () => {
                                             onClick={() =>
                                                 setShowDropdown((b) => !b)
                                             }
+                                            onBlur={closeLanguagesMenu}
                                         >
-                                            <span className='sr-only'>
-                                                Open user menu
-                                            </span>
                                             <div className=' w-15 relative flex h-10 flex-row items-center overflow-hidden  text-gray-700  hover:text-orange-400 '>
                                                 <svg
                                                     xmlns='http://www.w3.org/2000/svg'
@@ -205,38 +278,44 @@ const Navbar = () => {
                                     </div>
                                     {showDropdown && (
                                         <div
+                                            id='langMenu'
                                             ref={dropdown}
-                                            className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white py-1 shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
+                                            className='w-25 absolute right-0 z-50 m-0 mt-2 flex origin-top-right   flex-col place-content-center items-center rounded-md border bg-white  shadow-lg hover:border-b hover:border-orange-300 md:-right-5   '
                                             role='menu'
                                             aria-orientation='vertical'
                                             aria-labelledby='user-menu-button'
                                             tabIndex='-1'
                                         >
-                                            <Link
-                                                href={asPath}
-                                                locale='en'
-                                                className=' flex  px-3 py-2 text-sm text-gray-700  hover:text-orange-400 '
-                                                role='menuitem'
-                                                tabIndex='-1'
-                                                id='user-menu-item-0'
-                                            >
-                                                {t("common.nav.english")}
-                                            </Link>
-                                            <Link
-                                                href={asPath}
-                                                locale='tr'
-                                                className=' flex  px-3 py-2 text-sm text-gray-800 hover:text-orange-400'
-                                                role='menuitem'
-                                                tabIndex='-1'
-                                                id='user-menu-item-0'
-                                            >
-                                                {t("common.nav.turkish")}
-                                            </Link>
+                                            <div className='rounded px-2 py-1 hover:bg-gray-100'>
+                                                <Link
+                                                    href={asPath}
+                                                    locale='en'
+                                                    className=' flex text-sm text-gray-700 hover:text-orange-400 '
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-0'
+                                                >
+                                                    {t("common.nav.english")}
+                                                </Link>
+                                            </div>
+
+                                            <div className=' w-full rounded px-2 py-1 hover:bg-gray-100'>
+                                                <Link
+                                                    href={asPath}
+                                                    locale='tr'
+                                                    className=' flex text-sm text-gray-700 hover:text-orange-400'
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-0'
+                                                >
+                                                    {t("common.nav.turkish")}
+                                                </Link>
+                                            </div>
                                         </div>
                                     )}
                                 </div>
                                 {/* If there is NO authorized email, then user is not signed in. Show the sign in and out buttons */}
-                                {!auth?.email && (
+                                {!auth?.id && (
                                     <>
                                         <Link href='/signin'>
                                             <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
@@ -254,8 +333,8 @@ const Navbar = () => {
                         </div>
                         {/* profile menu */}
                         {/* If there is authorized email, then user is signed in. Show profile menu */}
-                        {auth?.email && (
-                            <div className='relative ml-3'>
+                        {auth?.id && (
+                            <div className='relative ml-3 mr-2   hover:border-primary-200'>
                                 <div>
                                     <button
                                         type='button'
@@ -266,23 +345,36 @@ const Navbar = () => {
                                         onClick={() =>
                                             setProfileShowDropdown((b) => !b)
                                         }
+                                        onBlur={close}
                                     >
                                         <span className='sr-only'>
                                             Open user menu
                                         </span>
                                         <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
-                                            <svg
-                                                className='absolute -left-1 h-12 w-12 text-orange-300'
-                                                fill='currentColor'
-                                                viewBox='0 0 20 20'
-                                                xmlns='http://www.w3.org/2000/svg'
-                                            >
-                                                <path
-                                                    fillRule='evenodd'
-                                                    d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'
-                                                    clipRule='evenodd'
-                                                ></path>
-                                            </svg>
+                                            {!auth?.profileImage && (
+                                                <svg
+                                                    className='absolute -left-1 h-12 w-12 text-orange-300'
+                                                    fill='currentColor'
+                                                    viewBox='0 0 20 20'
+                                                    xmlns='http://www.w3.org/2000/svg'
+                                                >
+                                                    <path
+                                                        fillRule='evenodd'
+                                                        d='M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z'
+                                                        clipRule='evenodd'
+                                                    ></path>
+                                                </svg>
+                                            )}
+                                            {auth?.profileImage && (
+                                                <Image
+                                                    src={auth.profileImage}
+                                                    alt={`${auth.firstName} profilephoto`}
+                                                    width='100%'
+                                                    height='100%'
+                                                    layout='responsive'
+                                                    objectFit='cover'
+                                                />
+                                            )}
                                         </div>
                                     </button>
                                 </div>
@@ -290,53 +382,70 @@ const Navbar = () => {
                                 {profileShowDropdown && (
                                     <div
                                         ref={profileDropdown}
-                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right  rounded-md border border-gray-400   bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'
+                                        className=' absolute right-0 z-50 mt-2 w-36 origin-top-right   rounded-md border border-gray-400 bg-white   shadow-lg  ring-1 ring-black ring-opacity-5 hover:border-primary-200 focus:outline-none'
                                         role='menu'
                                         aria-orientation='vertical'
                                         aria-labelledby='user-menu-button'
                                         tabIndex='-1'
                                     >
-                                        <Link
-                                            href='/events'
-                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                            role='menuitem'
-                                            tabIndex='-1'
-                                            id='user-menu-item-0'
-                                        >
-                                            {t("common.nav.yourEvents")}
-                                        </Link>
-                                        <br />
-                                        <Link
-                                            href='/editprofile'
-                                            className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
-                                            role='menuitem'
-                                            tabIndex='-1'
-                                            id='user-menu-item-0'
-                                        >
-                                            {t("common.nav.yourProfile")}
-                                        </Link>
-                                        <br />
-                                        <Link
-                                            href='/eventcreation'
-                                            className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
-                                            role='menuitem'
-                                            tabIndex='-1'
-                                            id='user-menu-item-1'
-                                        >
-                                            {t("common.nav.settings")}
-                                        </Link>
-                                        <br />
-                                        <button onClick={handleSignOut}>
+                                        <div className='rounded  py-1 pl-2 hover:bg-gray-100'>
                                             <Link
-                                                href='/'
-                                                className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
+                                                href='/events'
+                                                className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
                                                 role='menuitem'
                                                 tabIndex='-1'
-                                                id='user-menu-item-2'
+                                                id='user-menu-item-0'
                                             >
-                                                {t("common.nav.signOut")}
+                                                {t("common.nav.yourEvents")}
                                             </Link>
-                                        </button>
+                                        </div>
+                                        <div className='rounded  py-1 pl-2 hover:bg-gray-100'>
+                                            <Link
+                                                href='/yourevents'
+                                                className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-0'
+                                            >
+                                                {t("common.nav.myEvents")}
+                                            </Link>
+                                        </div>
+
+                                        <div className='py-1 pl-2 hover:bg-gray-100'>
+                                            <Link
+                                                href='/editprofile'
+                                                className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-0'
+                                            >
+                                                {t("common.nav.yourProfile")}
+                                            </Link>
+                                        </div>
+                                        <div className='py-1 pl-2 hover:bg-gray-100'>
+                                            <Link
+                                                href='/eventcreation'
+                                                className='block px-4 py-2 text-sm text-gray-700  hover:text-orange-400'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-1'
+                                            >
+                                                {t("common.nav.settings")}
+                                            </Link>
+                                        </div>
+                                        <div className='border-t py-1 pl-2 hover:bg-primary-200 hover:text-white '>
+                                            <button onClick={handleSignOut}>
+                                                <Link
+                                                    href='/'
+                                                    className='block border-t px-4 py-2 text-sm text-gray-700  hover:text-orange-400 '
+                                                    role='menuitem'
+                                                    tabIndex='-1'
+                                                    id='user-menu-item-2'
+                                                >
+                                                    {t("common.nav.signOut")}
+                                                </Link>
+                                            </button>
+                                        </div>
                                     </div>
                                 )}
                             </div>
@@ -344,87 +453,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            {showDropdown && (
-                <div
-                    ref={Mobiledropdown}
-                    className='sm:hidden'
-                    id='mobile-menu'
-                >
-                    <div className='flex w-full flex-col items-center space-y-1 px-2 pt-2 pb-1'>
-                        <div className='p-2'>
-                            <Link
-                                href='/allevents'
-                                className='block rounded-md  px-3 py-2 text-base font-medium text-gray-700'
-                                aria-current='page'
-                            >
-                                {t("common.nav.allEvents")}
-                            </Link>
-                        </div>
-                        <div className='p-2'>
-                            <Link
-                                href='/howitworks'
-                                className='block rounded-md px-3 py-2 text-base font-medium text-gray-700 '
-                            >
-                                {t("common.nav.howItWorks")}
-                            </Link>
-                        </div>
-                        <div className='p-2'>
-                            <Link
-                                href='/aboutus'
-                                className='block rounded-md px-3 py-2 text-base font-medium text-gray-700'
-                            >
-                                {t("common.nav.aboutUs")}
-                            </Link>
-                        </div>
-
-                        {/* mobile's languages menu */}
-                        <div className='flex flex-row items-center '>
-                            <Link
-                                href={asPath}
-                                locale='en'
-                                className=' flex  px-2 py-2 text-xs  font-medium text-gray-600 hover:text-orange-400 '
-                                role='menuitem'
-                                tabIndex='-1'
-                                id='user-menu-item-0'
-                            >
-                                {t("common.nav.english")}
-                            </Link>
-                            <p className='text-orange-400'>|</p>
-                            <Link
-                                href={asPath}
-                                locale='tr'
-                                className=' flex px-2 py-2 text-xs font-medium text-gray-600 hover:text-orange-400'
-                                role='menuitem'
-                                tabIndex='-1'
-                                id='user-menu-item-0'
-                            >
-                                {t("common.nav.turkish")}
-                            </Link>
-                        </div>
-                        {!auth?.email && (
-                            <div className='flex w-full flex-row items-center justify-center border-t'>
-                                <div className='flex w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
-                                    <Link
-                                        href='/signin'
-                                        className='block  rounded-md border-t px-3 py-2 text-base font-medium '
-                                    >
-                                        {t("common.nav.signIn")}
-                                    </Link>
-                                </div>
-                                <p className='text-orange-400'>|</p>
-                                <div className=' flex  w-full flex-row items-center justify-center justify-items-center py-1 text-sky-400 '>
-                                    <Link
-                                        href='/signup'
-                                        className='block rounded-md bg-orange-400 px-3 py-2 text-base font-medium text-gray-700'
-                                    >
-                                        {t("common.nav.signUp")}
-                                    </Link>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                </div>
-            )}
         </nav>
     );
 };

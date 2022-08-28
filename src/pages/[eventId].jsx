@@ -61,6 +61,12 @@ export default function EventViewPage({ event }) {
                 : event.confirmedVolunteers[i].profileImage
         );
     }
+    let hostProfileURL = event.publisherId
+        ? event.publisherId.profileImage
+        : "/images/userAvatar.jpeg";
+    if (hostProfileURL === undefined) {
+        hostProfileURL = "/images/userAvatar.jpeg";
+    }
     return (
         <Layout>
             <EventBanner
@@ -73,11 +79,7 @@ export default function EventViewPage({ event }) {
                 attendees={volunteers}
                 attendeeProfileURLs={volunteerProfileURLs}
                 host={event.publisherId ? event.publisherId.firstName : "N/A"}
-                hostProfileURL={
-                    event.publisherId
-                        ? event.publisherId.profileImage
-                        : "/images/userAvatar.jpeg"
-                }
+                hostProfileURL={hostProfileURL}
             />
             <EventDescriptionAttendeesList
                 description={event.content}
