@@ -73,7 +73,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
 
     return (
         <nav
-            className='relative z-50 mb-1 bg-white shadow-md'
+            className='relative z-50 bg-white shadow-md'
             // style={{ backgroundColor: "transparent" }}
         >
             <div className='mx-auto max-w-7xl  sm:px-6  lg:px-8  '>
@@ -397,6 +397,17 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                                 id='user-menu-item-0'
                                             >
                                                 {t("common.nav.yourEvents")}
+                                            </Link>
+                                        </div>
+                                        <div className='rounded  py-1 pl-2 hover:bg-gray-100'>
+                                            <Link
+                                                href='/yourevents'
+                                                className='block px-4 py-2 text-sm text-gray-700 hover:text-orange-400'
+                                                role='menuitem'
+                                                tabIndex='-1'
+                                                id='user-menu-item-0'
+                                            >
+                                                {t("common.nav.myEvents")}
                                             </Link>
                                         </div>
 

@@ -10,7 +10,7 @@
             "turkish": "Türkçe",
             "allEvents": "Etkinlikler",
             "events": "Etkinlikler",
-
+            "myEvents": "Etkinliklerim",
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
@@ -189,5 +189,10 @@
         "password": "Şifre",
         "name": "Ad",
         "surname": "Soyadı"
+    },
+    "yourEvents": {
+        "yourUpcomingEvents": "Gelecek Etkinlikleriniz",
+        "notJoined": "Daha hiçbir etkinliğe katılmadınız",
+        "exploreEvents": "Etkinlikleri Keşfet"
     }
 }
