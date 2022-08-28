@@ -97,6 +97,7 @@ function EventBanner({
             }
         }
     }
+
     updateAttendees(); // run this function whenever you need to update attendees
 
     const handleJoinClick = async () => {
