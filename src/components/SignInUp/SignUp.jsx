@@ -252,7 +252,7 @@ const SignUp = () => {
                                     </p>
                                 </div>
                                 <p className='signin m-1 flex text-xs italic text-gray-700'>
-                                    {t("signUPPage.haveAccount      ")}
+                                    {t("signUpPage.haveAccount")}
                                     <Link href='/signin'>
                                         <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
                                             {t("common.nav.signIn")}
@@ -280,7 +280,7 @@ const SignUp = () => {
                                         height={2}
                                     />
                                     <div className='text-sm text-gray-400'>
-                                        {t("SignUpPage.or")}
+                                        {t("signUpPage.or")}
                                     </div>
                                     <Image
                                         src='/svg/line.svg'
@@ -298,7 +298,7 @@ const SignUp = () => {
                                             height={30}
                                             width={30}
                                         />
-                                        {t("SignInUpPage.google")}
+                                        {t("signUpPage.google")}
                                     </button>
                                 </div>
                             </div>

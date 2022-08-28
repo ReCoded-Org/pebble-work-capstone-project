@@ -188,9 +188,10 @@
         "password": "Password",
         "name": "Name",
         "surname": "Surname",
-        "InvalidEmailOrPassword" : "Invalid email or password"
+        "loginFailed": "Login Failed",
+        "InvalidEmailOrPassword": "Invalid email or password"
     },
-     "signUpPage": {
+    "signUpPage": {
         "haveAccount": " Already have an account? ",
         "dontHaveAccount": "Don't have an account? ",
         "google": "Continue with Google ",
@@ -200,6 +201,7 @@
         "name": "Name",
         "surname": "Surname",
         "or": "Or",
-        "alreadyInUse" : " Email address already in use."
+
+        "alreadyInUse": " Email address already in use."
     }
 }

@@ -1479,7 +1479,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay rdrDayToday rdrDayWeekend rdrDayEndOfWeek"
+                  className="rdrDay rdrDayWeekend rdrDayEndOfWeek"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}
@@ -1505,7 +1505,7 @@ exports[`renders correctly 1`] = `
                   </span>
                 </button>
                 <button
-                  className="rdrDay rdrDayWeekend rdrDayStartOfWeek"
+                  className="rdrDay rdrDayToday rdrDayWeekend rdrDayStartOfWeek"
                   onBlur={[Function]}
                   onFocus={[Function]}
                   onKeyDown={[Function]}

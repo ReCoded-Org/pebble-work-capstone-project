@@ -65,9 +65,11 @@ function SignIn() {
             if (!err?.response) {
                 setErrMsg("No Server Response", err);
             } else if (err.response?.status === 400) {
-                setErrMsg(`${t("InvalidEmailOrPassword")}`);
+                // setErrMsg(`${t("signInPage.InvalidEmailOrPassword")}`);
+                setErrMsg("Invalid email or password");
             } else {
-                setErrMsg("Login Failed");
+                // setErrMsg(`${t("signInPage.loginFaild")}`);
+                setErrMsg("Login Faild");
             }
             errRef.current.focus();
         }
@@ -144,7 +146,7 @@ function SignIn() {
                             {/* Don&apos;t have an account? &nbsp; */}
                             {t("signInPage.dontHaveAccount")}
                             <Link href='/signup'>
-                                <div className='ml-0.5 cursor-pointer border-b border-primary-200 text-primary-200'>
+                                <div className='ml-1 cursor-pointer border-b border-primary-200 text-primary-200'>
                                     {t("common.nav.signUp")}
                                 </div>
                             </Link>

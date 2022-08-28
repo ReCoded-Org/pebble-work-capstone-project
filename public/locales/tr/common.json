@@ -189,6 +189,7 @@
         "password": "Şifre",
         "name": "Ad",
         "surname": "Soyadı",
+        "loginFailed": "Giriş yapilmamıstır",
         "InvalidEmailOrPassword": "E-post yada Şifre yanliş"
     },
     "signUpPage": {
@@ -201,6 +202,7 @@
         "name": "Ad",
         "surname": "Soyadı",
         "or": " yada ",
+
         "alreadyInUse": "Zaten mevcut E-post."
     }
 }
