@@ -3,6 +3,12 @@ import renderer from "react-test-renderer";
 
 import EventDescriptionAttendeesList from "../EventDescriptionAttendeesList";
 
+jest.mock("next/router", () => ({
+    useRouter: () => ({
+        query: { myProp: "myValue" },
+    }),
+}));
+
 it("renders correctly", () => {
     const tree = renderer
         .create(

@@ -18,21 +18,20 @@ function AttendeesList({ attendees, attendeeProfileURLs }) {
         const event = await axios({
             method: "get",
             url: `/api/event${eventId}/`,
-            withCredentials: true
-        })
+            withCredentials: true,
+        });
         //console.log("Event",event.data.confirmedVolunteers);
         // then update attendees and their profile urls with the info from server
-        const allAttendees = event.data.confirmedVolunteers
-        let tempAttendees = []
-        let tempAttendeeURLs = []
+        const allAttendees = event.data.confirmedVolunteers;
+        let tempAttendees = [];
+        let tempAttendeeURLs = [];
         for (let i = 0; i < allAttendees.length; i++) {
-            tempAttendees.push(allAttendees[i].firstName)
-            tempAttendeeURLs.push(allAttendees[i].profileImage)
+            tempAttendees.push(allAttendees[i].firstName);
+            tempAttendeeURLs.push(allAttendees[i].profileImage);
         }
         setAttendeeList(tempAttendees);
         setAttendeeUrlList(tempAttendeeURLs);
-    }
-    
+    };
 
     // initialize and update attendee avatars by getting the info from server
     let attendeeAvatars = [];
@@ -47,8 +46,8 @@ function AttendeesList({ attendees, attendeeProfileURLs }) {
                         alt={`${attendees[i]} avatar image`}
                         width={48}
                         height={48}
-                        objectFit="cover"
-                        layout="responsive"
+                        objectFit='cover'
+                        layout='responsive'
                     />
                     <p className='text-center'>{attendeeList[i]}</p>
                 </div>
@@ -56,7 +55,7 @@ function AttendeesList({ attendees, attendeeProfileURLs }) {
         }
     }
     updateAvatars();
-    
+
     return (
         <div className='p-6'>
             <p className='pb-6'>

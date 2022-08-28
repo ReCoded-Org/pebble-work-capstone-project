@@ -56,7 +56,7 @@ export default function EventViewPage({ event }) {
     // initialize and update volunteers, their profiles, and their IDs in three different arrays
     let volunteers = [];
     let volunteerProfileURLs = [];
-    let volunteerIDs = []
+    let volunteerIDs = [];
     for (let i = 0; i < event.confirmedVolunteers.length; i++) {
         volunteers.push(event.confirmedVolunteers[i].firstName);
         volunteerProfileURLs.push(
@@ -64,7 +64,7 @@ export default function EventViewPage({ event }) {
                 ? "/images/userAvatar.jpeg"
                 : event.confirmedVolunteers[i].profileImage
         );
-        volunteerIDs.push(event.confirmedVolunteers[i]._id)
+        volunteerIDs.push(event.confirmedVolunteers[i]._id);
     }
 
     // initialize hosts profile URL. If it doesn't exist, make it the default image
@@ -74,7 +74,7 @@ export default function EventViewPage({ event }) {
     if (hostProfileURL === undefined) {
         hostProfileURL = "/images/userAvatar.jpeg";
     }
-    
+
     return (
         <Layout>
             <EventBanner

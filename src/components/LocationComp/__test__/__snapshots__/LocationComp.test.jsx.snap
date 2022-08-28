@@ -13,25 +13,28 @@ exports[`renders correctly 1`] = `
       <h1
         className="mb-2 text-center text-xl font-bold sm:hidden"
       >
-        Search Event Location
+        eventsPage.locationComp.searchEventLocation
       </h1>
       <input
-        className="mb-2 h-1/2 w-3/4 rounded-md text-base focus:border-secondary-300 sm:mb-0 sm:w-full"
+        className="mb-2 h-9 w-3/4 rounded-md border-gray-200 text-base placeholder-black focus:border-secondary-300 sm:mb-0 sm:w-full"
         id="cities"
         placeholder="eventsPage.locationComp.searchLocation"
         type="text"
         value=""
       />
       <label />
+    </div>
+    <div
+      className="mt-2 flex flex-col items-center"
+    >
       <button
-        className="mt-1 mb-1 w-30 h-9 undefined bg-secondary-300 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg text-base bg-primary-200 border rounded text-white ml-2"
+        className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg rounded-md border-2 mb-0 py-0 px-0 bg-white text-black shadow-sm w-48"
         onClick={[Function]}
         type="button"
       >
         eventsPage.locationComp.search
       </button>
     </div>
-    <div />
   </div>
 </div>
 `;
