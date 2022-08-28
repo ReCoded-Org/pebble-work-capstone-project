@@ -10,7 +10,7 @@ import Layout from "@/components/layout/Layout";
 import SustainableGoals from "@/components/SustainableGoals";
 import TestimonialsFourPhotos from "@/components/TestimonialsFourPhotos";
 
-export default function HomePage() {
+export default function HomePage({ ninjas }) {
     // const { t } = useTranslation("common");
 
     return (

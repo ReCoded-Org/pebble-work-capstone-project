@@ -7,7 +7,7 @@ import EditInterests from "@/components/EditInterests";
 import Layout from "@/components/layout/Layout";
 import NameLocation from "@/components/NameLocation";
 
-export default function HomePage() {
+export default function editprofile() {
     // const { t } = useTranslation("common");
 
     return (

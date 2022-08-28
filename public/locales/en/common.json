@@ -9,7 +9,7 @@
             "english": "English",
             "turkish": "Turkish",
             "allEvents": "All Events",
-
+            "myEvents": "My Events",
             "events": "Events",
             "about": "About",
             "howItWorks": "How It Works",
@@ -81,7 +81,9 @@
         "header": {
             "title": "Create an Event",
             "subtitle": "First, set your events’s location:",
-            "description": "Pebble events can be both local or online. Choose where you want to host your event."
+            "description": "Choose where you want to host your event.",
+            "dateSubtitle": "Second, select the date and time of your event:",
+            "dateDescription": "Choose when you want to host your event."
         },
         "eventType": {
             "title": "Choose event type:",
@@ -206,5 +208,11 @@
     },
     "notfoundpage": {
         "oops": "Oops! Page Not Found.."
+      
+    },
+    "yourEvents": {
+        "yourUpcomingEvents": "Your Upcoming Events",
+        "notJoined": "You haven't joined any events yet.",
+        "exploreEvents": "Explore Events"
     }
 }

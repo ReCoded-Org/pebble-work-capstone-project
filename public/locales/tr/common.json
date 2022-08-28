@@ -10,7 +10,7 @@
             "turkish": "Türkçe",
             "allEvents": "Etkinlikler",
             "events": "Etkinlikler",
-
+            "myEvents": "Etkinliklerim",
             "about": "Hakkımızdda",
             "howItWorks": "Nasıl Çalışır",
             "aboutUs": "Hakkımızda",
@@ -82,7 +82,9 @@
         "header": {
             "title": "Etkinlik Oluştur",
             "subtitle": "İlk olarak, etkinliğinizin konumunu belirleyin:",
-            "description": "Pebble etkinlikleri hem yerel hem de çevrimiçi olabilir. Etkinliğinize ev sahipliği yapmak istediğiniz yeri seçin."
+            "description": "Etkinliğinize ev sahipliği yapmak istediğiniz yeri seçin.",
+            "dateSubtitle": "Sonra, etkinliğin tarih ve saatini belirleyin:",
+            "dateDescription": "Etkinliğizin zamanını seçin."
         },
         "eventType": {
             "title": "Etkinlik türünü seçin:",
@@ -207,5 +209,11 @@
     },
     "notfoundpage": {
         "oops": "Bu Sayfa Bulunmadı.."
+
+    },
+    "yourEvents": {
+        "yourUpcomingEvents": "Gelecek Etkinlikleriniz",
+        "notJoined": "Daha hiçbir etkinliğe katılmadınız",
+        "exploreEvents": "Etkinlikleri Keşfet"
     }
 }

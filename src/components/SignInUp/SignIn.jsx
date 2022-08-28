@@ -48,7 +48,7 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
-            //console.log(response.data.user);
+            console.log(response);
             const authData = { ...auth };
             authData.createdEvents = response.data.user.createdEvents;
             authData.email = response.data.user.email;
@@ -59,6 +59,7 @@ function SignIn() {
             authData.id = response.data.user.id;
             authData.interests = response.data.user.interests;
             authData.preferredCities = response.data.user.preferredCities;
+            authData.profileImage = response.data.user.profileImage;
             setAuth(authData);
             router.push("/events");
         } catch (err) {
