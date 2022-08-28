@@ -9,7 +9,9 @@ export default function Layout({ children }) {
         setShowMobileDropdown((b) => !b);
     };
     const closeMobileMenu = () => {
-        setShowMobileDropdown(false);
+        setTimeout(() => {
+            setShowMobileDropdown(false);
+        }, 250);
     };
     return (
         <div className='relative flex min-h-screen flex-col justify-between '>
