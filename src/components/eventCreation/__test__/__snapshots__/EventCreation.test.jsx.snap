@@ -162,7 +162,7 @@ Array [
             />
             <label />
             <div
-              className="absolute my-px flex w-full origin-top-right cursor-pointer flex-col divide-y rounded bg-white shadow"
+              className="absolute my-px flex w-full origin-top-right cursor-pointer flex-col divide-y rounded z-50 bg-white shadow"
             />
           </div>
           <input

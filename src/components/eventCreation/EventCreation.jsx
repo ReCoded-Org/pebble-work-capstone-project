@@ -208,7 +208,7 @@ const EventCreation = () => {
                                     callback={handleSearch}
                                     className='focus:ring-blacksm:mb-0 block w-full rounded-md border-black pl-8  text-base   focus:border-black focus:outline-none focus:ring-0 sm:w-full  lg:w-full'
                                 />
-                                <div className='absolute my-px flex w-full origin-top-right cursor-pointer flex-col  divide-y rounded   bg-white shadow'>
+                                <div className='absolute z-50 my-px flex w-full origin-top-right cursor-pointer  flex-col divide-y rounded bg-white shadow'>
                                     {citiesOfTurkey
                                         .filter((city) => {
                                             const searchCity =
