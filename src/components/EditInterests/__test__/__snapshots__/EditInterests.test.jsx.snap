@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="m-4 md:m-12"
+  className="m-4 md:m-8 "
 >
   <div
-    className="flex flex-wrap items-center justify-center overflow-hidden lg:ml-8 lg:flex-row lg:flex-wrap lg:items-start lg:justify-start"
+    className="flex flex-wrap items-center justify-center overflow-hidden lg:ml-8 lg:mr-8 lg:flex-row lg:flex-wrap lg:items-center lg:justify-center"
   >
     <div
       className="m-1 md:m-2 lg:m-3"
@@ -194,6 +194,17 @@ exports[`renders correctly 1`] = `
         Partnership For The Goals
       </button>
     </div>
+  </div>
+  <div
+    className="flex justify-end pr-8 "
+  >
+    <button
+      className="mt-1 mb-1 w-40 md:w-40 lg:w-52 h-8 md:h-12 lg:h-12 text-[11px] md:text-xl lg:text-xl bg-primary-200  undefined hover:undefined text-white font-medium  py-1  px-2  hover:undefined rounded  hover:shadow-lg flex items-center justify-center"
+      onClick={[Function]}
+      type="button"
+    >
+      Change my interest
+    </button>
   </div>
 </div>
 `;
