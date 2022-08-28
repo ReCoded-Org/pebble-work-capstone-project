@@ -3,11 +3,14 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 import axios from "../../api/axios";
+import { useTranslation } from "next-i18next";
 
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const SIGNUP_URL = "/api/auth/user/signup";
 
 const SignUp = () => {
+    const { t } = useTranslation("common");
+
     const [domLoaded, setDomLoaded] = useState(false);
     const emailRef = useRef();
     const nameRef = useRef();
@@ -133,7 +136,7 @@ const SignUp = () => {
                         </div>
                         <div className='flex w-96 flex-col items-center justify-center py-1 text-center lg:items-start  2xl:scale-150'>
                             <h1 className='py-3 text-3xl font-semibold md:flex'>
-                                Sign Up
+                                {t("common.nav.signUp")}
                             </h1>
                             <p
                                 ref={errRef}
@@ -158,7 +161,7 @@ const SignUp = () => {
                                             }
                                             required
                                             className='focus:shadow-outline mx-px  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
-                                            placeholder='Name'
+                                            placeholder={t("signUpPage.name")}
                                         />
                                     </div>
                                     <div>
@@ -171,7 +174,9 @@ const SignUp = () => {
                                             }
                                             required
                                             className='focus:shadow-outline  w-40 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
-                                            placeholder='Surname'
+                                            placeholder={t(
+                                                "signUpPage.surname"
+                                            )}
                                         />
                                     </div>
                                 </div>
@@ -191,7 +196,7 @@ const SignUp = () => {
                                         onFocus={() => setEmailFocus(true)}
                                         onBlur={() => setEmailFocus(false)}
                                         className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
-                                        placeholder='Email address'
+                                        placeholder={t("signUpPage.mail")}
                                     />
                                     {/* show error message if email is not valid. change classnames to tailwindcss  */}
                                     <p
@@ -202,7 +207,7 @@ const SignUp = () => {
                                                 : "hidden"
                                         }
                                     >
-                                        Email address already in use.
+                                        {t("signUpPage.alreadyInUse")}
                                     </p>
                                 </div>
                                 <div className='ml-px py-1'>
@@ -219,7 +224,7 @@ const SignUp = () => {
                                         onFocus={() => setPwdFocus(true)}
                                         onBlur={() => setPwdFocus(false)}
                                         className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
-                                        placeholder='Password'
+                                        placeholder={t("signUpPage.password")}
                                     />
                                     {/* show error message if email is not valid. change classnames to tailwindcss  */}
                                     <p
@@ -247,10 +252,10 @@ const SignUp = () => {
                                     </p>
                                 </div>
                                 <p className='signin m-1 flex text-xs italic text-gray-700'>
-                                    Already have an account?
+                                    {t("signUPPage.haveAccount      ")}
                                     <Link href='/signin'>
                                         <div className='cursor-pointer border-b border-primary-200 pl-1 text-primary-200'>
-                                            Sign in
+                                            {t("common.nav.signIn")}
                                         </div>
                                     </Link>
                                 </p>
@@ -264,7 +269,7 @@ const SignUp = () => {
                                         className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
                                         onClick={handleSignUp}
                                     >
-                                        Sign Up
+                                        {t("common.nav.signUp")}
                                     </button>
                                 </div>
                                 <div className='flex flex-row items-center justify-center py-1'>
@@ -275,7 +280,7 @@ const SignUp = () => {
                                         height={2}
                                     />
                                     <div className='text-sm text-gray-400'>
-                                        OR
+                                        {t("SignUpPage.or")}
                                     </div>
                                     <Image
                                         src='/svg/line.svg'
@@ -293,7 +298,7 @@ const SignUp = () => {
                                             height={30}
                                             width={30}
                                         />
-                                        Continue with Google
+                                        {t("SignInUpPage.google")}
                                     </button>
                                 </div>
                             </div>

@@ -180,7 +180,7 @@
             "attendees": "Katılımcılar:"
         }
     },
-    "signInUpPage": {
+    "signInPage": {
         "haveAccount": "Zaten hesabım var,",
         "dontHaveAccount": "Hesabım yok,",
         "google": "Google ile devam et",
@@ -188,6 +188,19 @@
         "mail": "E-posta",
         "password": "Şifre",
         "name": "Ad",
-        "surname": "Soyadı"
+        "surname": "Soyadı",
+        "InvalidEmailOrPassword": "E-post yada Şifre yanliş"
+    },
+    "signUpPage": {
+        "haveAccount": "Zaten hesabım var,",
+        "dontHaveAccount": "Hesabım yok,",
+        "google": "Google ile devam et",
+        "twitter": "Twitter ile devam et",
+        "mail": "E-posta",
+        "password": "Şifre",
+        "name": "Ad",
+        "surname": "Soyadı",
+        "or": " yada ",
+        "alreadyInUse": "Zaten mevcut E-post."
     }
 }
