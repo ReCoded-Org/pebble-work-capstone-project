@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useEffect, useRef, useState } from "react";
+import toast from "react-hot-toast";
 
 import useAuth from "@/hooks/useAuth";
 
@@ -281,7 +282,10 @@ const EventsPage = ({ events }) => {
     let categoryFilterURL = "";
     function handleApplyFilters() {
         //construct URL to render events based on category filters
-        if (checkedBoxes.length > 0) {
+        setIsInterestButtonClicked(!isInterestButtonClicked);
+        if (checkedBoxes.length === 0) {
+            toast(t("eventsPage.toast.noCategory"));
+        } else if (checkedBoxes.length > 0) {
             categoryFilterURL =
                 "?" + "categories=" + checkedBoxes.join("&categories=");
 
@@ -327,12 +331,15 @@ const EventsPage = ({ events }) => {
     let cityFilterURL = "";
     function onSearch(selectedCity) {
         //construct URL to render events based on city filters
+        setIsLocationButtonClicked(!isLocationButtonClicked);
         setSearchTerm(selectedCity);
         cityFilterURL = "?" + "city=" + selectedCity;
         let cityURL = `&city=${selectedCity}`;
 
         setParams({ ...params, city: selectedCity });
-        if (
+        if (selectedCity === "") {
+            toast(t("eventsPage.toast.noLocation"));
+        } else if (
             params.categories.length == 0 &&
             params.dateFilter.fromDate == "" &&
             params.dateFilter.toDate == ""
@@ -382,6 +389,7 @@ const EventsPage = ({ events }) => {
     let dateFilterURL = "";
     function handleDateSubmit() {
         //construct URL to render events based on date filters - for Mobile
+        setIsDateButtonClicked(!isDateButtonClicked);
         let fromDate = format(range[0].startDate, "yyyy-MM-dd");
         let toDate = format(range[0].endDate, "yyyy-MM-dd");
         dateFilterURL = "?" + "fromDate=" + fromDate + "&toDate=" + toDate;
@@ -510,6 +518,38 @@ const EventsPage = ({ events }) => {
         // API Call to join event
     }
 
+    //reset filters
+    function handleResetFilters() {
+        if (
+            params.categories.length == 0 &&
+            params.city == "" &&
+            params.dateFilter.fromDate == "" &&
+            params.dateFilter.toDate == ""
+        ) {
+            toast(t("eventsPage.toast.noFilters"));
+        } else if (
+            router.query.categories !== undefined ||
+            router.query.city !== undefined ||
+            router.query.fromDate !== undefined ||
+            router.query.toDate !== undefined
+        ) {
+            setParams({
+                categories: [],
+                city: "",
+                dateFilter: { fromDate: "", toDate: "" },
+            });
+            setRange([
+                {
+                    ...range,
+                    startDate: new Date(),
+                    endDate: addDays(new Date(), 0),
+                },
+            ]);
+            setSearchTerm("");
+            router.push(router.pathname);
+        }
+    }
+
     return (
         <Layout>
             <div className='flex justify-center text-center sm:mx-12 sm:grid sm:grid-cols-3  sm:text-start'>
@@ -617,6 +657,15 @@ const EventsPage = ({ events }) => {
                             />
                         </div>
                     ) : null}
+                    <div className='mx-3 mt-4 flex flex-col items-center sm:mx-4 sm:mt-0'>
+                        <hr className='my-4 mx-3 hidden w-full sm:block' />
+                        <Button
+                            label={t("eventsPage.resetFilters")}
+                            onClick={handleResetFilters}
+                            bgColor='bg-primary-200'
+                            customStyle='rounded-md border-2 mt-0 mb-0 py-0 px-0 bg-white text-black shadow-sm w-48'
+                        />
+                    </div>
                 </div>
                 <hr className='my-4 mx-3 text-black sm:hidden' />
 
@@ -630,7 +679,7 @@ const EventsPage = ({ events }) => {
                     ) : (
                         <div className='flex justify-center text-center'>
                             <p className='mt-2 text-xl font-bold'>
-                                No events found according to applied filters
+                                {t("eventsPage.noEvents")}
                             </p>
                         </div>
                     )}
