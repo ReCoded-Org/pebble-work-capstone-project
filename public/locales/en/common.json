@@ -203,5 +203,8 @@
         "or": "Or",
 
         "alreadyInUse": " Email address already in use."
+    },
+    "notfoundpage": {
+        "oops": "Oops! Page Not Found.."
     }
 }

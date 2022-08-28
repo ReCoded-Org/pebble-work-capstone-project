@@ -204,5 +204,8 @@
         "or": " yada ",
 
         "alreadyInUse": "Zaten mevcut E-post."
+    },
+    "notfoundpage": {
+        "oops": "Bu Sayfa Bulunmadı.."
     }
 }
