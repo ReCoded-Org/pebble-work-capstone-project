@@ -302,7 +302,7 @@ const NameLocation = () => {
                     />
                 </div>
                 <label className='text-[12px] font-medium md:text-xl lg:text-xl'>
-                    Your Location
+                    Preferred cities:
                 </label>
                 <div className='mt-1 mb-3 h-8 md:mt-2 md:mb-9 md:h-14 md:w-[490px] lg:h-12 lg:w-[600px]'>
                     <div className='mt-1 mb-3 h-8 md:mt-2 md:mb-9 md:h-14 md:w-[490px] lg:h-12 lg:w-[600px]'>
