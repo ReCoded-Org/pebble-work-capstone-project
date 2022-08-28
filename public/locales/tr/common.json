@@ -181,5 +181,10 @@
         "password": "Şifre",
         "name": "Ad",
         "surname": "Soyadı"
+    },
+    "yourEvents": {
+        "yourUpcomingEvents": "Gelecek Etkinlikleriniz",
+        "notJoined": "Daha hiçbir etkinliğe katılmadınız",
+        "exploreEvents": "Etkinlikleri Keşfet"
     }
 }

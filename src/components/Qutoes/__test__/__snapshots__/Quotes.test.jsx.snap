@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex h-96 items-center justify-center bg-gradient-to-t from-primary-200 to-secondary-300"
+>
+  <div
+    className="mx-7 flex flex-col items-center justify-center py-5 text-center font-bold text-white"
+  >
+    <div
+      className="flex flex-col items-center sm:w-3/4"
+    >
+      <p
+        className="mb-3 text-base italic sm:text-3xl"
+      >
+        "
+        Alone we can do so little; together we can do so much.
+        "
+      </p>
+      <hr
+        className="my-2 w-3/4"
+      />
+      <h2
+        className="mb-5 text-sm sm:text-2xl"
+      >
+        Helen Keller
+      </h2>
+    </div>
+    <div>
+      <button
+        className="mt-1 mb-1 w-30 h-8 undefined bg-secondary-300 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg undefined"
+        onClick={[Function]}
+        type="button"
+      >
+        Get Inspired
+      </button>
+    </div>
+  </div>
+</div>
+`;

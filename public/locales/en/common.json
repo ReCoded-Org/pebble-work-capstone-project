@@ -180,5 +180,10 @@
         "password": "Password",
         "name": "Name",
         "surname": "Surname"
+    },
+    "yourEvents": {
+        "yourUpcomingEvents": "Your Upcoming Events",
+        "notJoined": "You haven't joined any events yet.",
+        "exploreEvents": "Explore Events"
     }
 }
