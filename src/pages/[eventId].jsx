@@ -51,8 +51,12 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export default function EventViewPage({ event }) {
-    const volunteers = [];
-    const volunteerProfileURLs = [];
+    //console.log("Event",event);
+
+    // initialize and update volunteers, their profiles, and their IDs in three different arrays
+    let volunteers = [];
+    let volunteerProfileURLs = [];
+    let volunteerIDs = []
     for (let i = 0; i < event.confirmedVolunteers.length; i++) {
         volunteers.push(event.confirmedVolunteers[i].firstName);
         volunteerProfileURLs.push(
@@ -60,13 +64,17 @@ export default function EventViewPage({ event }) {
                 ? "/images/userAvatar.jpeg"
                 : event.confirmedVolunteers[i].profileImage
         );
+        volunteerIDs.push(event.confirmedVolunteers[i]._id)
     }
+
+    // initialize hosts profile URL. If it doesn't exist, make it the default image
     let hostProfileURL = event.publisherId
         ? event.publisherId.profileImage
         : "/images/userAvatar.jpeg";
     if (hostProfileURL === undefined) {
         hostProfileURL = "/images/userAvatar.jpeg";
     }
+    
     return (
         <Layout>
             <EventBanner
@@ -78,6 +86,7 @@ export default function EventViewPage({ event }) {
                 dateTime={event.date}
                 attendees={volunteers}
                 attendeeProfileURLs={volunteerProfileURLs}
+                attendeeIDs={volunteerIDs}
                 host={event.publisherId ? event.publisherId.firstName : "N/A"}
                 hostProfileURL={hostProfileURL}
             />
