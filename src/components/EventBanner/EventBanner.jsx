@@ -1,9 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import * as React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+
+import useAuth from "@/hooks/useAuth";
 
 import Button from "@/components/Button";
+
+import axios from "@/api/axios";
 
 function EventBanner({
     title,
@@ -14,63 +21,128 @@ function EventBanner({
     dateTime,
     attendees,
     attendeeProfileURLs,
+    attendeeIDs,
     host,
     hostProfileURL,
 }) {
-    const { t } = useTranslation("common");
+    const { t } = useTranslation("common"); // translation function
+    const { auth } = useAuth(); // get auth and setAuth
+    const router = useRouter(); // get router
+    const eventId = router.asPath; // return eventid with a slash before it "/[eventID]""
+
+    // set a state for the number of attendees, attendee profile URLs, and attendee list.
+    const [attendeeNum, setAttendeeNum] = useState(attendees.length);
+    const [attendeeList, setAttendeeList] = useState(attendees);
+    const [attendeeUrlList, setAttendeeUrlList] = useState(attendeeProfileURLs);
+    const [attendeeIdList, setAttendeeIdList] = useState(attendeeIDs);
+
+    // check if user already joined event, then update state called joiet isJoinedInitial = false;
     const [join, setJoin] = useState(false);
-    function handleJoinClick() {
-        setJoin(!join);
+    useEffect(() => {
+        for (let i = 0; i < attendeeIdList.length; i++) {
+            if (attendeeIdList[i] === auth?.id) {
+                setJoin(true);
+                return;
+            }
+        }
+    }, [auth]);
+
+    // initialize the attendee avatars list, to be displayed next to the number of attendees
+    let attendeeAvatars = [];
+    function updateAttendees() {
+        if (attendeeNum > 0) {
+            // attendee number is greater than 0
+            attendeeAvatars.push(
+                <div className=''>
+                    <Image
+                        className='rounded-full'
+                        src={attendeeUrlList[0]}
+                        alt={`${title} image`}
+                        width={48}
+                        height={48}
+                        objectFit='cover'
+                    />
+                </div>
+            );
+            if (attendeeNum < 3) {
+                for (let i = 1; i < attendeeNum; i++) {
+                    attendeeAvatars.push(
+                        <div className='-ml-6'>
+                            <Image
+                                className='rounded-full'
+                                src={attendeeUrlList[i]}
+                                alt={`${title},image`}
+                                width={48}
+                                height={48}
+                                objectFit='cover'
+                            />
+                        </div>
+                    );
+                }
+            } else {
+                for (let i = 1; i < 3; i++) {
+                    attendeeAvatars.push(
+                        <div className='-ml-6'>
+                            <Image
+                                className='rounded-full'
+                                src={attendeeUrlList[i]}
+                                alt={`${title},image`}
+                                width={48}
+                                height={48}
+                                objectFit='cover'
+                            />
+                        </div>
+                    );
+                }
+            }
+        }
     }
+    updateAttendees(); // run this function whenever you need to update attendees
+
+    const handleJoinClick = async () => {
+        if (join === false) {
+            // if user is not joined
+            try {
+                // 1. post the user as an attendee to event
+                const responseJoin = await axios({
+                    method: "post",
+                    url: `/api/event${eventId}/volunteers`,
+                    withCredentials: true,
+                });
+                toast.success(responseJoin.data.message);
+                setJoin(true); // changes the button label to LEAVE
+
+                // 2. change the number of attendees, attendelist, attendeeIDList, update attendeeAvatars
+                setAttendeeNum(attendeeNum + 1);
+                setAttendeeList([...attendeeList, auth?.firstName]);
+                setAttendeeUrlList([...attendeeUrlList, auth?.profileImage]);
+                setAttendeeIdList([...attendeeIdList, auth?.id]);
+                updateAttendees();
+            } catch (err) {
+                //console.log("Error",err)
+            }
+        } else {
+            try {
+                const responseLeave = await axios({
+                    method: "delete",
+                    url: `/api/event${eventId}/volunteers`,
+                    withCredentials: true,
+                });
+                setJoin(false);
+                toast.success(responseLeave.data.message);
+                setAttendeeNum(attendeeNum - 1);
+                updateAttendees();
+            } catch (err) {
+                //console.log(err)
+            }
+        }
+    };
     const date = dateTime.split("T")[0];
     const dateArray = date.split("-");
     const dateDayMonthYear = [dateArray[2], dateArray[1], dateArray[0]];
     const longDate = dateDayMonthYear.join(".");
 
     const time = dateTime.split("T")[1];
-    let attendeeAvatars = [];
-    if (attendees.length > 0) {
-        attendeeAvatars.push(
-            <div className=''>
-                <Image
-                    className='rounded-full'
-                    src={attendeeProfileURLs[0]}
-                    alt={`${title} image`}
-                    width={48}
-                    height={48}
-                />
-            </div>
-        );
-        if (attendees.ength < 3) {
-            for (let i = 1; i < attendees.length; i++) {
-                attendeeAvatars.push(
-                    <div className='-ml-6'>
-                        <Image
-                            className='rounded-full'
-                            src={attendeeProfileURLs[i]}
-                            alt={`${title},image`}
-                            width={48}
-                            height={48}
-                        />
-                    </div>
-                );
-            }
-        } else {
-            for (let i = 1; i < 3; i++) {
-                attendeeAvatars.push(
-                    <div className='-ml-6'>
-                        <Image
-                            className='rounded-full'
-                            src={attendeeProfileURLs[i]}
-                            alt={`${title},image`}
-                            width={48}
-                            height={48}
-                        />
-                    </div>
-                );
-            }
-        }
-    }
 
     return (
         <div className='grid-col-1 grid grid-flow-row gap-2 md:grid-cols-3 md:gap-2 md:p-6'>
@@ -84,6 +156,7 @@ function EventBanner({
                     alt={`${title},image`}
                     width={600}
                     height={400}
+                    objectFit='cover'
                 />
             </div>
             <div className='order-last col-span-1 flex flex-col items-center pb-6  md:items-start md:justify-items-start md:pt-12'>
@@ -132,11 +205,11 @@ function EventBanner({
                 <div className='flex items-center pt-6'>
                     {attendeeAvatars}
                     <p className='pl-6'>
-                        {attendees.length === 0
+                        {attendeeNum === 0
                             ? t("eventViewPage.eventBanner.noAttendees")
-                            : attendees.length === 1
+                            : attendeeNum === 1
                             ? t("eventViewPage.eventBanner.oneAttendee")
-                            : attendees.length +
+                            : attendeeNum +
                               " " +
                               t("EventViewPage.eventBanner.manyAttendees")}
                     </p>
@@ -148,21 +221,47 @@ function EventBanner({
                         alt='avatar image'
                         width={48}
                         height={48}
+                        objectFit='cover'
                     />
                     <p className='pl-6'>{`Organized by ${host}`}</p>
                 </div>
-                <Button
-                    label={
-                        join
-                            ? t("eventViewPage.eventBanner.join")
-                            : t("eventViewPage.eventBanner.leave")
-                    }
-                    bgColor='bg-primary-200'
-                    textColor='text-white'
-                    height='h-12'
-                    width='w-48'
-                    onClick={handleJoinClick}
-                />
+                {/* if user signed in show join leave buttons */}
+                {auth?.id && (
+                    <Button
+                        label={
+                            join === true
+                                ? t("eventViewPage.eventBanner.leave")
+                                : t("eventViewPage.eventBanner.join")
+                        }
+                        bgColor='bg-primary-200'
+                        textColor='text-white'
+                        height='h-12'
+                        width='w-48'
+                        onClick={handleJoinClick}
+                    />
+                )}
+                {/* if user is NOT signed in show sign in or sign up buttons */}
+                {!auth?.id && (
+                    <div className='text-blue m-2 flex flex-row flex-wrap items-center hover:cursor-default'>
+                        {t("eventsPage.eventCards.toJoinTurkish")}
+                        &nbsp;
+                        <Link className='' href='/signin'>
+                            <p className='text-primary-200 underline hover:cursor-pointer'>
+                                {t("eventsPage.eventCards.signIn")}
+                            </p>
+                        </Link>
+                        &nbsp;
+                        {t("eventsPage.eventCards.or")}
+                        &nbsp;
+                        <Link href='/signup'>
+                            <p className='text-primary-200 underline hover:cursor-pointer'>
+                                {t("eventsPage.eventCards.signUp")}
+                            </p>
+                        </Link>
+                        &nbsp;
+                        {t("eventsPage.eventCards.toJoinEnglish")}
+                    </div>
+                )}
             </div>
         </div>
     );
