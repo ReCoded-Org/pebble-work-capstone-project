@@ -16,6 +16,8 @@ import Layout from "@/components/layout/Layout";
 import LocationComp from "@/components/LocationComp";
 import Pagination from "@/components/Pagination/Pagination";
 
+import axios from "@/api/axios";
+
 export async function getServerSideProps({ locale, query }) {
     let totalParams = "";
     // NO SELECTION
@@ -520,12 +522,52 @@ const EventsPage = ({ events }) => {
 
     // JOIN / LEAVE AN EVENT
     const [isJoined, setIsJoined] = useState({});
-    function handleJoinClick(id) {
+    const handleJoinClick = async (id) => {
+        // 1. get confirmed volunteers for this event
+        const event = await axios({
+            method: "get",
+            url: `/api/event/${id}`,
+        })
+        // 2. loop and check if auth.id exist in confirmed volunteers
+        const confirmedVolunteers = event.data.confirmedVolunteers;
+        const confirmedVolunteerIDs = [];
+        for (let i = 0; i < confirmedVolunteers.length; i++) {
+            confirmedVolunteerIDs.push(confirmedVolunteers[i].id);
+        }
+        // 3. return isAuthJoined = true of false
+        let isAuthJoined = false;
+        for (let k = 0; k < confirmedVolunteerIDs.length; k++) {
+            if (confirmedVolunteerIDs[k] === auth?.id) {
+                isAuthJoined = true;
+                return;
+            }
+        }
+        console.log(isJoined[id]);
+        // API Call to join event
+        if (!isJoined[id][0]) {
+            //post user to event
+            const responseJoin = await axios({
+                method: "post",
+                url: `/api/event${id}/volunteers`,
+                withCredentials: true,
+            });
+            toast.success(responseJoin.data.message);
+        }
+        else {
+            // delete user from event
+            const responseLeave = await axios({
+                method: "delete",
+                url: `/api/event${id}/volunteers`,
+                withCredentials: true,
+            });
+            toast.success(responseLeave.data.message);
+        }
         setIsJoined((isJoined) => ({
             ...isJoined,
-            [id]: !isJoined[id],
+            [id]: [!isJoined[id], isAuthJoined],
+
         }));
-        // API Call to join event
+        
     }
 
     //reset filters

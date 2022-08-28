@@ -60,7 +60,7 @@ function SignIn() {
             authData.interests = response.data.user.interests;
             authData.preferredCities = response.data.user.preferredCities;
             setAuth(authData);
-            //router.push("/events");
+            router.push("/events");
         } catch (err) {
             if (!err?.response) {
                 setErrMsg("No Server Response", err);

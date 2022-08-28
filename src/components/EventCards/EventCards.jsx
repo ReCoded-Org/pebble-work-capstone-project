@@ -101,7 +101,7 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     {auth?.email && (
                                         <Button
                                             label={
-                                                isJoined[event._id]
+                                                isJoined[event._id][0] && isJoined[event._id][1]
                                                     ? t(
                                                           "eventsPage.eventCards.leave"
                                                       )
