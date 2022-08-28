@@ -22,6 +22,7 @@ export async function getServerSideProps({ locale }) {
 }
 
 const YourEvents = ({ events }) => {
+    // RENDERING UPCOMING EVENTS
     const { t } = useTranslation("common");
     let today = new Date();
     let formattedToday = format(today, "yyyy-MM-dd");
@@ -33,6 +34,7 @@ const YourEvents = ({ events }) => {
         }
     });
 
+    //PAGINATION
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10);
 
@@ -41,6 +43,7 @@ const YourEvents = ({ events }) => {
     const currentPosts = futureEvents.slice(indexOfFirstPost, indexOfLastPost);
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+    //JOIN-LEAVE EVENTS
     const [isJoined, setIsJoined] = useState({});
     function handleJoinClick(id) {
         setIsJoined((isJoined) => ({
