@@ -310,7 +310,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                     )}
                                 </div>
                                 {/* If there is NO authorized email, then user is not signed in. Show the sign in and out buttons */}
-                                {!auth?.email && (
+                                {!auth?.id && (
                                     <>
                                         <Link href='/signin'>
                                             <a className=' rounded-md px-3 py-2 text-sm font-semibold text-gray-800  hover:text-orange-400  '>
@@ -328,7 +328,7 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                         </div>
                         {/* profile menu */}
                         {/* If there is authorized email, then user is signed in. Show profile menu */}
-                        {auth?.email && (
+                        {auth?.id && (
                             <div className='relative ml-3 mr-2   hover:border-primary-200'>
                                 <div>
                                     <button
