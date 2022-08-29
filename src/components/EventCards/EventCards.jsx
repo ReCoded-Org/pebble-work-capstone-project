@@ -19,8 +19,8 @@ const EventCards = ({ events = [] }) => {
         const response = await axios({
             method: "get",
             url: `/api/user`,
-            withCredentials: true
-        })
+            withCredentials: true,
+        });
         // 2. get all the followed event ids from user, and set them equal to the state
         const followedEvents = response.data.followedEvents;
         const tempFollowedEventIDs = [];
@@ -28,13 +28,12 @@ const EventCards = ({ events = [] }) => {
             tempFollowedEventIDs.push(followedEvents[i]._id);
         }
         setFollowedEventIDs(tempFollowedEventIDs);
-    }
+    };
     updateUserFollowingEvents();
 
     // JOIN / LEAVE AN EVENT
     const [isJoined, setIsJoined] = useState({});
     const handleJoinClick = async (id) => {
-        
         // API Call to join event
         // user is not already joined:
         if (!followedEventIDs.includes(id)) {
@@ -47,8 +46,7 @@ const EventCards = ({ events = [] }) => {
             });
             updateUserFollowingEvents();
             toast.success(responseJoin.data.message);
-        }
-        else {
+        } else {
             // delete user from event
             const responseLeave = await axios({
                 method: "delete",
@@ -58,11 +56,8 @@ const EventCards = ({ events = [] }) => {
             updateUserFollowingEvents();
             toast.success(responseLeave.data.message);
         }
-        
-    }
-    
+    };
 
-            
     return (
         <div>
             {events.map((event) => (
@@ -97,7 +92,12 @@ const EventCards = ({ events = [] }) => {
                                                 >
                                                     <Image
                                                         className='rounded-full'
-                                                        src={volunteer.profileImage===undefined?"/images/userAvatar.jpeg":volunteer.profileImage}
+                                                        src={
+                                                            volunteer.profileImage ===
+                                                            undefined
+                                                                ? "/images/userAvatar.jpeg"
+                                                                : volunteer.profileImage
+                                                        }
                                                         alt='user-images'
                                                         width={25}
                                                         height={25}
@@ -152,7 +152,9 @@ const EventCards = ({ events = [] }) => {
                                     {auth?.email && (
                                         <Button
                                             label={
-                                                followedEventIDs.includes(event._id)
+                                                followedEventIDs.includes(
+                                                    event._id
+                                                )
                                                     ? t(
                                                           "eventsPage.eventCards.leave"
                                                       )

@@ -20,7 +20,8 @@ function EventDescriptionAttendeesList({
     const router = useRouter();
     let isCreator = false;
     let createdEvents = auth?.createdEvents;
-    const thisEventID = router.asPath.substring(1);
+    const eventIDRoute = router.asPath;
+    const thisEventID = eventIDRoute.substring(1);
     if (createdEvents !== undefined) {
         for (let i = 0; i < createdEvents.length; i++) {
             if (createdEvents[i]._id === thisEventID) {

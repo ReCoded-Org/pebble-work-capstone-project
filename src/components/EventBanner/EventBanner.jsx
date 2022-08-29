@@ -47,7 +47,7 @@ function EventBanner({
         }
     }, [auth]);
 
-    console.log("hostprofile",hostProfileURL)
+    console.log("hostprofile", hostProfileURL);
     // initialize the attendee avatars list, to be displayed next to the number of attendees
     let attendeeAvatars = [];
     function updateAttendees() {

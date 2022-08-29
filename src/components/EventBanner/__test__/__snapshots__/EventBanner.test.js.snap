@@ -563,7 +563,7 @@ exports[`renders correctly 1`] = `
       <p
         className="pl-6"
       >
-        6 EventViewPage.eventBanner.manyAttendees
+        6 eventViewPage.eventBanner.manyAttendees
       </p>
     </div>
     <div
@@ -660,8 +660,8 @@ exports[`renders correctly 1`] = `
             data-nimg="intrinsic"
             decoding="async"
             loading="lazy"
-            src="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75"
-            srcSet="/_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FuserAvatar.jpeg&w=96&q=75 2x"
+            src="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75"
+            srcSet="/_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=48&q=75 1x, /_next/image?url=%2Fimages%2FsampleEventImage.jpg&w=96&q=75 2x"
             style={
               Object {
                 "border": "none",

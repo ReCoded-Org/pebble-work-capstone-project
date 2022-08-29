@@ -9,7 +9,7 @@ const EditInterests = ({
     afterClick,
     setCategories,
     categories,
-    button = "" // sometimes the submitinterest button needs to be hidden. Leave this value empty if you don't want it hidden.
+    button = "", // sometimes the submitinterest button needs to be hidden. Leave this value empty if you don't want it hidden.
 }) => {
     const labels = [
         "No Poverty",

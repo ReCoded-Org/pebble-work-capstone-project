@@ -282,7 +282,7 @@ const EventCreation = () => {
                             categories={categories}
                             setCategories={setCategories}
                             beforeClick='text-primary-200  border-primary-200'
-                            button="hidden"
+                            button='hidden'
                         />
                     </div>
                 </div>

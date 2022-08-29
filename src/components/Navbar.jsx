@@ -353,14 +353,14 @@ const Navbar = ({ closeMobileMenu, showMobileDropdown, open }) => {
                                         <div className='bg relative h-10 w-10 overflow-hidden rounded-full bg-sky-200'>
                                             {!auth?.profileImage && (
                                                 <Image
-                                                src="/images/userAvatar.jpeg"
-                                                alt={`${auth.firstName} profilephoto`}
-                                                width='100%'
-                                                height='100%'
-                                                layout='responsive'
-                                                objectFit='cover'
+                                                    src='/images/userAvatar.jpeg'
+                                                    alt={`${auth.firstName} profilephoto`}
+                                                    width='100%'
+                                                    height='100%'
+                                                    layout='responsive'
+                                                    objectFit='cover'
                                                 />
-                                                
+
                                                 // <svg
                                                 //     className='absolute -left-1 h-12 w-12 text-orange-300'
                                                 //     fill='currentColor'

@@ -16,7 +16,6 @@ import Layout from "@/components/layout/Layout";
 import LocationComp from "@/components/LocationComp";
 import Pagination from "@/components/Pagination/Pagination";
 
-
 export async function getServerSideProps({ locale, query }) {
     let totalParams = "";
     // NO SELECTION
@@ -672,9 +671,7 @@ const EventsPage = ({ events }) => {
 
                 <div className='mx-4 sm:col-span-2 sm:mx-0'>
                     {events.length > 0 ? (
-                        <EventCards
-                            events={currentPosts}
-                        />
+                        <EventCards events={currentPosts} />
                     ) : (
                         <div className='flex justify-center text-center'>
                             <p className='mt-2 text-xl font-bold'>
