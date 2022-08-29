@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useRef, useState } from "react";
 
 import axios from "../../api/axios";
@@ -8,6 +9,7 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const SIGNUP_URL = "/api/auth/user/signup";
 
 const SignUp = () => {
+    const router = useRouter();
     const [domLoaded, setDomLoaded] = useState(false);
     const emailRef = useRef();
     const nameRef = useRef();
@@ -27,7 +29,6 @@ const SignUp = () => {
     const [pwdFocus, setPwdFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState("");
-    const [success, setSuccess] = useState(false);
 
     // should start with name input field already focused, but not working
     // useEffect(() => {
@@ -81,7 +82,7 @@ const SignUp = () => {
                 }
             );
             //console.log(response.data);
-            setSuccess(true);
+            router.push("/signin");
         } catch (err) {
             if (!err?.response) {
                 setErrMsg("No Server Response");
@@ -110,18 +111,7 @@ const SignUp = () => {
         // });
     };
     return (
-        <>
-            {/* success is for signup success. If successful sign up, ask user to verify email and sign up. */}
-            {success ? (
-                <section>
-                    <h1>Success!</h1>
-                    <h3>Please check your email and verify your account.</h3>
-                    <p>
-                        <Link href='/signin'>Sign In</Link>
-                    </p>
-                </section>
-            ) : (
-                domLoaded && (
+        domLoaded && (
                     <form className='m-5  flex h-full flex-col  items-center  justify-around   lg:flex-row'>
                         <div className='h-100 flex w-96 flex-col items-center justify-center text-center 2xl:scale-150 '>
                             <Image
@@ -299,9 +289,7 @@ const SignUp = () => {
                             </div>
                         </div>
                     </form>
-                )
-            )}
-        </>
+        )
     );
 };
 

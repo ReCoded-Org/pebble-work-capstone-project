@@ -9,6 +9,7 @@ const EditInterests = ({
     afterClick,
     setCategories,
     categories,
+    button = "" // sometimes the submitinterest button needs to be hidden. Leave this value empty if you don't want it hidden.
 }) => {
     const labels = [
         "No Poverty",
@@ -100,7 +101,7 @@ const EditInterests = ({
                     borderColor=''
                     fontSize='text-[11px] md:text-xl lg:text-xl'
                     border=''
-                    customStyle='flex items-center justify-center'
+                    customStyle={`flex items-center justify-center ${button}`}
                     onClick={submitinterests}
                 />
             </div>
