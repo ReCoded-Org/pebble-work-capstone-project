@@ -518,16 +518,6 @@ const EventsPage = ({ events }) => {
         };
     });
 
-    // JOIN / LEAVE AN EVENT
-    const [isJoined, setIsJoined] = useState({});
-    function handleJoinClick(id) {
-        setIsJoined((isJoined) => ({
-            ...isJoined,
-            [id]: !isJoined[id],
-        }));
-        // API Call to join event
-    }
-
     //reset filters
     function handleResetFilters() {
         if (
@@ -681,11 +671,7 @@ const EventsPage = ({ events }) => {
 
                 <div className='mx-4 sm:col-span-2 sm:mx-0'>
                     {events.length > 0 ? (
-                        <EventCards
-                            events={currentPosts}
-                            isJoined={isJoined}
-                            handleJoinClick={handleJoinClick}
-                        />
+                        <EventCards events={currentPosts} />
                     ) : (
                         <div className='flex justify-center text-center'>
                             <p className='mt-2 text-xl font-bold'>

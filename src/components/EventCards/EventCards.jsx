@@ -1,14 +1,62 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
 
 import useAuth from "@/hooks/useAuth";
 
 import Button from "@/components/Button";
 
-const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
+import axios from "@/api/axios";
+
+const EventCards = ({ events = [] }) => {
     const { t } = useTranslation("common");
     const { auth } = useAuth();
+    const [followedEventIDs, setFollowedEventIDs] = useState([]);
+    const updateUserFollowingEvents = async () => {
+        // 1. get the user object
+        const response = await axios({
+            method: "get",
+            url: `/api/user`,
+            withCredentials: true,
+        });
+        // 2. get all the followed event ids from user, and set them equal to the state
+        const followedEvents = response.data.followedEvents;
+        const tempFollowedEventIDs = [];
+        for (let i = 0; i < followedEvents.length; i++) {
+            tempFollowedEventIDs.push(followedEvents[i]._id);
+        }
+        setFollowedEventIDs(tempFollowedEventIDs);
+    };
+    updateUserFollowingEvents();
+
+    // JOIN / LEAVE AN EVENT
+    const [isJoined, setIsJoined] = useState({});
+    const handleJoinClick = async (id) => {
+        // API Call to join event
+        // user is not already joined:
+        if (!followedEventIDs.includes(id)) {
+            //console.log('')
+            //post user to event
+            const responseJoin = await axios({
+                method: "post",
+                url: `/api/event/${id}/volunteers`,
+                withCredentials: true,
+            });
+            updateUserFollowingEvents();
+            toast.success(responseJoin.data.message);
+        } else {
+            // delete user from event
+            const responseLeave = await axios({
+                method: "delete",
+                url: `/api/event/${id}/volunteers`,
+                withCredentials: true,
+            });
+            updateUserFollowingEvents();
+            toast.success(responseLeave.data.message);
+        }
+    };
 
     return (
         <div>
@@ -45,7 +93,10 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                                     <Image
                                                         className='rounded-full'
                                                         src={
-                                                            volunteer.profileImage
+                                                            volunteer.profileImage ===
+                                                            undefined
+                                                                ? "/images/userAvatar.jpeg"
+                                                                : volunteer.profileImage
                                                         }
                                                         alt='user-images'
                                                         width={25}
@@ -101,7 +152,9 @@ const EventCards = ({ events = [], isJoined = {}, handleJoinClick }) => {
                                     {auth?.email && (
                                         <Button
                                             label={
-                                                isJoined[event._id]
+                                                followedEventIDs.includes(
+                                                    event._id
+                                                )
                                                     ? t(
                                                           "eventsPage.eventCards.leave"
                                                       )

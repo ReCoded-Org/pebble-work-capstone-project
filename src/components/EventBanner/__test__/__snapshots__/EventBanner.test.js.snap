@@ -563,7 +563,7 @@ exports[`renders correctly 1`] = `
       <p
         className="pl-6"
       >
-        6 EventViewPage.eventBanner.manyAttendees
+        6 eventViewPage.eventBanner.manyAttendees
       </p>
     </div>
     <div

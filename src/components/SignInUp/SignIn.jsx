@@ -48,8 +48,10 @@ function SignIn() {
                     withCredentials: true,
                 }
             );
-            console.log(response);
+            console.log(response.data.user);
             const authData = { ...auth };
+
+            // initializing Auth data with the user object
             authData.createdEvents = response.data.user.createdEvents;
             authData.email = response.data.user.email;
             authData.firstName = response.data.user.firstName;

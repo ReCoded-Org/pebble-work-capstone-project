@@ -47,6 +47,7 @@ function EventBanner({
         }
     }, [auth]);
 
+    console.log("hostprofile", hostProfileURL);
     // initialize the attendee avatars list, to be displayed next to the number of attendees
     let attendeeAvatars = [];
     function updateAttendees() {
@@ -212,7 +213,7 @@ function EventBanner({
                             ? t("eventViewPage.eventBanner.oneAttendee")
                             : attendeeNum +
                               " " +
-                              t("EventViewPage.eventBanner.manyAttendees")}
+                              t("eventViewPage.eventBanner.manyAttendees")}
                     </p>
                 </div>
                 <div className='flex items-center pt-6 pb-12'>
