@@ -199,7 +199,7 @@ exports[`renders correctly 1`] = `
     className="flex justify-end pr-8 "
   >
     <button
-      className="mt-1 mb-1 w-40 md:w-40 lg:w-52 h-8 md:h-12 lg:h-12 text-[11px] md:text-xl lg:text-xl bg-primary-200  undefined hover:undefined text-white font-medium  py-1  px-2  hover:undefined rounded  hover:shadow-lg flex items-center justify-center"
+      className="mt-1 mb-1 w-40 md:w-40 lg:w-52 h-8 md:h-12 lg:h-12 text-[11px] md:text-xl lg:text-xl bg-primary-200  undefined hover:undefined text-white font-medium  py-1  px-2  hover:undefined rounded  hover:shadow-lg flex items-center justify-center "
       onClick={[Function]}
       type="button"
     >

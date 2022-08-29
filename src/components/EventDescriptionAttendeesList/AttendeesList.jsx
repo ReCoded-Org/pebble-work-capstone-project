@@ -27,12 +27,16 @@ function AttendeesList({ attendees, attendeeProfileURLs }) {
         let tempAttendeeURLs = [];
         for (let i = 0; i < allAttendees.length; i++) {
             tempAttendees.push(allAttendees[i].firstName);
-            tempAttendeeURLs.push(allAttendees[i].profileImage);
+            if (allAttendees[i].profileImage === undefined) {
+                tempAttendeeURLs.push("/images/userAvatar.jpeg");
+            } else {
+                tempAttendeeURLs.push(allAttendees[i].profileImage);
+            }
         }
         setAttendeeList(tempAttendees);
         setAttendeeUrlList(tempAttendeeURLs);
     };
-
+    //console.log(attendeeUrlList)
     // initialize and update attendee avatars by getting the info from server
     let attendeeAvatars = [];
     function updateAvatars() {
@@ -61,9 +65,13 @@ function AttendeesList({ attendees, attendeeProfileURLs }) {
             <p className='pb-6'>
                 <b>{t("eventViewPage.attendeesList.attendees")}</b>
             </p>
-            <div className='grid grid-cols-4 items-center gap-10 md:grid-cols-6 lg:grid-cols-4'>
-                {attendeeAvatars}
-            </div>
+            {attendeeList.length === 0 ? (
+                "There are no attendees for this event yet."
+            ) : (
+                <div className='grid grid-cols-4 items-center gap-10 md:grid-cols-6 lg:grid-cols-4'>
+                    {attendeeAvatars}
+                </div>
+            )}
         </div>
     );
 }
