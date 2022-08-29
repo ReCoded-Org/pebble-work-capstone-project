@@ -49,6 +49,48 @@ const AboutPage = () => {
             instagram: "https://www.instagram.com/nasa/",
             imageLink: "/images/oznur.png",
         },
+        {
+            name: "Halit Batur",
+            github: "https://www.github.com/",
+            linkedin: "https://www.linkedin.com/",
+            instagram: "https://www.instagram.com/nasa/",
+            imageLink: "/images/halit.jpeg",
+        },
+        {
+            name: "Sara Hamoud",
+            github: "https://www.github.com/",
+            linkedin: "https://www.linkedin.com/",
+            instagram: "https://www.instagram.com/nasa/",
+            imageLink: "/images/sara.jpg",
+        },
+        {
+            name: "Muhammed Şihebi",
+            github: "https://www.github.com/",
+            linkedin: "https://www.linkedin.com/",
+            instagram: "https://www.instagram.com/nasa/",
+            imageLink: "/images/muhammed.jpeg",
+        },
+        {
+            name: "Rama Alshaban",
+            github: "https://github.com/ramaalshaban",
+            linkedin: "https://www.linkedin.com/in/ramaalshaban",
+            instagram: "https://www.instagram.com/nasa/",
+            imageLink: "/images/rama.jpeg",
+        },
+        {
+            name: "Mehmet Baki",
+            github: "https://www.github.com/",
+            linkedin: "https://www.linkedin.com/i",
+            instagram: "https://www.instagram.com/nasa/",
+            imageLink: "/images/mehmet.jpeg",
+        },
+        {
+            name: "Lara Gurol",
+            github: "https://github.com/laragurol",
+            linkedin: "http://linkedin.com/in/laragurol",
+            instagram: "https://www.instagram.com/nasa/",
+            imageLink: "/images/lara.png",
+        },
     ];
 
     return (
