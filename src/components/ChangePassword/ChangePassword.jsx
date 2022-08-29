@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { useState } from "react";
 
 import Button from "@/components/Button";
@@ -6,6 +7,7 @@ import axios from "@/api/axios";
 
 import InputComponent from "../InputComponent";
 const ChangePassword = () => {
+    const { t } = useTranslation("common");
     const [password, setPassword] = useState("");
     const [retypePassword, setRetypePassword] = useState("");
     const [message, setMessage] = useState("");
@@ -47,7 +49,7 @@ const ChangePassword = () => {
             <div className='align-center h-[200px] w-[400px] justify-center overflow-hidden rounded-lg bg-[#a4e7f4] md:h-[300px] md:w-[600px] lg:h-[450px] lg:w-[900px]'>
                 <div className='m-8 lg:m-24 lg:justify-center'>
                     <div className='text-md mb-6 flex font-medium md:mb-8 md:mt-14 md:text-2xl lg:mt-16 lg:mb-12 lg:text-3xl'>
-                        <h2>Change Password</h2>
+                        <h2>{t("editProfilePage.changePasswordHeader")}</h2>
                     </div>
                     <div className='justify-center overflow-hidden lg:flex-row lg:flex-wrap lg:items-start lg:justify-start'>
                         <form>
@@ -56,7 +58,9 @@ const ChangePassword = () => {
                                     <InputComponent
                                         id='passwordInput'
                                         type='password'
-                                        placeholder='Password'
+                                        placeholder={t(
+                                            "editProfilePage.passwordPH"
+                                        )}
                                         callback={handleChange}
                                     />
                                 </div>
@@ -64,7 +68,9 @@ const ChangePassword = () => {
                                     <InputComponent
                                         id='passwordInput2'
                                         type='password'
-                                        placeholder='Retype password'
+                                        placeholder={t(
+                                            "editProfilePage.retypePH"
+                                        )}
                                         callback={handleRetypePasswordChange}
                                     />
                                 </div>
@@ -74,7 +80,7 @@ const ChangePassword = () => {
                             <div className='mt-6 flex flex-row justify-end md:mt-8 lg:mt-12'>
                                 <div className='mr-2 justify-end md:mr-4 lg:mr-6'>
                                     <Button
-                                        label='Submit'
+                                        label={t("editProfilePage.submitBtn")}
                                         bgColor='bg-primary-200'
                                         textColor='text-white'
                                         fontWeight='font-medium'
@@ -88,7 +94,7 @@ const ChangePassword = () => {
                                 </div>
                                 <div className=''>
                                     <Button
-                                        label='Cancel'
+                                        label={t("editProfilePage.cancelBtn")}
                                         bgColor='bg-white'
                                         textColor='text-black'
                                         fontWeight='font-medium'

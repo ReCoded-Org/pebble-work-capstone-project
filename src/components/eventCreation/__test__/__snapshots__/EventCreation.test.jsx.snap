@@ -243,7 +243,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                No Poverty
+                editProfilePage.noPoverty
               </button>
             </div>
             <div
@@ -254,7 +254,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Zero Hunger
+                editProfilePage.zeroHunger
               </button>
             </div>
             <div
@@ -265,7 +265,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Good Health And Well-Being
+                editProfilePage.goodHealthAndWellbeing
               </button>
             </div>
             <div
@@ -276,7 +276,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Quality Education
+                editProfilePage.qualityEducation
               </button>
             </div>
             <div
@@ -287,7 +287,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Gender Equality
+                editProfilePage.genderEquality
               </button>
             </div>
             <div
@@ -298,7 +298,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Clean Water And Sanitation
+                editProfilePage.cleanWaterAndSanitation
               </button>
             </div>
             <div
@@ -309,7 +309,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Affordable And Clean Energy
+                editProfilePage.affordableAndCleanEnergy
               </button>
             </div>
             <div
@@ -320,7 +320,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Decent Work And Economic Growth
+                editProfilePage.decentWorkAndEconomicGrowth
               </button>
             </div>
             <div
@@ -331,7 +331,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Industry Innovation And Infrastructure
+                editProfilePage.industryInnovationAndInfrastructure
               </button>
             </div>
             <div
@@ -342,7 +342,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Reduced Inequalities
+                editProfilePage.reducedInequalities
               </button>
             </div>
             <div
@@ -353,7 +353,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Sustainable Cities And Communities
+                editProfilePage.sustainableCitiesAndCommunities
               </button>
             </div>
             <div
@@ -364,7 +364,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Responsible Consumption And Production
+                editProfilePage.responsibleConsumptionAndProduction
               </button>
             </div>
             <div
@@ -375,7 +375,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Climate Action
+                editProfilePage.climateAction
               </button>
             </div>
             <div
@@ -386,7 +386,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Life Below Water
+                editProfilePage.lifeBelowWater
               </button>
             </div>
             <div
@@ -397,7 +397,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Life On Land
+                editProfilePage.lifeOnLand
               </button>
             </div>
             <div
@@ -408,7 +408,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Peace And Justice And Strong Institutions
+                editProfilePage.peaceJusticeAndStrongInstitutions
               </button>
             </div>
             <div
@@ -419,7 +419,7 @@ Array [
                 onClick={[Function]}
                 type="button"
               >
-                Partnership For The Goals
+                editProfilePage.partnershipForTheGoals
               </button>
             </div>
           </div>
@@ -431,7 +431,7 @@ Array [
               onClick={[Function]}
               type="button"
             >
-              Change my interest
+              editProfilePage.changeInterest
             </button>
           </div>
         </div>

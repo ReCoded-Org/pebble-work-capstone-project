@@ -1,3 +1,4 @@
+import { useTranslation } from "next-i18next";
 import { useState } from "react";
 
 import Button from "@/components/Button";
@@ -11,24 +12,25 @@ const EditInterests = ({
     categories,
     button = "", // sometimes the submitinterest button needs to be hidden. Leave this value empty if you don't want it hidden.
 }) => {
+    const { t } = useTranslation("common");
     const labels = [
-        "No Poverty",
-        "Zero Hunger",
-        "Good Health And Well-Being",
-        "Quality Education",
-        "Gender Equality",
-        "Clean Water And Sanitation",
-        "Affordable And Clean Energy",
-        "Decent Work And Economic Growth",
-        "Industry Innovation And Infrastructure",
-        "Reduced Inequalities",
-        "Sustainable Cities And Communities",
-        "Responsible Consumption And Production",
-        "Climate Action",
-        "Life Below Water",
-        "Life On Land",
-        "Peace And Justice And Strong Institutions",
-        "Partnership For The Goals",
+        "noPoverty",
+        "zeroHunger",
+        "goodHealthAndWellbeing",
+        "qualityEducation",
+        "genderEquality",
+        "cleanWaterAndSanitation",
+        "affordableAndCleanEnergy",
+        "decentWorkAndEconomicGrowth",
+        "industryInnovationAndInfrastructure",
+        "reducedInequalities",
+        "sustainableCitiesAndCommunities",
+        "responsibleConsumptionAndProduction",
+        "climateAction",
+        "lifeBelowWater",
+        "lifeOnLand",
+        "peaceJusticeAndStrongInstitutions",
+        "partnershipForTheGoals",
     ];
     const [selected, setSelected] = useState([]);
 
@@ -69,7 +71,7 @@ const EditInterests = ({
                 {labels.map((label) => (
                     <div key={label} className='m-1 md:m-2 lg:m-3'>
                         <Button
-                            label={label}
+                            label={t(`editProfilePage.${label}`)}
                             bgColor={
                                 selected.includes(label)
                                     ? "bg-primary-200"
@@ -92,7 +94,7 @@ const EditInterests = ({
             </div>
             <div className='flex justify-end pr-8  '>
                 <Button
-                    label='Change my interest'
+                    label={t("editProfilePage.changeInterest")}
                     bgColor='bg-primary-200'
                     textColor='text-white'
                     fontWeight='font-medium'
