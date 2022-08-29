@@ -3,7 +3,13 @@ import { useState } from "react";
 import Button from "@/components/Button";
 
 import axios from "@/api/axios";
-const EditInterests = ({ beforeClick, afterClick }) => {
+// ADDED PROPS: CATEGORIES AND SETCATEGORIES
+const EditInterests = ({
+    beforeClick,
+    afterClick,
+    setCategories,
+    categories,
+}) => {
     const labels = [
         "No Poverty",
         "Zero Hunger",
@@ -29,6 +35,10 @@ const EditInterests = ({ beforeClick, afterClick }) => {
         setSelected([...selected, label]);
         if (selected.includes(label)) {
             setSelected(selected.filter((item) => item !== label));
+        }
+        setCategories([...categories, label]); // ADDED THIS HERE
+        if (categories.includes(label)) {
+            setCategories(categories.filter((item) => item !== label));
         }
     };
 

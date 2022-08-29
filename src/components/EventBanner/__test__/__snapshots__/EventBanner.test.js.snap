@@ -86,7 +86,7 @@ exports[`renders correctly 1`] = `
             "maxWidth": "100%",
             "minHeight": "100%",
             "minWidth": "100%",
-            "objectFit": undefined,
+            "objectFit": "cover",
             "objectPosition": undefined,
             "padding": 0,
             "position": "absolute",
@@ -118,7 +118,7 @@ exports[`renders correctly 1`] = `
               "maxWidth": "100%",
               "minHeight": "100%",
               "minWidth": "100%",
-              "objectFit": undefined,
+              "objectFit": "cover",
               "objectPosition": undefined,
               "padding": 0,
               "position": "absolute",
@@ -271,7 +271,7 @@ exports[`renders correctly 1`] = `
                 "maxWidth": "100%",
                 "minHeight": "100%",
                 "minWidth": "100%",
-                "objectFit": undefined,
+                "objectFit": "cover",
                 "objectPosition": undefined,
                 "padding": 0,
                 "position": "absolute",
@@ -303,7 +303,7 @@ exports[`renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -393,7 +393,7 @@ exports[`renders correctly 1`] = `
                 "maxWidth": "100%",
                 "minHeight": "100%",
                 "minWidth": "100%",
-                "objectFit": undefined,
+                "objectFit": "cover",
                 "objectPosition": undefined,
                 "padding": 0,
                 "position": "absolute",
@@ -425,7 +425,7 @@ exports[`renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -515,7 +515,7 @@ exports[`renders correctly 1`] = `
                 "maxWidth": "100%",
                 "minHeight": "100%",
                 "minWidth": "100%",
-                "objectFit": undefined,
+                "objectFit": "cover",
                 "objectPosition": undefined,
                 "padding": 0,
                 "position": "absolute",
@@ -547,7 +547,7 @@ exports[`renders correctly 1`] = `
                   "maxWidth": "100%",
                   "minHeight": "100%",
                   "minWidth": "100%",
-                  "objectFit": undefined,
+                  "objectFit": "cover",
                   "objectPosition": undefined,
                   "padding": 0,
                   "position": "absolute",
@@ -643,7 +643,7 @@ exports[`renders correctly 1`] = `
               "maxWidth": "100%",
               "minHeight": "100%",
               "minWidth": "100%",
-              "objectFit": undefined,
+              "objectFit": "cover",
               "objectPosition": undefined,
               "padding": 0,
               "position": "absolute",
@@ -675,7 +675,7 @@ exports[`renders correctly 1`] = `
                 "maxWidth": "100%",
                 "minHeight": "100%",
                 "minWidth": "100%",
-                "objectFit": undefined,
+                "objectFit": "cover",
                 "objectPosition": undefined,
                 "padding": 0,
                 "position": "absolute",
@@ -693,13 +693,31 @@ exports[`renders correctly 1`] = `
         Organized by Jangis Khan
       </p>
     </div>
-    <button
-      className="mt-1 mb-1 w-48 h-12 undefined bg-primary-200 undefined undefined hover:undefined text-white font-normal  py-1  px-2 undefined hover:undefined rounded  hover:shadow-lg undefined"
-      onClick={[Function]}
-      type="button"
+    <div
+      className="text-blue m-2 flex flex-row flex-wrap items-center hover:cursor-default"
     >
-      eventViewPage.eventBanner.leave
-    </button>
+      eventsPage.eventCards.toJoinTurkish
+       
+      <p
+        className="text-primary-200 underline hover:cursor-pointer"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        eventsPage.eventCards.signIn
+      </p>
+       
+      eventsPage.eventCards.or
+       
+      <p
+        className="text-primary-200 underline hover:cursor-pointer"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        eventsPage.eventCards.signUp
+      </p>
+       
+      eventsPage.eventCards.toJoinEnglish
+    </div>
   </div>
 </div>
 `;
