@@ -4,7 +4,7 @@ import React from "react";
 import Layout from "@/components/layout/Layout";
 import SignIn from "@/components/SignInUp/SignIn";
 
-const SignInUppage = () => {
+const signin = () => {
     return (
         <div>
             <Layout>
@@ -14,7 +14,7 @@ const SignInUppage = () => {
     );
 };
 
-export default SignInUppage;
+export default signin;
 export async function getStaticProps({ locale }) {
     return {
         props: {

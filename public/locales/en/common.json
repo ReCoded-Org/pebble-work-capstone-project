@@ -181,7 +181,7 @@
             "attendees": "Attendees:"
         }
     },
-    "signInUpPage": {
+    "signInPage": {
         "haveAccount": " Already have an account? ",
         "dontHaveAccount": "Don't have an account? ",
         "google": "Continue with Google ",
@@ -189,7 +189,25 @@
         "mail": "Email adress",
         "password": "Password",
         "name": "Name",
-        "surname": "Surname"
+        "surname": "Surname",
+        "loginFailed": "Login Failed",
+        "InvalidEmailOrPassword": "Invalid email or password"
+    },
+    "signUpPage": {
+        "haveAccount": " Already have an account? ",
+        "dontHaveAccount": "Don't have an account? ",
+        "google": "Continue with Google ",
+        "twitter": "Continue with Twitter",
+        "mail": "Email adress",
+        "password": "Password",
+        "name": "Name",
+        "surname": "Surname",
+        "or": "Or",
+
+        "alreadyInUse": " Email address already in use."
+    },
+    "notfoundpage": {
+        "oops": "Oops! Page Not Found.."
     },
     "yourEvents": {
         "yourUpcomingEvents": "Your Upcoming Events",
