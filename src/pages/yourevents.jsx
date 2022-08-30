@@ -3,16 +3,18 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState } from "react";
+import { useEffect } from "react";
+
+import useAuth from "@/hooks/useAuth";
 
 import EventCards from "@/components/EventCards";
 import Layout from "@/components/layout/Layout";
 import Pagination from "@/components/Pagination/Pagination";
 import Quotes from "@/components/Qutoes";
 
-import axios from "@/api/axios";
+// import axios from "@/api/axios";
 
 export async function getServerSideProps({ locale }) {
-
     return {
         props: {
             ...(await serverSideTranslations(locale, ["common"])),
@@ -21,80 +23,69 @@ export async function getServerSideProps({ locale }) {
 }
 
 const YourEvents = () => {
-    // RENDERING THE EVENTS: CREATED BY USER AND WILL BE ATTENDED BY USER
     const { t } = useTranslation("common");
     let today = new Date();
     let formattedToday = format(today, "yyyy-MM-dd");
-    
-    let futureEvents = []
-    let createdFutureEvents = []
 
-    const updateEvents = async () => {
-        const user = await axios({
-            method: "get",
-            url:"/api/user/",
-            withCredentials:true
-        })
-        // console.log(user);
-        user.data.followedEvents.map((e) => {
-            if (e.date.split("T")[0] >= formattedToday) {
-                futureEvents.push(e);
-            }
-        })
-        // console.log("FUTURE EVENTS", futureEvents);
-        user.data.createdEvents.map((e) => {
-            if (e.date.split("T")[0] >= formattedToday) {
-                createdFutureEvents.push(e);
-            }
-        })
-        // console.log(createdFutureEvents);
-    }
-    
-    updateEvents();
-    console.log("OUTSIDE FN: FUTURE EVENTS", futureEvents);
+    const { auth } = useAuth();
+    console.log("auth", auth);
 
-        // const { auth } = useAuth();
-        // console.log("auth",auth)
-        
-        // let followedEvents =auth?.followedEvents;
-        // let createdEvents =auth?.createdEvents;
-    
-        // //BRINGING EVENTS THE USER WILL ATTEND
-        // const futureEvents = [];
-        // followedEvents.map((e) => {
-        //     if (e.date.split("T")[0] >= formattedToday) {
-        //         futureEvents.push(e);
-        //     }
-        // });
-    
-        // //BRINGING EVENTS CREATED BY USER
-        // const createdFutureEvents= [];
-        // createdEvents.map((e) => {
-        //     if (e.date.split("T")[0] >= formattedToday) {
-        //         createdFutureEvents.push(e);
-        //     }
-        // });
-
-    //PAGINATION
+    //GETTING EVENTS THE USER WILL ATTEND
+    const [futureEvents, setFutureEvents] = useState([]);
+    useEffect(() => {
+        let followedEvents = auth?.followedEvents;
+        if (!followedEvents) return;
+        const followedFutureEvents = followedEvents.filter((e) => {
+            return e.date.split("T")[0] >= formattedToday;
+        });
+        setFutureEvents(followedFutureEvents);
+    }, [auth]);
+    //PAGINATION FOR EVENTS ATTENDED BY USER
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(5);
+    const [currentPosts, setCurrentPosts] = useState([]);
+    useEffect(() => {
+        if (futureEvents.length <= 0) return;
+        const indexOfLastPost = currentPage * postsPerPage;
+        const indexOfFirstPost = indexOfLastPost - postsPerPage;
+        setCurrentPosts(futureEvents.slice(indexOfFirstPost, indexOfLastPost));
+    }, [futureEvents]);
 
-    const indexOfLastPost = currentPage * postsPerPage;
-    const indexOfFirstPost = indexOfLastPost - postsPerPage;
-    const currentPosts = futureEvents.slice(indexOfFirstPost, indexOfLastPost);
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-    console.log("CURRENT POSTS", currentPosts);
-    
+    //GETTING EVENTS THE USER CREATED
+    const [createdEvents, setCreatedEvents] = useState([]);
+    useEffect(() => {
+        let createdEvents = auth?.createdEvents;
+        console.log("createdEvents", createdEvents);
+        if (!createdEvents) return;
+        const createdFutureEvents = createdEvents.filter((e) => {
+            return e.date.split("T")[0] >= formattedToday;
+        });
+        setCreatedEvents(createdFutureEvents);
+    }, [auth]);
+
     //PAGINATION FOR EVENTS CREATED BY USER
     const [currentPageForCreated, setCurrentPageForCreated] = useState(1);
     const [postsPerPageForCreated] = useState(5);
+    const [currentPostsForCreated, setCurrentPostsForCreated] = useState([]);
+    const paginateForCreated = (pageNumber) =>
+        setCurrentPageForCreated(pageNumber);
 
-    const indexOfLastPostForCreated = currentPageForCreated * postsPerPageForCreated;
-    const indexOfFirstPostForCreated = indexOfLastPostForCreated - postsPerPageForCreated;
-    const currentPostsForCreated = createdFutureEvents.slice(indexOfFirstPostForCreated, indexOfLastPostForCreated);
-    const paginateForCreated = (pageNumber) => setCurrentPageForCreated(pageNumber);
-    
+    useEffect(() => {
+        if (createdEvents.length <= 0) return;
+        const indexOfLastPostForCreated =
+            currentPageForCreated * postsPerPageForCreated;
+        const indexOfFirstPostForCreated =
+            indexOfLastPostForCreated - postsPerPageForCreated;
+        setCurrentPostsForCreated(
+            createdEvents.slice(
+                indexOfFirstPostForCreated,
+                indexOfLastPostForCreated
+            )
+        );
+    }, [createdEvents]);
+
     //JOIN-LEAVE EVENTS
     const [isJoined, setIsJoined] = useState({});
     function handleJoinClick(id) {
@@ -102,7 +93,6 @@ const YourEvents = () => {
             ...isJoined,
             [id]: !isJoined[id],
         }));
-        // API Call to leave event
     }
 
     return (
@@ -152,7 +142,7 @@ const YourEvents = () => {
                 </h1>
             </div>
             <div className='mx-4 sm:mx-44'>
-                {createdFutureEvents.length > 0 ? (
+                {createdEvents.length > 0 ? (
                     <div>
                         <div className='my-10'>
                             <EventCards
@@ -164,7 +154,7 @@ const YourEvents = () => {
                         <div className='mb-10'>
                             <Pagination
                                 postsPerPage={postsPerPageForCreated}
-                                totalPosts={createdFutureEvents.length}
+                                totalPosts={createdEvents.length}
                                 paginate={paginateForCreated}
                             />
                         </div>

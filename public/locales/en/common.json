@@ -194,6 +194,7 @@
     "yourEvents": {
         "yourUpcomingEvents": "Your Upcoming Events",
         "notJoined": "You haven't joined any events yet.",
+        "exploreEvents": "Explore Events",
         "eventsCreatedByYou": "Future Events You Created",
         "notCreated": "You haven't created any events yet.",
         "createEvents": "Create an Event"
