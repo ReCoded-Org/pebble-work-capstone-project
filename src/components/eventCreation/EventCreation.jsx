@@ -1,17 +1,69 @@
+import { Combobox } from "@headlessui/react";
+import {
+    GoogleMap,
+    InfoWindow,
+    MarkerF,
+    useLoadScript,
+} from "@react-google-maps/api";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
-import React, { useState } from "react";
+import { useCallback } from "react";
+import { useRef, useState } from "react";
+import usePlacesAutocomplete, {
+    getGeocode,
+    getLatLng,
+} from "use-places-autocomplete";
 
 import axios from "@/api/axios";
 
 import EditInterests from "../EditInterests";
 import InputComponent from "../InputComponent";
-import Map from "../Map";
+// import Map from "../Map";
 
-const EventCreation = () => {
+const libraries = ["places"];
+const center = {
+    lat: 43.6532,
+    lng: -79.3832,
+};
+
+let selectedLocation = {};
+
+const EventCreation = ({ location }) => {
     const { t } = useTranslation("common");
+    // SEARCH -GOOGLE MAPS
+    const {
+        ready,
+        value,
+        suggestions: { status, data },
+        setValue,
+        clearSuggestions,
+    } = usePlacesAutocomplete({
+        requestOptions: {
+            location: { lat: () => data.lat, lng: () => data.lng },
+            radius: 100 * 1000,
+        },
+    });
+
+    const handleInput = (e) => {
+        setValue(e.target.value);
+    };
+
+    const handleSelect = async (address) => {
+        setValue(address, false);
+        clearSuggestions();
+
+        try {
+            const results = await getGeocode({ address });
+            const { lat, lng } = await getLatLng(results[0]);
+            panTo({ lat, lng });
+            selectedLocation = { lat, lng };
+        } catch (error) {
+            console.log("😱 Error: ", error);
+        }
+    };
+
     const citiesOfTurkey = [
         "Adana",
         "Adiyaman",
@@ -100,13 +152,53 @@ const EventCreation = () => {
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
     // const [coverImage, setCoverImage] = useState("");
-    const [address, setAddress] = useState("");
+    // const [address, setAddress] = useState("");
     const [eventId, setEventId] = useState("");
     const [valueState, setValueState] = useState("");
     const [dateInput, setDateInput] = useState();
     const [timeInput, setTimeInput] = useState();
 
     const router = useRouter();
+
+    //GOOGLE MAPS
+    const { isLoaded } = useLoadScript({
+        googleMapsApiKey: "AIzaSyA6fZUJ5sQvINReBDOxFAW5Qh3RRs4Askc",
+        libraries,
+    });
+
+    const [marker, setMarker] = useState([]);
+
+    const [selected, setSelected] = useState(null);
+
+    const onClickMap = (e) => {
+        setMarker({
+            lat: e.latLng.lat(),
+            lng: e.latLng.lng(),
+        });
+    };
+
+    const onSearchChange = (e) => {
+        setMarker({
+            lat: selectedLocation.lat,
+            lng: selectedLocation.lng,
+        });
+    };
+
+    let mapRef = useRef();
+    const onMapLoad = useCallback((map) => {
+        mapRef = map;
+    }, []);
+
+    const panTo = useCallback(({ lat, lng }) => {
+        mapRef.panTo({ lat, lng });
+        mapRef.setZoom(14);
+    }, []);
+
+    if (!isLoaded) return <div>Loading...</div>;
+    console.log(marker);
+    location = marker;
+    console.log(location.lat);
+    console.log(location.lng);
 
     async function submitEvent() {
         var bodyFormData = new FormData();
@@ -120,9 +212,9 @@ const EventCreation = () => {
         }
         bodyFormData.append("address[city]", searchTerm);
         bodyFormData.append("address[country]", "Turkey");
-        bodyFormData.append("address[addressLine]", address);
-        bodyFormData.append("location[lat]", 41.01);
-        bodyFormData.append("location[log]", 28.97);
+        bodyFormData.append("address[addressLine]", "address"); // what value should be here?
+        bodyFormData.append("location[lat]", 41.01); //location.lat
+        bodyFormData.append("location[log]", 28.97); //location.lng
         //         formData.append("movie[screenshots][]", file1)
         // formData.append("movie[screenshots][]", file2)
         // for (let i = 0; i < categories.length; i++) {
@@ -167,9 +259,9 @@ const EventCreation = () => {
     //     setCoverImage(e.target.value)
     // }
 
-    function handleAddress(e) {
-        setAddress(e.target.value);
-    }
+    // function handleAddress(e) {
+    //     setAddress(e.target.value);
+    // }
     function handleDate(e) {
         setDateInput(e.target.value);
     }
@@ -235,11 +327,11 @@ const EventCreation = () => {
                                         ))}
                                 </div>
                             </div>
-                            <InputComponent
+                            {/* <InputComponent
                                 value={address}
                                 callback={handleAddress}
                                 placeholder='Enter your address'
-                            />
+                            /> */}
                         </div>
                     </div>
                     <div className='flex flex-col items-center justify-center'>
@@ -269,9 +361,68 @@ const EventCreation = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col pt-3 '>
-                    <Map />
+                <div className='mb-4 mt-3 flex flex-col items-center justify-center py-3 text-center text-lg  font-semibold'>
+                    Please type the full adress and pin it on the map
                 </div>
+                <div className='flex flex-col pt-3 '>
+                    <div className='h-[400px]'>
+                        <GoogleMap
+                            zoom={10}
+                            center={center}
+                            mapContainerClassName='w-full h-full'
+                            onClick={onClickMap}
+                            onLoad={onMapLoad}
+                            onBoundsChanged={onSearchChange}
+                        >
+                            <MarkerF
+                                position={{
+                                    lat: marker.lat,
+                                    lng: marker.lng,
+                                }}
+                                onClick={() => {
+                                    setSelected(marker);
+                                }}
+                            />
+                            {selected ? (
+                                <InfoWindow
+                                    position={{
+                                        lat: selected.lat,
+                                        lng: selected.lng,
+                                    }}
+                                    onCloseClick={() => setSelected(null)}
+                                >
+                                    <div>adres falan</div>
+                                </InfoWindow>
+                            ) : null}
+                            <div className='m-2'>
+                                <div className=' left-1/2 top-4 z-10 w-full max-w-[400px] translate-x-1/2'>
+                                    <Combobox onChange={handleSelect}>
+                                        <Combobox.Input
+                                            value={value}
+                                            onChange={handleInput}
+                                            disabled={!ready}
+                                        />
+                                        <Combobox.Options className='bg-white'>
+                                            {status === "OK" &&
+                                                data.map(
+                                                    ({ id, description }) => (
+                                                        <Combobox.Option
+                                                            key={id}
+                                                            value={description}
+                                                            className='border-b border-gray-200'
+                                                        >
+                                                            {description}
+                                                        </Combobox.Option>
+                                                    )
+                                                )}
+                                        </Combobox.Options>
+                                    </Combobox>
+                                </div>
+                            </div>
+                        </GoogleMap>
+                    </div>
+                </div>
+
                 <div className='flex flex-col pt-3 '>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>
