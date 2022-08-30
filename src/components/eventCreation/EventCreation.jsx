@@ -8,6 +8,7 @@ import axios from "@/api/axios";
 
 import EditInterests from "../EditInterests";
 import InputComponent from "../InputComponent";
+import Map from "../Map";
 
 const EventCreation = () => {
     const { t } = useTranslation("common");
@@ -267,6 +268,9 @@ const EventCreation = () => {
                             />
                         </div>
                     </div>
+                </div>
+                <div className='flex flex-col pt-3 '>
+                    <Map />
                 </div>
                 <div className='flex flex-col pt-3 '>
                     <div>

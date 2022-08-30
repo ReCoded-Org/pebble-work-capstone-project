@@ -215,6 +215,13 @@ Array [
       className="flex flex-col pt-3 "
     >
       <div>
+        Loading...
+      </div>
+    </div>
+    <div
+      className="flex flex-col pt-3 "
+    >
+      <div>
         <h2
           className="py-1 text-xl font-medium text-black"
         >
