@@ -18,6 +18,8 @@ const center = {
     lng: -79.3832,
 };
 
+let selectedLocation = {};
+
 function Map({ location }) {
     const { isLoaded } = useLoadScript({
         googleMapsApiKey: "AIzaSyA6fZUJ5sQvINReBDOxFAW5Qh3RRs4Askc",
@@ -25,12 +27,20 @@ function Map({ location }) {
     });
 
     const [marker, setMarker] = useState([]);
+
     const [selected, setSelected] = useState(null);
 
     const onClickMap = (e) => {
         setMarker({
             lat: e.latLng.lat(),
             lng: e.latLng.lng(),
+        });
+    };
+
+    const onSearchChange = (e) => {
+        setMarker({
+            lat: selectedLocation.lat,
+            lng: selectedLocation.lng,
         });
     };
 
@@ -57,12 +67,16 @@ function Map({ location }) {
                 mapContainerClassName='w-full h-full'
                 onClick={onClickMap}
                 onLoad={onMapLoad}
+                onBoundsChanged={onSearchChange}
             >
                 <MarkerF
+                    position={{
+                        lat: marker.lat,
+                        lng: marker.lng,
+                    }}
                     onClick={() => {
                         setSelected(marker);
                     }}
-                    position={{ lat: marker.lat, lng: marker.lng }}
                 />
                 {selected ? (
                     <InfoWindow
@@ -100,13 +114,13 @@ function Search({ panTo }) {
 
     const handleSelect = async (address) => {
         setValue(address, false);
-        console.log(address);
         clearSuggestions();
 
         try {
             const results = await getGeocode({ address });
             const { lat, lng } = await getLatLng(results[0]);
             panTo({ lat, lng });
+            selectedLocation = { lat, lng };
         } catch (error) {
             console.log("😱 Error: ", error);
         }
