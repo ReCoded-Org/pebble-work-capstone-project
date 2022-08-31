@@ -213,6 +213,10 @@
     "yourEvents": {
         "yourUpcomingEvents": "Gelecek Etkinlikleriniz",
         "notJoined": "Daha hiçbir etkinliğe katılmadınız",
+        "exploreEvents": "Etkinlikleri Keşfet",
+        "eventsCreatedByYou": "Organize Ettiğin Etkinlikler",
+        "notCreated": "Henüz bir etkinlik organize etmedin.",
+        "createEvents": "Etkinlik oluştur",
         "exploreEvents": "Etkinlikleri Keşfet"
     },
     "editProfilePage": {
