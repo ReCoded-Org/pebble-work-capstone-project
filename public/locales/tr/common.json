@@ -182,7 +182,7 @@
             "attendees": "Katılımcılar:"
         }
     },
-    "signInUpPage": {
+    "signInPage": {
         "haveAccount": "Zaten hesabım var,",
         "dontHaveAccount": "Hesabım yok,",
         "google": "Google ile devam et",
@@ -190,7 +190,25 @@
         "mail": "E-posta",
         "password": "Şifre",
         "name": "Ad",
-        "surname": "Soyadı"
+        "surname": "Soyadı",
+        "loginFailed": "Giriş yapilmamıstır",
+        "InvalidEmailOrPassword": "E-post yada Şifre yanliş"
+    },
+    "signUpPage": {
+        "haveAccount": "Zaten hesabım var,",
+        "dontHaveAccount": "Hesabım yok,",
+        "google": "Google ile devam et",
+        "twitter": "Twitter ile devam et",
+        "mail": "E-posta",
+        "password": "Şifre",
+        "name": "Ad",
+        "surname": "Soyadı",
+        "or": " yada ",
+
+        "alreadyInUse": "Zaten mevcut E-post."
+    },
+    "notfoundpage": {
+        "oops": "Bu Sayfa Bulunmadı.."
     },
     "yourEvents": {
         "yourUpcomingEvents": "Gelecek Etkinlikleriniz",
@@ -198,6 +216,39 @@
         "exploreEvents": "Etkinlikleri Keşfet",
         "eventsCreatedByYou": "Organize Ettiğin Etkinlikler",
         "notCreated": "Henüz bir etkinlik organize etmedin.",
-        "createEvents": "Etkinlik oluştur"
+        "createEvents": "Etkinlik oluştur",
+        "exploreEvents": "Etkinlikleri Keşfet"
+    },
+    "editProfilePage": {
+        "header": "Profili Düzenle",
+        "upload": "Fotoğraf Yükle",
+        "name": "İsim (Zorunlu)",
+        "namePH": "İsminiz",
+        "location": "Tercih Edilen Şehirler:",
+        "locationPH": "Konumunuz",
+        "changePasswordHeader": "Şifre Değiştir",
+        "interests": "İlgi Alanlarınız",
+        "noPoverty": "Sıfır Yoksulluk",
+        "zeroHunger": "Sıfır Açlık",
+        "goodHealthAndWellbeing": "İyi Sağlık ve Refah",
+        "qualityEducation": "Kaliteli eğitim",
+        "genderEquality": "Cinsiyet eşitliği",
+        "cleanWaterAndSanitation": "Temiz Su ve Sanitasyon",
+        "affordableAndCleanEnergy": "Uygun Fiyatlı ve Temiz Enerji",
+        "decentWorkAndEconomicGrowth": "İnsana Yakışır İş ve Ekonomik Büyüme",
+        "industryInnovationAndInfrastructure": "Sanayi, İnovasyon ve Altyapı",
+        "reducedInequalities": "Azaltılmış Eşitsizlikler",
+        "responsibleConsumptionAndProduction": "Sorumlu Tüketim ve Üretim",
+        "sustainableCitiesAndCommunities": "Sürdürülebilir Şehirler ve Topluluklar",
+        "climateAction": "İklim Eylemi",
+        "lifeBelowWater": "Su Altında Yaşam",
+        "lifeOnLand": "Karada Yaşam",
+        "peaceJusticeAndStrongInstitutions": "Barış, Adalet ve Güçlü Kurumlar",
+        "partnershipForTheGoals": "Hedefler için Ortaklık",
+        "passwordPH": "Şifrenizi yazın",
+        "retypePH": "Şifrenizi yeniden yazın",
+        "submitBtn": "Kaydet",
+        "cancelBtn": "İptal",
+        "changeInterest": "İlgi Alanımı Değiştir"
     }
 }

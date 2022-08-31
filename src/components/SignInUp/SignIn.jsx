@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { useEffect, useRef, useState } from "react";
 
 import useAuth from "@/hooks/useAuth";
@@ -10,6 +11,7 @@ import axios from "@/api/axios";
 const SIGNIN_URL = "/api/auth/signin";
 
 function SignIn() {
+    const { t } = useTranslation("common");
     const [domLoaded, setDomLoaded] = useState(false);
 
     let { auth, setAuth } = useAuth();
@@ -66,9 +68,11 @@ function SignIn() {
             if (!err?.response) {
                 setErrMsg("No Server Response", err);
             } else if (err.response?.status === 400) {
+                // setErrMsg(`${t("signInPage.InvalidEmailOrPassword")}`);
                 setErrMsg("Invalid email or password");
             } else {
-                setErrMsg("Login Failed");
+                // setErrMsg(`${t("signInPage.loginFaild")}`);
+                setErrMsg("Login Faild");
             }
             errRef.current.focus();
         }
@@ -87,7 +91,7 @@ function SignIn() {
                 </div>
                 <div className='flex w-96 flex-col items-center justify-center py-1 text-center lg:items-start  2xl:scale-150'>
                     <h1 className='py-3 text-3xl font-semibold md:flex'>
-                        Sign In
+                        {t("common.nav.signIn")}
                     </h1>
                     <p
                         ref={errRef}
@@ -111,7 +115,7 @@ function SignIn() {
                                 value={email}
                                 required
                                 className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
-                                placeholder='Email address'
+                                placeholder={t("signInPage.mail")}
                             />
                         </div>
                         <div className='ml-px py-1'>
@@ -123,7 +127,7 @@ function SignIn() {
                                 value={pwd}
                                 required
                                 className='focus:shadow-outline w-80 appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:ring-secondary-200'
-                                placeholder='Password'
+                                placeholder={t("signInPage.password")}
                             />
                         </div>
                         <div className='flex flex-row items-center justify-center py-1'>
@@ -142,10 +146,11 @@ function SignIn() {
                             />
                         </div>
                         <p className='m-1 flex text-xs italic text-gray-700'>
-                            Don&apos;t have an account? &nbsp;
+                            {/* Don&apos;t have an account? &nbsp; */}
+                            {t("signInPage.dontHaveAccount")}
                             <Link href='/signup'>
-                                <div className='cursor-pointer border-b border-primary-200 text-primary-200'>
-                                    Sign Up
+                                <div className='ml-1 cursor-pointer border-b border-primary-200 text-primary-200'>
+                                    {t("common.nav.signUp")}
                                 </div>
                             </Link>
                         </p>
@@ -154,7 +159,7 @@ function SignIn() {
                                 className='w-80 rounded bg-primary-200 px-2 py-1 md:w-auto '
                                 onClick={handleSignIn}
                             >
-                                Sign In
+                                {t("common.nav.signIn")}
                             </button>
                         </div>
                     </div>
