@@ -49,7 +49,7 @@ const YourEvents = () => {
         const indexOfLastPost = currentPage * postsPerPage;
         const indexOfFirstPost = indexOfLastPost - postsPerPage;
         setCurrentPosts(futureEvents.slice(indexOfFirstPost, indexOfLastPost));
-    }, [futureEvents]);
+    }, [futureEvents, currentPage, postsPerPage]);
 
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -63,7 +63,7 @@ const YourEvents = () => {
             return e.date.split("T")[0] >= formattedToday;
         });
         setCreatedEvents(createdFutureEvents);
-    }, [auth]);
+    }, [auth, formattedToday]);
 
     //PAGINATION FOR EVENTS CREATED BY USER
     const [currentPageForCreated, setCurrentPageForCreated] = useState(1);
@@ -84,7 +84,7 @@ const YourEvents = () => {
                 indexOfLastPostForCreated
             )
         );
-    }, [createdEvents]);
+    }, [createdEvents, currentPageForCreated, postsPerPageForCreated]);
 
     //JOIN-LEAVE EVENTS
     const [isJoined, setIsJoined] = useState({});
