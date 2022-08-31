@@ -89,6 +89,8 @@ export default function EventViewPage({ event }) {
                 attendeeIDs={volunteerIDs}
                 host={event.publisherId ? event.publisherId.firstName : "N/A"}
                 hostProfileURL={hostProfileURL}
+                latitude={event.location.lat}
+                longitude={event.location.log}
             />
             <EventDescriptionAttendeesList
                 description={event.content}
