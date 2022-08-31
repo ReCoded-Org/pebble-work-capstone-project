@@ -9,8 +9,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import { useState } from "react";
 import { useCallback } from "react";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import usePlacesAutocomplete, {
     getGeocode,
     getLatLng,
@@ -20,7 +21,6 @@ import axios from "@/api/axios";
 
 import EditInterests from "../EditInterests";
 import InputComponent from "../InputComponent";
-// import Map from "../Map";
 
 const libraries = ["places"];
 const center = {
@@ -30,9 +30,7 @@ const center = {
 
 let selectedLocation = {};
 
-const EventCreation = ({ location }) => {
-    const { t } = useTranslation("common");
-    // SEARCH -GOOGLE MAPS
+function Search({ panTo }) {
     const {
         ready,
         value,
@@ -64,6 +62,34 @@ const EventCreation = ({ location }) => {
         }
     };
 
+    return (
+        <div className=' left-1/2 top-4 z-10 w-full max-w-[400px] translate-x-1/2'>
+            <Combobox onChange={handleSelect}>
+                <Combobox.Input
+                    value={value}
+                    onChange={handleInput}
+                    disabled={!ready}
+                />
+                <Combobox.Options>
+                    {status === "OK" &&
+                        data.map(({ id, description }) => (
+                            <Combobox.Option key={id} value={description}>
+                                {description}
+                            </Combobox.Option>
+                        ))}
+                </Combobox.Options>
+            </Combobox>
+        </div>
+    );
+}
+
+const EventCreation = () => {
+    const { isLoaded } = useLoadScript({
+        googleMapsApiKey: "AIzaSyA6fZUJ5sQvINReBDOxFAW5Qh3RRs4Askc",
+        libraries,
+    });
+
+    const { t } = useTranslation("common");
     const citiesOfTurkey = [
         "Adana",
         "Adiyaman",
@@ -157,48 +183,10 @@ const EventCreation = ({ location }) => {
     const [valueState, setValueState] = useState("");
     const [dateInput, setDateInput] = useState();
     const [timeInput, setTimeInput] = useState();
-
-    const router = useRouter();
-
-    //GOOGLE MAPS
-    const { isLoaded } = useLoadScript({
-        googleMapsApiKey: "AIzaSyA6fZUJ5sQvINReBDOxFAW5Qh3RRs4Askc",
-        libraries,
-    });
-
     const [marker, setMarker] = useState([]);
-
     const [selected, setSelected] = useState(null);
 
-    const onClickMap = (e) => {
-        setMarker({
-            lat: e.latLng.lat(),
-            lng: e.latLng.lng(),
-        });
-    };
-
-    const onSearchChange = (e) => {
-        setMarker({
-            lat: selectedLocation.lat,
-            lng: selectedLocation.lng,
-        });
-    };
-
-    let mapRef = useRef();
-    const onMapLoad = useCallback((map) => {
-        mapRef = map;
-    }, []);
-
-    const panTo = useCallback(({ lat, lng }) => {
-        mapRef.panTo({ lat, lng });
-        mapRef.setZoom(14);
-    }, []);
-
-    if (!isLoaded) return <div>Loading...</div>;
-    console.log(marker);
-    location = marker;
-    console.log(location.lat);
-    console.log(location.lng);
+    const router = useRouter();
 
     async function submitEvent() {
         var bodyFormData = new FormData();
@@ -213,8 +201,8 @@ const EventCreation = ({ location }) => {
         bodyFormData.append("address[city]", searchTerm);
         bodyFormData.append("address[country]", "Turkey");
         bodyFormData.append("address[addressLine]", "address"); // what value should be here?
-        bodyFormData.append("location[lat]", 41.01); //location.lat
-        bodyFormData.append("location[log]", 28.97); //location.lng
+        bodyFormData.append("location[lat]", marker.lat); //location.lat
+        bodyFormData.append("location[log]", marker.lng); //location.lng
         //         formData.append("movie[screenshots][]", file1)
         // formData.append("movie[screenshots][]", file2)
         // for (let i = 0; i < categories.length; i++) {
@@ -254,6 +242,35 @@ const EventCreation = ({ location }) => {
     function handleContent(e) {
         setContent(e.target.value);
     }
+
+    //Google Maps Function
+
+    const onClickMap = (e) => {
+        setMarker({
+            lat: e.latLng.lat(),
+            lng: e.latLng.lng(),
+        });
+    };
+
+    const onSearchChange = (e) => {
+        setMarker({
+            lat: selectedLocation.lat,
+            lng: selectedLocation.lng,
+        });
+    };
+
+    let mapRef = useRef();
+    const onMapLoad = useCallback((map) => {
+        mapRef = map;
+    }, []);
+
+    const panTo = useCallback(({ lat, lng }) => {
+        mapRef.panTo({ lat, lng });
+        mapRef.setZoom(14);
+    }, []);
+
+    if (!isLoaded) return <div>Loading...</div>;
+    console.log(marker);
 
     // function handleCoverImage(e) {
     //     setCoverImage(e.target.value)
@@ -361,10 +378,10 @@ const EventCreation = ({ location }) => {
                         </div>
                     </div>
                 </div>
-                <div className='mb-4 mt-3 flex flex-col items-center justify-center py-3 text-center text-lg  font-semibold'>
-                    Please type the full adress and pin it on the map
-                </div>
                 <div className='flex flex-col pt-3 '>
+                    <div className='mb-4 mt-3 flex flex-col items-center justify-center py-3 text-center text-lg  font-semibold'>
+                        Please type the full adress and pin it on the map
+                    </div>
                     <div className='h-[400px]'>
                         <GoogleMap
                             zoom={10}
@@ -395,34 +412,11 @@ const EventCreation = ({ location }) => {
                                 </InfoWindow>
                             ) : null}
                             <div className='m-2'>
-                                <div className=' left-1/2 top-4 z-10 w-full max-w-[400px] translate-x-1/2'>
-                                    <Combobox onChange={handleSelect}>
-                                        <Combobox.Input
-                                            value={value}
-                                            onChange={handleInput}
-                                            disabled={!ready}
-                                        />
-                                        <Combobox.Options className='bg-white'>
-                                            {status === "OK" &&
-                                                data.map(
-                                                    ({ id, description }) => (
-                                                        <Combobox.Option
-                                                            key={id}
-                                                            value={description}
-                                                            className='border-b border-gray-200'
-                                                        >
-                                                            {description}
-                                                        </Combobox.Option>
-                                                    )
-                                                )}
-                                        </Combobox.Options>
-                                    </Combobox>
-                                </div>
+                                <Search panTo={panTo} />
                             </div>
                         </GoogleMap>
                     </div>
                 </div>
-
                 <div className='flex flex-col pt-3 '>
                     <div>
                         <h2 className='py-1 text-xl  font-medium text-black'>

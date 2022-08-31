@@ -27,7 +27,6 @@ function Map({ location }) {
     });
 
     const [marker, setMarker] = useState([]);
-
     const [selected, setSelected] = useState(null);
 
     const onClickMap = (e) => {
