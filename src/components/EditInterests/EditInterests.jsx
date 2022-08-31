@@ -14,23 +14,23 @@ const EditInterests = ({
 }) => {
     const { t } = useTranslation("common");
     const labels = [
-        "noPoverty",
-        "zeroHunger",
-        "goodHealthAndWellbeing",
-        "qualityEducation",
-        "genderEquality",
-        "cleanWaterAndSanitation",
-        "affordableAndCleanEnergy",
-        "decentWorkAndEconomicGrowth",
-        "industryInnovationAndInfrastructure",
-        "reducedInequalities",
-        "sustainableCitiesAndCommunities",
-        "responsibleConsumptionAndProduction",
-        "climateAction",
-        "lifeBelowWater",
-        "lifeOnLand",
-        "peaceJusticeAndStrongInstitutions",
-        "partnershipForTheGoals",
+        "No Poverty",
+        "Zero Hunger",
+        "Good Health and Wellbeing",
+        "Quality Education",
+        "Gender Equality",
+        "Clean Water and Sanitation",
+        "Affordable and Clean Energy",
+        "Decent Work and Economic Growth",
+        "Industry, Innovation and Infrastructure",
+        "Reduced Inequalities",
+        "Sustainable Cities and Communities",
+        "Responsible Consumption and Production",
+        "Climate Action",
+        "Life Below Water",
+        "Life On Land",
+        "Peace, Justice and Strong Institutions",
+        "Partnership for the Goals"
     ];
     const [selected, setSelected] = useState([]);
 
