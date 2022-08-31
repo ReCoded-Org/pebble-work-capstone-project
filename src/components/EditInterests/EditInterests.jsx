@@ -16,21 +16,21 @@ const EditInterests = ({
     const labels = [
         "No Poverty",
         "Zero Hunger",
-        "Good Health and Wellbeing",
+        "Good Health And Well-Being",
         "Quality Education",
         "Gender Equality",
-        "Clean Water and Sanitation",
-        "Affordable and Clean Energy",
-        "Decent Work and Economic Growth",
-        "Industry, Innovation and Infrastructure",
+        "Clean Water And Sanitation",
+        "Affordable And Clean Energy",
+        "Decent Work And Economic Growth",
+        "Industry Innovation And Infrastructure",
         "Reduced Inequalities",
-        "Sustainable Cities and Communities",
-        "Responsible Consumption and Production",
+        "Sustainable Cities And Communities",
+        "Responsible Consumption And Production",
         "Climate Action",
         "Life Below Water",
         "Life On Land",
-        "Peace, Justice and Strong Institutions",
-        "Partnership for the Goals"
+        "Peace And Justice And Strong Institutions",
+        "Partnership For The Goals"
     ];
     const [selected, setSelected] = useState([]);
 
