@@ -161,6 +161,9 @@ exports[`renders correctly 1`] = `
         <p>
           11th Street South, Arlington, Virginia
         </p>
+        <div>
+          Loading...
+        </div>
       </div>
     </div>
     <div

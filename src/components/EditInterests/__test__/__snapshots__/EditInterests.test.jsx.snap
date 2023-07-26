@@ -15,7 +15,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.noPoverty
+        editProfilePage.No Poverty
       </button>
     </div>
     <div
@@ -26,7 +26,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.zeroHunger
+        editProfilePage.Zero Hunger
       </button>
     </div>
     <div
@@ -37,7 +37,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.goodHealthAndWellbeing
+        editProfilePage.Good Health And Well-Being
       </button>
     </div>
     <div
@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.qualityEducation
+        editProfilePage.Quality Education
       </button>
     </div>
     <div
@@ -59,7 +59,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.genderEquality
+        editProfilePage.Gender Equality
       </button>
     </div>
     <div
@@ -70,7 +70,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.cleanWaterAndSanitation
+        editProfilePage.Clean Water And Sanitation
       </button>
     </div>
     <div
@@ -81,7 +81,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.affordableAndCleanEnergy
+        editProfilePage.Affordable And Clean Energy
       </button>
     </div>
     <div
@@ -92,7 +92,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.decentWorkAndEconomicGrowth
+        editProfilePage.Decent Work And Economic Growth
       </button>
     </div>
     <div
@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.industryInnovationAndInfrastructure
+        editProfilePage.Industry Innovation And Infrastructure
       </button>
     </div>
     <div
@@ -114,7 +114,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.reducedInequalities
+        editProfilePage.Reduced Inequalities
       </button>
     </div>
     <div
@@ -125,7 +125,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.sustainableCitiesAndCommunities
+        editProfilePage.Sustainable Cities And Communities
       </button>
     </div>
     <div
@@ -136,7 +136,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.responsibleConsumptionAndProduction
+        editProfilePage.Responsible Consumption And Production
       </button>
     </div>
     <div
@@ -147,7 +147,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.climateAction
+        editProfilePage.Climate Action
       </button>
     </div>
     <div
@@ -158,7 +158,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.lifeBelowWater
+        editProfilePage.Life Below Water
       </button>
     </div>
     <div
@@ -169,7 +169,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.lifeOnLand
+        editProfilePage.Life On Land
       </button>
     </div>
     <div
@@ -180,7 +180,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.peaceJusticeAndStrongInstitutions
+        editProfilePage.Peace And Justice And Strong Institutions
       </button>
     </div>
     <div
@@ -191,7 +191,7 @@ exports[`renders correctly 1`] = `
         onClick={[Function]}
         type="button"
       >
-        editProfilePage.partnershipForTheGoals
+        editProfilePage.Partnership For The Goals
       </button>
     </div>
   </div>

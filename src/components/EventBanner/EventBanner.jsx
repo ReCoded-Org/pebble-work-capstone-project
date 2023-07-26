@@ -12,12 +12,16 @@ import Button from "@/components/Button";
 
 import axios from "@/api/axios";
 
+import SingleMap from "../SingleMap";
+
 function EventBanner({
     title,
     imageSrc,
     city,
     country,
     address,
+    latitude,
+    longitude,
     dateTime,
     attendees,
     attendeeProfileURLs,
@@ -181,6 +185,7 @@ function EventBanner({
                         </p>
                         <p>{country}</p>
                         <p>{address}</p>
+                        <SingleMap latitude={latitude} longitude={longitude} />
                     </div>
                 </div>
                 <div className='flex pt-6 pl-2'>

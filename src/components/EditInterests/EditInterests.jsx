@@ -30,7 +30,7 @@ const EditInterests = ({
         "Life Below Water",
         "Life On Land",
         "Peace And Justice And Strong Institutions",
-        "Partnership For The Goals"
+        "Partnership For The Goals",
     ];
     const [selected, setSelected] = useState([]);
 
